@@ -122,6 +122,23 @@ This page summarizes PMM-specific OpenSCAD features that are useful to coding ag
 - Evidence:
   - https://forum.bambulab.com/t/parametic-model-maker-colors-documentation/77524
 
+## bundled_bosl2_library
+
+- Status: `supported`
+- Introduced in: `pre-v1.1.0`
+- Scope: `libraries`
+- Provenance: `Official release`
+- Syntax:
+  - `include <BOSL2/std.scad>;`
+- Constraints:
+  - PMM distinguishes between bundled platform libraries and arbitrary local include trees.
+  - The v1.1.0 PMM release explicitly documented a BOSL2 backend revision, which strongly indicates BOSL2 support in PMM.
+- Rewrite guidance: Do not strip or inline BOSL2 solely because local include trees are risky. First distinguish bundled PMM libraries from local project files.
+- Agent action: It is reasonable to keep BOSL2 includes when targeting PMM, while still checking for version-specific APIs and performance costs.
+- Evidence:
+  - https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564
+  - https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680
+
 ## backend_manifold_enabled
 
 - Status: `supported`

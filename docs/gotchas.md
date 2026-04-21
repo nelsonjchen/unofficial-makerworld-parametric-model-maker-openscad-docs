@@ -56,6 +56,15 @@ Community usage and employee replies indicate PMM can work with supplied platfor
 Evidence:
 - [Parametric Model Maker support for includes](https://forum.bambulab.com/t/150680)
 
+## Do Not Overcorrect By Removing BOSL2
+Provenance: `Official release`
+
+PMM does not appear to reject all libraries. The more precise rule is that arbitrary local project includes are risky, while bundled PMM libraries can be available. In particular, Bambu's `v1.1.0` PMM release explicitly documented an updated BOSL2 revision, which is strong evidence that BOSL2 is supported in PMM.
+
+Evidence:
+- [Parametric Model Maker V1.1.0 - Major UI Refresh](https://forum.bambulab.com/t/203564)
+- [Parametric Model Maker support for includes](https://forum.bambulab.com/t/150680)
+
 ## `// preview[...]` Is Not A PMM Feature
 Provenance: `Employee-confirmed`
 

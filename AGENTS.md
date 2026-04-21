@@ -34,6 +34,7 @@ Use `data/feature-index.json`, `data/compatibility-rules.json`, and `data/change
 ### Convert a normal OpenSCAD script into PMM-compatible form
 - Start with `checklists/convert-existing-script.md`.
 - Remove or replace fragile local includes.
+- Do not assume this means PMM cannot use bundled libraries such as BOSL2. The main risk is arbitrary local project files, not every library include.
 - Replace arbitrary uploaded asset names with PMM-supported defaults when using file upload features.
 - Add PMM-specific comments and modules only after the core geometry works.
 
@@ -56,6 +57,7 @@ Use `data/feature-index.json`, `data/compatibility-rules.json`, and `data/change
 ### Detect and rewrite unsupported constructs
 - Use `docs/compatibility-rules.md` and `docs/gotchas.md`.
 - Treat local include trees and arbitrary co-uploaded asset names as suspicious.
+- Distinguish bundled PMM libraries such as BOSL2 from arbitrary local include trees before rewriting working code.
 - Prefer shared helper modules over recursive or special-case PMM module calls.
 
 ### Produce a MakerWorld upload package plan

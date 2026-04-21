@@ -20,6 +20,28 @@
     "manual_capture_refs": []
   },
   {
+    "feature_key": "distinguish_bundled_bosl2_from_local_includes",
+    "status": "supported",
+    "introduced_in": "v1.1.0",
+    "scope": "libraries",
+    "syntax": [
+      "include <BOSL2/std.scad>;"
+    ],
+    "constraints": [
+      "Bundled PMM libraries such as BOSL2 are a different case from arbitrary local project includes.",
+      "Bambu documented a specific BOSL2 revision in the v1.1.0 PMM release."
+    ],
+    "rewrite_guidance": "Keep BOSL2 when it is actually helping the model; only flatten or remove dependencies that are not part of PMM's bundled environment.",
+    "agent_action": "Do not conclude that PMM cannot use BOSL2 just because PMM has trouble with arbitrary local include trees.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564",
+      "https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680"
+    ],
+    "manual_capture_refs": []
+  },
+  {
     "feature_key": "require_default_asset_names",
     "status": "supported",
     "introduced_in": "v0.8.0",

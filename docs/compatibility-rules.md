@@ -16,6 +16,22 @@ Use this page when deciding whether a local OpenSCAD pattern can be ported direc
 - Evidence:
   - https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680
 
+## distinguish_bundled_bosl2_from_local_includes
+
+- Status: `supported`
+- Scope: `libraries`
+- Provenance: `Official release`
+- Example syntax:
+  - `include <BOSL2/std.scad>;`
+- Constraints:
+  - Bundled PMM libraries such as BOSL2 are a different case from arbitrary local project includes.
+  - Bambu documented a specific BOSL2 revision in the v1.1.0 PMM release.
+- Rewrite guidance: Keep BOSL2 when it is actually helping the model; only flatten or remove dependencies that are not part of PMM's bundled environment.
+- Agent action: Do not conclude that PMM cannot use BOSL2 just because PMM has trouble with arbitrary local include trees.
+- Evidence:
+  - https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564
+  - https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680
+
 ## require_default_asset_names
 
 - Status: `supported`

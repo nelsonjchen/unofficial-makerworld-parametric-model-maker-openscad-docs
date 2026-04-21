@@ -17,6 +17,7 @@ Check the script against:
 
 At this stage, answer:
 - Does the script depend on local includes that PMM is unlikely to have?
+- Is the script using a bundled PMM library such as BOSL2, or is it using arbitrary local project includes?
 - Does it assume arbitrary co-uploaded asset names?
 - Does it need PMM-specific comments like `// color` or `// font`?
 - Does it need multi-plate support or would that complicate the release?
@@ -24,6 +25,7 @@ At this stage, answer:
 ## 3. Rewrite Unsupported Or Fragile Constructs First
 Before adding PMM sugar:
 - Collapse fragile local includes into one PMM-safe file if needed.
+- Do not strip out bundled PMM libraries such as BOSL2 just because local includes are risky.
 - Replace arbitrary asset references with supported default filenames when using file upload features.
 - Remove non-portable assumptions about local filesystem layout.
 - Prefer simple helper modules over PMM magic until the model is stable.

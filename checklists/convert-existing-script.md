@@ -4,6 +4,7 @@ Use this checklist when converting a normal OpenSCAD project into a PMM-oriented
 
 - Identify which parameters should become user-facing PMM controls.
 - Check for `include` or `use` statements that depend on local files.
+- Distinguish bundled libraries such as BOSL2 from arbitrary local project includes before rewriting.
 - Check for `import()` calls that assume arbitrary asset names.
 - Flatten or rewrite fragile local project structure before PMM-specific tweaks.
 - Keep the core model rendering correctly before adding PMM-only comments.
