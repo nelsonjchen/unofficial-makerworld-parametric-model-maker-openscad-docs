@@ -1,9 +1,9 @@
 {
-  "capture_method": "public_app_json_endpoint",
-  "captured_at": "2026-04-21T17:26:06Z",
-  "notes": "Installed font inventory exposed by MakerWorld.",
-  "origin": "MakerWorld PMM app endpoint",
   "source_type": "makerworld_json",
+  "origin": "MakerWorld PMM public web asset",
+  "captured_at": "2026-04-21T17:36:14Z",
   "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json",
-  "verbatim": true
+  "capture_method": "public_web_fetch",
+  "verbatim": true,
+  "notes": "Fetched from a public PMM web asset or chunk URL."
 }

@@ -1,8 +1,8 @@
 {
-  "source_type": "makerworld_json",
+  "source_type": "makerworld_web_asset",
   "origin": "MakerWorld PMM public web asset",
   "captured_at": "2026-04-21T17:36:14Z",
-  "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json",
+  "url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_buildManifest.js",
   "capture_method": "public_web_fetch",
   "verbatim": true,
   "notes": "Fetched from a public PMM web asset or chunk URL."

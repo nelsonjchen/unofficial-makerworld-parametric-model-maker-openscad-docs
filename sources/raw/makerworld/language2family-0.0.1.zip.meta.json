@@ -1,0 +1,9 @@
+{
+  "source_type": "makerworld_web_asset",
+  "origin": "MakerWorld PMM public web asset",
+  "captured_at": "2026-04-21T17:36:15Z",
+  "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/language2family-0.0.1.zip",
+  "capture_method": "public_web_fetch",
+  "verbatim": true,
+  "notes": "Discovered from public PMM chunk strings and fetched without auth."
+}

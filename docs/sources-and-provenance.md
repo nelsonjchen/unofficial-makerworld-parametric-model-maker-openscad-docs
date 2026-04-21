@@ -5,6 +5,7 @@ This repository separates evidence class from source type.
 ## Source Types
 
 - `makerworld_json`: raw JSON captured from MakerWorld PMM app endpoints
+- `makerworld_web_asset`: raw non-JSON public PMM web artifacts such as JS chunks, manifests, or ZIP assets
 - `discourse_json`: raw JSON captured from Bambu's public Discourse forum endpoints
 - `manual_capture`: intentional notes or copied text from PMM UI surfaces
 
@@ -28,7 +29,8 @@ This repository separates evidence class from source type.
 
 ## Current Source Inventory
 
-- `makerworld_json`: `2`
+- `makerworld_json`: `3`
+- `makerworld_web_asset`: `6`
 - `discourse_json`: `24`
 - `manual_capture`: `0`
 

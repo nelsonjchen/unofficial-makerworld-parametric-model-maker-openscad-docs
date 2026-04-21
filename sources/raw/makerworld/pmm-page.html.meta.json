@@ -1,0 +1,9 @@
+{
+  "source_type": "makerworld_web_asset",
+  "origin": "MakerWorld PMM public web asset",
+  "captured_at": "2026-04-21T17:36:14Z",
+  "url": "https://makerworld.com/en/makerlab/parametricModelMaker?pageType=generator",
+  "capture_method": "public_web_fetch",
+  "verbatim": true,
+  "notes": "Live PMM page HTML fetched without a browser session."
+}

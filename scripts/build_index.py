@@ -98,8 +98,10 @@ def build_topic_index() -> tuple[list[dict], dict[int, dict]]:
 
 def build_source_index() -> list[dict]:
     records = []
-    for path in sorted(RAW_MAKERWORLD_DIR.glob("*.json")):
-        if path.name.endswith(".meta.json"):
+    for path in sorted(RAW_MAKERWORLD_DIR.iterdir()):
+        if not path.is_file():
+            continue
+        if path.name == "README.md" or path.name.endswith(".meta.json"):
             continue
         meta_path = path.with_suffix(path.suffix + ".meta.json")
         metadata = load_json(meta_path) if meta_path.exists() else {}
@@ -341,6 +343,44 @@ def build_feature_index(topic_map: dict[int, dict]) -> list[dict]:
             "manual_capture_refs": [],
         },
         {
+            "feature_key": "font_catalog_endpoint",
+            "status": "supported",
+            "introduced_in": "fonts-show-0.0.1 asset",
+            "scope": "fonts",
+            "syntax": ['"AR One Sans"', '"Abyssinica SIL"', '"Noto Sans Arabic"'],
+            "constraints": [
+                "MakerWorld exposes a broader PMM font catalog endpoint that returns a `fontNames` list.",
+                "This catalog is much larger than the smaller installed-font inventory and is useful for UI or multilingual discovery work.",
+            ],
+            "rewrite_guidance": "Use the broad catalog for font research, then validate must-have fonts against the installed runtime inventory before promising deterministic output.",
+            "agent_action": "Check `fonts-show-0.0.1.json` when exploring PMM font availability, but keep `fonts-0.8.0.json` as the stricter runtime compatibility check.",
+            "source_class": "Official app endpoint",
+            "source_type": "makerworld_json",
+            "evidence_urls": [
+                "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-show-0.0.1.json"
+            ],
+            "manual_capture_refs": [],
+        },
+        {
+            "feature_key": "language_to_font_family_map_asset",
+            "status": "supported",
+            "introduced_in": "language2family-0.0.1 asset",
+            "scope": "fonts",
+            "syntax": ["language2family-0.0.1.zip", "language_support_family_2.json"],
+            "constraints": [
+                "MakerWorld publishes a ZIP asset containing `language_support_family_2.json`.",
+                "The JSON maps language-script identifiers to large font-family lists and is useful for multilingual font fallback research.",
+            ],
+            "rewrite_guidance": "When a PMM model needs broad language coverage, use the language-to-family map as a discovery aid before narrowing choices to installed or tested fonts.",
+            "agent_action": "Use the language-support asset when selecting fallback families for multilingual text parameters.",
+            "source_class": "Official app endpoint",
+            "source_type": "makerworld_web_asset",
+            "evidence_urls": [
+                "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/language2family-0.0.1.zip"
+            ],
+            "manual_capture_refs": [],
+        },
+        {
             "feature_key": "backend_manifold_enabled",
             "status": "supported",
             "introduced_in": "2025-03-13",
@@ -454,6 +494,26 @@ def build_compatibility_rules(topic_map: dict[int, dict]) -> list[dict]:
             "source_class": "Official release",
             "source_type": "discourse_json",
             "evidence_urls": evidence([144618]),
+            "manual_capture_refs": [],
+        },
+        {
+            "feature_key": "validate_fonts_against_installed_inventory",
+            "status": "caution",
+            "introduced_in": "fonts-show-0.0.1 asset",
+            "scope": "fonts",
+            "syntax": ['font_name = "Some Font"; // font'],
+            "constraints": [
+                "MakerWorld exposes both a broad PMM font catalog and a smaller installed-font inventory.",
+                "A font being visible in the broad catalog does not by itself prove it is part of the smaller runtime inventory you want to target deterministically.",
+            ],
+            "rewrite_guidance": "When a font is essential to geometry or layout, validate it against the installed inventory rather than relying only on the broader display catalog.",
+            "agent_action": "Treat `fonts-show-0.0.1.json` as discovery data and `fonts-0.8.0.json` as the stricter runtime check.",
+            "source_class": "Official app endpoint",
+            "source_type": "makerworld_json",
+            "evidence_urls": [
+                "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-show-0.0.1.json",
+                "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json",
+            ],
             "manual_capture_refs": [],
         },
         {

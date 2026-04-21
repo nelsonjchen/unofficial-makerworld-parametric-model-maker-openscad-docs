@@ -18,6 +18,7 @@ Use `data/feature-index.json`, `data/compatibility-rules.json`, and `data/change
 - Which PMM-specific comments and modules exist?
 - What file naming conventions are mandatory for uploads?
 - What features are employee-confirmed versus inferred?
+- Which PMM web assets are directly fetchable without auth, and which require browser context or login?
 - What limitations should I rewrite around?
 - What backend or library version is PMM using?
 - How should I package a file-upload or multi-plate model for MakerWorld?
@@ -67,6 +68,7 @@ Use `data/feature-index.json`, `data/compatibility-rules.json`, and `data/change
 
 ## Provenance Rules
 - Prefer `Official app endpoint` evidence when a question is directly answered by MakerWorld's own JSON payloads, such as installed libraries or font inventories.
+- Use `docs/web-discovery.md` and `data/pmm-web-discovery.json` when you need current PMM chunk URLs, public asset discovery notes, or auth-vs-browser-context guidance.
 - Prefer `Official release` and `Employee-confirmed` evidence.
 - Use `Manual UI capture` only when the forum does not cover a detail and the capture is clearly labeled.
 - Treat `Community-discovered` as useful but not authoritative.
@@ -78,10 +80,12 @@ Agents should rely on these public outputs:
 - `docs/compatibility-rules.md`
 - `docs/agent-workflow.md`
 - `docs/publishing-workflow.md`
+- `docs/web-discovery.md`
 - `docs/gotchas.md`
 - `docs/changelog.md`
 - `patterns/pmm-ready-template.scad`
 - `data/feature-index.json`
 - `data/compatibility-rules.json`
 - `data/changelog.json`
+- `data/pmm-web-discovery.json`
 - `data/source-index.json`

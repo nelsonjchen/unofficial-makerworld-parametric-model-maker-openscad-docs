@@ -17,6 +17,13 @@ def load_json(name: str) -> object:
     return json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
 
 
+def load_json_optional(name: str) -> object | None:
+    path = DATA_DIR / name
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def write_doc(name: str, lines: list[str]) -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     (DOCS_DIR / name).write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
@@ -84,6 +91,7 @@ def render_compatibility_rules(rules: list[dict]) -> None:
 def render_discourse_api(source_index: list[dict]) -> None:
     discourse_records = [record for record in source_index if record["source_type"] == "discourse_json"]
     makerworld_records = [record for record in source_index if record["source_type"] == "makerworld_json"]
+    makerworld_asset_records = [record for record in source_index if record["source_type"] == "makerworld_web_asset"]
     lines = [
         "# Discourse API",
         "",
@@ -106,12 +114,83 @@ def render_discourse_api(source_index: list[dict]) -> None:
         "## Current Snapshot Inventory",
         "",
         f"- MakerWorld app-endpoint artifacts indexed elsewhere: `{len(makerworld_records)}`",
+        f"- MakerWorld public web assets indexed elsewhere: `{len(makerworld_asset_records)}`",
         f"- Discourse artifacts indexed: `{len(discourse_records)}`",
         "- Manual UI captures are intentionally separate and are not fetched by the script.",
         "",
-        "See `scripts/fetch_sources.py` for the concrete fetch implementation.",
+        "See `scripts/fetch_sources.py` for forum and direct JSON fetches, and `docs/web-discovery.md` for public PMM web-asset discovery.",
     ]
     write_doc("discourse-api.md", lines)
+
+
+def render_web_discovery(discovery: dict | None) -> None:
+    if discovery is None:
+        lines = [
+            "# Public Web Discovery",
+            "",
+            "Run `python3 scripts/discover_pmm_web.py` to generate the current PMM public-web discovery summary.",
+        ]
+        write_doc("web-discovery.md", lines)
+        return
+
+    page_fetch = discovery.get("page_fetch", {})
+    public_fetches = discovery.get("public_fetches", [])
+    account_candidates = discovery.get("account_api_candidates", [])
+    public_urls = [record["url"] for record in public_fetches if record.get("ok")]
+    lines = [
+        "# Public Web Discovery",
+        "",
+        "This page summarizes how much of MakerWorld PMM can be rediscovered from public web assets without a logged-in browser session.",
+        "",
+        "## Current Discovery Result",
+        "",
+        f"- Captured at: `{discovery.get('captured_at')}`",
+        f"- PMM page URL: `{discovery.get('page_url')}`",
+        f"- Headless page-fetch status: `{page_fetch.get('status')}`",
+        f"- Headless page HTTP status: `{page_fetch.get('http_status')}`",
+        f"- Build manifest URL: `{discovery.get('build_manifest_url') or 'not discovered live in this run'}`",
+        f"- Current chunk URL count: `{len(discovery.get('current_chunk_urls', []))}`",
+        f"- Public fetchable artifact count: `{len(public_urls)}`",
+        f"- Account or session-bound API candidate count: `{len(account_candidates)}`",
+        "",
+        "## What Works Without Auth",
+        "",
+        "These assets were reachable directly in this discovery model:",
+    ]
+    for url in public_urls:
+        lines.append(f"- {url}")
+    if not public_urls:
+        lines.append("- No public assets were fetched in this run.")
+
+    lines.extend(
+        [
+            "",
+            "## What Needs Browser Context Or Login",
+            "",
+            "- The top-level PMM HTML may be blocked by a Cloudflare challenge for headless clients even when lower-level static chunks and content-generator assets are public.",
+            "- Account-focused `api/v1/...` endpoints should be treated as browser- or login-bound unless separately confirmed.",
+        ]
+    )
+    for record in account_candidates[:20]:
+        lines.append(f"- `{record['auth_hint']}`: {record['url']}")
+
+    lines.extend(
+        [
+            "",
+            "## Refresh Guidance",
+            "",
+            "1. Run `python3 scripts/discover_pmm_web.py` first.",
+            "2. If the PMM page itself is challenge-protected, seed discovery with a cleaned browser network log using `--seed-file` or known public chunk URLs using `--seed-url`.",
+            "3. Re-run `python3 scripts/build_index.py` and `python3 scripts/build_docs.py` after discovery if you changed the raw artifact set.",
+            "",
+            "## Current Notes",
+            "",
+        ]
+    )
+    for note in discovery.get("notes", []):
+        lines.append(f"- {note}")
+
+    write_doc("web-discovery.md", lines)
 
 
 def render_sources_and_provenance(source_index: list[dict]) -> None:
@@ -124,6 +203,7 @@ def render_sources_and_provenance(source_index: list[dict]) -> None:
         "## Source Types",
         "",
         "- `makerworld_json`: raw JSON captured from MakerWorld PMM app endpoints",
+        "- `makerworld_web_asset`: raw non-JSON public PMM web artifacts such as JS chunks, manifests, or ZIP assets",
         "- `discourse_json`: raw JSON captured from Bambu's public Discourse forum endpoints",
         "- `manual_capture`: intentional notes or copied text from PMM UI surfaces",
         "",
@@ -148,6 +228,7 @@ def render_sources_and_provenance(source_index: list[dict]) -> None:
         "## Current Source Inventory",
         "",
         f"- `makerworld_json`: `{counter.get('makerworld_json', 0)}`",
+        f"- `makerworld_web_asset`: `{counter.get('makerworld_web_asset', 0)}`",
         f"- `discourse_json`: `{counter.get('discourse_json', 0)}`",
         f"- `manual_capture`: `{counter.get('manual_capture', 0)}`",
         "",
@@ -160,10 +241,12 @@ def main() -> None:
     features = load_json("feature-index.json")
     rules = load_json("compatibility-rules.json")
     source_index = load_json("source-index.json")
+    web_discovery = load_json_optional("pmm-web-discovery.json")
 
     render_feature_reference(features)
     render_compatibility_rules(rules)
     render_discourse_api(source_index)
+    render_web_discovery(web_discovery)
     render_sources_and_provenance(source_index)
 
 

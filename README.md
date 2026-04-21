@@ -30,6 +30,7 @@ This repository exists to turn that scattered knowledge into one agent-friendly 
 - Which PMM-specific comments and modules exist?
 - What file naming conventions are mandatory for uploads?
 - What features are employee-confirmed versus inferred?
+- Which PMM web assets are directly fetchable without auth, and which require browser context or login?
 - What limitations should I rewrite around?
 - What backend or library version is PMM using?
 - How should I package a file-upload or multi-plate model for MakerWorld?
@@ -40,14 +41,16 @@ If you are a coding agent, start here:
 2. `docs/agent-workflow.md`
 3. `docs/feature-reference.md`
 4. `docs/compatibility-rules.md`
-5. `docs/gotchas.md`
-6. `docs/changelog.md`
-7. `patterns/pmm-ready-template.scad`
+5. `docs/web-discovery.md`
+6. `docs/gotchas.md`
+7. `docs/changelog.md`
+8. `patterns/pmm-ready-template.scad`
 
 If you want to refresh the evidence-backed data:
 
 ```bash
 python3 scripts/fetch_sources.py
+python3 scripts/discover_pmm_web.py
 python3 scripts/build_index.py
 python3 scripts/build_changelog.py
 python3 scripts/build_patterns_index.py
@@ -66,7 +69,9 @@ python3 scripts/build_all.py
 - `patterns/`: PMM-oriented OpenSCAD examples and templates.
 - `checklists/`: migration, packaging, and validation checklists.
 - `data/`: machine-readable indexes for agent retrieval.
+- `data/pmm-web-discovery.json`: current public-web discovery summary for PMM assets.
 - `sources/raw/discourse/`: raw public Discourse JSON snapshots from Bambu's forum.
+- `sources/raw/makerworld/`: raw PMM app endpoints and public web-asset captures.
 - `sources/raw/manual/`: intentional manual captures from PMM UI or related surfaces.
 - `scripts/`: refresh and build tooling.
 

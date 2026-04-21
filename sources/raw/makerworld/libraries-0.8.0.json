@@ -1,46 +1,46 @@
 {
   "Libraries": [
     {
-      "description": "The Belfry OpenScad Library, v2.0. An OpenSCAD library of shapes, masks, and manipulators to make working with OpenSCAD easier. BETA.",
-      "includeMethod": "include <BOSL2/*.scad>;",
       "name": "BOSL2",
-      "url": "https://github.com/BelfrySCAD/BOSL2"
+      "url": "https://github.com/BelfrySCAD/BOSL2",
+      "description": "The Belfry OpenScad Library, v2.0. An OpenSCAD library of shapes, masks, and manipulators to make working with OpenSCAD easier. BETA.",
+      "includeMethod": "include <BOSL2/*.scad>;"
     },
     {
-      "description": " A full 3Dprinting workflow solution for OpenSCAD v.21 and above.",
-      "includeMethod": "include <ub.scad>;",
       "name": "UB",
-      "url": "https://github.com/UBaer21/UB.scad"
+      "url": "https://github.com/UBaer21/UB.scad",
+      "description": " A full 3Dprinting workflow solution for OpenSCAD v.21 and above.",
+      "includeMethod": "include <ub.scad>;"
     },
     {
-      "description": "A Parametric Mechanical Keycap Library.",
-      "includeMethod": "include <KeyV2/*.scad>;",
       "name": "KeyV2",
-      "url": "https://github.com/rsheldiii/keyv2"
+      "url": "https://github.com/rsheldiii/keyv2",
+      "description": "A Parametric Mechanical Keycap Library.",
+      "includeMethod": "include <KeyV2/*.scad>;"
     },
     {
-      "description": "A ground-up rebuild of the stock gridfinity bins in OpenSCAD.",
-      "includeMethod": "include <gridfinity-rebuilt-openscad/*.scad>;",
       "name": "gridfinity-rebuilt-openscad",
-      "url": "https://github.com/kennetek/gridfinity-rebuilt-openscad"
+      "url": "https://github.com/kennetek/gridfinity-rebuilt-openscad",
+      "description": "A ground-up rebuild of the stock gridfinity bins in OpenSCAD.",
+      "includeMethod": "include <gridfinity-rebuilt-openscad/*.scad>;"
     },
     {
-      "description": "OpenSCAD threading library.",
-      "includeMethod": "include <threads-scad/threads.scad>;",
       "name": "threads-scad",
-      "url": "https://github.com/rcolyer/threads-scad/"
+      "url": "https://github.com/rcolyer/threads-scad/",
+      "description": "OpenSCAD threading library.",
+      "includeMethod": "include <threads-scad/threads.scad>;"
     },
     {
-      "description": "OpenSCAD Library for Gear Racks, Involute and Worm Gears.",
-      "includeMethod": "include <Getriebe.scad>;",
       "name": "Getriebe",
-      "url": "https://github.com/janssen86/OpenSCAD-Getriebebibliothek/tree/master"
+      "url": "https://github.com/janssen86/OpenSCAD-Getriebebibliothek/tree/master",
+      "description": "OpenSCAD Library for Gear Racks, Involute and Worm Gears.",
+      "includeMethod": "include <Getriebe.scad>;"
     },
     {
-      "description": "A new version of the knurled finishing library with some added refinements, information, new modules and features.",
-      "includeMethod": "include <knurledFinishLib_v2.scad>;",
       "name": "knurledFinishLib_v2",
-      "url": "https://www.thingiverse.com/thing:32122"
+      "url": "https://www.thingiverse.com/thing:32122",
+      "description": "A new version of the knurled finishing library with some added refinements, information, new modules and features.",
+      "includeMethod": "include <knurledFinishLib_v2.scad>;"
     }
   ]
 }

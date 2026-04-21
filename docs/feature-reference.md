@@ -176,6 +176,41 @@ This page summarizes PMM-specific OpenSCAD features that are useful to coding ag
 - Evidence:
   - https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json
 
+## font_catalog_endpoint
+
+- Status: `supported`
+- Introduced in: `fonts-show-0.0.1 asset`
+- Scope: `fonts`
+- Provenance: `Official app endpoint`
+- Syntax:
+  - `"AR One Sans"`
+  - `"Abyssinica SIL"`
+  - `"Noto Sans Arabic"`
+- Constraints:
+  - MakerWorld exposes a broader PMM font catalog endpoint that returns a `fontNames` list.
+  - This catalog is much larger than the smaller installed-font inventory and is useful for UI or multilingual discovery work.
+- Rewrite guidance: Use the broad catalog for font research, then validate must-have fonts against the installed runtime inventory before promising deterministic output.
+- Agent action: Check `fonts-show-0.0.1.json` when exploring PMM font availability, but keep `fonts-0.8.0.json` as the stricter runtime compatibility check.
+- Evidence:
+  - https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-show-0.0.1.json
+
+## language_to_font_family_map_asset
+
+- Status: `supported`
+- Introduced in: `language2family-0.0.1 asset`
+- Scope: `fonts`
+- Provenance: `Official app endpoint`
+- Syntax:
+  - `language2family-0.0.1.zip`
+  - `language_support_family_2.json`
+- Constraints:
+  - MakerWorld publishes a ZIP asset containing `language_support_family_2.json`.
+  - The JSON maps language-script identifiers to large font-family lists and is useful for multilingual font fallback research.
+- Rewrite guidance: When a PMM model needs broad language coverage, use the language-to-family map as a discovery aid before narrowing choices to installed or tested fonts.
+- Agent action: Use the language-support asset when selecting fallback families for multilingual text parameters.
+- Evidence:
+  - https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/language2family-0.0.1.zip
+
 ## backend_manifold_enabled
 
 - Status: `supported`

@@ -3,11 +3,14 @@
 This repository stores evidence in two broad classes.
 
 ## `sources/raw/makerworld/`
-These files are direct JSON snapshots from MakerWorld-controlled PMM endpoints rather than forum posts.
+These files are direct public PMM artifacts from MakerWorld-controlled endpoints or web assets rather than forum posts.
 
 Examples:
 - bundled OpenSCAD library inventories
 - installed font inventories
+- public JS chunks
+- build manifests
+- ZIP assets exposed by the PMM web app
 
 Every fetched artifact should have a sidecar metadata file describing:
 - `source_type`

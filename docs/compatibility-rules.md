@@ -78,6 +78,22 @@ Use this page when deciding whether a local OpenSCAD pattern can be ported direc
 - Evidence:
   - https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618
 
+## validate_fonts_against_installed_inventory
+
+- Status: `caution`
+- Scope: `fonts`
+- Provenance: `Official app endpoint`
+- Example syntax:
+  - `font_name = "Some Font"; // font`
+- Constraints:
+  - MakerWorld exposes both a broad PMM font catalog and a smaller installed-font inventory.
+  - A font being visible in the broad catalog does not by itself prove it is part of the smaller runtime inventory you want to target deterministically.
+- Rewrite guidance: When a font is essential to geometry or layout, validate it against the installed inventory rather than relying only on the broader display catalog.
+- Agent action: Treat `fonts-show-0.0.1.json` as discovery data and `fonts-0.8.0.json` as the stricter runtime check.
+- Evidence:
+  - https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-show-0.0.1.json
+  - https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json
+
 ## multi_plate_stl_tradeoff
 
 - Status: `caution`

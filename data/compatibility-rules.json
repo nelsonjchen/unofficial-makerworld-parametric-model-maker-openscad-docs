@@ -106,6 +106,28 @@
     "manual_capture_refs": []
   },
   {
+    "feature_key": "validate_fonts_against_installed_inventory",
+    "status": "caution",
+    "introduced_in": "fonts-show-0.0.1 asset",
+    "scope": "fonts",
+    "syntax": [
+      "font_name = \"Some Font\"; // font"
+    ],
+    "constraints": [
+      "MakerWorld exposes both a broad PMM font catalog and a smaller installed-font inventory.",
+      "A font being visible in the broad catalog does not by itself prove it is part of the smaller runtime inventory you want to target deterministically."
+    ],
+    "rewrite_guidance": "When a font is essential to geometry or layout, validate it against the installed inventory rather than relying only on the broader display catalog.",
+    "agent_action": "Treat `fonts-show-0.0.1.json` as discovery data and `fonts-0.8.0.json` as the stricter runtime check.",
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-show-0.0.1.json",
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json"
+    ],
+    "manual_capture_refs": []
+  },
+  {
     "feature_key": "multi_plate_stl_tradeoff",
     "status": "caution",
     "introduced_in": "v0.10.0",

@@ -1,0 +1,215 @@
+{
+  "captured_at": "2026-04-21T17:36:16Z",
+  "page_url": "https://makerworld.com/en/makerlab/parametricModelMaker?pageType=generator",
+  "page_fetch": {
+    "status": "ok",
+    "http_status": 200,
+    "cf_mitigated": null,
+    "error": null
+  },
+  "seed_sources": [],
+  "seed_url_count": 31,
+  "build_manifest_url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_buildManifest.js",
+  "current_chunk_urls": [
+    "https://makerworld.com/_next/static/chunks/openscad-84d6e74b207bcd6c.js",
+    "https://makerworld.com/_next/static/chunks/pages/makerlab/parametricModelMaker-b38162896fad14ff.js"
+  ],
+  "region_base_urls": [
+    "https://makerworld.bblmw.cn/makerworld/makerlab/content-generator/openscad/",
+    "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/"
+  ],
+  "public_fetches": [
+    {
+      "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json",
+      "status": 200,
+      "ok": true,
+      "saved_path": "sources/raw/makerworld/fonts-0.8.0.json",
+      "summary": {
+        "content_type": "application/json",
+        "bytes": 64106,
+        "top_level_type": "dict",
+        "keys": [
+          "fontNames"
+        ],
+        "font_count": 1615,
+        "font_sample": [
+          "Aldo:style=SemiBold",
+          "Anton:style=Regular",
+          "Archivo Black:style=Regular",
+          "Asap",
+          "Asap:style=Black",
+          "Asap:style=Black Italic",
+          "Asap:style=Bold",
+          "Asap:style=Bold Italic",
+          "Asap:style=ExtraBold",
+          "Asap:style=ExtraBold Italic",
+          "Asap:style=ExtraLight",
+          "Asap:style=ExtraLight Italic",
+          "Asap:style=Italic",
+          "Asap:style=Light",
+          "Asap:style=Light Italic"
+        ]
+      }
+    },
+    {
+      "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-show-0.0.1.json",
+      "status": 200,
+      "ok": true,
+      "source": "chunk_string",
+      "saved_path": "sources/raw/makerworld/fonts-show-0.0.1.json",
+      "summary": {
+        "content_type": "application/json",
+        "bytes": 288758,
+        "top_level_type": "dict",
+        "keys": [
+          "fontNames"
+        ],
+        "font_count": 8267,
+        "font_sample": [
+          "ABeeZee:style=Italic",
+          "ABeeZee:style=Regular",
+          "ADLaM Display:style=Regular",
+          "AR One Sans",
+          "AR One Sans:style=Bold",
+          "AR One Sans:style=Medium",
+          "AR One Sans:style=Regular",
+          "AR One Sans:style=SemiBold",
+          "Abel:style=Regular",
+          "Abhaya Libre ExtraBold:style=Regular",
+          "Abhaya Libre Medium:style=Regular",
+          "Abhaya Libre SemiBold:style=Regular",
+          "Abhaya Libre:style=Bold",
+          "Abhaya Libre:style=Regular",
+          "Aboreto:style=Regular"
+        ]
+      }
+    },
+    {
+      "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/language2family-0.0.1.zip",
+      "status": 200,
+      "ok": true,
+      "source": "chunk_string",
+      "saved_path": "sources/raw/makerworld/language2family-0.0.1.zip",
+      "summary": {
+        "content_type": "application/zip",
+        "bytes": 2283699,
+        "member_count": 1,
+        "members": [
+          "language_support_family_2.json"
+        ],
+        "first_json_member": "language_support_family_2.json",
+        "first_json_type": "dict",
+        "first_json_key_count": 778,
+        "first_json_key_sample": [
+          "aa_Latn",
+          "ace_Latn",
+          "af_Latn",
+          "ala_Latn",
+          "aln_Latn",
+          "anw_Latn",
+          "an_Latn",
+          "aoz_Latn",
+          "arn_Latn",
+          "asa_Latn",
+          "awo_Latn",
+          "ay_Latn"
+        ],
+        "first_value_count": 1787,
+        "first_value_sample": [
+          "ABeeZee",
+          "Abel",
+          "Abhaya Libre",
+          "Aboreto",
+          "Abril Fatface",
+          "Abyssinica SIL",
+          "Acme",
+          "Actor",
+          "Adamina",
+          "ADLaM Display"
+        ]
+      }
+    },
+    {
+      "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/language_support_family_2.json",
+      "status": 403,
+      "ok": false,
+      "source": "chunk_string",
+      "error": null
+    },
+    {
+      "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json",
+      "status": 200,
+      "ok": true,
+      "saved_path": "sources/raw/makerworld/libraries-0.8.0.json",
+      "summary": {
+        "content_type": "application/json",
+        "bytes": 1800,
+        "top_level_type": "dict",
+        "keys": [
+          "Libraries"
+        ]
+      }
+    },
+    {
+      "url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_buildManifest.js",
+      "status": 200,
+      "ok": true,
+      "saved_path": "sources/raw/makerworld/pmm-build-manifest.js",
+      "summary": {
+        "content_type": "application/javascript; charset=UTF-8",
+        "bytes": 55553,
+        "embedded_absolute_url_count": 0,
+        "embedded_relative_url_count": 3,
+        "embedded_base_url_count": 0,
+        "embedded_content_file_count": 0
+      }
+    },
+    {
+      "url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_ssgManifest.js",
+      "status": 200,
+      "ok": true,
+      "saved_path": "sources/raw/makerworld/pmm-ssg-manifest.js",
+      "summary": {
+        "content_type": "application/javascript; charset=UTF-8",
+        "bytes": 77,
+        "embedded_absolute_url_count": 0,
+        "embedded_relative_url_count": 0,
+        "embedded_base_url_count": 0,
+        "embedded_content_file_count": 0
+      }
+    },
+    {
+      "url": "https://makerworld.com/_next/static/chunks/openscad-84d6e74b207bcd6c.js",
+      "status": 200,
+      "ok": true,
+      "saved_path": "sources/raw/makerworld/openscad-84d6e74b207bcd6c.js",
+      "summary": {
+        "content_type": "application/javascript; charset=UTF-8",
+        "bytes": 297298,
+        "embedded_absolute_url_count": 16,
+        "embedded_relative_url_count": 3,
+        "embedded_base_url_count": 2,
+        "embedded_content_file_count": 7
+      }
+    },
+    {
+      "url": "https://makerworld.com/_next/static/chunks/pages/makerlab/parametricModelMaker-b38162896fad14ff.js",
+      "status": 200,
+      "ok": true,
+      "saved_path": "sources/raw/makerworld/parametricModelMaker-b38162896fad14ff.js",
+      "summary": {
+        "content_type": "application/javascript; charset=UTF-8",
+        "bytes": 12430,
+        "embedded_absolute_url_count": 3,
+        "embedded_relative_url_count": 1,
+        "embedded_base_url_count": 0,
+        "embedded_content_file_count": 0
+      }
+    }
+  ],
+  "account_api_candidates": [],
+  "notes": [
+    "The top-level PMM page can be Cloudflare challenge-protected for headless or non-browser clients even when lower-level PMM assets remain directly fetchable.",
+    "Public `_next/static` chunks and `makerworld.bblmw.com/makerworld/makerlab/content-generator/...` assets are the main unauthenticated discovery surface once a current chunk URL or build manifest URL is known."
+  ]
+}

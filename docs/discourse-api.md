@@ -18,8 +18,9 @@ Bambu Lab's forum is a Discourse instance and exposes public JSON endpoints that
 
 ## Current Snapshot Inventory
 
-- MakerWorld app-endpoint artifacts indexed elsewhere: `2`
+- MakerWorld app-endpoint artifacts indexed elsewhere: `3`
+- MakerWorld public web assets indexed elsewhere: `6`
 - Discourse artifacts indexed: `24`
 - Manual UI captures are intentionally separate and are not fetched by the script.
 
-See `scripts/fetch_sources.py` for the concrete fetch implementation.
+See `scripts/fetch_sources.py` for forum and direct JSON fetches, and `docs/web-discovery.md` for public PMM web-asset discovery.
