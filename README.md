@@ -9,6 +9,17 @@ The main use case is practical:
 
 This repo intentionally focuses on OpenSCAD. Fusion 360-specific guidance is out of scope unless a later PMM update changed the OpenSCAD workflow or backend itself.
 
+## Why This Exists
+The practical problem is that PMM documentation is scattered across release posts, support threads, UI examples, and community reverse-engineering instead of living in one obvious reference.
+
+That pain shows up repeatedly in public discussions:
+- [Any Documentation on Parametric Model Maker?](https://forum.bambulab.com/t/230605)
+- [Parametric Model Maker V1.1.0 - Major UI Refresh](https://forum.bambulab.com/t/203564)
+- [Documentation on parametric model maker](https://www.reddit.com/r/makerworld/comments/1rayxnv/documentation_on_parametric_model_maker/)
+- [Reddit comment link shared by the user](https://www.reddit.com/r/makerworld/comments/1rayxnv/comment/o6p0aza/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+This repository exists to turn that scattered knowledge into one agent-friendly OpenSCAD PMM reference with provenance, examples, and a refreshable evidence archive.
+
 ## Questions This Repo Should Answer
 - How do I make this OpenSCAD script work in MakerWorld PMM?
 - Which PMM-specific comments and modules exist?
