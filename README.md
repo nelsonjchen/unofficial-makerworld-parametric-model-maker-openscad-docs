@@ -13,8 +13,11 @@ This repo intentionally focuses on OpenSCAD. Fusion 360-specific guidance is out
 The practical problem is that PMM documentation is scattered across release posts, support threads, UI examples, and community reverse-engineering instead of living in one obvious reference.
 
 That pain shows up repeatedly in public discussions:
-- [Any Documentation on Parametric Model Maker?](https://forum.bambulab.com/t/230605)
-- [Parametric Model Maker V1.1.0 - Major UI Refresh](https://forum.bambulab.com/t/203564)
+- [Any Documentation on Parametric Model Maker? post 1](https://forum.bambulab.com/t/any-documentation-on-parametric-model-maker/230605/1)
+- [Any Documentation on Parametric Model Maker? post 7](https://forum.bambulab.com/t/any-documentation-on-parametric-model-maker/230605/7)
+- [Any Documentation on Parametric Model Maker? post 8](https://forum.bambulab.com/t/any-documentation-on-parametric-model-maker/230605/8)
+- [Parametric Model Maker V1.1.0 - Major UI Refresh, post 5](https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564/5)
+- [Parametric Model Maker Review and Feedback, post 3](https://forum.bambulab.com/t/parametric-model-maker-review-and-feedback/75758/3)
 - [Documentation on parametric model maker](https://www.reddit.com/r/makerworld/comments/1rayxnv/documentation_on_parametric_model_maker/)
 - [Reddit comment link shared by the user](https://www.reddit.com/r/makerworld/comments/1rayxnv/comment/o6p0aza/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
