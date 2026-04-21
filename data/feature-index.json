@@ -1,0 +1,199 @@
+[
+  {
+    "feature_key": "model_page_integration",
+    "status": "supported",
+    "introduced_in": "2024-05-10",
+    "scope": "ui",
+    "syntax": [],
+    "constraints": [
+      "PMM is integrated into MakerWorld model pages rather than being only a separate tool entrypoint."
+    ],
+    "rewrite_guidance": "Assume model-page customization exists; do not design around the older detached workflow.",
+    "agent_action": "Package the script for a model-page PMM flow rather than an entirely off-page customizer.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/makerworld-update-05-10/74832"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "file_upload_default_assets",
+    "status": "supported",
+    "introduced_in": "v0.8.0",
+    "scope": "uploads",
+    "syntax": [
+      "yourFileName = \"default.png\";",
+      "yourFileName = \"default.svg\";",
+      "yourFileName = \"default.stl\";"
+    ],
+    "constraints": [
+      "The official release documents built-in default filenames rather than arbitrary file naming.",
+      "Custom default files are not described as supported in the release note."
+    ],
+    "rewrite_guidance": "Rewrite arbitrary uploaded asset names to PMM-supported defaults when building a PMM-safe script.",
+    "agent_action": "Use default filenames for PMM upload parameters and explain the upload expectation to users.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/paramatric-model-maker-v0-8-0-support-uploading-files/91853"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "parameterized_color_ui",
+    "status": "supported",
+    "introduced_in": "v0.9.0",
+    "scope": "colors",
+    "syntax": [
+      "accent = \"#FF0000\"; // color"
+    ],
+    "constraints": [
+      "Parameterized colors are documented using hex string values with the `// color` comment."
+    ],
+    "rewrite_guidance": "Convert user-facing color parameters to hex strings and add `// color` only where PMM UI exposure is intended.",
+    "agent_action": "Prefer hex string parameters over non-parameterized literal color arrays for PMM UI controls.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/paramatric-model-maker-v0-9-0-support-multi-color-modeling/100160"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "font_picker_ui",
+    "status": "supported",
+    "introduced_in": "v0.10.0",
+    "scope": "fonts",
+    "syntax": [
+      "font_name = \"Roboto\"; // font"
+    ],
+    "constraints": [
+      "The `// font` comment is required to enable the PMM font picker UI."
+    ],
+    "rewrite_guidance": "If a model exposes fonts to PMM users, add a dedicated font-name parameter with the required comment marker.",
+    "agent_action": "Do not assume a font parameter will become a PMM UI control unless `// font` is present.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "multi_plate_3mf",
+    "status": "supported",
+    "introduced_in": "v0.10.0",
+    "scope": "export",
+    "syntax": [
+      "module mw_plate_1() { ... }",
+      "module mw_plate_2() { ... }"
+    ],
+    "constraints": [
+      "Each printable plate uses an `mw_plate_N()` module.",
+      "The official release warns that multi-plate scripts do not offer STL download from that script."
+    ],
+    "rewrite_guidance": "Only choose multi-plate when the user actually benefits from a 3MF-first release strategy.",
+    "agent_action": "Use PMM multi-plate modules for multi-part outputs and explain the STL tradeoff.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "assembly_view",
+    "status": "supported",
+    "introduced_in": "v0.10.0",
+    "scope": "preview",
+    "syntax": [
+      "module mw_assembly_view() { ... }"
+    ],
+    "constraints": [
+      "The assembly view is documented as a preview aid and is not included in the exported 3MF."
+    ],
+    "rewrite_guidance": "Use assembly view to improve comprehension for multi-part models without confusing it with printable geometry.",
+    "agent_action": "Add `mw_assembly_view()` when users need a full-preview assembly, not as the only output definition.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "profile_configuration",
+    "status": "supported",
+    "introduced_in": "v0.10.0",
+    "scope": "profiles",
+    "syntax": [],
+    "constraints": [
+      "Only selected profile settings are documented as configurable and the upload action must persist the changes."
+    ],
+    "rewrite_guidance": "Treat profile configuration as a PMM-side release concern rather than a pure OpenSCAD concern.",
+    "agent_action": "Mention profile settings when layout or auto-arrange behavior matters.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "customizer_compatibility",
+    "status": "partial",
+    "introduced_in": "pre-v0.9",
+    "scope": "compatibility",
+    "syntax": [],
+    "constraints": [
+      "An employee said PMM mainly follows the OpenSCAD Customizer manual.",
+      "Thingiverse-like preview comments were explicitly said to be unused by PMM itself."
+    ],
+    "rewrite_guidance": "Model PMM parameter behavior after OpenSCAD Customizer first, and treat extra comment conventions as non-authoritative unless confirmed.",
+    "agent_action": "Do not depend on `// preview[...]` or undocumented comment syntax as PMM functionality.",
+    "source_class": "Employee-confirmed",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametic-model-maker-colors-documentation/77524"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "backend_manifold_enabled",
+    "status": "supported",
+    "introduced_in": "2025-03-13",
+    "scope": "backend",
+    "syntax": [],
+    "constraints": [
+      "An employee explicitly stated that the PMM backend used commit `b550957ddac62e59428d08efa62e2f44c15a0b95` and manifold was enabled."
+    ],
+    "rewrite_guidance": "If local and PMM behavior differ, account for a specific PMM backend revision rather than assuming the latest local OpenSCAD release.",
+    "agent_action": "Document backend-version assumptions when diagnosing geometry or export discrepancies.",
+    "source_class": "Employee-confirmed",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "backend_refresh_v1_1_0",
+    "status": "supported",
+    "introduced_in": "v1.1.0",
+    "scope": "backend",
+    "syntax": [],
+    "constraints": [
+      "The OpenSCAD-backed PMM workflow moved the code editor behind a Code button.",
+      "The release documented an OpenSCAD backend based on commit `c8fbef05ba900e46892e9a44ea05f7d88e576e13` and BOSL2 commit `99fcfc6867e739aa1cd8ffc49fe39276036681f1`."
+    ],
+    "rewrite_guidance": "Use these documented revisions when explaining environment differences or library behavior.",
+    "agent_action": "Account for the documented backend and BOSL2 revisions when troubleshooting reproducibility.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564"
+    ],
+    "manual_capture_refs": []
+  }
+]

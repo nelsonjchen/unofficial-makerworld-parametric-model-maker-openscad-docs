@@ -1,0 +1,9 @@
+{
+  "capture_method": "public_json_endpoint",
+  "captured_at": "2026-04-21T15:58:11Z",
+  "notes": "OpenSCAD-focused search seed for PMM-related topics.",
+  "origin": "Bambu Lab Community Forum (Discourse)",
+  "source_type": "discourse_json",
+  "url": "https://forum.bambulab.com/search.json?q=%22Parametric%20Model%20Maker%22%20OpenSCAD",
+  "verbatim": true
+}

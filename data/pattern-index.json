@@ -1,0 +1,119 @@
+[
+  {
+    "pattern_key": "basic_parameterized_model",
+    "path": "patterns/basic-parameterized-model.scad",
+    "purpose": "Minimal PMM-friendly parameterized OpenSCAD baseline.",
+    "supports": [
+      "basic parameters"
+    ],
+    "limitations": [
+      "No file upload support.",
+      "No multi-plate structure."
+    ],
+    "evidence_urls": []
+  },
+  {
+    "pattern_key": "color_parameter",
+    "path": "patterns/color-parameter.scad",
+    "purpose": "Expose a PMM color control using a hex string and `// color`.",
+    "supports": [
+      "colors",
+      "3mf color export"
+    ],
+    "limitations": [
+      "Designed around a simple hex-string UI parameter."
+    ],
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/paramatric-model-maker-v0-9-0-support-multi-color-modeling/100160"
+    ]
+  },
+  {
+    "pattern_key": "font_parameter",
+    "path": "patterns/font-parameter.scad",
+    "purpose": "Expose PMM's font picker using `// font`.",
+    "supports": [
+      "fonts",
+      "text models"
+    ],
+    "limitations": [
+      "Assumes PMM font picker support rather than arbitrary font file upload."
+    ],
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ]
+  },
+  {
+    "pattern_key": "file_upload_svg",
+    "path": "patterns/file-upload-svg.scad",
+    "purpose": "Illustrate PMM's SVG upload convention using `default.svg`.",
+    "supports": [
+      "svg upload"
+    ],
+    "limitations": [
+      "Uses PMM's documented default filename convention."
+    ],
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/paramatric-model-maker-v0-8-0-support-uploading-files/91853"
+    ]
+  },
+  {
+    "pattern_key": "file_upload_stl",
+    "path": "patterns/file-upload-stl.scad",
+    "purpose": "Illustrate PMM's STL upload convention using `default.stl`.",
+    "supports": [
+      "stl upload"
+    ],
+    "limitations": [
+      "Assumes the PMM-safe default filename workflow."
+    ],
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/paramatric-model-maker-v0-8-0-support-uploading-files/91853",
+      "https://forum.bambulab.com/t/openscad-stl-import/247687"
+    ]
+  },
+  {
+    "pattern_key": "multi_plate_3mf",
+    "path": "patterns/multi-plate-3mf.scad",
+    "purpose": "Demonstrate PMM multi-plate 3MF modules.",
+    "supports": [
+      "multi-plate",
+      "3mf export"
+    ],
+    "limitations": [
+      "Carries the documented STL tradeoff for the script."
+    ],
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ]
+  },
+  {
+    "pattern_key": "assembly_view",
+    "path": "patterns/assembly-view.scad",
+    "purpose": "Show a clean separation between printable plate modules and assembly preview.",
+    "supports": [
+      "assembly preview",
+      "multi-part preview"
+    ],
+    "limitations": [
+      "Assembly view is preview-only, not printable output."
+    ],
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ]
+  },
+  {
+    "pattern_key": "pmm_ready_template",
+    "path": "patterns/pmm-ready-template.scad",
+    "purpose": "Use as a starting point for PMM-adapted OpenSCAD.",
+    "supports": [
+      "basic parameters",
+      "colors",
+      "fonts",
+      "optional multi-plate structure"
+    ],
+    "limitations": [
+      "Template must still be adapted to the user's geometry and packaging strategy."
+    ],
+    "evidence_urls": []
+  }
+]

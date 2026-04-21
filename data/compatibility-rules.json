@@ -1,0 +1,187 @@
+[
+  {
+    "feature_key": "avoid_arbitrary_local_includes",
+    "status": "caution",
+    "introduced_in": "2025-03-13",
+    "scope": "includes",
+    "syntax": [
+      "include <local_file.scad>;"
+    ],
+    "constraints": [
+      "Local include trees are not a safe PMM default unless the library is known to exist in PMM."
+    ],
+    "rewrite_guidance": "Flatten local dependencies or inline the minimum needed helpers into a PMM-safe file.",
+    "agent_action": "Treat local include graphs as migration work, not drop-in PMM behavior.",
+    "source_class": "Employee-confirmed",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "require_default_asset_names",
+    "status": "supported",
+    "introduced_in": "v0.8.0",
+    "scope": "uploads",
+    "syntax": [
+      "\"default.png\"",
+      "\"default.svg\"",
+      "\"default.stl\""
+    ],
+    "constraints": [
+      "PMM upload features are documented around built-in default filenames."
+    ],
+    "rewrite_guidance": "Rename or rewire uploaded asset variables to match documented PMM defaults.",
+    "agent_action": "Avoid arbitrary uploaded asset names in PMM-targeted scripts.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/paramatric-model-maker-v0-8-0-support-uploading-files/91853"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "hex_string_color_only_for_ui",
+    "status": "supported",
+    "introduced_in": "v0.9.0",
+    "scope": "colors",
+    "syntax": [
+      "accent_hex = \"#FF0000\"; // color"
+    ],
+    "constraints": [
+      "Parameterized color UI is documented for hex strings rather than arbitrary color expressions."
+    ],
+    "rewrite_guidance": "Expose PMM color controls as hex string parameters and keep more complex color logic internal if needed.",
+    "agent_action": "Use simple hex-string parameters for PMM-exposed colors.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/paramatric-model-maker-v0-9-0-support-multi-color-modeling/100160"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "font_comment_required",
+    "status": "supported",
+    "introduced_in": "v0.10.0",
+    "scope": "fonts",
+    "syntax": [
+      "font_name = \"Roboto\"; // font"
+    ],
+    "constraints": [
+      "The PMM font UI requires the `// font` marker."
+    ],
+    "rewrite_guidance": "Add `// font` only to parameters intended for PMM font selection.",
+    "agent_action": "Do not assume plain OpenSCAD font strings become PMM font controls automatically.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "multi_plate_stl_tradeoff",
+    "status": "caution",
+    "introduced_in": "v0.10.0",
+    "scope": "export",
+    "syntax": [
+      "module mw_plate_1() { ... }"
+    ],
+    "constraints": [
+      "The official release notes that multi-plate scripts cannot provide STL download from that script."
+    ],
+    "rewrite_guidance": "Consider separate release variants when both PMM multi-plate output and STL convenience matter.",
+    "agent_action": "Present multi-plate as a product decision, not only a code implementation detail.",
+    "source_class": "Official release",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "oversize_auto_arrange_risk",
+    "status": "caution",
+    "introduced_in": "2025-01-19",
+    "scope": "layout",
+    "syntax": [],
+    "constraints": [
+      "Oversize models may fail 3MF generation.",
+      "Employee replies connect this to auto-arrange behavior and practical plate limits."
+    ],
+    "rewrite_guidance": "Split large output into multiple plates or document profile-setting expectations when a model approaches layout limits.",
+    "agent_action": "Flag oversize and auto-arrange risk in the upload plan.",
+    "source_class": "Employee-confirmed",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-3mf-cannot-be-generated/133844",
+      "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618",
+      "https://forum.bambulab.com/t/parametric-model-maker-model-is-rotated-after-generation/172901"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "preview_comments_not_supported_feature",
+    "status": "unsupported",
+    "introduced_in": "2024-05-28",
+    "scope": "comments",
+    "syntax": [
+      "// preview[...]"
+    ],
+    "constraints": [
+      "An employee explicitly said the preview comment example was not used by PMM itself."
+    ],
+    "rewrite_guidance": "Remove or ignore preview-comment reliance when porting a script to PMM.",
+    "agent_action": "Do not spend effort preserving preview-comment behavior as if it were a PMM feature.",
+    "source_class": "Employee-confirmed",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametic-model-maker-colors-documentation/77524"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "uploaded_stl_name_is_fragile",
+    "status": "caution",
+    "introduced_in": "2026-04-08",
+    "scope": "uploads",
+    "syntax": [
+      "import(\"oven_knob_solid.stl\");"
+    ],
+    "constraints": [
+      "Community evidence suggests PMM STL-backed workflows are safer when aligned with the documented `default.stl` pattern."
+    ],
+    "rewrite_guidance": "Prefer the official default-file convention over arbitrary co-uploaded STL naming assumptions.",
+    "agent_action": "Treat arbitrary uploaded STL filenames as risky unless separately confirmed by current PMM behavior.",
+    "source_class": "Community-discovered",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/openscad-stl-import/247687",
+      "https://forum.bambulab.com/t/paramatric-model-maker-v0-8-0-support-uploading-files/91853"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "avoid_direct_special_module_calls",
+    "status": "caution",
+    "introduced_in": "2025-11-25",
+    "scope": "multi-plate",
+    "syntax": [
+      "mw_plate_1();",
+      "mw_assembly_view();"
+    ],
+    "constraints": [
+      "Community troubleshooting suggests special PMM modules should define output rather than be treated as ordinary helper calls."
+    ],
+    "rewrite_guidance": "Keep reusable geometry in neutral helper modules and reserve PMM-specific modules for output structure.",
+    "agent_action": "Do not build the whole model around directly calling PMM special modules as ordinary functions.",
+    "source_class": "Community-discovered",
+    "source_type": "discourse_json",
+    "evidence_urls": [
+      "https://forum.bambulab.com/t/parametric-model-maker-model-times-out-help/211145"
+    ],
+    "manual_capture_refs": []
+  }
+]

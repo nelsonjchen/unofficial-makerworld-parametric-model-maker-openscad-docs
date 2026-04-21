@@ -1,0 +1,364 @@
+[
+  {
+    "topic_id": 74832,
+    "title": "MakerWorld Update 05/10",
+    "url": "https://forum.bambulab.com/t/makerworld-update-05-10/74832",
+    "created_at": "2024-05-10T09:05:28.792Z",
+    "author_username": "MakerWorld",
+    "post_count": 20,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "MakerWorld update that integrated PMM into model pages.",
+    "tags": [
+      "release",
+      "integration"
+    ],
+    "raw_path": "sources/raw/discourse/topic-74832-makerworld-update-05-10.json",
+    "meta_path": "sources/raw/discourse/topic-74832-makerworld-update-05-10.json.meta.json"
+  },
+  {
+    "topic_id": 75758,
+    "title": "Parametric Model Maker Review and Feedback",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-review-and-feedback/75758",
+    "created_at": "2024-05-15T03:21:32.287Z",
+    "author_username": "ozarkexpeditions",
+    "post_count": 20,
+    "has_employee_reply": false,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Early community feedback thread about PMM UX and documentation gaps.",
+    "tags": [
+      "feedback",
+      "ux"
+    ],
+    "raw_path": "sources/raw/discourse/topic-75758-parametric-model-maker-review-and-feedback.json",
+    "meta_path": "sources/raw/discourse/topic-75758-parametric-model-maker-review-and-feedback.json.meta.json"
+  },
+  {
+    "topic_id": 77524,
+    "title": "Parametic Model Maker - colors? documentation?",
+    "url": "https://forum.bambulab.com/t/parametic-model-maker-colors-documentation/77524",
+    "created_at": "2024-05-24T16:17:01.524Z",
+    "author_username": "DanTup",
+    "post_count": 9,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Employee-confirmed early color limitation and Customizer compatibility notes.",
+    "tags": [
+      "colors",
+      "compatibility"
+    ],
+    "raw_path": "sources/raw/discourse/topic-77524-parametic-model-maker-colors-documentation.json",
+    "meta_path": "sources/raw/discourse/topic-77524-parametic-model-maker-colors-documentation.json.meta.json"
+  },
+  {
+    "topic_id": 91853,
+    "title": "Paramatric Model Maker V0.8.0 support uploading files!",
+    "url": "https://forum.bambulab.com/t/paramatric-model-maker-v0-8-0-support-uploading-files/91853",
+    "created_at": "2024-08-06T03:53:34.099Z",
+    "author_username": "ypy",
+    "post_count": 20,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Official v0.8.0 release thread for PMM file upload support.",
+    "tags": [
+      "release",
+      "uploads"
+    ],
+    "raw_path": "sources/raw/discourse/topic-91853-paramatric-model-maker-v0-8-0-support-uploading-files.json",
+    "meta_path": "sources/raw/discourse/topic-91853-paramatric-model-maker-v0-8-0-support-uploading-files.json.meta.json"
+  },
+  {
+    "topic_id": 100160,
+    "title": "Paramatric Model Maker V0.9.0 - Support Multi-Color Modeling",
+    "url": "https://forum.bambulab.com/t/paramatric-model-maker-v0-9-0-support-multi-color-modeling/100160",
+    "created_at": "2024-09-23T11:29:25.616Z",
+    "author_username": "PineappleBun_BBL",
+    "post_count": 20,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Official v0.9.0 release thread for multi-color 3MF and // color support.",
+    "tags": [
+      "release",
+      "colors",
+      "3mf"
+    ],
+    "raw_path": "sources/raw/discourse/topic-100160-paramatric-model-maker-v0-9-0-support-multi-color-modeling.json",
+    "meta_path": "sources/raw/discourse/topic-100160-paramatric-model-maker-v0-9-0-support-multi-color-modeling.json.meta.json"
+  },
+  {
+    "topic_id": 128380,
+    "title": "Parametric Model Maker Under Maintence",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-under-maintence/128380",
+    "created_at": "2024-12-30T17:24:38.119Z",
+    "author_username": "ozarkexpeditions",
+    "post_count": 20,
+    "has_employee_reply": false,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Maintenance outage thread showing operational fragility and community impact.",
+    "tags": [
+      "ops",
+      "availability"
+    ],
+    "raw_path": "sources/raw/discourse/topic-128380-parametric-model-maker-under-maintence.json",
+    "meta_path": "sources/raw/discourse/topic-128380-parametric-model-maker-under-maintence.json.meta.json"
+  },
+  {
+    "topic_id": 133844,
+    "title": "Parametric Model Maker: 3MF cannot be generated",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-3mf-cannot-be-generated/133844",
+    "created_at": "2025-01-12T16:28:37.989Z",
+    "author_username": "benjaminkott",
+    "post_count": 7,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Employee-confirmed oversize and 3MF generation behavior after color-related changes.",
+    "tags": [
+      "3mf",
+      "oversize"
+    ],
+    "raw_path": "sources/raw/discourse/topic-133844-parametric-model-maker-3mf-cannot-be-generated.json",
+    "meta_path": "sources/raw/discourse/topic-133844-parametric-model-maker-3mf-cannot-be-generated.json.meta.json"
+  },
+  {
+    "topic_id": 142549,
+    "title": "Bezier Problems with Parametric Model Maker",
+    "url": "https://forum.bambulab.com/t/bezier-problems-with-parametric-model-maker/142549",
+    "created_at": "2025-02-03T12:30:52.693Z",
+    "author_username": "oymate",
+    "post_count": 2,
+    "has_employee_reply": false,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Community thread on bezier or BOSL2 path issues.",
+    "tags": [
+      "bosl2",
+      "geometry"
+    ],
+    "raw_path": "sources/raw/discourse/topic-142549-bezier-problems-with-parametric-model-maker.json",
+    "meta_path": "sources/raw/discourse/topic-142549-bezier-problems-with-parametric-model-maker.json.meta.json"
+  },
+  {
+    "topic_id": 144618,
+    "title": "Parametric Model Maker V0.10.0 - Multi-Plate 3MF Generation",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-v0-10-0-multi-plate-3mf-generation/144618",
+    "created_at": "2025-02-10T03:45:41.401Z",
+    "author_username": "PineappleBun_BBL",
+    "post_count": 20,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Official v0.10.0 release thread for multi-plate 3MF, // font, and profile config.",
+    "tags": [
+      "release",
+      "multi-plate",
+      "fonts"
+    ],
+    "raw_path": "sources/raw/discourse/topic-144618-parametric-model-maker-v0-10-0-multi-plate-3mf-generation.json",
+    "meta_path": "sources/raw/discourse/topic-144618-parametric-model-maker-v0-10-0-multi-plate-3mf-generation.json.meta.json"
+  },
+  {
+    "topic_id": 150680,
+    "title": "Parametric Model Maker support for includes",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680",
+    "created_at": "2025-03-06T13:38:38.139Z",
+    "author_username": "GAlgier",
+    "post_count": 8,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Employee-confirmed notes on includes, backend commit, and manifold.",
+    "tags": [
+      "includes",
+      "backend"
+    ],
+    "raw_path": "sources/raw/discourse/topic-150680-parametric-model-maker-support-for-includes.json",
+    "meta_path": "sources/raw/discourse/topic-150680-parametric-model-maker-support-for-includes.json.meta.json"
+  },
+  {
+    "topic_id": 154198,
+    "title": "Request: Parametric Model Maker - Upload Custom Fonts",
+    "url": "https://forum.bambulab.com/t/request-parametric-model-maker-upload-custom-fonts/154198",
+    "created_at": "2025-03-20T15:02:02.356Z",
+    "author_username": "Lilac_Rage",
+    "post_count": 4,
+    "has_employee_reply": false,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Community feature request around custom fonts.",
+    "tags": [
+      "fonts",
+      "request"
+    ],
+    "raw_path": "sources/raw/discourse/topic-154198-request-parametric-model-maker-upload-custom-fonts.json",
+    "meta_path": "sources/raw/discourse/topic-154198-request-parametric-model-maker-upload-custom-fonts.json.meta.json"
+  },
+  {
+    "topic_id": 156334,
+    "title": "Create customizable models on Maker World using Parametric Model Maker",
+    "url": "https://forum.bambulab.com/t/create-customizable-models-on-maker-world-using-parametric-model-maker/156334",
+    "created_at": "2025-03-27T17:33:24.955Z",
+    "author_username": "Surrey_Homeware",
+    "post_count": 6,
+    "has_employee_reply": false,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Community-written tutorial that confirms real documentation demand.",
+    "tags": [
+      "tutorial",
+      "documentation"
+    ],
+    "raw_path": "sources/raw/discourse/topic-156334-create-customizable-models-on-maker-world-using-parametric-model-maker.json",
+    "meta_path": "sources/raw/discourse/topic-156334-create-customizable-models-on-maker-world-using-parametric-model-maker.json.meta.json"
+  },
+  {
+    "topic_id": 172894,
+    "title": "Parametric Model Maker: Allow customizing of file download name",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-allow-customizing-of-file-download-name/172894",
+    "created_at": "2025-06-16T20:10:00.099Z",
+    "author_username": "benjaminkott",
+    "post_count": 4,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Community request around output filename customization.",
+    "tags": [
+      "filenames",
+      "request"
+    ],
+    "raw_path": "sources/raw/discourse/topic-172894-parametric-model-maker-allow-customizing-of-file-download-name.json",
+    "meta_path": "sources/raw/discourse/topic-172894-parametric-model-maker-allow-customizing-of-file-download-name.json.meta.json"
+  },
+  {
+    "topic_id": 172899,
+    "title": "Parametric Model Maker: Keep Model Information",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-keep-model-information/172899",
+    "created_at": "2025-06-16T20:42:26.253Z",
+    "author_username": "benjaminkott",
+    "post_count": 2,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Community request around preserving model information in generated assets.",
+    "tags": [
+      "metadata",
+      "request"
+    ],
+    "raw_path": "sources/raw/discourse/topic-172899-parametric-model-maker-keep-model-information.json",
+    "meta_path": "sources/raw/discourse/topic-172899-parametric-model-maker-keep-model-information.json.meta.json"
+  },
+  {
+    "topic_id": 172901,
+    "title": "Parametric Model Maker: Model is rotated after generation",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-model-is-rotated-after-generation/172901",
+    "created_at": "2025-06-16T21:17:55.013Z",
+    "author_username": "benjaminkott",
+    "post_count": 2,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Employee-confirmed auto-arrange explanation for rotated model behavior.",
+    "tags": [
+      "auto-arrange",
+      "layout"
+    ],
+    "raw_path": "sources/raw/discourse/topic-172901-parametric-model-maker-model-is-rotated-after-generation.json",
+    "meta_path": "sources/raw/discourse/topic-172901-parametric-model-maker-model-is-rotated-after-generation.json.meta.json"
+  },
+  {
+    "topic_id": 188591,
+    "title": "Parametric Model Maker - Timeout on simple SCAD",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-timeout-on-simple-scad/188591",
+    "created_at": "2025-08-11T08:43:16.217Z",
+    "author_username": "Yatuin",
+    "post_count": 13,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Employee-confirmed outage and timeout incident affecting 3MF export.",
+    "tags": [
+      "timeout",
+      "ops"
+    ],
+    "raw_path": "sources/raw/discourse/topic-188591-parametric-model-maker-timeout-on-simple-scad.json",
+    "meta_path": "sources/raw/discourse/topic-188591-parametric-model-maker-timeout-on-simple-scad.json.meta.json"
+  },
+  {
+    "topic_id": 203564,
+    "title": "Parametric Model Maker V1.1.0 - Major UI Refresh",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564",
+    "created_at": "2025-10-25T15:06:26.988Z",
+    "author_username": "PineappleBun_BBL",
+    "post_count": 5,
+    "has_employee_reply": true,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Official v1.1.0 release thread with OpenSCAD UI and backend updates.",
+    "tags": [
+      "release",
+      "backend",
+      "ui"
+    ],
+    "raw_path": "sources/raw/discourse/topic-203564-parametric-model-maker-v1-1-0-major-ui-refresh.json",
+    "meta_path": "sources/raw/discourse/topic-203564-parametric-model-maker-v1-1-0-major-ui-refresh.json.meta.json"
+  },
+  {
+    "topic_id": 211145,
+    "title": "Parametric Model Maker - Model Times out - help?",
+    "url": "https://forum.bambulab.com/t/parametric-model-maker-model-times-out-help/211145",
+    "created_at": "2025-11-25T04:34:51.774Z",
+    "author_username": "jrwagz",
+    "post_count": 9,
+    "has_employee_reply": false,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Community performance and timeout discussion for complex PMM models.",
+    "tags": [
+      "timeout",
+      "performance"
+    ],
+    "raw_path": "sources/raw/discourse/topic-211145-parametric-model-maker-model-times-out-help.json",
+    "meta_path": "sources/raw/discourse/topic-211145-parametric-model-maker-model-times-out-help.json.meta.json"
+  },
+  {
+    "topic_id": 230605,
+    "title": "Any Documentation on Parametric Model Maker?",
+    "url": "https://forum.bambulab.com/t/any-documentation-on-parametric-model-maker/230605",
+    "created_at": "2026-02-02T00:34:12.117Z",
+    "author_username": "Derftoy",
+    "post_count": 18,
+    "has_employee_reply": false,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Recent thread asking for PMM documentation, confirming discoverability pain.",
+    "tags": [
+      "documentation"
+    ],
+    "raw_path": "sources/raw/discourse/topic-230605-any-documentation-on-parametric-model-maker.json",
+    "meta_path": "sources/raw/discourse/topic-230605-any-documentation-on-parametric-model-maker.json.meta.json"
+  },
+  {
+    "topic_id": 247687,
+    "title": "OpenSCAD stl import",
+    "url": "https://forum.bambulab.com/t/openscad-stl-import/247687",
+    "created_at": "2026-04-08T19:26:20.483Z",
+    "author_username": "CookOG",
+    "post_count": 7,
+    "has_employee_reply": false,
+    "source_type": "discourse_json",
+    "scope": "OpenSCAD",
+    "summary": "Community thread suggesting default.stl conventions for STL-backed workflows.",
+    "tags": [
+      "uploads",
+      "stl"
+    ],
+    "raw_path": "sources/raw/discourse/topic-247687-openscad-stl-import.json",
+    "meta_path": "sources/raw/discourse/topic-247687-openscad-stl-import.json.meta.json"
+  }
+]

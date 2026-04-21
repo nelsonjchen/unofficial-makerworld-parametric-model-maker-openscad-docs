@@ -1,0 +1,873 @@
+{
+  "actions_summary": [
+    {
+      "can_act": false,
+      "count": 0,
+      "hidden": false,
+      "id": 4
+    },
+    {
+      "can_act": false,
+      "count": 0,
+      "hidden": false,
+      "id": 8
+    },
+    {
+      "can_act": false,
+      "count": 0,
+      "hidden": false,
+      "id": 10
+    },
+    {
+      "can_act": false,
+      "count": 0,
+      "hidden": false,
+      "id": 7
+    }
+  ],
+  "archetype": "regular",
+  "archived": false,
+  "bookmarked": false,
+  "bookmarks": [],
+  "can_vote": false,
+  "category_id": 163,
+  "chunk_size": 20,
+  "closed": false,
+  "created_at": "2025-06-16T20:09:59.981Z",
+  "current_post_number": 1,
+  "deleted_at": null,
+  "deleted_by": null,
+  "details": {
+    "can_edit": false,
+    "created_by": {
+      "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
+      "id": 29047,
+      "name": "Benjamin Kott",
+      "username": "benjaminkott"
+    },
+    "last_poster": {
+      "avatar_template": "/user_avatar/forum.bambulab.com/jetpad/{size}/32448_2.png",
+      "id": 29303,
+      "name": "jetpad",
+      "username": "jetpad"
+    },
+    "links": [
+      {
+        "attachment": false,
+        "clicks": 11,
+        "domain": "makerworld.com",
+        "internal": false,
+        "reflection": false,
+        "root_domain": "makerworld.com",
+        "title": "Organizer Box by Benjamin Kott MakerWorld: Download Free 3D Models",
+        "url": "https://makerworld.com/en/models/103266-organizer-box",
+        "user_id": 29047
+      }
+    ],
+    "notification_level": 1,
+    "participants": [
+      {
+        "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
+        "flair_bg_color": null,
+        "flair_color": null,
+        "flair_group_id": null,
+        "flair_name": null,
+        "flair_url": null,
+        "id": 29047,
+        "name": "Benjamin Kott",
+        "post_count": 2,
+        "primary_group_name": null,
+        "trust_level": 2,
+        "username": "benjaminkott"
+      },
+      {
+        "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+        "flair_bg_color": "",
+        "flair_color": "",
+        "flair_group_id": 41,
+        "flair_name": "Bambu_Lab_Employee",
+        "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+        "id": 24049,
+        "name": "",
+        "post_count": 1,
+        "primary_group_name": "Bambu_Lab_Employee",
+        "trust_level": 3,
+        "username": "PineappleBun_BBL"
+      },
+      {
+        "avatar_template": "/user_avatar/forum.bambulab.com/jetpad/{size}/32448_2.png",
+        "flair_bg_color": null,
+        "flair_color": null,
+        "flair_group_id": null,
+        "flair_name": null,
+        "flair_url": null,
+        "id": 29303,
+        "name": "jetpad",
+        "post_count": 1,
+        "primary_group_name": null,
+        "trust_level": 2,
+        "username": "jetpad"
+      }
+    ]
+  },
+  "discourse_zendesk_plugin_zendesk_id": null,
+  "discourse_zendesk_plugin_zendesk_url": "https://your-url.zendesk.com/agent/tickets/",
+  "draft": null,
+  "draft_key": "topic_172894",
+  "draft_sequence": null,
+  "fancy_title": "Parametric Model Maker: Allow customizing of file download name",
+  "featured_link": null,
+  "has_summary": false,
+  "highest_post_number": 4,
+  "id": 172894,
+  "image_url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/d/4/d4db054c7eda37ce6e955adfeeba442d4be91270_2_1024x768.jpeg",
+  "last_posted_at": "2025-07-09T20:19:10.277Z",
+  "like_count": 6,
+  "message_bus_last_id": 0,
+  "participant_count": 3,
+  "pinned": false,
+  "pinned_at": null,
+  "pinned_globally": false,
+  "pinned_until": null,
+  "post_stream": {
+    "posts": [
+      {
+        "accepted_answer": false,
+        "actions_summary": [
+          {
+            "count": 5,
+            "id": 2
+          }
+        ],
+        "admin": false,
+        "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
+        "badges_granted": [],
+        "bookmarked": false,
+        "can_accept_answer": false,
+        "can_delete": false,
+        "can_edit": false,
+        "can_recover": false,
+        "can_see_hidden_post": false,
+        "can_unaccept_answer": false,
+        "can_view_edit_history": true,
+        "can_vote": false,
+        "can_wiki": false,
+        "cooked": "<p>When using the customizer, the generated download filename is usually matching the filename of the upload. This is not really helpful when generating lots of variants.</p>\n<p>If we take this example:</p><aside class=\"onebox allowlistedgeneric\" data-onebox-src=\"https://makerworld.com/en/models/103266-organizer-box\">\n  <header class=\"source\">\n      <img src=\"https://cdn-forum.bambulab.com/original/3X/1/c/1c24b83c1500163989015ea75cfe140f0b31d275.png\" class=\"site-icon\" data-dominant-color=\"B1B1B1\" width=\"400\" height=\"400\">\n\n      <a href=\"https://makerworld.com/en/models/103266-organizer-box\" target=\"_blank\" rel=\"noopener nofollow ugc\">makerworld.com</a>\n  </header>\n\n  <article class=\"onebox-body\">\n    <div class=\"aspect-image\" style=\"--aspect-ratio:690/414;\"><img src=\"https://cdn-forum.bambulab.com/optimized/3X/d/4/d4db054c7eda37ce6e955adfeeba442d4be91270_2_666x500.jpeg\" class=\"thumbnail\" data-dominant-color=\"A28A73\" width=\"666\" height=\"500\"></div>\n\n<h3><a href=\"https://makerworld.com/en/models/103266-organizer-box\" target=\"_blank\" rel=\"noopener nofollow ugc\">Organizer Box by Benjamin Kott MakerWorld: Download Free 3D Models</a></h3>\n\n  <p>Organizer Box (Fully Parameterized) with Fusion 360 Source Files and Parametric Model Maker support.Use the available print profiles if you want to have a specific size, if you are more into tinkering fetch the Fusion 360 file and enjoy all the...</p>\n\n\n  </article>\n\n  <div class=\"onebox-metadata\">\n    \n    \n  </div>\n\n  <div style=\"clear: both\"></div>\n</aside>\n\n<p>The current generated filename is \u201c<strong>Organizer Box.3mf</strong>\u201d.<br>\nThe desired filename would be \u201c<strong>Organizer Box 150x80x60mm - Corner 20mm.3mf</strong>\u201d</p>\n<p>This way we could generate better matching file names according to the user\u2019s input. This could be done via a template during the upload process so we could for example reference parameters / variables that should be used in some kind of placeholder format.</p>",
+        "created_at": "2025-06-16T20:10:00.099Z",
+        "current_user_reaction": null,
+        "current_user_used_main_reaction": false,
+        "deleted_at": null,
+        "display_username": "Benjamin Kott",
+        "edit_reason": null,
+        "flair_bg_color": null,
+        "flair_color": null,
+        "flair_group_id": null,
+        "flair_name": null,
+        "flair_url": null,
+        "hidden": false,
+        "id": 472035,
+        "incoming_link_count": 157,
+        "link_counts": [
+          {
+            "clicks": 11,
+            "internal": false,
+            "reflection": false,
+            "title": "Organizer Box by Benjamin Kott MakerWorld: Download Free 3D Models",
+            "url": "https://makerworld.com/en/models/103266-organizer-box"
+          }
+        ],
+        "moderator": false,
+        "name": "Benjamin Kott",
+        "post_number": 1,
+        "post_type": 1,
+        "post_url": "/t/parametric-model-maker-allow-customizing-of-file-download-name/172894/1",
+        "posts_count": 4,
+        "primary_group_name": null,
+        "quote_count": 0,
+        "reaction_users_count": 5,
+        "reactions": [
+          {
+            "count": 4,
+            "id": "+1",
+            "type": "emoji"
+          },
+          {
+            "count": 1,
+            "id": "100",
+            "type": "emoji"
+          }
+        ],
+        "read": true,
+        "readers_count": 64,
+        "reads": 65,
+        "reply_count": 0,
+        "reply_to_post_number": null,
+        "score": 868.0,
+        "staff": false,
+        "topic_accepted_answer": null,
+        "topic_id": 172894,
+        "topic_slug": "parametric-model-maker-allow-customizing-of-file-download-name",
+        "trust_level": 2,
+        "updated_at": "2025-06-16T20:10:00.099Z",
+        "user_deleted": false,
+        "user_id": 29047,
+        "user_title": null,
+        "username": "benjaminkott",
+        "version": 1,
+        "wiki": false,
+        "yours": false
+      },
+      {
+        "accepted_answer": false,
+        "actions_summary": [],
+        "admin": false,
+        "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+        "badges_granted": [],
+        "bookmarked": false,
+        "can_accept_answer": false,
+        "can_delete": false,
+        "can_edit": false,
+        "can_recover": false,
+        "can_see_hidden_post": false,
+        "can_unaccept_answer": false,
+        "can_view_edit_history": true,
+        "can_wiki": false,
+        "cooked": "<p>I understand the identical file names cause confusion.<br>\nHowever, the parameters for different models are very diverse. Therefore, it won\u2019t be easy to figure out a way to define the naming rules.</p>",
+        "created_at": "2025-06-27T09:42:43.850Z",
+        "current_user_reaction": null,
+        "current_user_used_main_reaction": false,
+        "deleted_at": null,
+        "display_username": "",
+        "edit_reason": null,
+        "flair_bg_color": "",
+        "flair_color": "",
+        "flair_group_id": 41,
+        "flair_name": "Bambu_Lab_Employee",
+        "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+        "hidden": false,
+        "id": 482715,
+        "incoming_link_count": 0,
+        "moderator": false,
+        "name": "",
+        "post_number": 2,
+        "post_type": 1,
+        "post_url": "/t/parametric-model-maker-allow-customizing-of-file-download-name/172894/2",
+        "posts_count": 4,
+        "primary_group_name": "Bambu_Lab_Employee",
+        "quote_count": 0,
+        "reaction_users_count": 0,
+        "reactions": [],
+        "read": true,
+        "readers_count": 45,
+        "reads": 46,
+        "reply_count": 1,
+        "reply_to_post_number": null,
+        "score": 14.2,
+        "staff": false,
+        "title_is_group": true,
+        "topic_accepted_answer": null,
+        "topic_id": 172894,
+        "topic_slug": "parametric-model-maker-allow-customizing-of-file-download-name",
+        "trust_level": 3,
+        "updated_at": "2025-06-27T09:42:43.850Z",
+        "user_deleted": false,
+        "user_id": 24049,
+        "user_title": "Bambu Lab Employee",
+        "username": "PineappleBun_BBL",
+        "version": 1,
+        "wiki": false,
+        "yours": false
+      },
+      {
+        "accepted_answer": false,
+        "actions_summary": [],
+        "admin": false,
+        "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
+        "badges_granted": [],
+        "bookmarked": false,
+        "can_accept_answer": false,
+        "can_delete": false,
+        "can_edit": false,
+        "can_recover": false,
+        "can_see_hidden_post": false,
+        "can_unaccept_answer": false,
+        "can_view_edit_history": true,
+        "can_wiki": false,
+        "cooked": "<p>I fully understand and i agree. The question is if we could have some kind of template where placeholders could be used so the creator could customize the download name. Or allow to provide the name as OpenScad Variable that we need to \u201cecho\u201d in a certain way so the infrastructure can pick it up.</p>\n<p>Example:<br>\n\u201cOrganizer Box xx - Corner \u201d</p>",
+        "created_at": "2025-06-27T09:53:25.180Z",
+        "current_user_reaction": null,
+        "current_user_used_main_reaction": false,
+        "deleted_at": null,
+        "display_username": "Benjamin Kott",
+        "edit_reason": null,
+        "flair_bg_color": null,
+        "flair_color": null,
+        "flair_group_id": null,
+        "flair_name": null,
+        "flair_url": null,
+        "hidden": false,
+        "id": 482719,
+        "incoming_link_count": 0,
+        "moderator": false,
+        "name": "Benjamin Kott",
+        "post_number": 3,
+        "post_type": 1,
+        "post_url": "/t/parametric-model-maker-allow-customizing-of-file-download-name/172894/3",
+        "posts_count": 4,
+        "primary_group_name": null,
+        "quote_count": 0,
+        "reaction_users_count": 0,
+        "reactions": [],
+        "read": true,
+        "readers_count": 45,
+        "reads": 46,
+        "reply_count": 0,
+        "reply_to_post_number": 2,
+        "reply_to_user": {
+          "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+          "id": 24049,
+          "name": "",
+          "username": "PineappleBun_BBL"
+        },
+        "score": 9.2,
+        "staff": false,
+        "topic_accepted_answer": null,
+        "topic_id": 172894,
+        "topic_slug": "parametric-model-maker-allow-customizing-of-file-download-name",
+        "trust_level": 2,
+        "updated_at": "2025-06-27T09:53:25.180Z",
+        "user_deleted": false,
+        "user_id": 29047,
+        "user_title": null,
+        "username": "benjaminkott",
+        "version": 1,
+        "wiki": false,
+        "yours": false
+      },
+      {
+        "accepted_answer": false,
+        "actions_summary": [
+          {
+            "count": 1,
+            "id": 2
+          }
+        ],
+        "admin": false,
+        "avatar_template": "/user_avatar/forum.bambulab.com/jetpad/{size}/32448_2.png",
+        "badges_granted": [],
+        "bookmarked": false,
+        "can_accept_answer": false,
+        "can_delete": false,
+        "can_edit": false,
+        "can_recover": false,
+        "can_see_hidden_post": false,
+        "can_unaccept_answer": false,
+        "can_view_edit_history": true,
+        "can_wiki": false,
+        "cooked": "<p>In the code for my OpenScad projects I echo a filename that I construct out of the customizer parameters used to create the model to the console for when I\u2019m working locally. The filenames do get crazy but it allows me to save all the parameters for recreating the model again. Then I copy it to the clipboard and paste it into the file save dialog when I save the STL. Here an example for my FlexiGrid model.</p>\n<p>ECHO: \u201cFileName:\u201d, \"    fg-s0-8mm-5x5x35mm-m60-eb-1-r10-c0.35-v0-lh0.28-g0-hs3.5-sc0-wc1-sm0-sl0-bl0-bh10-bs0-w3-lw0.42-ver3.6    \"</p>\n<p>That tells me it\u2019s a rectangle shape, 8mm cube, of 5x5 prisms that are 35 mm tall, with a 60% slide, and so on.</p>\n<p>It could be a special variable name like \u201c$filename\u201d that MakerWorld could use. There would be no rules (or minimal rules) for file names other than just set that variable to what you want it to be.</p>",
+        "created_at": "2025-07-09T20:19:10.277Z",
+        "current_user_reaction": null,
+        "current_user_used_main_reaction": false,
+        "deleted_at": null,
+        "display_username": "jetpad",
+        "edit_reason": null,
+        "flair_bg_color": null,
+        "flair_color": null,
+        "flair_group_id": null,
+        "flair_name": null,
+        "flair_url": null,
+        "hidden": false,
+        "id": 490586,
+        "incoming_link_count": 3,
+        "moderator": false,
+        "name": "jetpad",
+        "post_number": 4,
+        "post_type": 1,
+        "post_url": "/t/parametric-model-maker-allow-customizing-of-file-download-name/172894/4",
+        "posts_count": 4,
+        "primary_group_name": null,
+        "quote_count": 0,
+        "reaction_users_count": 1,
+        "reactions": [
+          {
+            "count": 1,
+            "id": "+1",
+            "type": "emoji"
+          }
+        ],
+        "read": true,
+        "readers_count": 31,
+        "reads": 32,
+        "reply_count": 0,
+        "reply_to_post_number": null,
+        "score": 36.4,
+        "staff": false,
+        "topic_accepted_answer": null,
+        "topic_id": 172894,
+        "topic_slug": "parametric-model-maker-allow-customizing-of-file-download-name",
+        "trust_level": 2,
+        "updated_at": "2025-07-09T20:23:28.211Z",
+        "user_deleted": false,
+        "user_id": 29303,
+        "user_title": "",
+        "username": "jetpad",
+        "version": 1,
+        "wiki": false,
+        "yours": false
+      }
+    ],
+    "stream": [
+      472035,
+      482715,
+      482719,
+      490586
+    ]
+  },
+  "posts_count": 4,
+  "reply_count": 1,
+  "show_read_indicator": false,
+  "slow_mode_enabled_until": null,
+  "slow_mode_seconds": 0,
+  "slug": "parametric-model-maker-allow-customizing-of-file-download-name",
+  "suggested_topics": [
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2026-01-04T21:45:08.787Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2026-01-04T16:54:45.534Z",
+      "fancy_title": "Configure .3mf file options when using .scad generator",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 2,
+      "id": 221944,
+      "image_url": null,
+      "last_posted_at": "2026-01-04T21:45:08.787Z",
+      "like_count": 5,
+      "liked": null,
+      "op_like_count": 1,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/k3ldar/{size}/13500_2.png",
+            "id": 69934,
+            "name": "K3ldar",
+            "trust_level": 1,
+            "username": "k3ldar"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/flummer/{size}/98153_2.png",
+            "id": 95879,
+            "name": "flummer",
+            "trust_level": 2,
+            "username": "flummer"
+          }
+        }
+      ],
+      "posts_count": 2,
+      "reply_count": 0,
+      "slug": "configure-3mf-file-options-when-using-scad-generator",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Configure .3mf file options when using .scad generator",
+      "unpinned": null,
+      "unseen": false,
+      "views": 140,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2026-04-14T14:45:09.157Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-06-30T06:15:42.753Z",
+      "fancy_title": "Parametric Model Maker V1.0.0 - Fusion 360 Support!",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 194,
+      "id": 179329,
+      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/f/d/fd1e83f4b5fd19f3f3988da8abfe1711bf633a7a_2_1024x522.jpeg",
+      "last_posted_at": "2026-04-14T14:45:09.157Z",
+      "like_count": 219,
+      "liked": null,
+      "op_like_count": 62,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+            "flair_group_id": 41,
+            "flair_name": "Bambu_Lab_Employee",
+            "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+            "id": 24049,
+            "name": "",
+            "primary_group_name": "Bambu_Lab_Employee",
+            "trust_level": 3,
+            "username": "PineappleBun_BBL"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/lee-2/{size}/13500_2.png",
+            "id": 33115,
+            "name": "Lee",
+            "trust_level": 2,
+            "username": "Lee-2"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/shaq981/{size}/97892_2.png",
+            "id": 95632,
+            "name": "Shaq981",
+            "trust_level": 2,
+            "username": "shaq981"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/thebreadman/{size}/117976_2.png",
+            "id": 33855,
+            "name": "",
+            "trust_level": 2,
+            "username": "TheBreadman"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/cool_person/{size}/153386_2.png",
+            "id": 153755,
+            "name": "Cool Person",
+            "trust_level": 0,
+            "username": "cool_person"
+          }
+        }
+      ],
+      "posts_count": 187,
+      "reply_count": 95,
+      "slug": "parametric-model-maker-v1-0-0-fusion-360-support",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Parametric Model Maker V1.0.0 - Fusion 360 Support!",
+      "unpinned": null,
+      "unseen": false,
+      "views": 29999,
+      "visibility_reason_id": 4,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2025-09-29T13:03:27.367Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-09-27T14:27:29.380Z",
+      "fancy_title": "Make My Sign won&rsquo;t take my upload",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 3,
+      "id": 198161,
+      "image_url": null,
+      "last_posted_at": "2025-09-29T13:03:27.367Z",
+      "like_count": 0,
+      "liked": null,
+      "op_like_count": 0,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster, Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/firefli/{size}/101858_2.png",
+            "id": 115185,
+            "name": "Robert",
+            "trust_level": 1,
+            "username": "Firefli"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/geeknj/{size}/101858_2.png",
+            "id": 110573,
+            "name": "GeekNJ",
+            "trust_level": 2,
+            "username": "GeekNJ"
+          }
+        }
+      ],
+      "posts_count": 3,
+      "reply_count": 1,
+      "slug": "make-my-sign-wont-take-my-upload",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Make My Sign won't take my upload",
+      "unpinned": null,
+      "unseen": false,
+      "views": 174,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2025-10-23T04:16:46.508Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-08-11T08:43:16.142Z",
+      "fancy_title": "Parametric Model Maker - Timeout on simple SCAD",
+      "featured_link": null,
+      "has_accepted_answer": true,
+      "highest_post_number": 15,
+      "id": 188591,
+      "image_url": null,
+      "last_posted_at": "2025-10-23T04:16:46.508Z",
+      "like_count": 5,
+      "liked": null,
+      "op_like_count": 3,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/yatuin/{size}/116263_2.png",
+            "id": 110765,
+            "name": "Yatuin",
+            "trust_level": 2,
+            "username": "Yatuin"
+          }
+        },
+        {
+          "description": "Frequent Poster, Accepted Answer",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+            "flair_group_id": 41,
+            "flair_name": "Bambu_Lab_Employee",
+            "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+            "id": 24049,
+            "name": "",
+            "primary_group_name": "Bambu_Lab_Employee",
+            "trust_level": 3,
+            "username": "PineappleBun_BBL"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/vanishvulpes/{size}/101858_2.png",
+            "id": 111849,
+            "name": "Vanish Vulpes",
+            "trust_level": 0,
+            "username": "VanishVulpes"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/malctheoracle/{size}/137308_2.png",
+            "id": 37295,
+            "name": "Every tool has its hidden purpose.",
+            "trust_level": 2,
+            "username": "MalcTheOracle"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/hesiga.hg/{size}/101858_2.png",
+            "id": 120828,
+            "name": "Hesiga Hg",
+            "trust_level": 1,
+            "username": "Hesiga.hg"
+          }
+        }
+      ],
+      "posts_count": 13,
+      "reply_count": 8,
+      "slug": "parametric-model-maker-timeout-on-simple-scad",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Parametric Model Maker - Timeout on simple SCAD",
+      "unpinned": null,
+      "unseen": false,
+      "views": 513,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2026-03-03T14:00:31.234Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2026-02-26T22:33:02.182Z",
+      "fancy_title": "Parametric Model Maker&hellip;. Studio Presets?",
+      "featured_link": null,
+      "has_accepted_answer": true,
+      "highest_post_number": 15,
+      "id": 237552,
+      "image_url": null,
+      "last_posted_at": "2026-03-03T14:00:31.234Z",
+      "like_count": 3,
+      "liked": null,
+      "op_like_count": 0,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster, Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/ericrowespam/{size}/6169_2.png",
+            "id": 4734,
+            "name": "Eric",
+            "trust_level": 1,
+            "username": "ericrowespam"
+          }
+        },
+        {
+          "description": "Frequent Poster, Accepted Answer",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/migueljeronimoa/{size}/48859_2.png",
+            "id": 24740,
+            "name": "Miguel Jeronimo",
+            "trust_level": 2,
+            "username": "migueljeronimoa"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/cypherous/{size}/6169_2.png",
+            "id": 5396,
+            "name": "",
+            "trust_level": 2,
+            "username": "Cypherous"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/neofabric/{size}/145507_2.png",
+            "id": 143648,
+            "name": "Neofabric",
+            "trust_level": 2,
+            "username": "NEOFABRIC"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+            "flair_group_id": 41,
+            "flair_name": "Bambu_Lab_Employee",
+            "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+            "id": 24049,
+            "name": "",
+            "primary_group_name": "Bambu_Lab_Employee",
+            "trust_level": 3,
+            "username": "PineappleBun_BBL"
+          }
+        }
+      ],
+      "posts_count": 15,
+      "reply_count": 12,
+      "slug": "parametric-model-maker-studio-presets",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Parametric Model Maker.... Studio Presets?",
+      "unpinned": null,
+      "unseen": false,
+      "views": 233,
+      "visible": true
+    }
+  ],
+  "tags": [
+    "product-request"
+  ],
+  "tags_descriptions": {},
+  "thumbnails": [
+    {
+      "height": 1080,
+      "max_height": null,
+      "max_width": null,
+      "url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/original/3X/d/4/d4db054c7eda37ce6e955adfeeba442d4be91270.jpeg",
+      "width": 1440
+    },
+    {
+      "height": 768,
+      "max_height": 1024,
+      "max_width": 1024,
+      "url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/d/4/d4db054c7eda37ce6e955adfeeba442d4be91270_2_1024x768.jpeg",
+      "width": 1024
+    }
+  ],
+  "timeline_lookup": [
+    [
+      1,
+      309
+    ],
+    [
+      2,
+      298
+    ],
+    [
+      4,
+      286
+    ]
+  ],
+  "title": "Parametric Model Maker: Allow customizing of file download name",
+  "topic_timer": null,
+  "unpinned": null,
+  "user_id": 29047,
+  "user_voted": false,
+  "valid_reactions": [
+    "+1",
+    "-1",
+    "heart",
+    "100",
+    "laughing",
+    "open_mouth",
+    "clap"
+  ],
+  "views": 292,
+  "visible": true,
+  "vote_count": 0,
+  "word_count": 371
+}

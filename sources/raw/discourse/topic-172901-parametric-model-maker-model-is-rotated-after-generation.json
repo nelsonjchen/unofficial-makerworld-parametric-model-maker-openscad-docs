@@ -1,0 +1,686 @@
+{
+  "accepted_answer": {
+    "accepter_name": null,
+    "excerpt": "<p>This is because we enable \u201cAuto arrange\u201d by default.<br>\nYou could turn it off with this:<br>\n<div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://cdn-forum.bambulab.com/original/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449.png\" data-download-href=\"/uploads/short-url/texPWMSwcss3dUQJNE8x6noDVB7.png?dl=1\" title=\"image\"><img src=\"https://cdn-forum.bambulab.com/optimized/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449_2_366x500.png\" alt=\"image\" data-base62-sha1=\"texPWMSwcss3dUQJNE8x6noDVB7\" width=\"366\" height=\"500\" srcset=\"https://cdn-forum.bambulab.com/optimized/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449_2_366x500.png, https://cdn-forum.bambulab.com/optimized/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449_2_549x750.png 1.5x, https://cdn-forum.bambulab.com/original/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449.png 2x\" data-dominant-color=\"2A2926\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">image</span><span class=\"informations\">553\u00d7755 27.5 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div></p>",
+    "name": null,
+    "post_number": 2,
+    "username": "PineappleBun_BBL"
+  },
+  "actions_summary": [
+    {
+      "can_act": false,
+      "count": 0,
+      "hidden": false,
+      "id": 4
+    },
+    {
+      "can_act": false,
+      "count": 0,
+      "hidden": false,
+      "id": 8
+    },
+    {
+      "can_act": false,
+      "count": 0,
+      "hidden": false,
+      "id": 10
+    },
+    {
+      "can_act": false,
+      "count": 0,
+      "hidden": false,
+      "id": 7
+    }
+  ],
+  "archetype": "regular",
+  "archived": false,
+  "bookmarked": false,
+  "bookmarks": [],
+  "can_vote": false,
+  "category_id": 163,
+  "chunk_size": 20,
+  "closed": false,
+  "created_at": "2025-06-16T21:17:54.951Z",
+  "current_post_number": 1,
+  "deleted_at": null,
+  "deleted_by": null,
+  "details": {
+    "can_edit": false,
+    "created_by": {
+      "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
+      "id": 29047,
+      "name": "Benjamin Kott",
+      "username": "benjaminkott"
+    },
+    "last_poster": {
+      "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+      "id": 24049,
+      "name": "",
+      "username": "PineappleBun_BBL"
+    },
+    "links": [
+      {
+        "attachment": false,
+        "clicks": 4,
+        "domain": "makerworld.com",
+        "internal": false,
+        "reflection": false,
+        "root_domain": "makerworld.com",
+        "title": "Organizer Box by Benjamin Kott MakerWorld: Download Free 3D Models",
+        "url": "https://makerworld.com/en/models/103266-organizer-box",
+        "user_id": 29047
+      }
+    ],
+    "notification_level": 1,
+    "participants": [
+      {
+        "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+        "flair_bg_color": "",
+        "flair_color": "",
+        "flair_group_id": 41,
+        "flair_name": "Bambu_Lab_Employee",
+        "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+        "id": 24049,
+        "name": "",
+        "post_count": 1,
+        "primary_group_name": "Bambu_Lab_Employee",
+        "trust_level": 3,
+        "username": "PineappleBun_BBL"
+      },
+      {
+        "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
+        "flair_bg_color": null,
+        "flair_color": null,
+        "flair_group_id": null,
+        "flair_name": null,
+        "flair_url": null,
+        "id": 29047,
+        "name": "Benjamin Kott",
+        "post_count": 1,
+        "primary_group_name": null,
+        "trust_level": 2,
+        "username": "benjaminkott"
+      }
+    ]
+  },
+  "discourse_zendesk_plugin_zendesk_id": null,
+  "discourse_zendesk_plugin_zendesk_url": "https://your-url.zendesk.com/agent/tickets/",
+  "draft": null,
+  "draft_key": "topic_172901",
+  "draft_sequence": null,
+  "fancy_title": "Parametric Model Maker: Model is rotated after generation",
+  "featured_link": null,
+  "has_summary": false,
+  "highest_post_number": 2,
+  "id": 172901,
+  "image_url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0_2_1024x483.png",
+  "last_posted_at": "2025-06-27T09:27:34.101Z",
+  "like_count": 1,
+  "message_bus_last_id": 0,
+  "participant_count": 2,
+  "pinned": false,
+  "pinned_at": null,
+  "pinned_globally": false,
+  "pinned_until": null,
+  "post_stream": {
+    "posts": [
+      {
+        "accepted_answer": false,
+        "actions_summary": [],
+        "admin": false,
+        "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
+        "badges_granted": [],
+        "bookmarked": false,
+        "can_accept_answer": false,
+        "can_delete": false,
+        "can_edit": false,
+        "can_recover": false,
+        "can_see_hidden_post": false,
+        "can_unaccept_answer": false,
+        "can_view_edit_history": true,
+        "can_vote": false,
+        "can_wiki": false,
+        "cooked": "<p>The Parametric Model Maker is rotating the model for some reason even it fits on a Build Plate. Tested on H2D and P1S. Both can print 200x100mm objects.</p>\n<p><div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://cdn-forum.bambulab.com/original/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0.png\" data-download-href=\"/uploads/short-url/lor04BFvQQ1bsJQLZBsgGVQjbaM.png?dl=1\" title=\"image\"><img src=\"https://cdn-forum.bambulab.com/optimized/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0_2_690x325.png\" alt=\"image\" data-base62-sha1=\"lor04BFvQQ1bsJQLZBsgGVQjbaM\" width=\"690\" height=\"325\" srcset=\"https://cdn-forum.bambulab.com/optimized/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0_2_690x325.png, https://cdn-forum.bambulab.com/optimized/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0_2_1035x487.png 1.5x, https://cdn-forum.bambulab.com/optimized/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0_2_1380x650.png 2x\" data-dominant-color=\"B4B3AB\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">image</span><span class=\"informations\">2623\u00d71238 242 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div></p>\n<p>Can be validated on this model:</p><aside class=\"onebox allowlistedgeneric\" data-onebox-src=\"https://makerworld.com/en/models/103266-organizer-box\">\n  <header class=\"source\">\n      <img src=\"https://cdn-forum.bambulab.com/original/3X/1/c/1c24b83c1500163989015ea75cfe140f0b31d275.png\" class=\"site-icon\" data-dominant-color=\"B1B1B1\" width=\"400\" height=\"400\">\n\n      <a href=\"https://makerworld.com/en/models/103266-organizer-box\" target=\"_blank\" rel=\"noopener nofollow ugc\">makerworld.com</a>\n  </header>\n\n  <article class=\"onebox-body\">\n    <div class=\"aspect-image\" style=\"--aspect-ratio:690/414;\"><img src=\"https://cdn-forum.bambulab.com/optimized/3X/d/4/d4db054c7eda37ce6e955adfeeba442d4be91270_2_666x500.jpeg\" class=\"thumbnail\" data-dominant-color=\"A28A73\" width=\"666\" height=\"500\"></div>\n\n<h3><a href=\"https://makerworld.com/en/models/103266-organizer-box\" target=\"_blank\" rel=\"noopener nofollow ugc\">Organizer Box by Benjamin Kott MakerWorld: Download Free 3D Models</a></h3>\n\n  <p>Organizer Box (Fully Parameterized) with Fusion 360 Source Files and Parametric Model Maker support.Use the available print profiles if you want to have a specific size, if you are more into tinkering fetch the Fusion 360 file and enjoy all the...</p>\n\n\n  </article>\n\n  <div class=\"onebox-metadata\">\n    \n    \n  </div>\n\n  <div style=\"clear: both\"></div>\n</aside>\n\n<p>Use Settings:<br>\nLength: 200<br>\nWidth: 100</p>",
+        "created_at": "2025-06-16T21:17:55.013Z",
+        "current_user_reaction": null,
+        "current_user_used_main_reaction": false,
+        "deleted_at": null,
+        "display_username": "Benjamin Kott",
+        "edit_reason": null,
+        "flair_bg_color": null,
+        "flair_color": null,
+        "flair_group_id": null,
+        "flair_name": null,
+        "flair_url": null,
+        "hidden": false,
+        "id": 472083,
+        "incoming_link_count": 19,
+        "link_counts": [
+          {
+            "clicks": 4,
+            "internal": false,
+            "reflection": false,
+            "title": "Organizer Box by Benjamin Kott MakerWorld: Download Free 3D Models",
+            "url": "https://makerworld.com/en/models/103266-organizer-box"
+          }
+        ],
+        "moderator": false,
+        "name": "Benjamin Kott",
+        "post_number": 1,
+        "post_type": 1,
+        "post_url": "/t/parametric-model-maker-model-is-rotated-after-generation/172901/1",
+        "posts_count": 2,
+        "primary_group_name": null,
+        "quote_count": 0,
+        "reaction_users_count": 0,
+        "reactions": [],
+        "read": true,
+        "readers_count": 55,
+        "reads": 56,
+        "reply_count": 0,
+        "reply_to_post_number": null,
+        "score": 106.2,
+        "staff": false,
+        "topic_accepted_answer": true,
+        "topic_id": 172901,
+        "topic_slug": "parametric-model-maker-model-is-rotated-after-generation",
+        "trust_level": 2,
+        "updated_at": "2025-06-16T21:17:55.013Z",
+        "user_deleted": false,
+        "user_id": 29047,
+        "user_title": null,
+        "username": "benjaminkott",
+        "version": 1,
+        "wiki": false,
+        "yours": false
+      },
+      {
+        "accepted_answer": true,
+        "actions_summary": [
+          {
+            "count": 1,
+            "id": 2
+          }
+        ],
+        "admin": false,
+        "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+        "badges_granted": [],
+        "bookmarked": false,
+        "can_accept_answer": false,
+        "can_delete": false,
+        "can_edit": false,
+        "can_recover": false,
+        "can_see_hidden_post": false,
+        "can_unaccept_answer": false,
+        "can_view_edit_history": true,
+        "can_wiki": false,
+        "cooked": "<p>This is because we enable \u201cAuto arrange\u201d by default.<br>\nYou could turn it off with this:<br>\n<div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://cdn-forum.bambulab.com/original/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449.png\" data-download-href=\"/uploads/short-url/texPWMSwcss3dUQJNE8x6noDVB7.png?dl=1\" title=\"image\"><img src=\"https://cdn-forum.bambulab.com/optimized/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449_2_366x500.png\" alt=\"image\" data-base62-sha1=\"texPWMSwcss3dUQJNE8x6noDVB7\" width=\"366\" height=\"500\" srcset=\"https://cdn-forum.bambulab.com/optimized/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449_2_366x500.png, https://cdn-forum.bambulab.com/optimized/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449_2_549x750.png 1.5x, https://cdn-forum.bambulab.com/original/3X/c/c/cce3f990f71ba355d4c2c415e1de66d6b6ad9449.png 2x\" data-dominant-color=\"2A2926\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">image</span><span class=\"informations\">553\u00d7755 27.5 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div></p>",
+        "created_at": "2025-06-27T09:27:34.101Z",
+        "current_user_reaction": null,
+        "current_user_used_main_reaction": false,
+        "deleted_at": null,
+        "display_username": "",
+        "edit_reason": null,
+        "flair_bg_color": "",
+        "flair_color": "",
+        "flair_group_id": 41,
+        "flair_name": "Bambu_Lab_Employee",
+        "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+        "hidden": false,
+        "id": 482708,
+        "incoming_link_count": 3,
+        "moderator": false,
+        "name": "",
+        "post_number": 2,
+        "post_type": 1,
+        "post_url": "/t/parametric-model-maker-model-is-rotated-after-generation/172901/2",
+        "posts_count": 2,
+        "primary_group_name": "Bambu_Lab_Employee",
+        "quote_count": 0,
+        "reaction_users_count": 1,
+        "reactions": [
+          {
+            "count": 1,
+            "id": "heart",
+            "type": "emoji"
+          }
+        ],
+        "read": true,
+        "readers_count": 25,
+        "reads": 26,
+        "reply_count": 0,
+        "reply_to_post_number": null,
+        "score": 35.2,
+        "staff": false,
+        "title_is_group": true,
+        "topic_accepted_answer": true,
+        "topic_id": 172901,
+        "topic_slug": "parametric-model-maker-model-is-rotated-after-generation",
+        "trust_level": 3,
+        "updated_at": "2025-06-27T09:27:34.101Z",
+        "user_deleted": false,
+        "user_id": 24049,
+        "user_title": "Bambu Lab Employee",
+        "username": "PineappleBun_BBL",
+        "version": 1,
+        "wiki": false,
+        "yours": false
+      }
+    ],
+    "stream": [
+      472083,
+      482708
+    ]
+  },
+  "posts_count": 2,
+  "reply_count": 0,
+  "show_read_indicator": false,
+  "slow_mode_enabled_until": null,
+  "slow_mode_seconds": 0,
+  "slug": "parametric-model-maker-model-is-rotated-after-generation",
+  "suggested_topics": [
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2025-05-09T23:07:51.974Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-05-08T18:37:47.487Z",
+      "fancy_title": "Touch/Apple Pencil Dragging Not Working on iPad in Vase Maker Tool",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 2,
+      "id": 167748,
+      "image_url": null,
+      "last_posted_at": "2025-05-09T23:07:51.974Z",
+      "like_count": 2,
+      "liked": null,
+      "op_like_count": 1,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/dr_miller/{size}/13500_2.png",
+            "id": 48226,
+            "name": "",
+            "trust_level": 1,
+            "username": "Dr_Miller"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/jayzay/{size}/15716_2.png",
+            "flair_group_id": 42,
+            "flair_name": "X1-Carbon-Owners",
+            "flair_url": "https://cdn-forum.bambulab.com/original/1X/4d7f90bcda9621690972e5b8ce084f589afda162.png",
+            "id": 5364,
+            "name": "JayZay",
+            "trust_level": 3,
+            "username": "JayZay"
+          }
+        }
+      ],
+      "posts_count": 2,
+      "reply_count": 0,
+      "slug": "touch-apple-pencil-dragging-not-working-on-ipad-in-vase-maker-tool",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Touch/Apple Pencil Dragging Not Working on iPad in Vase Maker Tool",
+      "unpinned": null,
+      "unseen": false,
+      "views": 134,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2025-04-22T14:15:00.071Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-04-22T14:14:59.960Z",
+      "fancy_title": "Make my statue hits bambu handy",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 1,
+      "id": 163517,
+      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/c/3/c30d779d881689fd308ef239012534b8cec36855_2_1024x635.jpeg",
+      "last_posted_at": "2025-04-22T14:15:00.071Z",
+      "like_count": 0,
+      "liked": null,
+      "op_like_count": 0,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster, Most Recent Poster",
+          "extras": "latest single",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/neiljt/{size}/108134_2.png",
+            "id": 27503,
+            "name": "Neiljt",
+            "trust_level": 2,
+            "username": "Neiljt"
+          }
+        }
+      ],
+      "posts_count": 1,
+      "reply_count": 0,
+      "slug": "make-my-statue-hits-bambu-handy",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Make my statue hits bambu handy",
+      "unpinned": null,
+      "unseen": false,
+      "views": 216,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2026-04-19T18:38:24.950Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-06-14T04:52:42.403Z",
+      "fancy_title": "Lightbox maker producing fragile boxes",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 26,
+      "id": 172810,
+      "image_url": null,
+      "last_posted_at": "2026-04-19T18:38:24.950Z",
+      "like_count": 11,
+      "liked": null,
+      "op_like_count": 1,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/qjo/{size}/87073_2.png",
+            "id": 8969,
+            "name": "",
+            "trust_level": 2,
+            "username": "Qjo"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/apprentice/{size}/13500_2.png",
+            "id": 43800,
+            "name": "Apprentice ",
+            "trust_level": 2,
+            "username": "Apprentice"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/mando_mike/{size}/152204_2.png",
+            "id": 152294,
+            "name": "Mando Mike",
+            "trust_level": 1,
+            "username": "Mando_Mike"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/raygundesignz/{size}/152135_2.png",
+            "id": 152199,
+            "name": "Ray Gun Designz",
+            "trust_level": 0,
+            "username": "RayGunDesignz"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/the_kid_3d/{size}/154177_2.png",
+            "id": 154649,
+            "name": "The Kid 3d",
+            "trust_level": 0,
+            "username": "The_Kid_3d"
+          }
+        }
+      ],
+      "posts_count": 25,
+      "reply_count": 19,
+      "slug": "lightbox-maker-producing-fragile-boxes",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Lightbox maker producing fragile boxes",
+      "unpinned": null,
+      "unseen": false,
+      "views": 1943,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2025-07-09T20:19:10.277Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-06-16T20:09:59.981Z",
+      "fancy_title": "Parametric Model Maker: Allow customizing of file download name",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 4,
+      "id": 172894,
+      "image_url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/d/4/d4db054c7eda37ce6e955adfeeba442d4be91270_2_1024x768.jpeg",
+      "last_posted_at": "2025-07-09T20:19:10.277Z",
+      "like_count": 6,
+      "liked": null,
+      "op_like_count": 5,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
+            "id": 29047,
+            "name": "Benjamin Kott",
+            "trust_level": 2,
+            "username": "benjaminkott"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+            "flair_group_id": 41,
+            "flair_name": "Bambu_Lab_Employee",
+            "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+            "id": 24049,
+            "name": "",
+            "primary_group_name": "Bambu_Lab_Employee",
+            "trust_level": 3,
+            "username": "PineappleBun_BBL"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/jetpad/{size}/32448_2.png",
+            "id": 29303,
+            "name": "jetpad",
+            "trust_level": 2,
+            "username": "jetpad"
+          }
+        }
+      ],
+      "posts_count": 4,
+      "reply_count": 1,
+      "slug": "parametric-model-maker-allow-customizing-of-file-download-name",
+      "tags": [
+        "product-request"
+      ],
+      "tags_descriptions": {},
+      "title": "Parametric Model Maker: Allow customizing of file download name",
+      "unpinned": null,
+      "unseen": false,
+      "views": 292,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2026-04-14T14:45:09.157Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-06-30T06:15:42.753Z",
+      "fancy_title": "Parametric Model Maker V1.0.0 - Fusion 360 Support!",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 194,
+      "id": 179329,
+      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/f/d/fd1e83f4b5fd19f3f3988da8abfe1711bf633a7a_2_1024x522.jpeg",
+      "last_posted_at": "2026-04-14T14:45:09.157Z",
+      "like_count": 219,
+      "liked": null,
+      "op_like_count": 62,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+            "flair_group_id": 41,
+            "flair_name": "Bambu_Lab_Employee",
+            "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+            "id": 24049,
+            "name": "",
+            "primary_group_name": "Bambu_Lab_Employee",
+            "trust_level": 3,
+            "username": "PineappleBun_BBL"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/lee-2/{size}/13500_2.png",
+            "id": 33115,
+            "name": "Lee",
+            "trust_level": 2,
+            "username": "Lee-2"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/shaq981/{size}/97892_2.png",
+            "id": 95632,
+            "name": "Shaq981",
+            "trust_level": 2,
+            "username": "shaq981"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/thebreadman/{size}/117976_2.png",
+            "id": 33855,
+            "name": "",
+            "trust_level": 2,
+            "username": "TheBreadman"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/cool_person/{size}/153386_2.png",
+            "id": 153755,
+            "name": "Cool Person",
+            "trust_level": 0,
+            "username": "cool_person"
+          }
+        }
+      ],
+      "posts_count": 187,
+      "reply_count": 95,
+      "slug": "parametric-model-maker-v1-0-0-fusion-360-support",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Parametric Model Maker V1.0.0 - Fusion 360 Support!",
+      "unpinned": null,
+      "unseen": false,
+      "views": 29999,
+      "visibility_reason_id": 4,
+      "visible": true
+    }
+  ],
+  "tags": [
+    "bug-report"
+  ],
+  "tags_descriptions": {},
+  "thumbnails": [
+    {
+      "height": 1238,
+      "max_height": null,
+      "max_width": null,
+      "url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/original/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0.png",
+      "width": 2623
+    },
+    {
+      "height": 483,
+      "max_height": 1024,
+      "max_width": 1024,
+      "url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0_2_1024x483.png",
+      "width": 1024
+    }
+  ],
+  "timeline_lookup": [
+    [
+      1,
+      309
+    ],
+    [
+      2,
+      298
+    ]
+  ],
+  "title": "Parametric Model Maker: Model is rotated after generation",
+  "topic_timer": null,
+  "unpinned": null,
+  "user_id": 29047,
+  "user_voted": false,
+  "valid_reactions": [
+    "+1",
+    "-1",
+    "heart",
+    "100",
+    "laughing",
+    "open_mouth",
+    "clap"
+  ],
+  "views": 151,
+  "visible": true,
+  "vote_count": 0,
+  "word_count": 74
+}

@@ -1,0 +1,2645 @@
+{
+  "flair_groups": [
+    {
+      "flair_bg_color": "",
+      "flair_color": "",
+      "flair_url": "https://cdn-forum.bambulab.com/original/1X/ac1bb59cbae2215f0f96249a2568083a6209e48a.png",
+      "id": 44,
+      "name": "Bambu-Lab-AMS-Owner"
+    },
+    {
+      "flair_bg_color": "",
+      "flair_color": "",
+      "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+      "id": 41,
+      "name": "Bambu_Lab_Employee"
+    }
+  ],
+  "primary_groups": [
+    {
+      "id": 41,
+      "name": "Bambu_Lab_Employee"
+    }
+  ],
+  "topic_list": {
+    "can_create_topic": false,
+    "more_topics_url": "/latest?no_definitions=true&page=1",
+    "per_page": 30,
+    "top_tags": [
+      "bambu-studio",
+      "bug-report",
+      "product-request",
+      "failed-print",
+      "bambu-firmware",
+      "bambu-studio-feature",
+      "feature-request",
+      "firmware-feature",
+      "bambu-handy",
+      "bambu-handy-feature",
+      "successful-print",
+      "printer-firmware-fea",
+      "beta-firmware",
+      "public-beta",
+      "new-release",
+      "x1"
+    ],
+    "topics": [
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2025-05-02T20:22:24.710Z",
+        "can_vote": false,
+        "category_id": 1,
+        "closed": true,
+        "created_at": "2022-09-08T07:34:00.006Z",
+        "excerpt": "Welcome to the Bambu Lab Forum! \nWe are happy to see you as part of our Bambu Lab Comunity! \nIf you own a Bambu Lab printer, we recommend joining the groups accordingly: \nBambu Lab X1 Owner \nBambu Lab X1-Carbon Owner \nBa&hellip;",
+        "fancy_title": "Welcome to Bambu Lab Forum - Read Me!",
+        "featured_link": null,
+        "has_accepted_answer": true,
+        "has_summary": true,
+        "highest_post_number": 182,
+        "id": 7,
+        "image_url": null,
+        "last_posted_at": "2025-05-02T15:07:06.718Z",
+        "last_poster_username": "MalcTheOracle",
+        "like_count": 854,
+        "liked": null,
+        "op_like_count": 267,
+        "pinned": true,
+        "pinned_globally": true,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": -1
+          },
+          {
+            "description": "Frequent Poster, Accepted Answer",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 2695
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 45495
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": 44,
+            "primary_group_id": null,
+            "user_id": 16758
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 37295
+          }
+        ],
+        "posts_count": 172,
+        "reply_count": 100,
+        "slug": "welcome-to-bambu-lab-forum-read-me",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Welcome to Bambu Lab Forum - Read Me!",
+        "unpinned": null,
+        "unseen": false,
+        "views": 29430,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:56:32.213Z",
+        "can_vote": false,
+        "category_id": 8,
+        "closed": false,
+        "created_at": "2026-04-21T15:56:32.153Z",
+        "fancy_title": "Bambu Studio 2.6.0.51 all Pressure Advance Profiles Missing",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 1,
+        "id": 250850,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:56:32.213Z",
+        "last_poster_username": "ZeusPrint",
+        "like_count": 0,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster",
+            "extras": "latest single",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 107624
+          }
+        ],
+        "posts_count": 1,
+        "reply_count": 0,
+        "slug": "bambu-studio-2-6-0-51-all-pressure-advance-profiles-missing",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Bambu Studio 2.6.0.51 all Pressure Advance Profiles Missing",
+        "unpinned": null,
+        "unseen": false,
+        "views": 1,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:55:18.992Z",
+        "can_vote": false,
+        "category_id": 177,
+        "closed": false,
+        "created_at": "2026-04-14T16:36:34.062Z",
+        "fancy_title": "Nevermind, forget it",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": true,
+        "highest_post_number": 105,
+        "id": 249141,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:55:18.992Z",
+        "last_poster_username": "diomedes.dominguez",
+        "like_count": 268,
+        "liked": null,
+        "op_like_count": 25,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 150990
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 104385
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 11418
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 43771
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 36667
+          }
+        ],
+        "posts_count": 102,
+        "reply_count": 74,
+        "slug": "nevermind-forget-it",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Nevermind, forget it",
+        "unpinned": null,
+        "unseen": false,
+        "views": 2031,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:53:48.589Z",
+        "can_vote": false,
+        "category_id": 166,
+        "closed": false,
+        "created_at": "2026-04-21T15:13:59.855Z",
+        "fancy_title": "PPA-CF feeding problems solution",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 3,
+        "id": 250846,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:53:48.589Z",
+        "last_poster_username": "maxim3D",
+        "like_count": 0,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 22473
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 81277
+          }
+        ],
+        "posts_count": 3,
+        "reply_count": 1,
+        "slug": "ppa-cf-feeding-problems-solution",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "PPA-CF feeding problems solution",
+        "unpinned": null,
+        "unseen": false,
+        "views": 10,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:53:19.491Z",
+        "can_vote": false,
+        "category_id": 166,
+        "closed": false,
+        "created_at": "2026-02-19T20:08:15.735Z",
+        "fancy_title": "BambuLab Vortek Upgrade Kit : Full VIDEO Install Guide!",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 30,
+        "id": 235613,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:53:19.491Z",
+        "last_poster_username": "Chuck240",
+        "like_count": 19,
+        "liked": null,
+        "op_like_count": 6,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 61541
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 127213
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 58400
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 26755
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 94072
+          }
+        ],
+        "posts_count": 30,
+        "reply_count": 17,
+        "slug": "bambulab-vortek-upgrade-kit-full-video-install-guide",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "BambuLab Vortek Upgrade Kit : Full VIDEO Install Guide!",
+        "unpinned": null,
+        "unseen": false,
+        "views": 1359,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:51:37.372Z",
+        "can_vote": false,
+        "category_id": 103,
+        "closed": false,
+        "created_at": "2026-04-20T10:49:35.982Z",
+        "fancy_title": "Fixing first layer",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 8,
+        "id": 250557,
+        "image_url": "https://cdn-forum.bambulab.com/optimized/3X/4/8/488626decdbbdd9edb43f11349dc2ab233a6652b_2_1024x768.jpeg",
+        "last_posted_at": "2026-04-21T15:51:37.372Z",
+        "last_poster_username": "Holzfuss",
+        "like_count": 1,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 154550
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 2695
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 124464
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 52820
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 153431
+          }
+        ],
+        "posts_count": 8,
+        "reply_count": 3,
+        "slug": "fixing-first-layer",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Fixing first layer",
+        "unpinned": null,
+        "unseen": false,
+        "views": 70,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:40:45.793Z",
+        "can_vote": false,
+        "category_id": 144,
+        "closed": false,
+        "created_at": "2026-03-23T15:25:20.308Z",
+        "fancy_title": "Reducing AI Slop on Makerworld",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": true,
+        "highest_post_number": 128,
+        "id": 243785,
+        "image_url": "https://cdn-forum.bambulab.com/original/3X/6/a/6a804d8a084fc7263706fc865bd7e1a12e63bdf2.jpeg",
+        "last_posted_at": "2026-04-21T15:40:45.793Z",
+        "last_poster_username": "shaq981",
+        "like_count": 164,
+        "liked": null,
+        "op_like_count": 17,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 59465
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 32686
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 52820
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 28704
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 95632
+          }
+        ],
+        "posts_count": 126,
+        "reply_count": 90,
+        "slug": "reducing-ai-slop-on-makerworld",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Reducing AI Slop on Makerworld",
+        "unpinned": null,
+        "unseen": false,
+        "views": 1682,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:39:14.078Z",
+        "can_vote": false,
+        "category_id": 10,
+        "closed": false,
+        "created_at": "2026-04-21T06:55:37.290Z",
+        "excerpt": "We want to hear from you! \nYour feedback will help us make Bambu Lab Academy, our learning platform for \nBambu Lab 3D printers and software, even better. \nThis survey focuses on your experiences with our courses and how &hellip;",
+        "fancy_title": "Help us Shape the Future of Bambu Lab Academy!",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 3,
+        "id": 250811,
+        "image_url": "https://cdn-forum.bambulab.com/original/3X/9/e/9e8b93acc09151a29ccd76dbb6bd0c1138c1ad09.jpeg",
+        "last_posted_at": "2026-04-21T15:39:14.078Z",
+        "last_poster_username": "PandaFood",
+        "like_count": 2,
+        "liked": null,
+        "op_like_count": 1,
+        "pinned": true,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": 41,
+            "primary_group_id": 41,
+            "user_id": 28672
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 81324
+          }
+        ],
+        "posts_count": 2,
+        "reply_count": 0,
+        "slug": "help-us-shape-the-future-of-bambu-lab-academy",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Help us Shape the Future of Bambu Lab Academy!",
+        "unpinned": null,
+        "unseen": false,
+        "views": 48,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:33:58.973Z",
+        "can_vote": false,
+        "category_id": 178,
+        "closed": false,
+        "created_at": "2026-04-20T10:21:12.337Z",
+        "fancy_title": "Bambu H2C and Prusa Core One L: a comparison",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 38,
+        "id": 250555,
+        "image_url": "https://cdn-forum.bambulab.com/original/3X/7/1/7179e40e173e84f98f9657e5b3794a69f19946ba.jpeg",
+        "last_posted_at": "2026-04-21T15:33:58.973Z",
+        "last_poster_username": "skyrippersystems",
+        "like_count": 24,
+        "liked": null,
+        "op_like_count": 2,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 79856
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 138096
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 67381
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 122847
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 54935
+          }
+        ],
+        "posts_count": 38,
+        "reply_count": 30,
+        "slug": "bambu-h2c-and-prusa-core-one-l-a-comparison",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Bambu H2C and Prusa Core One L: a comparison",
+        "unpinned": null,
+        "unseen": false,
+        "views": 304,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:27:51.113Z",
+        "can_vote": false,
+        "category_id": 13,
+        "closed": false,
+        "created_at": "2026-04-17T09:28:00.158Z",
+        "fancy_title": "P2S Firmware 01.02 not available for download?",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 17,
+        "id": 249815,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:27:51.113Z",
+        "last_poster_username": "stachdude",
+        "like_count": 9,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 139901
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 26755
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": 41,
+            "primary_group_id": 41,
+            "user_id": 28672
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 122932
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 154964
+          }
+        ],
+        "posts_count": 16,
+        "reply_count": 11,
+        "slug": "p2s-firmware-01-02-not-available-for-download",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "P2S Firmware 01.02 not available for download?",
+        "unpinned": null,
+        "unseen": false,
+        "views": 141,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:17:07.923Z",
+        "can_vote": false,
+        "category_id": 22,
+        "closed": false,
+        "created_at": "2026-04-21T13:13:22.627Z",
+        "fancy_title": "Replacement cable for AMS odometer",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 6,
+        "id": 250838,
+        "image_url": "https://cdn-forum.bambulab.com/optimized/3X/2/0/20da727c4377f3c8fe40a4f8e130a4a702e6fa44_2_1024x572.jpeg",
+        "last_posted_at": "2026-04-21T15:17:07.923Z",
+        "last_poster_username": "MZip",
+        "like_count": 0,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 154664
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 26755
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 122932
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 23328
+          }
+        ],
+        "posts_count": 6,
+        "reply_count": 2,
+        "slug": "replacement-cable-for-ams-odometer",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Replacement cable for AMS odometer",
+        "unpinned": null,
+        "unseen": false,
+        "views": 22,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:15:07.135Z",
+        "can_vote": false,
+        "category_id": 166,
+        "closed": false,
+        "created_at": "2026-01-14T11:16:01.994Z",
+        "fancy_title": "Terrible tolerances/dimensional accuracy on stock profiles H2D",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": true,
+        "highest_post_number": 52,
+        "id": 224855,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:15:07.135Z",
+        "last_poster_username": "HOLDALL_Tools",
+        "like_count": 49,
+        "liked": null,
+        "op_like_count": 1,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 94057
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 24559
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 121836
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 43771
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 151183
+          }
+        ],
+        "posts_count": 52,
+        "reply_count": 41,
+        "slug": "terrible-tolerances-dimensional-accuracy-on-stock-profiles-h2d",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Terrible tolerances/dimensional accuracy on stock profiles H2D",
+        "unpinned": null,
+        "unseen": false,
+        "views": 1371,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:14:41.336Z",
+        "can_vote": false,
+        "category_id": 166,
+        "closed": false,
+        "created_at": "2025-05-23T22:02:38.425Z",
+        "fancy_title": "AMS HT PPA/PPS workaround",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 7,
+        "id": 171381,
+        "image_url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/4/0/405e58186f675fd7c4903b29b7085d24f6422833_2_1024x970.jpeg",
+        "last_posted_at": "2026-04-21T15:14:41.336Z",
+        "last_poster_username": "maxim3D",
+        "like_count": 6,
+        "liked": null,
+        "op_like_count": 4,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 22473
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 3322
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 8969
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 154475
+          }
+        ],
+        "posts_count": 7,
+        "reply_count": 2,
+        "slug": "ams-ht-ppa-pps-workaround",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "AMS HT PPA/PPS workaround",
+        "unpinned": null,
+        "unseen": false,
+        "views": 2468,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:05:32.774Z",
+        "can_vote": false,
+        "category_id": 179,
+        "closed": false,
+        "created_at": "2026-04-21T15:05:32.716Z",
+        "fancy_title": "The X2D is a game changer! Thank you Bambu Lab!",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 1,
+        "id": 250845,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:05:32.774Z",
+        "last_poster_username": "HOLDALL_Tools",
+        "like_count": 1,
+        "liked": null,
+        "op_like_count": 1,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster",
+            "extras": "latest single",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 151183
+          }
+        ],
+        "posts_count": 1,
+        "reply_count": 0,
+        "slug": "the-x2d-is-a-game-changer-thank-you-bambu-lab",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "The X2D is a game changer! Thank you Bambu Lab!",
+        "unpinned": null,
+        "unseen": false,
+        "views": 34,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:03:51.743Z",
+        "can_vote": false,
+        "category_id": 102,
+        "closed": false,
+        "created_at": "2026-04-21T14:23:16.587Z",
+        "fancy_title": "Down a rabbit hole to figure out grease is bad for belts",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 3,
+        "id": 250843,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:03:51.743Z",
+        "last_poster_username": "owensieber",
+        "like_count": 1,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 26967
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 81277
+          }
+        ],
+        "posts_count": 3,
+        "reply_count": 1,
+        "slug": "down-a-rabbit-hole-to-figure-out-grease-is-bad-for-belts",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Down a rabbit hole to figure out grease is bad for belts",
+        "unpinned": null,
+        "unseen": false,
+        "views": 25,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:00:52.795Z",
+        "can_vote": false,
+        "category_id": 178,
+        "closed": false,
+        "created_at": "2026-04-21T11:34:08.184Z",
+        "fancy_title": "Elegoo ASA print quality",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 2,
+        "id": 250828,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:00:52.795Z",
+        "last_poster_username": "user_3454396445",
+        "like_count": 0,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 82785
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 94875
+          }
+        ],
+        "posts_count": 2,
+        "reply_count": 0,
+        "slug": "elegoo-asa-print-quality",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Elegoo ASA print quality",
+        "unpinned": null,
+        "unseen": false,
+        "views": 31,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T15:00:29.538Z",
+        "can_vote": false,
+        "category_id": 166,
+        "closed": false,
+        "created_at": "2026-04-15T03:26:39.392Z",
+        "fancy_title": "Has anyone tried the new Color Mixing feature on Studio 2.5.3 yet?",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 33,
+        "id": 249293,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T15:00:29.538Z",
+        "last_poster_username": "skyrippersystems",
+        "like_count": 38,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 85989
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 90275
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 21634
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 1178
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 79856
+          }
+        ],
+        "posts_count": 33,
+        "reply_count": 16,
+        "slug": "has-anyone-tried-the-new-color-mixing-feature-on-studio-2-5-3-yet",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Has anyone tried the new Color Mixing feature on Studio 2.5.3 yet?",
+        "unpinned": null,
+        "unseen": false,
+        "views": 1327,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:57:17.740Z",
+        "can_vote": false,
+        "category_id": 7,
+        "closed": false,
+        "created_at": "2026-01-28T01:21:46.553Z",
+        "fancy_title": "You can now dry filament while printing",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 27,
+        "id": 229004,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T14:57:17.740Z",
+        "last_poster_username": "CincinnatiDesigns",
+        "like_count": 19,
+        "liked": null,
+        "op_like_count": 1,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 133725
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 147281
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 150860
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 14938
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 104385
+          }
+        ],
+        "posts_count": 27,
+        "reply_count": 16,
+        "slug": "you-can-now-dry-filament-while-printing",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "You can now dry filament while printing",
+        "unpinned": null,
+        "unseen": false,
+        "views": 10290,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:54:23.297Z",
+        "can_vote": false,
+        "category_id": 179,
+        "closed": false,
+        "created_at": "2026-04-18T02:48:27.828Z",
+        "fancy_title": "First print with X2d, COMPLETE FAILURE",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 16,
+        "id": 249934,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T14:54:23.297Z",
+        "last_poster_username": "HOLDALL_Tools",
+        "like_count": 13,
+        "liked": null,
+        "op_like_count": 2,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 116030
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 7720
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 150388
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 154808
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 151183
+          }
+        ],
+        "posts_count": 16,
+        "reply_count": 9,
+        "slug": "first-print-with-x2d-complete-failure",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "First print with X2d, COMPLETE FAILURE",
+        "unpinned": null,
+        "unseen": false,
+        "views": 605,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:51:27.613Z",
+        "can_vote": false,
+        "category_id": 161,
+        "closed": false,
+        "created_at": "2026-04-15T11:25:10.280Z",
+        "fancy_title": "NSFW tag in general // new uploads",
+        "featured_link": null,
+        "has_accepted_answer": true,
+        "has_summary": false,
+        "highest_post_number": 15,
+        "id": 249353,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T14:51:27.613Z",
+        "last_poster_username": "Cypherous",
+        "like_count": 9,
+        "liked": null,
+        "op_like_count": 1,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Accepted Answer",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 30432
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 151387
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 139222
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 154392
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 5396
+          }
+        ],
+        "posts_count": 15,
+        "reply_count": 9,
+        "slug": "nsfw-tag-in-general-new-uploads",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "NSFW tag in general // new uploads",
+        "unpinned": null,
+        "unseen": false,
+        "views": 298,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:46:44.378Z",
+        "can_vote": false,
+        "category_id": 178,
+        "closed": false,
+        "created_at": "2026-04-19T11:22:51.231Z",
+        "fancy_title": "Will Filament track switch work with the H2c",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 5,
+        "id": 250299,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T14:46:44.378Z",
+        "last_poster_username": "dann2707",
+        "like_count": 2,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 32016
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 130979
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 5972
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 23876
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 121836
+          }
+        ],
+        "posts_count": 5,
+        "reply_count": 1,
+        "slug": "will-filament-track-switch-work-with-the-h2c",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Will Filament track switch work with the H2c",
+        "unpinned": null,
+        "unseen": false,
+        "views": 146,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:45:52.768Z",
+        "can_vote": false,
+        "category_id": 8,
+        "closed": false,
+        "created_at": "2026-04-21T13:04:20.309Z",
+        "fancy_title": "Preview icon",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 5,
+        "id": 250837,
+        "image_url": "https://cdn-forum.bambulab.com/original/3X/7/7/77665cb1142255b01ab1b5a15eaffef1e3e568b9.png",
+        "last_posted_at": "2026-04-21T14:45:52.768Z",
+        "last_poster_username": "lkraus",
+        "like_count": 0,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 12620
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 10688
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 2695
+          }
+        ],
+        "posts_count": 5,
+        "reply_count": 2,
+        "slug": "preview-icon",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Preview icon",
+        "unpinned": null,
+        "unseen": false,
+        "views": 22,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:40:48.118Z",
+        "can_vote": false,
+        "category_id": 178,
+        "closed": false,
+        "created_at": "2026-04-01T05:20:47.824Z",
+        "fancy_title": "Firmware Update for H2C",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 28,
+        "id": 246015,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T14:40:48.118Z",
+        "last_poster_username": "dann2707",
+        "like_count": 21,
+        "liked": null,
+        "op_like_count": 2,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 13699
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 26755
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 56378
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 139019
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 121836
+          }
+        ],
+        "posts_count": 26,
+        "reply_count": 18,
+        "slug": "firmware-update-for-h2c",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Firmware Update for H2C",
+        "unpinned": null,
+        "unseen": false,
+        "views": 1534,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:40:03.768Z",
+        "can_vote": false,
+        "category_id": 178,
+        "closed": false,
+        "created_at": "2026-04-14T21:29:13.940Z",
+        "fancy_title": "Filament Track Switch",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 33,
+        "id": 249241,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T14:40:03.768Z",
+        "last_poster_username": "hotellonely",
+        "like_count": 11,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 22473
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 1178
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 135970
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 81277
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 67381
+          }
+        ],
+        "posts_count": 33,
+        "reply_count": 22,
+        "slug": "filament-track-switch",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Filament Track Switch",
+        "unpinned": null,
+        "unseen": false,
+        "views": 910,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:28:33.314Z",
+        "can_vote": false,
+        "category_id": 8,
+        "closed": false,
+        "created_at": "2026-04-21T09:15:34.163Z",
+        "fancy_title": "Color change layer height",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 8,
+        "id": 250819,
+        "image_url": "https://cdn-forum.bambulab.com/optimized/3X/4/d/4d4af0848f1a27cd5c56b4af4700290330719d85_2_1024x547.png",
+        "last_posted_at": "2026-04-21T14:28:33.314Z",
+        "last_poster_username": "Edinnit",
+        "like_count": 3,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 153550
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 34076
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 130979
+          }
+        ],
+        "posts_count": 8,
+        "reply_count": 4,
+        "slug": "color-change-layer-height",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Color change layer height",
+        "unpinned": null,
+        "unseen": false,
+        "views": 21,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:27:36.658Z",
+        "can_vote": false,
+        "category_id": 102,
+        "closed": false,
+        "created_at": "2026-04-18T19:40:25.510Z",
+        "fancy_title": "Clog issue",
+        "featured_link": null,
+        "has_accepted_answer": true,
+        "has_summary": false,
+        "highest_post_number": 8,
+        "id": 250135,
+        "image_url": "https://cdn-forum.bambulab.com/optimized/3X/d/5/d5ad1f996343a0a9b2f5a66a19fc0b02f180c17d_2_1024x348.jpeg",
+        "last_posted_at": "2026-04-21T14:27:36.658Z",
+        "last_poster_username": "GARoss",
+        "like_count": 3,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster, Accepted Answer",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 109167
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 81277
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 52820
+          }
+        ],
+        "posts_count": 8,
+        "reply_count": 2,
+        "slug": "clog-issue",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Clog issue",
+        "unpinned": null,
+        "unseen": false,
+        "views": 71,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:27:31.716Z",
+        "can_vote": false,
+        "category_id": 178,
+        "closed": false,
+        "created_at": "2026-04-19T15:06:09.827Z",
+        "fancy_title": "Newbie TPU printing advice",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 11,
+        "id": 250350,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T14:27:31.716Z",
+        "last_poster_username": "MaxThreeD",
+        "like_count": 1,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 144331
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 26472
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 54935
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 85821
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 130979
+          }
+        ],
+        "posts_count": 11,
+        "reply_count": 4,
+        "slug": "newbie-tpu-printing-advice",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Newbie TPU printing advice",
+        "unpinned": null,
+        "unseen": false,
+        "views": 159,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:11:29.436Z",
+        "can_vote": false,
+        "category_id": 166,
+        "closed": false,
+        "created_at": "2026-04-03T22:19:04.436Z",
+        "fancy_title": "Critical \u2018Consumable\u2019 Part Not Sold \u2014 What\u2019s the Plan Post-Warranty?",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 31,
+        "id": 246608,
+        "image_url": null,
+        "last_posted_at": "2026-04-21T14:11:29.436Z",
+        "last_poster_username": "Bambilover09",
+        "like_count": 26,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 119785
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 135650
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 19925
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 16235
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 152788
+          }
+        ],
+        "posts_count": 29,
+        "reply_count": 19,
+        "slug": "critical-consumable-part-not-sold-what-s-the-plan-post-warranty",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Critical \u2018Consumable\u2019 Part Not Sold \u2014 What\u2019s the Plan Post-Warranty?",
+        "unpinned": null,
+        "unseen": false,
+        "views": 837,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T14:03:43.786Z",
+        "can_vote": false,
+        "category_id": 161,
+        "closed": false,
+        "created_at": "2026-04-19T13:04:28.807Z",
+        "fancy_title": "Unable to upload 3MF files that contain &ldquo;Mixed Filaments&rdquo;",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 3,
+        "id": 250324,
+        "image_url": "https://cdn-forum.bambulab.com/optimized/3X/9/0/90d6723bed58402b5ad6e55c9db43db386ff733a_2_1024x80.png",
+        "last_posted_at": "2026-04-21T14:03:43.786Z",
+        "last_poster_username": "3D_Gaunt",
+        "like_count": 0,
+        "liked": null,
+        "op_like_count": 0,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 132144
+          },
+          {
+            "description": "Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 154671
+          }
+        ],
+        "posts_count": 3,
+        "reply_count": 1,
+        "slug": "unable-to-upload-3mf-files-that-contain-mixed-filaments",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Unable to upload 3MF files that contain \"Mixed Filaments\"",
+        "unpinned": null,
+        "unseen": false,
+        "views": 62,
+        "visible": true
+      },
+      {
+        "archetype": "regular",
+        "archived": false,
+        "bookmarked": null,
+        "bumped": true,
+        "bumped_at": "2026-04-21T13:46:39.996Z",
+        "can_vote": false,
+        "category_id": 144,
+        "closed": false,
+        "created_at": "2026-04-20T20:08:50.579Z",
+        "fancy_title": "Update to Makerworld rewards choices",
+        "featured_link": null,
+        "has_accepted_answer": false,
+        "has_summary": false,
+        "highest_post_number": 8,
+        "id": 250697,
+        "image_url": "https://cdn-forum.bambulab.com/original/3X/b/9/b9f8227797163d885e92e80e4e530ff3d86f483f.png",
+        "last_posted_at": "2026-04-21T13:46:39.996Z",
+        "last_poster_username": "3D_Printerers",
+        "like_count": 5,
+        "liked": null,
+        "op_like_count": 3,
+        "pinned": false,
+        "pinned_globally": false,
+        "posters": [
+          {
+            "description": "Original Poster, Most Recent Poster",
+            "extras": "latest",
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 133263
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 5396
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 79252
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 44102
+          },
+          {
+            "description": "Frequent Poster",
+            "extras": null,
+            "flair_group_id": null,
+            "primary_group_id": null,
+            "user_id": 104385
+          }
+        ],
+        "posts_count": 8,
+        "reply_count": 3,
+        "slug": "update-to-makerworld-rewards-choices",
+        "tags": [],
+        "tags_descriptions": {},
+        "title": "Update to Makerworld rewards choices",
+        "unpinned": null,
+        "unseen": false,
+        "views": 125,
+        "visible": true
+      }
+    ]
+  },
+  "users": [
+    {
+      "admin": true,
+      "avatar_template": "/user_avatar/forum.bambulab.com/system/{size}/109021_2.png",
+      "id": -1,
+      "moderator": true,
+      "name": "system",
+      "trust_level": 4,
+      "username": "system"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/lkraus/{size}/116929_2.png",
+      "id": 2695,
+      "name": "Larry",
+      "trust_level": 3,
+      "username": "lkraus"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/polycat/{size}/13500_2.png",
+      "id": 45495,
+      "name": "Polycat",
+      "trust_level": 1,
+      "username": "Polycat"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/xsynatic/{size}/122571_2.png",
+      "flair_group_id": 44,
+      "flair_name": "Bambu-Lab-AMS-Owner",
+      "flair_url": "https://cdn-forum.bambulab.com/original/1X/ac1bb59cbae2215f0f96249a2568083a6209e48a.png",
+      "id": 16758,
+      "name": "",
+      "trust_level": 2,
+      "username": "xsynatic"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/malctheoracle/{size}/137308_2.png",
+      "id": 37295,
+      "name": "Every tool has its hidden purpose.",
+      "trust_level": 2,
+      "username": "MalcTheOracle"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/zeusprint/{size}/113149_2.png",
+      "id": 107624,
+      "name": "Zeus",
+      "trust_level": 1,
+      "username": "ZeusPrint"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/scoof/{size}/151246_2.png",
+      "id": 150990,
+      "name": "Scoof",
+      "trust_level": 1,
+      "username": "Scoof"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/cincinnatidesigns/{size}/152766_2.png",
+      "id": 104385,
+      "name": "Ted",
+      "trust_level": 3,
+      "username": "CincinnatiDesigns"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/r3d-five/{size}/107734_2.png",
+      "id": 11418,
+      "name": "Jay Cooley",
+      "trust_level": 2,
+      "username": "R3d-Five"
+    },
+    {
+      "avatar_template": "/letter_avatar_proxy/v4/letter/r/58f4c7/{size}.png",
+      "id": 43771,
+      "name": "",
+      "trust_level": 3,
+      "username": "RetroSharky"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/diomedes.dominguez/{size}/13500_2.png",
+      "id": 36667,
+      "name": "Diomedes Dominguez",
+      "trust_level": 2,
+      "username": "diomedes.dominguez"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/maxim3d/{size}/131536_2.png",
+      "id": 22473,
+      "name": "Maxim (Max)",
+      "trust_level": 2,
+      "username": "maxim3D"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/carbonforge/{size}/13500_2.png",
+      "id": 81277,
+      "name": "Carbon Forge",
+      "trust_level": 2,
+      "username": "CarbonForge"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/iftibashir/{size}/63624_2.png",
+      "id": 61541,
+      "name": "",
+      "trust_level": 2,
+      "username": "IftiBashir"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/user_1083141284/{size}/101858_2.png",
+      "id": 127213,
+      "name": "lala",
+      "trust_level": 2,
+      "username": "user_1083141284"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/user_3700128993/{size}/13500_2.png",
+      "id": 58400,
+      "name": "User 3700128993",
+      "trust_level": 2,
+      "username": "user_3700128993"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/philch/{size}/13500_2.png",
+      "id": 26755,
+      "name": "Philch",
+      "trust_level": 3,
+      "username": "philch"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/chuck240/{size}/13500_2.png",
+      "id": 94072,
+      "name": "Chuck240",
+      "trust_level": 2,
+      "username": "Chuck240"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/harth/{size}/101858_2.png",
+      "id": 154550,
+      "name": "Harth",
+      "trust_level": 1,
+      "username": "Harth"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/jacques_premium/{size}/149721_2.png",
+      "id": 124464,
+      "name": "Jacques Premium",
+      "trust_level": 2,
+      "username": "Jacques_Premium"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/bullocks/{size}/154074_2.png",
+      "id": 52820,
+      "name": "Rusty Shackleford",
+      "trust_level": 3,
+      "username": "Bullocks"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/holzfuss/{size}/101858_2.png",
+      "id": 153431,
+      "name": "Holzfu\u00df",
+      "trust_level": 1,
+      "username": "Holzfuss"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/martin4/{size}/60971_2.png",
+      "id": 59465,
+      "name": "Martin",
+      "trust_level": 2,
+      "username": "Martin4"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/square3d/{size}/129207_2.png",
+      "id": 32686,
+      "name": "Square2 3D",
+      "trust_level": 1,
+      "username": "Square3D"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/josh-3d/{size}/118689_2.png",
+      "id": 28704,
+      "name": "Josh 3D",
+      "trust_level": 2,
+      "username": "Josh-3D"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/shaq981/{size}/97892_2.png",
+      "id": 95632,
+      "name": "Shaq981",
+      "trust_level": 2,
+      "username": "shaq981"
+    },
+    {
+      "admin": true,
+      "avatar_template": "/user_avatar/forum.bambulab.com/supportassistant/{size}/114039_2.png",
+      "flair_group_id": 41,
+      "flair_name": "Bambu_Lab_Employee",
+      "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+      "id": 28672,
+      "moderator": true,
+      "name": "Bambu Lab Customer Support Assistant",
+      "primary_group_name": "Bambu_Lab_Employee",
+      "trust_level": 4,
+      "username": "SupportAssistant"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/pandafood/{size}/13500_2.png",
+      "id": 81324,
+      "name": "User 1445315909",
+      "trust_level": 2,
+      "username": "PandaFood"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/skyrippersystems/{size}/81691_2.png",
+      "id": 79856,
+      "name": "Skyrippersystems",
+      "trust_level": 2,
+      "username": "skyrippersystems"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/epistra/{size}/101858_2.png",
+      "id": 138096,
+      "name": "Epistra",
+      "trust_level": 2,
+      "username": "Epistra"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/hotellonely/{size}/132773_2.png",
+      "id": 67381,
+      "name": "Hotellonely",
+      "trust_level": 2,
+      "username": "hotellonely"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/meshmaster/{size}/143773_2.png",
+      "id": 122847,
+      "name": "StreetSports",
+      "trust_level": 2,
+      "username": "MeshMaster"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/ginberry3d/{size}/13500_2.png",
+      "id": 54935,
+      "name": "Gin Berry3 D",
+      "trust_level": 2,
+      "username": "GinBerry3D"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/mimo/{size}/101858_2.png",
+      "id": 139901,
+      "name": "User 2335589869",
+      "trust_level": 2,
+      "username": "mimo"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/christian_huber/{size}/101858_2.png",
+      "id": 122932,
+      "name": "Christian Huber",
+      "trust_level": 1,
+      "username": "Christian_Huber"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/stachdude/{size}/101858_2.png",
+      "id": 154964,
+      "name": "stachdude",
+      "trust_level": 0,
+      "username": "stachdude"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/hal90001/{size}/101858_2.png",
+      "id": 154664,
+      "name": "Hal9000",
+      "trust_level": 1,
+      "username": "HAL90001"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/mzip/{size}/76349_2.png",
+      "id": 23328,
+      "name": "Yabba Dabba Doo!",
+      "trust_level": 2,
+      "username": "MZip"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/user_3180132258/{size}/13500_2.png",
+      "id": 94057,
+      "name": "User 3180132258",
+      "trust_level": 2,
+      "username": "user_3180132258"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/alex_vg/{size}/39248_2.png",
+      "id": 24559,
+      "name": "Alex_vG",
+      "trust_level": 2,
+      "username": "Alex_vG"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/dann2707/{size}/101858_2.png",
+      "id": 121836,
+      "name": "",
+      "trust_level": 3,
+      "username": "dann2707"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/holdall_tools/{size}/101858_2.png",
+      "id": 151183,
+      "name": "Holdall Tools",
+      "trust_level": 1,
+      "username": "HOLDALL_Tools"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/3dtech/{size}/7896_2.png",
+      "id": 3322,
+      "name": "",
+      "trust_level": 2,
+      "username": "3DTech"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/qjo/{size}/87073_2.png",
+      "id": 8969,
+      "name": "",
+      "trust_level": 2,
+      "username": "Qjo"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/kcspacepirate/{size}/101858_2.png",
+      "id": 154475,
+      "name": "Kc Space Pirate",
+      "trust_level": 0,
+      "username": "KCSpacePirate"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/owensieber/{size}/13500_2.png",
+      "id": 26967,
+      "name": "Owensieber",
+      "trust_level": 1,
+      "username": "owensieber"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/vertex_prints/{size}/84376_2.png",
+      "id": 82785,
+      "name": "Vertex Prints",
+      "trust_level": 1,
+      "username": "Vertex_Prints"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/user_3454396445/{size}/13500_2.png",
+      "id": 94875,
+      "name": "User 3454396445",
+      "trust_level": 2,
+      "username": "user_3454396445"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/user_194329822/{size}/13500_2.png",
+      "id": 85989,
+      "name": "User 194329822",
+      "trust_level": 1,
+      "username": "user_194329822"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/sebo3d1/{size}/147000_2.png",
+      "id": 90275,
+      "name": "Sebo3 D1",
+      "trust_level": 3,
+      "username": "Sebo3D1"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/kip/{size}/119215_2.png",
+      "id": 21634,
+      "name": "",
+      "trust_level": 2,
+      "username": "kip"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/sprior/{size}/4_2.png",
+      "id": 1178,
+      "name": "Steve Prior",
+      "trust_level": 2,
+      "username": "sprior"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/kartcon/{size}/138815_2.png",
+      "id": 133725,
+      "name": "Art Davis",
+      "trust_level": 2,
+      "username": "kartcon"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/camo5/{size}/148311_2.png",
+      "id": 147281,
+      "name": "Camo5",
+      "trust_level": 1,
+      "username": "Camo5"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/spiff2000/{size}/101858_2.png",
+      "id": 150860,
+      "name": "Spiff2000",
+      "trust_level": 0,
+      "username": "spiff2000"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/jonraymond/{size}/119526_2.png",
+      "id": 14938,
+      "moderator": true,
+      "name": "",
+      "trust_level": 4,
+      "username": "JonRaymond"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/narg/{size}/121839_2.png",
+      "id": 116030,
+      "name": "Narg",
+      "trust_level": 2,
+      "username": "Narg"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/rocketsled/{size}/10549_2.png",
+      "id": 7720,
+      "name": "Randy Cohen",
+      "trust_level": 2,
+      "username": "RocketSled"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/lionprints/{size}/101858_2.png",
+      "id": 150388,
+      "name": "Ryan",
+      "trust_level": 1,
+      "username": "LionPrints"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/kidius/{size}/101858_2.png",
+      "id": 154808,
+      "name": "Kidius",
+      "trust_level": 1,
+      "username": "Kidius"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/jolbars/{size}/145723_2.png",
+      "id": 30432,
+      "name": "Windi Jolbars",
+      "trust_level": 1,
+      "username": "jolbars"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/impman66/{size}/151679_2.png",
+      "id": 151387,
+      "name": "Impman66",
+      "trust_level": 2,
+      "username": "Impman66"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/slava_jim/{size}/142323_2.png",
+      "id": 139222,
+      "name": "Slava Jim",
+      "trust_level": 1,
+      "username": "Slava_Jim"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/scsi/{size}/153996_2.png",
+      "id": 154392,
+      "name": "Scsi",
+      "trust_level": 1,
+      "username": "scsi"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/cypherous/{size}/6169_2.png",
+      "id": 5396,
+      "name": "",
+      "trust_level": 2,
+      "username": "Cypherous"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/misterx426/{size}/31575_2.png",
+      "id": 32016,
+      "name": "Tim ",
+      "trust_level": 1,
+      "username": "misterx426"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/maxthreed/{size}/135682_2.png",
+      "id": 130979,
+      "name": "Max",
+      "trust_level": 3,
+      "username": "MaxThreeD"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/arekxyz/{size}/6305_2.png",
+      "id": 5972,
+      "name": "arekxyz",
+      "trust_level": 2,
+      "username": "arekxyz"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/zdendo/{size}/13500_2.png",
+      "id": 23876,
+      "name": "Zdenko Janov",
+      "trust_level": 2,
+      "username": "Zdendo"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/teseoo/{size}/138870_2.png",
+      "id": 12620,
+      "name": "Teseoo",
+      "trust_level": 1,
+      "username": "Teseoo"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/olias/{size}/116924_2.png",
+      "id": 10688,
+      "name": "Olias",
+      "trust_level": 2,
+      "username": "Olias"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/derftoy/{size}/13500_2.png",
+      "id": 13699,
+      "name": "Cory Jorgensen",
+      "trust_level": 1,
+      "username": "Derftoy"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/user_1117305564/{size}/13500_2.png",
+      "id": 56378,
+      "name": "User 1117305564",
+      "trust_level": 1,
+      "username": "user_1117305564"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/kerwin556/{size}/142108_2.png",
+      "id": 139019,
+      "name": "Kerwin556",
+      "trust_level": 2,
+      "username": "Kerwin556"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/yossi_0l/{size}/139732_2.png",
+      "id": 135970,
+      "name": "Yossi",
+      "trust_level": 1,
+      "username": "Yossi_0l"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/edinnit/{size}/101858_2.png",
+      "id": 153550,
+      "name": "Edinnit",
+      "trust_level": 1,
+      "username": "Edinnit"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/aprinterinthehills/{size}/13500_2.png",
+      "id": 34076,
+      "name": "",
+      "trust_level": 1,
+      "username": "aPrinterInTheHills"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/gaross/{size}/116626_2.png",
+      "id": 109167,
+      "name": "Ga Ross",
+      "trust_level": 1,
+      "username": "GARoss"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/user_3632819408/{size}/101858_2.png",
+      "id": 144331,
+      "name": "User 3632819408",
+      "trust_level": 1,
+      "username": "user_3632819408"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/blchandl2/{size}/115552_2.png",
+      "id": 26472,
+      "name": "Blchandl2",
+      "trust_level": 2,
+      "username": "blchandl2"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/l0rds474n/{size}/87255_2.png",
+      "id": 85821,
+      "name": "L0rd S474n",
+      "trust_level": 2,
+      "username": "L0rdS474n"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/ansun/{size}/101858_2.png",
+      "id": 119785,
+      "name": "Ansun",
+      "trust_level": 1,
+      "username": "Ansun"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/rusty35/{size}/101858_2.png",
+      "id": 135650,
+      "name": "User 3196793994",
+      "trust_level": 3,
+      "username": "Rusty35"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/eponymous/{size}/13500_2.png",
+      "id": 19925,
+      "name": "Eponymous",
+      "trust_level": 2,
+      "username": "Eponymous"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/miamijerry/{size}/13500_2.png",
+      "id": 16235,
+      "name": "Gerald Trudelle",
+      "trust_level": 2,
+      "username": "MiamiJerry"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/bambilover09/{size}/152583_2.png",
+      "id": 152788,
+      "name": "Bambilover09",
+      "trust_level": 0,
+      "username": "Bambilover09"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/valkyrie1/{size}/136529_2.png",
+      "id": 132144,
+      "name": "Valkyrie",
+      "trust_level": 1,
+      "username": "Valkyrie1"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/3d_gaunt/{size}/154197_2.png",
+      "id": 154671,
+      "name": "3 D Gaunt",
+      "trust_level": 0,
+      "username": "3D_Gaunt"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/3d_printerers/{size}/137422_2.png",
+      "id": 133263,
+      "name": "3 D Printerers",
+      "trust_level": 2,
+      "username": "3D_Printerers"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/user_775130548/{size}/13500_2.png",
+      "id": 79252,
+      "name": "curious :)",
+      "trust_level": 2,
+      "username": "user_775130548"
+    },
+    {
+      "avatar_template": "/user_avatar/forum.bambulab.com/elektroquark/{size}/117287_2.png",
+      "id": 44102,
+      "name": "ElektroQuark",
+      "trust_level": 2,
+      "username": "ElektroQuark"
+    }
+  ]
+}

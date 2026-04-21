@@ -1,0 +1,9 @@
+{
+  "capture_method": "public_json_endpoint",
+  "captured_at": "2026-04-21T15:58:04Z",
+  "notes": "Fetched from a public Discourse topic JSON endpoint.",
+  "origin": "Bambu Lab Community Forum (Discourse)",
+  "source_type": "discourse_json",
+  "url": "https://forum.bambulab.com/t/77524.json",
+  "verbatim": true
+}

@@ -1,0 +1,146 @@
+#!/usr/bin/env python3
+"""Build changelog JSON and Markdown from curated PMM milestones."""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = REPO_ROOT / "data"
+DOCS_DIR = REPO_ROOT / "docs"
+
+
+CHANGELOG_ENTRIES = [
+    {
+        "date": "2024-05-10",
+        "version": "integration",
+        "title": "PMM integrated into MakerWorld model pages",
+        "source_class": "Official release",
+        "topic_ids": [74832],
+        "what_changed": "MakerWorld announced that Parametric Model Maker was integrated into model pages so users could customize OpenSCAD-backed models directly from the model page.",
+        "agent_impact": "Agents can assume a first-class model-page customization flow exists and should package PMM-ready scripts around that user journey.",
+        "tradeoffs": "Early PMM UX still had rough edges, so implementation guidance should separate existence of the flow from maturity of the UX.",
+    },
+    {
+        "date": "2024-08-06",
+        "version": "v0.8.0",
+        "title": "File upload support with default asset names",
+        "source_class": "Official release",
+        "topic_ids": [91853],
+        "what_changed": "PMM added file upload support for PNG, SVG, and STL workflows using documented built-in default filenames.",
+        "agent_impact": "Agents can convert some local asset-backed models into PMM-compatible upload workflows, but should rewrite asset names to `default.png`, `default.svg`, or `default.stl`.",
+        "tradeoffs": "The release note described filename restrictions and did not present arbitrary co-upload naming as a safe default.",
+    },
+    {
+        "date": "2024-09-23",
+        "version": "v0.9.0",
+        "title": "Multi-color 3MF and `// color` parameter support",
+        "source_class": "Official release",
+        "topic_ids": [100160],
+        "what_changed": "PMM added multi-color 3MF export and documented a parameterized color UI using hex string variables with the `// color` marker.",
+        "agent_impact": "Agents can expose user-facing color controls in PMM by switching to hex string parameters rather than only hard-coded OpenSCAD color literals.",
+        "tradeoffs": "This did not remove geometry or layout constraints, and later employee replies tied some generation issues to the new 3MF path and sizing behavior.",
+    },
+    {
+        "date": "2025-01-19",
+        "version": "post-v0.9 clarification",
+        "title": "Employee clarification around oversize 3MF failures",
+        "source_class": "Employee-confirmed",
+        "topic_ids": [133844],
+        "what_changed": "An employee explained that PMM's newer 3MF generation path could fail when a model was oversize and noted that plate splitting work was underway.",
+        "agent_impact": "Agents should flag oversize risk explicitly and consider splitting large output or changing release strategy rather than assuming local success means PMM success.",
+        "tradeoffs": "A model can be logically valid OpenSCAD and still fail PMM generation because export and plate-layout constraints differ from local rendering.",
+    },
+    {
+        "date": "2025-02-10",
+        "version": "v0.10.0",
+        "title": "Multi-plate 3MF, assembly view, 3MF profile config, and font picker UI",
+        "source_class": "Official release",
+        "topic_ids": [144618],
+        "what_changed": "PMM added `mw_plate_N()`, optional `mw_assembly_view()`, 3MF profile configuration, a richer font picker triggered by `// font`, and better oversized-model error messaging.",
+        "agent_impact": "Agents can now build richer PMM releases for multi-part models, document profile-side concerns, and expose font selection more cleanly.",
+        "tradeoffs": "The release note explicitly warns that multi-plate scripts do not also provide STL download from that same script, so agents should treat this as a release-strategy choice.",
+    },
+    {
+        "date": "2025-02-16",
+        "version": "v0.10.0 follow-up",
+        "title": "Auto-arrange size limitation discussed and then fixed for a reported model",
+        "source_class": "Employee-confirmed",
+        "topic_ids": [144618],
+        "what_changed": "Employee replies connected generation failures to Studio auto-arrange behavior, discussed a practical size ceiling around `240 x 235`, and later confirmed a reported issue was fixed.",
+        "agent_impact": "Agents should treat PMM export failures as possibly layout-driven and include profile and arrangement notes when packaging larger models.",
+        "tradeoffs": "Disabling auto-arrange or splitting output may still be necessary depending on model shape and release design.",
+    },
+    {
+        "date": "2025-03-13",
+        "version": "backend clarification",
+        "title": "Employee clarification on backend commit and manifold",
+        "source_class": "Employee-confirmed",
+        "topic_ids": [150680],
+        "what_changed": "An employee stated that PMM was using OpenSCAD commit `b550957ddac62e59428d08efa62e2f44c15a0b95` and that manifold was enabled.",
+        "agent_impact": "Agents can document a concrete PMM backend assumption when local and hosted behavior diverge.",
+        "tradeoffs": "This still does not make arbitrary local include trees portable; backend version clarity helps debugging, not packaging safety by itself.",
+    },
+    {
+        "date": "2025-10-25",
+        "version": "v1.1.0",
+        "title": "OpenSCAD workflow and backend refresh",
+        "source_class": "Official release",
+        "topic_ids": [203564],
+        "what_changed": "PMM v1.1.0 refreshed the UI, collapsed the OpenSCAD editor behind a Code button, added an Open SCAD File flow under the Creator Portal, and documented updated OpenSCAD and BOSL2 backend revisions.",
+        "agent_impact": "Agents can describe the newer PMM editing workflow accurately and use the documented backend revisions when reasoning about reproducibility.",
+        "tradeoffs": "This is still an OpenSCAD-relevant workflow update even though PMM as a whole had broadened beyond OpenSCAD by then.",
+    },
+]
+
+
+def load_json(path: Path) -> object:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def write_json(path: Path, payload: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, sort_keys=False) + "\n", encoding="utf-8")
+
+
+def main() -> None:
+    topic_index = {record["topic_id"]: record for record in load_json(DATA_DIR / "topic-index.json")}
+    entries = []
+    for entry in CHANGELOG_ENTRIES:
+        record = dict(entry)
+        record["evidence_urls"] = [topic_index[topic_id]["url"] for topic_id in entry["topic_ids"] if topic_id in topic_index]
+        entries.append(record)
+
+    entries.sort(key=lambda item: item["date"])
+    write_json(DATA_DIR / "changelog.json", entries)
+
+    lines = [
+        "# Changelog",
+        "",
+        "This changelog is implementation-oriented. Each entry highlights what changed, what an agent can do differently, and what tradeoffs still matter.",
+        "",
+    ]
+    for entry in entries:
+        lines.append(f"## {entry['date']} - {entry['version']} - {entry['title']}")
+        lines.append("")
+        lines.append(f"Provenance: `{entry['source_class']}`")
+        lines.append("")
+        lines.append(f"**What changed:** {entry['what_changed']}")
+        lines.append("")
+        lines.append(f"**Agent impact:** {entry['agent_impact']}")
+        lines.append("")
+        lines.append(f"**Tradeoffs:** {entry['tradeoffs']}")
+        lines.append("")
+        lines.append("Evidence:")
+        for url in entry["evidence_urls"]:
+            lines.append(f"- {url}")
+        lines.append("")
+
+    DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    (DOCS_DIR / "changelog.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()
