@@ -29,13 +29,15 @@
     ],
     "constraints": [
       "Bundled PMM libraries such as BOSL2 are a different case from arbitrary local project includes.",
-      "Bambu documented a specific BOSL2 revision in the v1.1.0 PMM release."
+      "MakerWorld's library inventory explicitly lists BOSL2 as bundled.",
+      "Bambu also documented a specific BOSL2 revision in the v1.1.0 PMM release."
     ],
     "rewrite_guidance": "Keep BOSL2 when it is actually helping the model; only flatten or remove dependencies that are not part of PMM's bundled environment.",
     "agent_action": "Do not conclude that PMM cannot use BOSL2 just because PMM has trouble with arbitrary local include trees.",
-    "source_class": "Official release",
-    "source_type": "discourse_json",
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
     "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json",
       "https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564",
       "https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680"
     ],

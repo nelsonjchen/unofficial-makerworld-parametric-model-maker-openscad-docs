@@ -4,11 +4,13 @@ This repository separates evidence class from source type.
 
 ## Source Types
 
+- `makerworld_json`: raw JSON captured from MakerWorld PMM app endpoints
 - `discourse_json`: raw JSON captured from Bambu's public Discourse forum endpoints
 - `manual_capture`: intentional notes or copied text from PMM UI surfaces
 
 ## Provenance Labels
 
+- `Official app endpoint`
 - `Official release`
 - `Employee-confirmed`
 - `Manual UI capture`
@@ -17,14 +19,16 @@ This repository separates evidence class from source type.
 
 ## Preference Order
 
-1. Official release posts by staff
-2. Employee replies in support or bug threads
-3. Manual UI captures with clear provenance
-4. Community findings
-5. Explicitly labeled inference
+1. Official app endpoints
+2. Official release posts by staff
+3. Employee replies in support or bug threads
+4. Manual UI captures with clear provenance
+5. Community findings
+6. Explicitly labeled inference
 
 ## Current Source Inventory
 
+- `makerworld_json`: `2`
 - `discourse_json`: `24`
 - `manual_capture`: `0`
 

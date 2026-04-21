@@ -66,6 +66,7 @@ Use `data/feature-index.json`, `data/compatibility-rules.json`, and `data/change
 - Include user-facing notes about tradeoffs such as file upload expectations, multi-plate behavior, or oversize risk.
 
 ## Provenance Rules
+- Prefer `Official app endpoint` evidence when a question is directly answered by MakerWorld's own JSON payloads, such as installed libraries or font inventories.
 - Prefer `Official release` and `Employee-confirmed` evidence.
 - Use `Manual UI capture` only when the forum does not cover a detail and the capture is clearly labeled.
 - Treat `Community-discovered` as useful but not authoritative.

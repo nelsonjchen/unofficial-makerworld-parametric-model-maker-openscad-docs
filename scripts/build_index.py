@@ -9,6 +9,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DISCOURSE_DIR = REPO_ROOT / "sources" / "raw" / "discourse"
+RAW_MAKERWORLD_DIR = REPO_ROOT / "sources" / "raw" / "makerworld"
 RAW_MANUAL_DIR = REPO_ROOT / "sources" / "raw" / "manual"
 DATA_DIR = REPO_ROOT / "data"
 
@@ -97,6 +98,24 @@ def build_topic_index() -> tuple[list[dict], dict[int, dict]]:
 
 def build_source_index() -> list[dict]:
     records = []
+    for path in sorted(RAW_MAKERWORLD_DIR.glob("*.json")):
+        if path.name.endswith(".meta.json"):
+            continue
+        meta_path = path.with_suffix(path.suffix + ".meta.json")
+        metadata = load_json(meta_path) if meta_path.exists() else {}
+        records.append(
+            {
+                "path": str(path.relative_to(REPO_ROOT)),
+                "metadata_path": str(meta_path.relative_to(REPO_ROOT)) if meta_path.exists() else None,
+                "source_type": metadata.get("source_type", "makerworld_json"),
+                "origin": metadata.get("origin", "MakerWorld PMM app endpoint"),
+                "captured_at": metadata.get("captured_at"),
+                "url": metadata.get("url"),
+                "capture_method": metadata.get("capture_method"),
+                "verbatim": metadata.get("verbatim", True),
+                "notes": metadata.get("notes", ""),
+            }
+        )
     for path in sorted(RAW_DISCOURSE_DIR.glob("*.json")):
         if path.name.endswith(".meta.json"):
             continue
@@ -141,6 +160,25 @@ def build_feature_index(topic_map: dict[int, dict]) -> list[dict]:
         return [topic_map[topic_id]["url"] for topic_id in topic_ids if topic_id in topic_map]
 
     return [
+        {
+            "feature_key": "bundled_library_inventory_endpoint",
+            "status": "supported",
+            "introduced_in": "libraries-0.8.0 endpoint",
+            "scope": "libraries",
+            "syntax": ["include <BOSL2/*.scad>;", "include <threads-scad/threads.scad>;"],
+            "constraints": [
+                "MakerWorld exposes a direct JSON inventory of bundled OpenSCAD libraries.",
+                "This inventory is stronger evidence for bundled-library support than forum inference alone.",
+            ],
+            "rewrite_guidance": "When judging library support, check the MakerWorld library inventory before flattening working bundled includes.",
+            "agent_action": "Use the bundled library inventory as the primary source for whether PMM ships a given library.",
+            "source_class": "Official app endpoint",
+            "source_type": "makerworld_json",
+            "evidence_urls": [
+                "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+            ],
+            "manual_capture_refs": [],
+        },
         {
             "feature_key": "model_page_integration",
             "status": "supported",
@@ -270,13 +308,36 @@ def build_feature_index(topic_map: dict[int, dict]) -> list[dict]:
             "syntax": ["include <BOSL2/std.scad>;"],
             "constraints": [
                 "PMM distinguishes between bundled platform libraries and arbitrary local include trees.",
-                "The v1.1.0 PMM release explicitly documented a BOSL2 backend revision, which strongly indicates BOSL2 support in PMM.",
+                "MakerWorld's library inventory explicitly lists BOSL2 as a bundled library.",
+                "The v1.1.0 PMM release also documented a BOSL2 backend revision.",
             ],
             "rewrite_guidance": "Do not strip or inline BOSL2 solely because local include trees are risky. First distinguish bundled PMM libraries from local project files.",
             "agent_action": "It is reasonable to keep BOSL2 includes when targeting PMM, while still checking for version-specific APIs and performance costs.",
-            "source_class": "Official release",
-            "source_type": "discourse_json",
-            "evidence_urls": evidence([203564, 150680]),
+            "source_class": "Official app endpoint",
+            "source_type": "makerworld_json",
+            "evidence_urls": [
+                "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json",
+                *evidence([203564, 150680]),
+            ],
+            "manual_capture_refs": [],
+        },
+        {
+            "feature_key": "installed_fonts_inventory_endpoint",
+            "status": "supported",
+            "introduced_in": "fonts-0.8.0 endpoint",
+            "scope": "fonts",
+            "syntax": ['"Roboto"', '"Roboto:style=Bold"', '"Noto Sans JP"'],
+            "constraints": [
+                "MakerWorld exposes a direct JSON inventory of installed font names.",
+                "This inventory is the best available source for exact font availability.",
+            ],
+            "rewrite_guidance": "When a model depends on fonts, validate against the endpoint-backed font inventory rather than guessing from UI screenshots or forum anecdotes.",
+            "agent_action": "Use the MakerWorld font inventory as the primary source for exact PMM font availability and names.",
+            "source_class": "Official app endpoint",
+            "source_type": "makerworld_json",
+            "evidence_urls": [
+                "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json"
+            ],
             "manual_capture_refs": [],
         },
         {
@@ -340,13 +401,17 @@ def build_compatibility_rules(topic_map: dict[int, dict]) -> list[dict]:
             "syntax": ["include <BOSL2/std.scad>;"],
             "constraints": [
                 "Bundled PMM libraries such as BOSL2 are a different case from arbitrary local project includes.",
-                "Bambu documented a specific BOSL2 revision in the v1.1.0 PMM release.",
+                "MakerWorld's library inventory explicitly lists BOSL2 as bundled.",
+                "Bambu also documented a specific BOSL2 revision in the v1.1.0 PMM release.",
             ],
             "rewrite_guidance": "Keep BOSL2 when it is actually helping the model; only flatten or remove dependencies that are not part of PMM's bundled environment.",
             "agent_action": "Do not conclude that PMM cannot use BOSL2 just because PMM has trouble with arbitrary local include trees.",
-            "source_class": "Official release",
-            "source_type": "discourse_json",
-            "evidence_urls": evidence([203564, 150680]),
+            "source_class": "Official app endpoint",
+            "source_type": "makerworld_json",
+            "evidence_urls": [
+                "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json",
+                *evidence([203564, 150680]),
+            ],
             "manual_capture_refs": [],
         },
         {

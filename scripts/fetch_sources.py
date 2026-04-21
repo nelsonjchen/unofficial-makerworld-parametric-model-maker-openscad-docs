@@ -14,7 +14,9 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "sources" / "raw" / "discourse"
+MAKERWORLD_RAW_DIR = REPO_ROOT / "sources" / "raw" / "makerworld"
 BASE_URL = "https://forum.bambulab.com"
+MAKERWORLD_BASE = "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad"
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -64,6 +66,19 @@ EXTRA_ENDPOINTS = [
         "name": "latest",
         "url": f"{BASE_URL}/latest.json",
         "notes": "Global latest feed used for discovery.",
+    },
+]
+
+MAKERWORLD_ENDPOINTS = [
+    {
+        "name": "libraries-0.8.0",
+        "url": f"{MAKERWORLD_BASE}/libraries-0.8.0.json",
+        "notes": "Bundled OpenSCAD library inventory exposed by MakerWorld.",
+    },
+    {
+        "name": "fonts-0.8.0",
+        "url": f"{MAKERWORLD_BASE}/fonts-0.8.0.json",
+        "notes": "Installed font inventory exposed by MakerWorld.",
     },
 ]
 
@@ -126,17 +141,38 @@ def fetch_extra(spec: dict, force: bool) -> None:
     save_artifact(path, payload, metadata)
 
 
+def fetch_makerworld(spec: dict, force: bool) -> None:
+    path = MAKERWORLD_RAW_DIR / f"{spec['name']}.json"
+    if path.exists() and not force:
+        return
+    payload = fetch_json(spec["url"])
+    metadata = {
+        "source_type": "makerworld_json",
+        "origin": "MakerWorld PMM app endpoint",
+        "captured_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "url": spec["url"],
+        "capture_method": "public_app_json_endpoint",
+        "verbatim": True,
+        "notes": spec["notes"],
+    }
+    save_artifact(path, payload, metadata)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--force", action="store_true", help="Re-fetch even if files already exist.")
     args = parser.parse_args()
 
     RAW_DIR.mkdir(parents=True, exist_ok=True)
+    MAKERWORLD_RAW_DIR.mkdir(parents=True, exist_ok=True)
     for topic_id in TOPICS:
         fetch_topic(topic_id, force=args.force)
         time.sleep(0.1)
     for spec in EXTRA_ENDPOINTS:
         fetch_extra(spec, force=args.force)
+        time.sleep(0.1)
+    for spec in MAKERWORLD_ENDPOINTS:
+        fetch_makerworld(spec, force=args.force)
         time.sleep(0.1)
 
 

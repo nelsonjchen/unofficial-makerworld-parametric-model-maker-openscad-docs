@@ -2,6 +2,22 @@
 
 This repository stores evidence in two broad classes.
 
+## `sources/raw/makerworld/`
+These files are direct JSON snapshots from MakerWorld-controlled PMM endpoints rather than forum posts.
+
+Examples:
+- bundled OpenSCAD library inventories
+- installed font inventories
+
+Every fetched artifact should have a sidecar metadata file describing:
+- `source_type`
+- `origin`
+- `captured_at`
+- `url`
+- `capture_method`
+- `verbatim`
+- `notes`
+
 ## `sources/raw/discourse/`
 These files are public Discourse JSON snapshots fetched from Bambu Lab's forum.
 
@@ -37,8 +53,9 @@ Manual captures must include:
 
 ## Evidence Preference
 Docs should prefer:
-1. Discourse release posts by Bambu staff.
-2. Employee-confirmed details in support or bug threads.
-3. Manual UI captures with explicit provenance.
-4. Community-derived behavior notes.
-5. Explicitly labeled inference.
+1. MakerWorld app endpoints.
+2. Discourse release posts by Bambu staff.
+3. Employee-confirmed details in support or bug threads.
+4. Manual UI captures with explicit provenance.
+5. Community-derived behavior notes.
+6. Explicitly labeled inference.

@@ -72,6 +72,7 @@ python3 scripts/build_all.py
 
 ## Provenance Model
 The docs distinguish between:
+- `Official app endpoint`
 - `Official release`
 - `Employee-confirmed`
 - `Manual UI capture`
@@ -79,10 +80,11 @@ The docs distinguish between:
 - `Inference`
 
 The preferred evidence order is:
-1. Official release posts by Bambu staff.
-2. Employee replies in support or bug threads.
-3. Intentional manual captures from the PMM UI.
-4. Community findings.
-5. Explicitly labeled inference.
+1. Official app endpoints from MakerWorld.
+2. Official release posts by Bambu staff.
+3. Employee replies in support or bug threads.
+4. Intentional manual captures from the PMM UI.
+5. Community findings.
+6. Explicitly labeled inference.
 
-Raw Discourse snapshots are stored with sidecar metadata. Manual UI captures are not auto-scraped in v1; they should be added intentionally and labeled with provenance.
+Raw MakerWorld endpoint snapshots and Discourse snapshots are stored with sidecar metadata. Manual UI captures are not auto-scraped in v1; they should be added intentionally and labeled with provenance.

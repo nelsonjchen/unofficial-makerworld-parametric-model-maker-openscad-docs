@@ -1,5 +1,27 @@
 [
   {
+    "feature_key": "bundled_library_inventory_endpoint",
+    "status": "supported",
+    "introduced_in": "libraries-0.8.0 endpoint",
+    "scope": "libraries",
+    "syntax": [
+      "include <BOSL2/*.scad>;",
+      "include <threads-scad/threads.scad>;"
+    ],
+    "constraints": [
+      "MakerWorld exposes a direct JSON inventory of bundled OpenSCAD libraries.",
+      "This inventory is stronger evidence for bundled-library support than forum inference alone."
+    ],
+    "rewrite_guidance": "When judging library support, check the MakerWorld library inventory before flattening working bundled includes.",
+    "agent_action": "Use the bundled library inventory as the primary source for whether PMM ships a given library.",
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+    ],
+    "manual_capture_refs": []
+  },
+  {
     "feature_key": "model_page_integration",
     "status": "supported",
     "introduced_in": "2024-05-10",
@@ -169,15 +191,40 @@
     ],
     "constraints": [
       "PMM distinguishes between bundled platform libraries and arbitrary local include trees.",
-      "The v1.1.0 PMM release explicitly documented a BOSL2 backend revision, which strongly indicates BOSL2 support in PMM."
+      "MakerWorld's library inventory explicitly lists BOSL2 as a bundled library.",
+      "The v1.1.0 PMM release also documented a BOSL2 backend revision."
     ],
     "rewrite_guidance": "Do not strip or inline BOSL2 solely because local include trees are risky. First distinguish bundled PMM libraries from local project files.",
     "agent_action": "It is reasonable to keep BOSL2 includes when targeting PMM, while still checking for version-specific APIs and performance costs.",
-    "source_class": "Official release",
-    "source_type": "discourse_json",
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
     "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json",
       "https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564",
       "https://forum.bambulab.com/t/parametric-model-maker-support-for-includes/150680"
+    ],
+    "manual_capture_refs": []
+  },
+  {
+    "feature_key": "installed_fonts_inventory_endpoint",
+    "status": "supported",
+    "introduced_in": "fonts-0.8.0 endpoint",
+    "scope": "fonts",
+    "syntax": [
+      "\"Roboto\"",
+      "\"Roboto:style=Bold\"",
+      "\"Noto Sans JP\""
+    ],
+    "constraints": [
+      "MakerWorld exposes a direct JSON inventory of installed font names.",
+      "This inventory is the best available source for exact font availability."
+    ],
+    "rewrite_guidance": "When a model depends on fonts, validate against the endpoint-backed font inventory rather than guessing from UI screenshots or forum anecdotes.",
+    "agent_action": "Use the MakerWorld font inventory as the primary source for exact PMM font availability and names.",
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json"
     ],
     "manual_capture_refs": []
   },
