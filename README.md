@@ -1,6 +1,6 @@
 # Bambu MakerWorld OpenSCAD PMM Reference
 
-This repository is an agent-first reference for Bambu Lab MakerWorld's OpenSCAD-based Parametric Model Maker (PMM).
+This repository is an agent-first reference for Bambu Lab MakerWorld's [OpenSCAD](https://openscad.org/)-based [Parametric Model Maker (PMM)](https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564).
 
 The main use case is practical:
 - A user points Codex, Claude Code, or another agent at this repo.
