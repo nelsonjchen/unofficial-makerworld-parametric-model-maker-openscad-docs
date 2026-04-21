@@ -12,6 +12,8 @@ This repo intentionally focuses on OpenSCAD. Fusion 360-specific guidance is out
 ## Why This Exists
 The practical problem is that PMM documentation is scattered across release posts, support threads, UI examples, and community reverse-engineering instead of living in one obvious reference.
 
+As of April 21, 2026, we could not find a single official Bambu wiki or help-center page that serves as a canonical reference for MakerWorld's Parametric Model Maker, even with searches like [this Google query](https://www.google.com/search?q=site%3Awiki.bambulab.com+%22Parametric+Model+Maker%22+OR+site%3Asupport.bambulab.com+%22Parametric+Model+Maker%22+OR+site%3Amakerworld.com%2Fhelp+%22Parametric+Model+Maker%22).
+
 That pain shows up repeatedly in public discussions:
 - [Any Documentation on Parametric Model Maker? post 1](https://forum.bambulab.com/t/any-documentation-on-parametric-model-maker/230605/1)
 - [Any Documentation on Parametric Model Maker? post 7](https://forum.bambulab.com/t/any-documentation-on-parametric-model-maker/230605/7)
