@@ -168,7 +168,19 @@ PMM can use MakerWorld-bundled OpenSCAD libraries. Do not remove BOSL2 just beca
 include <BOSL2/std.scad>;
 ```
 
-Current bundled-library evidence is stored in [sources/raw/makerworld/libraries-0.8.0.json](../sources/raw/makerworld/libraries-0.8.0.json). At the time captured by this repo, it includes BOSL2 and several other libraries.
+Current bundled-library evidence is stored in [sources/raw/makerworld/libraries-0.8.0.json](../sources/raw/makerworld/libraries-0.8.0.json), with a normalized agent index at [data/bundled-library-index.json](../data/bundled-library-index.json).
+
+Important limitation: the MakerWorld inventory lists source URLs, descriptions, and include methods. It does not pin an installed commit for every library. Treat upstream repo HEADs and latest tags as upstream information, not proof of PMM's installed runtime. The only bundled-library pinned revision currently captured in this repo is the BOSL2 commit Bambu documented in the v1.1.0 release.
+
+| Library | PMM Include Method | Source | Version Or Revision Clue |
+| --- | --- | --- | --- |
+| BOSL2 | `include <BOSL2/*.scad>;` | [BelfrySCAD/BOSL2](https://github.com/BelfrySCAD/BOSL2) | Inventory description says `v2.0`; Bambu v1.1.0 release documents BOSL2 commit [`99fcfc6867e739aa1cd8ffc49fe39276036681f1`](https://github.com/BelfrySCAD/BOSL2/commit/99fcfc6867e739aa1cd8ffc49fe39276036681f1). |
+| UB | `include <ub.scad>;` | [UBaer21/UB.scad](https://github.com/UBaer21/UB.scad) | Inventory description says `OpenSCAD v.21 and above`; this appears to be compatibility text, not a PMM-pinned UB revision. |
+| KeyV2 | `include <KeyV2/*.scad>;` | [rsheldiii/keyv2](https://github.com/rsheldiii/keyv2) | No PMM-pinned version or commit listed in the inventory. |
+| gridfinity-rebuilt-openscad | `include <gridfinity-rebuilt-openscad/*.scad>;` | [kennetek/gridfinity-rebuilt-openscad](https://github.com/kennetek/gridfinity-rebuilt-openscad) | No PMM-pinned version or commit listed in the inventory. |
+| threads-scad | `include <threads-scad/threads.scad>;` | [rcolyer/threads-scad](https://github.com/rcolyer/threads-scad/) | No PMM-pinned version or commit listed in the inventory. |
+| Getriebe | `include <Getriebe.scad>;` | [OpenSCAD-Getriebebibliothek](https://github.com/janssen86/OpenSCAD-Getriebebibliothek/tree/master) | No PMM-pinned version listed; inventory source URL points at upstream `master`. |
+| knurledFinishLib_v2 | `include <knurledFinishLib_v2.scad>;` | [Thingiverse thing 32122](https://www.thingiverse.com/thing:32122) | Library name and description indicate `v2`, but no PMM-pinned commit or release artifact is listed. |
 
 Guidance:
 - Distinguish bundled PMM libraries from local project includes.

@@ -88,6 +88,7 @@ Agents should rely on these public outputs:
 - `patterns/pmm-ready-template.scad`
 - `data/feature-index.json`
 - `data/compatibility-rules.json`
+- `data/bundled-library-index.json`
 - `data/changelog.json`
 - `data/pmm-web-discovery.json`
 - `data/source-index.json`

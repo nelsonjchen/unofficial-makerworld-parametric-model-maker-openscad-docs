@@ -1,0 +1,107 @@
+[
+  {
+    "name": "BOSL2",
+    "include_method": "include <BOSL2/*.scad>;",
+    "source_url": "https://github.com/BelfrySCAD/BOSL2",
+    "makerworld_description": "The Belfry OpenScad Library, v2.0. An OpenSCAD library of shapes, masks, and manipulators to make working with OpenSCAD easier. BETA.",
+    "version_hint": "Inventory description says `v2.0`; Bambu's v1.1.0 release separately documents BOSL2 commit `99fcfc6867e739aa1cd8ffc49fe39276036681f1`.",
+    "pinned_revision": "99fcfc6867e739aa1cd8ffc49fe39276036681f1",
+    "pinned_revision_url": "https://github.com/BelfrySCAD/BOSL2/commit/99fcfc6867e739aa1cd8ffc49fe39276036681f1",
+    "pinned_revision_source": "https://forum.bambulab.com/t/parametric-model-maker-v1-1-0-major-ui-refresh/203564",
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+    ]
+  },
+  {
+    "name": "UB",
+    "include_method": "include <ub.scad>;",
+    "source_url": "https://github.com/UBaer21/UB.scad",
+    "makerworld_description": "A full 3Dprinting workflow solution for OpenSCAD v.21 and above.",
+    "version_hint": "Inventory description says `OpenSCAD v.21 and above`; this appears to describe OpenSCAD compatibility, not a PMM-pinned UB revision.",
+    "pinned_revision": null,
+    "pinned_revision_url": null,
+    "pinned_revision_source": null,
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+    ]
+  },
+  {
+    "name": "KeyV2",
+    "include_method": "include <KeyV2/*.scad>;",
+    "source_url": "https://github.com/rsheldiii/keyv2",
+    "makerworld_description": "A Parametric Mechanical Keycap Library.",
+    "version_hint": "No library version or PMM-pinned commit is listed in the MakerWorld inventory.",
+    "pinned_revision": null,
+    "pinned_revision_url": null,
+    "pinned_revision_source": null,
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+    ]
+  },
+  {
+    "name": "gridfinity-rebuilt-openscad",
+    "include_method": "include <gridfinity-rebuilt-openscad/*.scad>;",
+    "source_url": "https://github.com/kennetek/gridfinity-rebuilt-openscad",
+    "makerworld_description": "A ground-up rebuild of the stock gridfinity bins in OpenSCAD.",
+    "version_hint": "No library version or PMM-pinned commit is listed in the MakerWorld inventory.",
+    "pinned_revision": null,
+    "pinned_revision_url": null,
+    "pinned_revision_source": null,
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+    ]
+  },
+  {
+    "name": "threads-scad",
+    "include_method": "include <threads-scad/threads.scad>;",
+    "source_url": "https://github.com/rcolyer/threads-scad/",
+    "makerworld_description": "OpenSCAD threading library.",
+    "version_hint": "No library version or PMM-pinned commit is listed in the MakerWorld inventory.",
+    "pinned_revision": null,
+    "pinned_revision_url": null,
+    "pinned_revision_source": null,
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+    ]
+  },
+  {
+    "name": "Getriebe",
+    "include_method": "include <Getriebe.scad>;",
+    "source_url": "https://github.com/janssen86/OpenSCAD-Getriebebibliothek/tree/master",
+    "makerworld_description": "OpenSCAD Library for Gear Racks, Involute and Worm Gears.",
+    "version_hint": "No library version or PMM-pinned commit is listed; the inventory source URL points at the upstream `master` branch.",
+    "pinned_revision": null,
+    "pinned_revision_url": null,
+    "pinned_revision_source": null,
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+    ]
+  },
+  {
+    "name": "knurledFinishLib_v2",
+    "include_method": "include <knurledFinishLib_v2.scad>;",
+    "source_url": "https://www.thingiverse.com/thing:32122",
+    "makerworld_description": "A new version of the knurled finishing library with some added refinements, information, new modules and features.",
+    "version_hint": "Library name and description indicate `v2`, but no PMM-pinned commit or release artifact is listed.",
+    "pinned_revision": null,
+    "pinned_revision_url": null,
+    "pinned_revision_source": null,
+    "source_class": "Official app endpoint",
+    "source_type": "makerworld_json",
+    "evidence_urls": [
+      "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json"
+    ]
+  }
+]

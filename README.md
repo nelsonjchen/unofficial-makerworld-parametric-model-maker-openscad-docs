@@ -73,6 +73,7 @@ python3 scripts/build_all.py
 - `patterns/`: PMM-oriented OpenSCAD examples and templates.
 - `checklists/`: migration, packaging, and validation checklists.
 - `data/`: machine-readable indexes for agent retrieval.
+- `data/bundled-library-index.json`: normalized bundled-library include methods, source links, and version clues.
 - `data/pmm-web-discovery.json`: current public-web discovery summary for PMM assets.
 - `sources/raw/discourse/`: raw public Discourse JSON snapshots from Bambu's forum.
 - `sources/raw/makerworld/`: raw PMM app endpoints and public web-asset captures.
