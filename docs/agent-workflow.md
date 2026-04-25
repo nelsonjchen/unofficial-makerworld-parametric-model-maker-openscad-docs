@@ -11,6 +11,7 @@ This is the operational path for turning a normal OpenSCAD model into a MakerWor
 
 ## 2. Compare Against PMM Constraints
 Check the script against:
+- `docs/pmm-openscad-api.md`
 - `docs/compatibility-rules.md`
 - `docs/gotchas.md`
 - `data/compatibility-rules.json`

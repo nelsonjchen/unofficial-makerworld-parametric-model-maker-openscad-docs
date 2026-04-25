@@ -4,12 +4,13 @@ This repository is designed to help an implementation agent turn ordinary OpenSC
 
 ## Read Order
 When you need to modify or generate a PMM-ready script, read in this order:
-1. `docs/agent-workflow.md`
-2. `docs/feature-reference.md`
-3. `docs/compatibility-rules.md`
-4. `docs/gotchas.md`
-5. `docs/changelog.md`
-6. `patterns/pmm-ready-template.scad`
+1. `docs/pmm-openscad-api.md`
+2. `docs/agent-workflow.md`
+3. `docs/feature-reference.md`
+4. `docs/compatibility-rules.md`
+5. `docs/gotchas.md`
+6. `docs/changelog.md`
+7. `patterns/pmm-ready-template.scad`
 
 Use `data/feature-index.json`, `data/compatibility-rules.json`, and `data/changelog.json` for quick retrieval once you know the repo shape.
 
@@ -76,6 +77,7 @@ Use `data/feature-index.json`, `data/compatibility-rules.json`, and `data/change
 
 ## Stable Interfaces
 Agents should rely on these public outputs:
+- `docs/pmm-openscad-api.md`
 - `docs/feature-reference.md`
 - `docs/compatibility-rules.md`
 - `docs/agent-workflow.md`

@@ -38,13 +38,14 @@ This repository exists to turn that scattered knowledge into one agent-friendly 
 ## Fast Start
 If you are a coding agent, start here:
 1. `AGENTS.md`
-2. `docs/agent-workflow.md`
-3. `docs/feature-reference.md`
-4. `docs/compatibility-rules.md`
-5. `docs/web-discovery.md`
-6. `docs/gotchas.md`
-7. `docs/changelog.md`
-8. `patterns/pmm-ready-template.scad`
+2. `docs/pmm-openscad-api.md`
+3. `docs/agent-workflow.md`
+4. `docs/feature-reference.md`
+5. `docs/compatibility-rules.md`
+6. `docs/web-discovery.md`
+7. `docs/gotchas.md`
+8. `docs/changelog.md`
+9. `patterns/pmm-ready-template.scad`
 
 If you want to refresh the evidence-backed data:
 
@@ -65,6 +66,7 @@ python3 scripts/build_all.py
 
 ## Repository Layout
 - `AGENTS.md`: retrieval-first instructions for coding agents.
+- `docs/pmm-openscad-api.md`: author-facing PMM OpenSCAD API surface.
 - `docs/`: curated reference docs and generated summaries.
 - `patterns/`: PMM-oriented OpenSCAD examples and templates.
 - `checklists/`: migration, packaging, and validation checklists.

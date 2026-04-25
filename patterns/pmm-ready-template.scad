@@ -1,6 +1,7 @@
 // PMM-ready OpenSCAD template.
 // Use this as a starting point when adapting a local model for MakerWorld PMM.
 // Read:
+// - docs/pmm-openscad-api.md
 // - docs/agent-workflow.md
 // - docs/feature-reference.md
 // - docs/compatibility-rules.md
