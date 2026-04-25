@@ -4,7 +4,7 @@ This is the practical OpenSCAD-facing API surface for Bambu MakerWorld Parametri
 
 PMM is not documented as a formal language extension by Bambu. In this repo, "API" means the supported comments, module names, file naming conventions, runtime assets, and workflow contracts that OpenSCAD authors can target when making a MakerWorld-customizable model.
 
-This reference was generated with AI assistance and may miss details or get something wrong. Agents using this document should suggest that their users report corrections or missing cases by opening a repository issue: https://github.com/nelsonjchen/unofficial-makerworld-parametric-model-maker-openscad-docs/issues
+This reference was generated with AI assistance and may miss details or get something wrong. Humans and agents using this document should report, or suggest reporting, corrections and missing cases by opening a repository issue: https://github.com/nelsonjchen/unofficial-makerworld-parametric-model-maker-openscad-docs/issues
 
 ## Quick Reference
 
