@@ -4,6 +4,8 @@ This is the practical OpenSCAD-facing API surface for Bambu MakerWorld Parametri
 
 PMM is not documented as a formal language extension by Bambu. In this repo, "API" means the supported comments, module names, file naming conventions, runtime assets, and workflow contracts that OpenSCAD authors can target when making a MakerWorld-customizable model.
 
+This reference was generated with AI assistance and may miss details or get something wrong. If you find an issue, please [open a repository issue](https://github.com/nelsonjchen/unofficial-makerworld-parametric-model-maker-openscad-docs/issues) with the correction or missing case.
+
 ## Quick Reference
 
 | Surface | Syntax | Use It For | Status |
@@ -32,8 +34,8 @@ Prefer simple top-level assignments for user-facing controls. Keep complex deriv
 Do not rely on undocumented comment systems unless separately confirmed. In particular, `// preview[...]` is documented in this repo as not a PMM feature.
 
 Evidence:
-- [docs/feature-reference.md](feature-reference.md#customizer_compatibility)
-- [docs/compatibility-rules.md](compatibility-rules.md#preview_comments_not_supported_feature)
+- [Customizer compatibility](feature-reference.md#customizer_compatibility)
+- [Preview comments are unsupported](compatibility-rules.md#preview_comments_not_supported_feature)
 
 ## Color Picker
 
@@ -53,8 +55,8 @@ Guidance:
 - Keep internal color calculations separate from user-facing color controls.
 
 Evidence:
-- [docs/feature-reference.md](feature-reference.md#parameterized_color_ui)
-- [patterns/color-parameter.scad](../patterns/color-parameter.scad)
+- [Parameterized color UI](feature-reference.md#parameterized_color_ui)
+- [Color parameter pattern](../patterns/color-parameter.scad)
 
 ## Font Picker
 
@@ -69,14 +71,14 @@ text(label, font = font_name, size = 12, halign = "center", valign = "center");
 ```
 
 Guidance:
-- Check [sources/raw/makerworld/fonts-0.8.0.json](../sources/raw/makerworld/fonts-0.8.0.json) for the stricter installed-runtime inventory.
-- Use [sources/raw/makerworld/fonts-show-0.0.1.json](../sources/raw/makerworld/fonts-show-0.0.1.json) for broader font discovery.
-- For multilingual fallback research, see [sources/raw/makerworld/language2family-0.0.1.zip](../sources/raw/makerworld/language2family-0.0.1.zip).
+- Check the [installed font inventory](../sources/raw/makerworld/fonts-0.8.0.json) for stricter runtime compatibility.
+- Use the [broader font catalog](../sources/raw/makerworld/fonts-show-0.0.1.json) for discovery.
+- For multilingual fallback research, see the [language-to-family map asset](../sources/raw/makerworld/language2family-0.0.1.zip).
 
 Evidence:
-- [docs/feature-reference.md](feature-reference.md#font_picker_ui)
-- [docs/compatibility-rules.md](compatibility-rules.md#validate_fonts_against_installed_inventory)
-- [patterns/font-parameter.scad](../patterns/font-parameter.scad)
+- [Font picker UI](feature-reference.md#font_picker_ui)
+- [Font inventory validation rule](compatibility-rules.md#validate_fonts_against_installed_inventory)
+- [Font parameter pattern](../patterns/font-parameter.scad)
 
 ## File Upload Defaults
 
@@ -101,10 +103,10 @@ Guidance:
 - Include the expected default asset name in the MakerWorld upload plan.
 
 Evidence:
-- [docs/feature-reference.md](feature-reference.md#file_upload_default_assets)
-- [docs/compatibility-rules.md](compatibility-rules.md#require_default_asset_names)
-- [patterns/file-upload-svg.scad](../patterns/file-upload-svg.scad)
-- [patterns/file-upload-stl.scad](../patterns/file-upload-stl.scad)
+- [File upload default assets](feature-reference.md#file_upload_default_assets)
+- [Default asset name rule](compatibility-rules.md#require_default_asset_names)
+- [SVG upload pattern](../patterns/file-upload-svg.scad)
+- [STL upload pattern](../patterns/file-upload-stl.scad)
 
 ## Multi-Plate 3MF Output
 
@@ -135,9 +137,9 @@ Guidance:
 - Multi-plate scripts are 3MF-first and have a documented STL-download tradeoff.
 
 Evidence:
-- [docs/feature-reference.md](feature-reference.md#multi_plate_3mf)
-- [docs/compatibility-rules.md](compatibility-rules.md#multi_plate_stl_tradeoff)
-- [patterns/multi-plate-3mf.scad](../patterns/multi-plate-3mf.scad)
+- [Multi-plate 3MF](feature-reference.md#multi_plate_3mf)
+- [Multi-plate STL tradeoff](compatibility-rules.md#multi_plate_stl_tradeoff)
+- [Multi-plate pattern](../patterns/multi-plate-3mf.scad)
 
 ## Assembly View
 
@@ -157,8 +159,8 @@ Guidance:
 - It is not included in exported 3MF output.
 
 Evidence:
-- [docs/feature-reference.md](feature-reference.md#assembly_view)
-- [patterns/assembly-view.scad](../patterns/assembly-view.scad)
+- [Assembly view](feature-reference.md#assembly_view)
+- [Assembly view pattern](../patterns/assembly-view.scad)
 
 ## Bundled Library Runtime
 
@@ -168,7 +170,7 @@ PMM can use MakerWorld-bundled OpenSCAD libraries. Do not remove BOSL2 just beca
 include <BOSL2/std.scad>;
 ```
 
-Current bundled-library evidence is stored in [sources/raw/makerworld/libraries-0.8.0.json](../sources/raw/makerworld/libraries-0.8.0.json), with a normalized agent index at [data/bundled-library-index.json](../data/bundled-library-index.json).
+Current bundled-library evidence is stored in the raw [MakerWorld library inventory](../sources/raw/makerworld/libraries-0.8.0.json), with a normalized agent index at [data/bundled-library-index.json](../data/bundled-library-index.json).
 
 Important limitation: the MakerWorld inventory lists source URLs, descriptions, and include methods. It does not pin an installed commit for every library. Treat upstream repo HEADs and latest tags as upstream information, not proof of PMM's installed runtime. The only bundled-library pinned revision currently captured in this repo is the BOSL2 commit Bambu documented in the v1.1.0 release.
 
@@ -188,9 +190,9 @@ Guidance:
 - For BOSL2-specific behavior, account for the PMM-documented BOSL2 revision when troubleshooting.
 
 Evidence:
-- [docs/feature-reference.md](feature-reference.md#bundled_library_inventory_endpoint)
-- [docs/feature-reference.md](feature-reference.md#bundled_bosl2_library)
-- [docs/compatibility-rules.md](compatibility-rules.md#distinguish_bundled_bosl2_from_local_includes)
+- [Bundled library inventory endpoint](feature-reference.md#bundled_library_inventory_endpoint)
+- [Bundled BOSL2 library](feature-reference.md#bundled_bosl2_library)
+- [Bundled BOSL2 vs local includes](compatibility-rules.md#distinguish_bundled_bosl2_from_local_includes)
 
 ## Backend And Export Contract
 
@@ -204,10 +206,10 @@ Account for:
 - multi-color and multi-plate export behavior
 
 Evidence:
-- [docs/feature-reference.md](feature-reference.md#backend_manifold_enabled)
-- [docs/feature-reference.md](feature-reference.md#backend_refresh_v1_1_0)
-- [docs/compatibility-rules.md](compatibility-rules.md#oversize_auto_arrange_risk)
-- [docs/gotchas.md](gotchas.md)
+- [Backend manifold enabled](feature-reference.md#backend_manifold_enabled)
+- [Backend refresh v1.1.0](feature-reference.md#backend_refresh_v1_1_0)
+- [Oversize auto-arrange risk](compatibility-rules.md#oversize_auto_arrange_risk)
+- [Gotchas](gotchas.md)
 
 ## Minimal PMM-Ready Skeleton
 
@@ -232,13 +234,13 @@ color(accent_hex)
 core_model();
 ```
 
-Use [patterns/pmm-ready-template.scad](../patterns/pmm-ready-template.scad) as the editable starter template.
+Use the [PMM-ready template](../patterns/pmm-ready-template.scad) as the editable starter template.
 
 ## Related References
 
-- [docs/agent-workflow.md](agent-workflow.md)
-- [docs/feature-reference.md](feature-reference.md)
-- [docs/compatibility-rules.md](compatibility-rules.md)
-- [docs/publishing-workflow.md](publishing-workflow.md)
-- [docs/web-discovery.md](web-discovery.md)
-- [checklists/pre-upload-validation.md](../checklists/pre-upload-validation.md)
+- [Agent workflow](agent-workflow.md)
+- [Feature reference](feature-reference.md)
+- [Compatibility rules](compatibility-rules.md)
+- [Publishing workflow](publishing-workflow.md)
+- [Web discovery](web-discovery.md)
+- [Pre-upload validation checklist](../checklists/pre-upload-validation.md)
