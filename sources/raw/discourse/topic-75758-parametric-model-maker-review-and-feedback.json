@@ -570,7 +570,7 @@
         "flair_url": null,
         "hidden": false,
         "id": 198220,
-        "incoming_link_count": 5606,
+        "incoming_link_count": 5607,
         "link_counts": [
           {
             "clicks": 230,
@@ -2049,7 +2049,7 @@
       707
     ],
     [
-      2,
+      3,
       706
     ],
     [
@@ -2109,7 +2109,7 @@
       679
     ],
     [
-      53,
+      54,
       678
     ],
     [
@@ -2161,7 +2161,7 @@
       610
     ],
     [
-      98,
+      99,
       609
     ],
     [
@@ -2199,7 +2199,7 @@
     "open_mouth",
     "clap"
   ],
-  "views": 7823,
+  "views": 7824,
   "visible": true,
   "vote_count": 0,
   "word_count": 10580

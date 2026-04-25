@@ -822,142 +822,76 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2025-09-29T13:22:51.421Z",
+      "bumped_at": "2025-05-06T14:56:14.172Z",
       "category_id": 144,
       "closed": false,
-      "created_at": "2025-09-22T18:51:22.624Z",
-      "fancy_title": "Exclusive models getting downranked",
+      "created_at": "2025-04-24T05:12:15.638Z",
+      "fancy_title": "Bigger vouchers",
       "featured_link": null,
       "has_accepted_answer": false,
-      "highest_post_number": 14,
-      "id": 197200,
-      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/3/6/36ff87f3149ba6cc1528b1f83b082d0b971f2763_2_1024x295.png",
-      "last_posted_at": "2025-09-29T10:28:27.951Z",
-      "like_count": 4,
-      "liked": null,
-      "op_like_count": 1,
-      "pinned": false,
-      "posters": [
-        {
-          "description": "Original Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/best_codes/{size}/111251_2.png",
-            "id": 36229,
-            "name": "Best Codes",
-            "trust_level": 2,
-            "username": "Best_codes"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/fmor/{size}/92026_2.png",
-            "id": 90324,
-            "name": "Fmor",
-            "trust_level": 2,
-            "username": "fmor"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/r3d-five/{size}/107734_2.png",
-            "id": 11418,
-            "name": "Jay Cooley",
-            "trust_level": 2,
-            "username": "R3d-Five"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/florinv/{size}/124005_2.png",
-            "id": 30119,
-            "name": "Florin V",
-            "trust_level": 2,
-            "username": "FlorinV"
-          }
-        },
-        {
-          "description": "Most Recent Poster",
-          "extras": "latest",
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/hank/{size}/119340_2.png",
-            "id": 15005,
-            "name": "Hank",
-            "trust_level": 2,
-            "username": "Hank"
-          }
-        }
-      ],
-      "posts_count": 14,
-      "reply_count": 4,
-      "slug": "exclusive-models-getting-downranked",
-      "tags": [],
-      "tags_descriptions": {},
-      "title": "Exclusive models getting downranked",
-      "unpinned": null,
-      "unseen": false,
-      "views": 526,
-      "visible": true
-    },
-    {
-      "archetype": "regular",
-      "archived": false,
-      "bookmarked": null,
-      "bumped": true,
-      "bumped_at": "2026-03-21T02:19:35.690Z",
-      "category_id": 144,
-      "closed": false,
-      "created_at": "2026-03-21T01:40:22.222Z",
-      "fancy_title": "Interacting with your own models",
-      "featured_link": null,
-      "has_accepted_answer": false,
-      "highest_post_number": 4,
-      "id": 243189,
+      "highest_post_number": 5,
+      "id": 163959,
       "image_url": null,
-      "last_posted_at": "2026-03-21T02:19:35.690Z",
-      "like_count": 2,
+      "last_posted_at": "2025-05-06T14:56:14.172Z",
+      "like_count": 5,
       "liked": null,
-      "op_like_count": 0,
+      "op_like_count": 2,
       "pinned": false,
       "posters": [
         {
           "description": "Original Poster",
           "extras": null,
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/georgetds/{size}/74642_2.png",
-            "id": 71745,
-            "name": "",
+            "avatar_template": "/user_avatar/forum.bambulab.com/nickr1983/{size}/26282_2.png",
+            "id": 27371,
+            "name": "Nick R1983",
+            "trust_level": 1,
+            "username": "NickR1983"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/johnny_bit/{size}/118276_2.png",
+            "id": 54598,
+            "name": "Johnny_Bit",
             "trust_level": 2,
-            "username": "GeorgeTDS"
+            "username": "Johnny_Bit"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/zammer3d/{size}/137578_2.png",
+            "id": 31331,
+            "name": "Zammer 3D",
+            "trust_level": 2,
+            "username": "Zammer3D"
           }
         },
         {
           "description": "Most Recent Poster",
           "extras": "latest",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/malctheoracle/{size}/137308_2.png",
-            "id": 37295,
-            "name": "Every tool has its hidden purpose.",
+            "avatar_template": "/user_avatar/forum.bambulab.com/studio_727/{size}/105539_2.png",
+            "id": 18146,
+            "name": "Studio 727",
             "trust_level": 2,
-            "username": "MalcTheOracle"
+            "username": "Studio_727"
           }
         }
       ],
-      "posts_count": 4,
+      "posts_count": 5,
       "reply_count": 2,
-      "slug": "interacting-with-your-own-models",
+      "slug": "bigger-vouchers",
       "tags": [],
       "tags_descriptions": {},
-      "title": "Interacting with your own models",
+      "title": "Bigger vouchers",
       "unpinned": null,
       "unseen": false,
-      "views": 89,
+      "views": 255,
       "visible": true
     },
     {
@@ -965,76 +899,43 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2025-06-22T14:59:22.688Z",
+      "bumped_at": "2025-07-29T15:54:28.248Z",
       "category_id": 144,
       "closed": false,
-      "created_at": "2025-06-21T19:41:05.059Z",
-      "fancy_title": "How do you determine what threads something has?",
+      "created_at": "2025-07-29T15:54:28.198Z",
+      "fancy_title": "Ver\u00f6ffentlichungen unter Community",
       "featured_link": null,
-      "has_accepted_answer": true,
-      "highest_post_number": 6,
-      "id": 177542,
+      "has_accepted_answer": false,
+      "highest_post_number": 1,
+      "id": 186045,
       "image_url": null,
-      "last_posted_at": "2025-06-22T14:59:22.688Z",
-      "like_count": 4,
+      "last_posted_at": "2025-07-29T15:54:28.248Z",
+      "like_count": 0,
       "liked": null,
       "op_like_count": 0,
       "pinned": false,
       "posters": [
         {
           "description": "Original Poster, Most Recent Poster",
-          "extras": "latest",
+          "extras": "latest single",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/daekar/{size}/107044_2.png",
-            "id": 103465,
-            "name": "Daekar",
+            "avatar_template": "/user_avatar/forum.bambulab.com/joerg_b/{size}/115664_2.png",
+            "id": 110259,
+            "name": "Joerg B",
             "trust_level": 1,
-            "username": "Daekar"
-          }
-        },
-        {
-          "description": "Frequent Poster, Accepted Answer",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/larrycnaz/{size}/150272_2.png",
-            "id": 18469,
-            "name": "LarryCnAz",
-            "trust_level": 2,
-            "username": "LarryCnAZ"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/motogp11991/{size}/99703_2.png",
-            "id": 97380,
-            "name": "Moto GP1199",
-            "trust_level": 2,
-            "username": "MotoGP11991"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/hottr/{size}/105887_2.png",
-            "id": 38841,
-            "name": "Hottr",
-            "trust_level": 2,
-            "username": "hottr"
+            "username": "Joerg_B"
           }
         }
       ],
-      "posts_count": 6,
-      "reply_count": 3,
-      "slug": "how-do-you-determine-what-threads-something-has",
+      "posts_count": 1,
+      "reply_count": 0,
+      "slug": "veroffentlichungen-unter-community",
       "tags": [],
       "tags_descriptions": {},
-      "title": "How do you determine what threads something has?",
+      "title": "Ver\u00f6ffentlichungen unter Community",
       "unpinned": null,
       "unseen": false,
-      "views": 237,
+      "views": 94,
       "visible": true
     },
     {
@@ -1042,24 +943,160 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2025-06-12T12:29:41.219Z",
+      "bumped_at": "2025-08-01T13:40:45.219Z",
       "category_id": 144,
       "closed": false,
-      "created_at": "2025-05-30T08:54:54.173Z",
-      "fancy_title": "Makerworld dumb policies are seriously pushing me out",
+      "created_at": "2025-07-31T09:18:11.246Z",
+      "fancy_title": "On-Demand Models Feature",
       "featured_link": null,
       "has_accepted_answer": false,
-      "highest_post_number": 35,
-      "id": 172289,
-      "image_url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/c/d/cd61466e0ef916c0e8f4f73c533174416c0211e4_2_1023x263.jpeg",
-      "last_posted_at": "2025-06-12T03:09:36.118Z",
-      "like_count": 70,
+      "highest_post_number": 5,
+      "id": 186390,
+      "image_url": null,
+      "last_posted_at": "2025-08-01T13:40:45.219Z",
+      "like_count": 6,
       "liked": null,
-      "op_like_count": 8,
+      "op_like_count": 4,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster, Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/mosselini1/{size}/96672_2.png",
+            "id": 94537,
+            "name": "Mosselini1",
+            "trust_level": 2,
+            "username": "mosselini1"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/foxwood/{size}/134930_2.png",
+            "id": 34065,
+            "name": "Foxwood",
+            "trust_level": 2,
+            "username": "Foxwood"
+          }
+        }
+      ],
+      "posts_count": 5,
+      "reply_count": 3,
+      "slug": "on-demand-models-feature",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "On-Demand Models Feature",
+      "unpinned": null,
+      "unseen": false,
+      "views": 231,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2025-09-08T04:24:20.149Z",
+      "category_id": 103,
+      "closed": false,
+      "created_at": "2025-09-07T13:45:21.351Z",
+      "fancy_title": "Corner has not smoothed when using PLA",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 2,
+      "id": 194235,
+      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/b/3/b3c4dac0ad8c0c3657379ce9fe960bc2628429f9_2_576x1024.jpeg",
+      "last_posted_at": "2025-09-08T04:24:20.149Z",
+      "like_count": 0,
+      "liked": null,
+      "op_like_count": 0,
       "pinned": false,
       "posters": [
         {
           "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/ttz/{size}/13500_2.png",
+            "id": 88889,
+            "name": "",
+            "trust_level": 1,
+            "username": "TTz"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/theprotagonist/{size}/121272_2.png",
+            "id": 115494,
+            "name": "Shivam Chaurasia",
+            "trust_level": 1,
+            "username": "TheProtagonist"
+          }
+        }
+      ],
+      "posts_count": 2,
+      "reply_count": 0,
+      "slug": "corner-has-not-smoothed-when-using-pla",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Corner has not smoothed when using PLA",
+      "unpinned": null,
+      "unseen": false,
+      "views": 76,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2026-04-14T14:45:09.157Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-06-30T06:15:42.753Z",
+      "fancy_title": "Parametric Model Maker V1.0.0 - Fusion 360 Support!",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 194,
+      "id": 179329,
+      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/f/d/fd1e83f4b5fd19f3f3988da8abfe1711bf633a7a_2_1024x522.jpeg",
+      "last_posted_at": "2026-04-14T14:45:09.157Z",
+      "like_count": 219,
+      "liked": null,
+      "op_like_count": 62,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
+            "flair_group_id": 41,
+            "flair_name": "Bambu_Lab_Employee",
+            "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
+            "id": 24049,
+            "name": "",
+            "primary_group_name": "Bambu_Lab_Employee",
+            "trust_level": 3,
+            "username": "PineappleBun_BBL"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/lee-2/{size}/13500_2.png",
+            "id": 33115,
+            "name": "Lee",
+            "trust_level": 2,
+            "username": "Lee-2"
+          }
+        },
+        {
+          "description": "Frequent Poster",
           "extras": null,
           "user": {
             "avatar_template": "/user_avatar/forum.bambulab.com/shaq981/{size}/97892_2.png",
@@ -1073,136 +1110,35 @@
           "description": "Frequent Poster",
           "extras": null,
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/josh-3d/{size}/118689_2.png",
-            "id": 28704,
-            "name": "Josh 3D",
-            "trust_level": 2,
-            "username": "Josh-3D"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
-            "id": 29047,
-            "name": "Benjamin Kott",
-            "trust_level": 2,
-            "username": "benjaminkott"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/xsynatic/{size}/122571_2.png",
-            "flair_group_id": 44,
-            "flair_name": "Bambu-Lab-AMS-Owner",
-            "flair_url": "https://cdn-forum.bambulab.com/original/1X/ac1bb59cbae2215f0f96249a2568083a6209e48a.png",
-            "id": 16758,
+            "avatar_template": "/user_avatar/forum.bambulab.com/thebreadman/{size}/117976_2.png",
+            "id": 33855,
             "name": "",
             "trust_level": 2,
-            "username": "xsynatic"
+            "username": "TheBreadman"
           }
         },
         {
           "description": "Most Recent Poster",
           "extras": "latest",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/sprior/{size}/4_2.png",
-            "id": 1178,
-            "name": "Steve Prior",
-            "trust_level": 2,
-            "username": "sprior"
+            "avatar_template": "/user_avatar/forum.bambulab.com/cool_person/{size}/153386_2.png",
+            "id": 153755,
+            "name": "Cool Person",
+            "trust_level": 0,
+            "username": "cool_person"
           }
         }
       ],
-      "posts_count": 35,
-      "reply_count": 25,
-      "slug": "makerworld-dumb-policies-are-seriously-pushing-me-out",
+      "posts_count": 187,
+      "reply_count": 95,
+      "slug": "parametric-model-maker-v1-0-0-fusion-360-support",
       "tags": [],
       "tags_descriptions": {},
-      "title": "Makerworld dumb policies are seriously pushing me out",
+      "title": "Parametric Model Maker V1.0.0 - Fusion 360 Support!",
       "unpinned": null,
       "unseen": false,
-      "views": 961,
-      "visible": true
-    },
-    {
-      "archetype": "regular",
-      "archived": false,
-      "bookmarked": null,
-      "bumped": true,
-      "bumped_at": "2025-06-18T11:07:43.600Z",
-      "category_id": 166,
-      "closed": false,
-      "created_at": "2025-06-03T04:26:43.511Z",
-      "fancy_title": "Is there any option to turn off the light after printing?",
-      "featured_link": null,
-      "has_accepted_answer": true,
-      "highest_post_number": 4,
-      "id": 172435,
-      "image_url": null,
-      "last_posted_at": "2025-06-18T11:07:43.600Z",
-      "like_count": 6,
-      "liked": null,
-      "op_like_count": 0,
-      "pinned": false,
-      "posters": [
-        {
-          "description": "Original Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/3dp_lover/{size}/13500_2.png",
-            "id": 90983,
-            "name": "3DP LOVER",
-            "trust_level": 1,
-            "username": "3dp_lover"
-          }
-        },
-        {
-          "description": "Frequent Poster, Accepted Answer",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/motogp11991/{size}/99703_2.png",
-            "id": 97380,
-            "name": "Moto GP1199",
-            "trust_level": 2,
-            "username": "MotoGP11991"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/3d_prints/{size}/29691_2.png",
-            "id": 30449,
-            "name": "3 D Prints",
-            "trust_level": 2,
-            "username": "3D_Prints"
-          }
-        },
-        {
-          "description": "Most Recent Poster",
-          "extras": "latest",
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/itsjef/{size}/101858_2.png",
-            "id": 103591,
-            "name": "Itsjef",
-            "trust_level": 1,
-            "username": "Itsjef"
-          }
-        }
-      ],
-      "posts_count": 4,
-      "reply_count": 0,
-      "slug": "is-there-any-option-to-turn-off-the-light-after-printing",
-      "tags": [],
-      "tags_descriptions": {},
-      "title": "Is there any option to turn off the light after printing?",
-      "unpinned": null,
-      "unseen": false,
-      "views": 593,
+      "views": 30002,
+      "visibility_reason_id": 4,
       "visible": true
     }
   ],

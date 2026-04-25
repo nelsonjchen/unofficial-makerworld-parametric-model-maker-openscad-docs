@@ -591,18 +591,18 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2026-01-04T21:45:08.787Z",
+      "bumped_at": "2026-04-05T22:41:55.695Z",
       "category_id": 163,
       "closed": false,
-      "created_at": "2026-01-04T16:54:45.534Z",
-      "fancy_title": "Configure .3mf file options when using .scad generator",
+      "created_at": "2025-12-30T13:34:42.764Z",
+      "fancy_title": "Image to 3D Model is really hit or miss",
       "featured_link": null,
       "has_accepted_answer": false,
-      "highest_post_number": 2,
-      "id": 221944,
-      "image_url": null,
-      "last_posted_at": "2026-01-04T21:45:08.787Z",
-      "like_count": 5,
+      "highest_post_number": 7,
+      "id": 220515,
+      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/f/4/f400484d75846823e0f2ecdb2238f5f677f95af1_2_1024x576.jpeg",
+      "last_posted_at": "2026-04-05T22:41:55.695Z",
+      "like_count": 4,
       "liked": null,
       "op_like_count": 1,
       "pinned": false,
@@ -611,34 +611,67 @@
           "description": "Original Poster",
           "extras": null,
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/k3ldar/{size}/13500_2.png",
-            "id": 69934,
-            "name": "K3ldar",
+            "avatar_template": "/user_avatar/forum.bambulab.com/user_3681166896/{size}/61382_2.png",
+            "id": 59817,
+            "name": "User 3681166896",
             "trust_level": 1,
-            "username": "k3ldar"
+            "username": "user_3681166896"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/bratling/{size}/112516_2.png",
+            "id": 107158,
+            "name": "Bratling",
+            "trust_level": 2,
+            "username": "Bratling"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/dr34m3r/{size}/101858_2.png",
+            "id": 143102,
+            "name": "Dreamer",
+            "trust_level": 1,
+            "username": "DR34M3R"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/jeff_davis/{size}/101858_2.png",
+            "id": 151832,
+            "name": "Jeff Davis",
+            "trust_level": 0,
+            "username": "Jeff_Davis"
           }
         },
         {
           "description": "Most Recent Poster",
           "extras": "latest",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/flummer/{size}/98153_2.png",
-            "id": 95879,
-            "name": "flummer",
-            "trust_level": 2,
-            "username": "flummer"
+            "avatar_template": "/user_avatar/forum.bambulab.com/mando_mike/{size}/152204_2.png",
+            "id": 152294,
+            "name": "Mando Mike",
+            "trust_level": 1,
+            "username": "Mando_Mike"
           }
         }
       ],
-      "posts_count": 2,
-      "reply_count": 0,
-      "slug": "configure-3mf-file-options-when-using-scad-generator",
+      "posts_count": 6,
+      "reply_count": 1,
+      "slug": "image-to-3d-model-is-really-hit-or-miss",
       "tags": [],
       "tags_descriptions": {},
-      "title": "Configure .3mf file options when using .scad generator",
+      "title": "Image to 3D Model is really hit or miss",
       "unpinned": null,
       "unseen": false,
-      "views": 140,
+      "views": 515,
       "visible": true
     },
     {
@@ -646,36 +679,113 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2025-06-27T09:27:34.101Z",
+      "bumped_at": "2025-09-01T17:17:18.678Z",
       "category_id": 163,
       "closed": false,
-      "created_at": "2025-06-16T21:17:54.951Z",
-      "fancy_title": "Parametric Model Maker: Model is rotated after generation",
+      "created_at": "2025-09-01T17:17:18.620Z",
+      "fancy_title": "Parametric Model Maker - how can my .SCAD file know?",
       "featured_link": null,
-      "has_accepted_answer": true,
-      "highest_post_number": 2,
-      "id": 172901,
-      "image_url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/9/5/95f0c667b9cf379f5439d422959aaf348a3d60d0_2_1024x483.png",
-      "last_posted_at": "2025-06-27T09:27:34.101Z",
-      "like_count": 1,
+      "has_accepted_answer": false,
+      "highest_post_number": 1,
+      "id": 193023,
+      "image_url": null,
+      "last_posted_at": "2025-09-01T17:17:18.678Z",
+      "like_count": 2,
+      "liked": null,
+      "op_like_count": 2,
+      "pinned": false,
+      "posters": [
+        {
+          "description": "Original Poster, Most Recent Poster",
+          "extras": "latest single",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/pleasant_one/{size}/13500_2.png",
+            "id": 66040,
+            "name": "Pleasant One",
+            "trust_level": 1,
+            "username": "Pleasant_One"
+          }
+        }
+      ],
+      "posts_count": 1,
+      "reply_count": 0,
+      "slug": "parametric-model-maker-how-can-my-scad-file-know",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Parametric Model Maker - how can my .SCAD file know?",
+      "unpinned": null,
+      "unseen": false,
+      "views": 108,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2025-09-07T11:49:24.109Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-09-07T11:49:24.053Z",
+      "fancy_title": "Is there a way to group by colour in keychain maker?",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 1,
+      "id": 194209,
+      "image_url": null,
+      "last_posted_at": "2025-09-07T11:49:24.109Z",
+      "like_count": 0,
       "liked": null,
       "op_like_count": 0,
       "pinned": false,
       "posters": [
         {
+          "description": "Original Poster, Most Recent Poster",
+          "extras": "latest single",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/ricflairandy/{size}/108270_2.png",
+            "id": 105184,
+            "name": "Ricflairandy",
+            "trust_level": 1,
+            "username": "ricflairandy"
+          }
+        }
+      ],
+      "posts_count": 1,
+      "reply_count": 0,
+      "slug": "is-there-a-way-to-group-by-colour-in-keychain-maker",
+      "tags": [],
+      "tags_descriptions": {},
+      "title": "Is there a way to group by colour in keychain maker?",
+      "unpinned": null,
+      "unseen": false,
+      "views": 95,
+      "visible": true
+    },
+    {
+      "archetype": "regular",
+      "archived": false,
+      "bookmarked": null,
+      "bumped": true,
+      "bumped_at": "2026-01-25T18:51:17.537Z",
+      "category_id": 163,
+      "closed": false,
+      "created_at": "2025-10-25T15:06:26.922Z",
+      "fancy_title": "Parametric Model Maker V1.1.0 - Major UI Refresh",
+      "featured_link": null,
+      "has_accepted_answer": false,
+      "highest_post_number": 8,
+      "id": 203564,
+      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/2/e/2e5bde68ed109c6963509c6832488485b96ff4f9_2_1024x540.jpeg",
+      "last_posted_at": "2026-01-25T18:51:17.537Z",
+      "like_count": 10,
+      "liked": null,
+      "op_like_count": 8,
+      "pinned": false,
+      "posters": [
+        {
           "description": "Original Poster",
           "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
-            "id": 29047,
-            "name": "Benjamin Kott",
-            "trust_level": 2,
-            "username": "benjaminkott"
-          }
-        },
-        {
-          "description": "Most Recent Poster, Accepted Answer",
-          "extras": "latest",
           "user": {
             "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
             "flair_group_id": 41,
@@ -687,76 +797,62 @@
             "trust_level": 3,
             "username": "PineappleBun_BBL"
           }
-        }
-      ],
-      "posts_count": 2,
-      "reply_count": 0,
-      "slug": "parametric-model-maker-model-is-rotated-after-generation",
-      "tags": [
-        "bug-report"
-      ],
-      "tags_descriptions": {},
-      "title": "Parametric Model Maker: Model is rotated after generation",
-      "unpinned": null,
-      "unseen": false,
-      "views": 151,
-      "visible": true
-    },
-    {
-      "archetype": "regular",
-      "archived": false,
-      "bookmarked": null,
-      "bumped": true,
-      "bumped_at": "2025-05-22T19:17:36.793Z",
-      "category_id": 163,
-      "closed": false,
-      "created_at": "2025-05-21T02:13:49.623Z",
-      "fancy_title": "Parametric Model Maker - Including Threads Library Runs Demo",
-      "featured_link": null,
-      "has_accepted_answer": true,
-      "highest_post_number": 3,
-      "id": 170703,
-      "image_url": null,
-      "last_posted_at": "2025-05-22T19:17:36.793Z",
-      "like_count": 2,
-      "liked": null,
-      "op_like_count": 0,
-      "pinned": false,
-      "posters": [
+        },
         {
-          "description": "Original Poster, Most Recent Poster",
-          "extras": "latest",
+          "description": "Frequent Poster",
+          "extras": null,
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/jon123/{size}/83242_2.png",
-            "id": 81620,
-            "name": "Jon",
-            "trust_level": 2,
-            "username": "Jon123"
+            "avatar_template": "/user_avatar/forum.bambulab.com/cobo1/{size}/127562_2.png",
+            "id": 121730,
+            "name": "Cobo",
+            "trust_level": 0,
+            "username": "Cobo1"
           }
         },
         {
-          "description": "Frequent Poster, Accepted Answer",
+          "description": "Frequent Poster",
           "extras": null,
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/jjtechprints/{size}/123870_2.png",
-            "id": 34640,
-            "name": "JJTechPrints",
+            "avatar_template": "/user_avatar/forum.bambulab.com/malctheoracle/{size}/137308_2.png",
+            "id": 37295,
+            "name": "Every tool has its hidden purpose.",
             "trust_level": 2,
-            "username": "JJTechPrints"
+            "username": "MalcTheOracle"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/migueljeronimoa/{size}/48859_2.png",
+            "id": 24740,
+            "name": "Miguel Jeronimo",
+            "trust_level": 2,
+            "username": "migueljeronimoa"
+          }
+        },
+        {
+          "description": "Most Recent Poster",
+          "extras": "latest",
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/deutscher/{size}/101858_2.png",
+            "id": 138590,
+            "name": "Deutscher",
+            "trust_level": 0,
+            "username": "Deutscher"
           }
         }
       ],
-      "posts_count": 3,
-      "reply_count": 1,
-      "slug": "parametric-model-maker-including-threads-library-runs-demo",
-      "tags": [
-        "bug-report"
-      ],
+      "posts_count": 5,
+      "reply_count": 0,
+      "slug": "parametric-model-maker-v1-1-0-major-ui-refresh",
+      "tags": [],
       "tags_descriptions": {},
-      "title": "Parametric Model Maker - Including Threads Library Runs Demo",
+      "title": "Parametric Model Maker V1.1.0 - Major UI Refresh",
       "unpinned": null,
       "unseen": false,
-      "views": 218,
+      "views": 846,
+      "visibility_reason_id": 4,
       "visible": true
     },
     {
@@ -764,17 +860,17 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2025-12-04T03:54:04.286Z",
+      "bumped_at": "2026-01-23T19:41:35.908Z",
       "category_id": 163,
       "closed": false,
-      "created_at": "2025-12-04T03:54:04.241Z",
-      "fancy_title": "Lightbox Rear Panel Edge Height",
+      "created_at": "2026-01-23T15:22:48.534Z",
+      "fancy_title": "Lightbox issue gaps after vectorising image",
       "featured_link": null,
       "has_accepted_answer": false,
-      "highest_post_number": 1,
-      "id": 213661,
-      "image_url": null,
-      "last_posted_at": "2025-12-04T03:54:04.286Z",
+      "highest_post_number": 5,
+      "id": 227585,
+      "image_url": "https://cdn-forum.bambulab.com/original/3X/c/3/c3aa4f3ee5416bea816ecbb9877963576cf20150.jpeg",
+      "last_posted_at": "2026-01-23T19:41:35.908Z",
       "like_count": 0,
       "liked": null,
       "op_like_count": 0,
@@ -782,113 +878,47 @@
       "posters": [
         {
           "description": "Original Poster, Most Recent Poster",
-          "extras": "latest single",
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/lb_r/{size}/13500_2.png",
-            "id": 73782,
-            "name": "Lb&R",
-            "trust_level": 1,
-            "username": "LB_R"
-          }
-        }
-      ],
-      "posts_count": 1,
-      "reply_count": 0,
-      "slug": "lightbox-rear-panel-edge-height",
-      "tags": [],
-      "tags_descriptions": {},
-      "title": "Lightbox Rear Panel Edge Height",
-      "unpinned": null,
-      "unseen": false,
-      "views": 75,
-      "visible": true
-    },
-    {
-      "archetype": "regular",
-      "archived": false,
-      "bookmarked": null,
-      "bumped": true,
-      "bumped_at": "2026-03-05T23:16:50.549Z",
-      "category_id": 163,
-      "closed": false,
-      "created_at": "2026-02-02T00:34:12.051Z",
-      "fancy_title": "Any Documentation on Parametric Model Maker?",
-      "featured_link": null,
-      "has_accepted_answer": false,
-      "highest_post_number": 18,
-      "id": 230605,
-      "image_url": null,
-      "last_posted_at": "2026-03-05T23:16:50.549Z",
-      "like_count": 6,
-      "liked": null,
-      "op_like_count": 0,
-      "pinned": false,
-      "posters": [
-        {
-          "description": "Original Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/derftoy/{size}/13500_2.png",
-            "id": 13699,
-            "name": "Cory Jorgensen",
-            "trust_level": 1,
-            "username": "Derftoy"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/letter_avatar_proxy/v4/letter/r/58f4c7/{size}.png",
-            "id": 43771,
-            "name": "",
-            "trust_level": 3,
-            "username": "RetroSharky"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/maxthreed/{size}/135682_2.png",
-            "id": 130979,
-            "name": "Max",
-            "trust_level": 3,
-            "username": "MaxThreeD"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/dwdesigns/{size}/118068_2.png",
-            "id": 19184,
-            "name": "",
-            "trust_level": 2,
-            "username": "DWdesigns"
-          }
-        },
-        {
-          "description": "Most Recent Poster",
           "extras": "latest",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/eduo/{size}/144836_2.png",
-            "id": 142730,
-            "name": "Eduo",
+            "avatar_template": "/user_avatar/forum.bambulab.com/w177/{size}/101858_2.png",
+            "id": 138049,
+            "name": "W177",
             "trust_level": 1,
-            "username": "eduo"
+            "username": "w177"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/waynejohns1973/{size}/125383_2.png",
+            "id": 23549,
+            "name": "W3DPT",
+            "trust_level": 2,
+            "username": "waynejohns1973"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/user_avatar/forum.bambulab.com/mzip/{size}/76349_2.png",
+            "id": 23328,
+            "name": "Yabba Dabba Doo!",
+            "trust_level": 2,
+            "username": "MZip"
           }
         }
       ],
-      "posts_count": 18,
-      "reply_count": 13,
-      "slug": "any-documentation-on-parametric-model-maker",
+      "posts_count": 5,
+      "reply_count": 3,
+      "slug": "lightbox-issue-gaps-after-vectorising-image",
       "tags": [],
       "tags_descriptions": {},
-      "title": "Any Documentation on Parametric Model Maker?",
+      "title": "Lightbox issue gaps after vectorising image",
       "unpinned": null,
       "unseen": false,
-      "views": 581,
+      "views": 202,
       "visible": true
     }
   ],

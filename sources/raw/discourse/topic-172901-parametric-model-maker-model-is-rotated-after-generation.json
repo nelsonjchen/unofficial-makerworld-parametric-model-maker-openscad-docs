@@ -284,57 +284,65 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2025-05-09T23:07:51.974Z",
+      "bumped_at": "2025-10-09T01:18:27.947Z",
       "category_id": 163,
       "closed": false,
-      "created_at": "2025-05-08T18:37:47.487Z",
-      "fancy_title": "Touch/Apple Pencil Dragging Not Working on iPad in Vase Maker Tool",
+      "created_at": "2025-10-03T11:55:57.055Z",
+      "fancy_title": "Best Material for Lithophane Diffuser?",
       "featured_link": null,
       "has_accepted_answer": false,
-      "highest_post_number": 2,
-      "id": 167748,
+      "highest_post_number": 5,
+      "id": 199289,
       "image_url": null,
-      "last_posted_at": "2025-05-09T23:07:51.974Z",
-      "like_count": 2,
+      "last_posted_at": "2025-10-09T01:18:27.947Z",
+      "like_count": 1,
       "liked": null,
-      "op_like_count": 1,
+      "op_like_count": 0,
       "pinned": false,
       "posters": [
         {
           "description": "Original Poster",
           "extras": null,
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/dr_miller/{size}/13500_2.png",
-            "id": 48226,
-            "name": "",
+            "avatar_template": "/user_avatar/forum.bambulab.com/johnellenbe/{size}/13500_2.png",
+            "id": 38405,
+            "name": "johnellenbe",
             "trust_level": 1,
-            "username": "Dr_Miller"
+            "username": "johnellenbe"
+          }
+        },
+        {
+          "description": "Frequent Poster",
+          "extras": null,
+          "user": {
+            "avatar_template": "/letter_avatar_proxy/v4/letter/k/4da419/{size}.png",
+            "id": 3455,
+            "name": "Krellboy",
+            "trust_level": 3,
+            "username": "krellboy"
           }
         },
         {
           "description": "Most Recent Poster",
           "extras": "latest",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/jayzay/{size}/15716_2.png",
-            "flair_group_id": 42,
-            "flair_name": "X1-Carbon-Owners",
-            "flair_url": "https://cdn-forum.bambulab.com/original/1X/4d7f90bcda9621690972e5b8ce084f589afda162.png",
-            "id": 5364,
-            "name": "JayZay",
-            "trust_level": 3,
-            "username": "JayZay"
+            "avatar_template": "/user_avatar/forum.bambulab.com/bratling/{size}/112516_2.png",
+            "id": 107158,
+            "name": "Bratling",
+            "trust_level": 2,
+            "username": "Bratling"
           }
         }
       ],
-      "posts_count": 2,
-      "reply_count": 0,
-      "slug": "touch-apple-pencil-dragging-not-working-on-ipad-in-vase-maker-tool",
+      "posts_count": 5,
+      "reply_count": 2,
+      "slug": "best-material-for-lithophane-diffuser",
       "tags": [],
       "tags_descriptions": {},
-      "title": "Touch/Apple Pencil Dragging Not Working on iPad in Vase Maker Tool",
+      "title": "Best Material for Lithophane Diffuser?",
       "unpinned": null,
       "unseen": false,
-      "views": 134,
+      "views": 485,
       "visible": true
     },
     {
@@ -342,43 +350,43 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2025-04-22T14:15:00.071Z",
+      "bumped_at": "2025-05-15T09:38:38.679Z",
       "category_id": 163,
       "closed": false,
-      "created_at": "2025-04-22T14:14:59.960Z",
-      "fancy_title": "Make my statue hits bambu handy",
+      "created_at": "2025-05-15T09:38:38.624Z",
+      "fancy_title": "Lightbox Maker, the frame",
       "featured_link": null,
       "has_accepted_answer": false,
       "highest_post_number": 1,
-      "id": 163517,
-      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/c/3/c30d779d881689fd308ef239012534b8cec36855_2_1024x635.jpeg",
-      "last_posted_at": "2025-04-22T14:15:00.071Z",
-      "like_count": 0,
+      "id": 169451,
+      "image_url": null,
+      "last_posted_at": "2025-05-15T09:38:38.679Z",
+      "like_count": 3,
       "liked": null,
-      "op_like_count": 0,
+      "op_like_count": 3,
       "pinned": false,
       "posters": [
         {
           "description": "Original Poster, Most Recent Poster",
           "extras": "latest single",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/neiljt/{size}/108134_2.png",
-            "id": 27503,
-            "name": "Neiljt",
-            "trust_level": 2,
-            "username": "Neiljt"
+            "avatar_template": "/user_avatar/forum.bambulab.com/mwiman/{size}/13500_2.png",
+            "id": 61082,
+            "name": "Mats Wiman",
+            "trust_level": 1,
+            "username": "MWiman"
           }
         }
       ],
       "posts_count": 1,
       "reply_count": 0,
-      "slug": "make-my-statue-hits-bambu-handy",
+      "slug": "lightbox-maker-the-frame",
       "tags": [],
       "tags_descriptions": {},
-      "title": "Make my statue hits bambu handy",
+      "title": "Lightbox Maker, the frame",
       "unpinned": null,
       "unseen": false,
-      "views": 216,
+      "views": 191,
       "visible": true
     },
     {
@@ -474,71 +482,54 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2025-07-09T20:19:10.277Z",
+      "bumped_at": "2025-08-18T15:27:12.050Z",
       "category_id": 163,
       "closed": false,
-      "created_at": "2025-06-16T20:09:59.981Z",
-      "fancy_title": "Parametric Model Maker: Allow customizing of file download name",
+      "created_at": "2025-08-18T09:29:20.909Z",
+      "fancy_title": "Lithophane With Other Slicers(?)",
       "featured_link": null,
       "has_accepted_answer": false,
-      "highest_post_number": 4,
-      "id": 172894,
-      "image_url": "//or-cloud-forum-prod.s3.us-west-2.amazonaws.com/optimized/3X/d/4/d4db054c7eda37ce6e955adfeeba442d4be91270_2_1024x768.jpeg",
-      "last_posted_at": "2025-07-09T20:19:10.277Z",
-      "like_count": 6,
+      "highest_post_number": 3,
+      "id": 190025,
+      "image_url": null,
+      "last_posted_at": "2025-08-18T15:27:12.050Z",
+      "like_count": 0,
       "liked": null,
-      "op_like_count": 5,
+      "op_like_count": 0,
       "pinned": false,
       "posters": [
         {
-          "description": "Original Poster",
-          "extras": null,
+          "description": "Original Poster, Most Recent Poster",
+          "extras": "latest",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/benjaminkott/{size}/105680_2.png",
-            "id": 29047,
-            "name": "Benjamin Kott",
-            "trust_level": 2,
-            "username": "benjaminkott"
+            "avatar_template": "/user_avatar/forum.bambulab.com/johnellenbe/{size}/13500_2.png",
+            "id": 38405,
+            "name": "johnellenbe",
+            "trust_level": 1,
+            "username": "johnellenbe"
           }
         },
         {
           "description": "Frequent Poster",
           "extras": null,
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
-            "flair_group_id": 41,
-            "flair_name": "Bambu_Lab_Employee",
-            "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
-            "id": 24049,
-            "name": "",
-            "primary_group_name": "Bambu_Lab_Employee",
-            "trust_level": 3,
-            "username": "PineappleBun_BBL"
-          }
-        },
-        {
-          "description": "Most Recent Poster",
-          "extras": "latest",
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/jetpad/{size}/32448_2.png",
-            "id": 29303,
-            "name": "jetpad",
+            "avatar_template": "/user_avatar/forum.bambulab.com/johnny_bit/{size}/118276_2.png",
+            "id": 54598,
+            "name": "Johnny_Bit",
             "trust_level": 2,
-            "username": "jetpad"
+            "username": "Johnny_Bit"
           }
         }
       ],
-      "posts_count": 4,
+      "posts_count": 3,
       "reply_count": 1,
-      "slug": "parametric-model-maker-allow-customizing-of-file-download-name",
-      "tags": [
-        "product-request"
-      ],
+      "slug": "lithophane-with-other-slicers",
+      "tags": [],
       "tags_descriptions": {},
-      "title": "Parametric Model Maker: Allow customizing of file download name",
+      "title": "Lithophane With Other Slicers(?)",
       "unpinned": null,
       "unseen": false,
-      "views": 292,
+      "views": 112,
       "visible": true
     },
     {
@@ -546,92 +537,43 @@
       "archived": false,
       "bookmarked": null,
       "bumped": true,
-      "bumped_at": "2026-04-14T14:45:09.157Z",
+      "bumped_at": "2026-02-09T12:43:01.317Z",
       "category_id": 163,
       "closed": false,
-      "created_at": "2025-06-30T06:15:42.753Z",
-      "fancy_title": "Parametric Model Maker V1.0.0 - Fusion 360 Support!",
+      "created_at": "2026-02-09T12:43:01.249Z",
+      "fancy_title": "Image to Keychain Model Assemblies - One Model Per Color, What Happened?",
       "featured_link": null,
       "has_accepted_answer": false,
-      "highest_post_number": 194,
-      "id": 179329,
-      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/f/d/fd1e83f4b5fd19f3f3988da8abfe1711bf633a7a_2_1024x522.jpeg",
-      "last_posted_at": "2026-04-14T14:45:09.157Z",
-      "like_count": 219,
+      "highest_post_number": 1,
+      "id": 232720,
+      "image_url": "https://cdn-forum.bambulab.com/optimized/3X/9/5/95d396ca888dea3d5664a49ef8bd7dbdd88f33cb_2_1024x634.png",
+      "last_posted_at": "2026-02-09T12:43:01.317Z",
+      "like_count": 0,
       "liked": null,
-      "op_like_count": 62,
+      "op_like_count": 0,
       "pinned": false,
       "posters": [
         {
-          "description": "Original Poster",
-          "extras": null,
+          "description": "Original Poster, Most Recent Poster",
+          "extras": "latest single",
           "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/pineapplebun_bbl/{size}/58169_2.png",
-            "flair_group_id": 41,
-            "flair_name": "Bambu_Lab_Employee",
-            "flair_url": "https://cdn-forum.bambulab.com/original/1X/42780e3eda5937b80babfb5791e64857ec718cef.png",
-            "id": 24049,
-            "name": "",
-            "primary_group_name": "Bambu_Lab_Employee",
-            "trust_level": 3,
-            "username": "PineappleBun_BBL"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/lee-2/{size}/13500_2.png",
-            "id": 33115,
-            "name": "Lee",
+            "avatar_template": "/user_avatar/forum.bambulab.com/madmax/{size}/2013_2.png",
+            "id": 1231,
+            "name": "Madmax",
             "trust_level": 2,
-            "username": "Lee-2"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/shaq981/{size}/97892_2.png",
-            "id": 95632,
-            "name": "Shaq981",
-            "trust_level": 2,
-            "username": "shaq981"
-          }
-        },
-        {
-          "description": "Frequent Poster",
-          "extras": null,
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/thebreadman/{size}/117976_2.png",
-            "id": 33855,
-            "name": "",
-            "trust_level": 2,
-            "username": "TheBreadman"
-          }
-        },
-        {
-          "description": "Most Recent Poster",
-          "extras": "latest",
-          "user": {
-            "avatar_template": "/user_avatar/forum.bambulab.com/cool_person/{size}/153386_2.png",
-            "id": 153755,
-            "name": "Cool Person",
-            "trust_level": 0,
-            "username": "cool_person"
+            "username": "Madmax"
           }
         }
       ],
-      "posts_count": 187,
-      "reply_count": 95,
-      "slug": "parametric-model-maker-v1-0-0-fusion-360-support",
+      "posts_count": 1,
+      "reply_count": 0,
+      "slug": "image-to-keychain-model-assemblies-one-model-per-color-what-happened",
       "tags": [],
       "tags_descriptions": {},
-      "title": "Parametric Model Maker V1.0.0 - Fusion 360 Support!",
+      "title": "Image to Keychain Model Assemblies - One Model Per Color, What Happened?",
       "unpinned": null,
       "unseen": false,
-      "views": 29999,
-      "visibility_reason_id": 4,
+      "views": 64,
       "visible": true
     }
   ],
