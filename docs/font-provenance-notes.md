@@ -793,10 +793,15 @@ The site does not redistribute questionable font software. When a family is not 
 ### Strong
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: PMM render appears to match the Gaslight/Cyreal Strong Regular font. Public font metadata identifies it as SIL OFL with Reserved Font Name Strong.
 - Styles observed: `Regular`
+- Evidence:
+  - https://www.fontmirror.com/strong
+  - https://online-fonts.com/fonts/strong
+  - https://www.figma.com/fonts/strong/
+  - https://www.wfonts.com/font/strong
 
 ### Sunflower
 
@@ -881,4 +886,4 @@ The site does not redistribute questionable font software. When a family is not 
 ## Generated Summary
 
 - Preview statuses: `{'google-css': 8066, 'fallback-only': 194, 'self-hosted-preview': 6, 'external-preview': 1}`
-- License confidence labels: `{'clean': 8026, 'unknown': 188, 'conflicting': 1, 'restricted-redistribution': 6, 'likely-clean': 45, 'custom-license': 1}`
+- License confidence labels: `{'clean': 8026, 'unknown': 187, 'conflicting': 1, 'restricted-redistribution': 6, 'likely-clean': 46, 'custom-license': 1}`

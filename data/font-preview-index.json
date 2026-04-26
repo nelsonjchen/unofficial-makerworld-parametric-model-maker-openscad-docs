@@ -14,10 +14,10 @@
     },
     "license_confidence_counts": {
       "clean": 8026,
-      "unknown": 188,
+      "unknown": 187,
       "conflicting": 1,
       "restricted-redistribution": 6,
-      "likely-clean": 45,
+      "likely-clean": 46,
       "custom-license": 1
     },
     "pmm_metadata_family_count": 1790,
@@ -83124,9 +83124,14 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "PMM render appears to match the Gaslight/Cyreal Strong Regular font. Public font metadata identifies it as SIL OFL with Reserved Font Name Strong.",
+      "evidence_urls": [
+        "https://www.fontmirror.com/strong",
+        "https://online-fonts.com/fonts/strong",
+        "https://www.figma.com/fonts/strong/",
+        "https://www.wfonts.com/font/strong"
+      ]
     },
     {
       "family": "Style Script",

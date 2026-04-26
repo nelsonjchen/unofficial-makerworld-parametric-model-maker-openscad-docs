@@ -235,6 +235,18 @@ FONT_OVERRIDES = {
         "license_summary": "PMM uses the compact legacy name; public sources identify Poetsen One as SIL OFL.",
         "evidence_urls": ["https://online-fonts.com/fonts/poetsenone"],
     },
+    "Strong": {
+        "license_confidence": "likely-clean",
+        "preview_status": "fallback-only",
+        "preview_family": None,
+        "license_summary": "PMM render appears to match the Gaslight/Cyreal Strong Regular font. Public font metadata identifies it as SIL OFL with Reserved Font Name Strong.",
+        "evidence_urls": [
+            "https://www.fontmirror.com/strong",
+            "https://online-fonts.com/fonts/strong",
+            "https://www.figma.com/fonts/strong/",
+            "https://www.wfonts.com/font/strong",
+        ],
+    },
     "Open Sans Condensed": {
         "license_confidence": "clean",
         "preview_status": "google-css",

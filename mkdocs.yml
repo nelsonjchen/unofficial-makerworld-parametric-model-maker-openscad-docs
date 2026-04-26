@@ -20,6 +20,7 @@ nav:
   - Home: index.md
   - Font Index: font-index.md
   - Font Provenance Notes: font-provenance-notes.md
+  - Font Unknowns Research: font-unknowns-research.md
   - PMM OpenSCAD API: pmm-openscad-api.md
   - PMM Syntax Demo: pmm-syntax-demo.md
   - Feature Reference: feature-reference.md
