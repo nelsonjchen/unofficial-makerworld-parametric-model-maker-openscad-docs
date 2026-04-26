@@ -177,11 +177,14 @@ FONT_OVERRIDES = {
     },
     "HarmonyOS Sans SC": {
         "license_confidence": "restricted-redistribution",
-        "preview_status": "fallback-only",
-        "preview_family": None,
+        "preview_status": "self-hosted-preview",
+        "preview_family": "HarmonyOS Sans SC",
+        "font_css_url": "vendor-fonts/harmonyos-sans-sc/harmonyos-sans-sc.css",
         "fallback_stack": "Noto Sans SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif",
-        "license_summary": "Official Huawei/OpenHarmony materials allow use but restrict standalone redistribution; do not self-host font files.",
+        "license_summary": "Self-hosted preview. Redistribution terms require care; see the linked license sources.",
         "evidence_urls": [
+            "https://github.com/huawei-fonts/HarmonyOS-Sans",
+            "https://github.com/ajacocks/harmonyos-sans-font/blob/main/LICENSE",
             "https://developer.huawei.com/consumer/cn/design/resource-V1/",
             "https://developer.huawei.com/images/download/general/HarmonyOS-Sans.zip",
             "https://gitee.com/openharmony/utils_system_resources/blob/master/LICENSE_Fonts",
@@ -355,6 +358,14 @@ def google_css_url(family: str) -> str:
     return f"https://fonts.googleapis.com/css2?family={quote_plus(family)}&display=swap"
 
 
+def font_css_url(preview: dict, preview_family: str | None) -> str | None:
+    if preview.get("font_css_url"):
+        return preview["font_css_url"]
+    if preview["preview_status"] == "google-css" and preview_family:
+        return google_css_url(preview_family)
+    return None
+
+
 def default_preview_for_family(family: str) -> dict:
     alias = ALIAS_OVERRIDES.get(family)
     if alias:
@@ -398,6 +409,7 @@ def build_records() -> tuple[list[dict], dict, dict]:
         preview = default_preview_for_family(family)
         preview.update(FONT_OVERRIDES.get(family, {}))
         preview_family = preview.get("preview_family")
+        local_font_css_url = font_css_url(preview, preview_family)
         record = {
             "id": f"font-{idx}",
             "pmm_name": raw_name,
@@ -424,6 +436,8 @@ def build_records() -> tuple[list[dict], dict, dict]:
             "evidence_urls": preview["evidence_urls"],
             "pmm_metadata": pmm_metadata,
         }
+        if local_font_css_url and preview["preview_status"] != "google-css":
+            record["font_css_url"] = local_font_css_url
         records.append(record)
         family_records[family].append(record)
 
@@ -553,20 +567,24 @@ def write_provenance_page(records: list[dict], summary: dict) -> None:
     (DOCS_DIR / "font-provenance-notes.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
+def preview_record(record: dict) -> dict:
+    item = {
+        "family": record["family"],
+        "preview_status": record["preview_status"],
+        "preview_family": record["preview_family"],
+        "google_css_url": record["google_css_url"],
+        "license_confidence": record["license_confidence"],
+        "license_summary": record["license_summary"],
+        "evidence_urls": record["evidence_urls"],
+    }
+    if record.get("font_css_url"):
+        item["font_css_url"] = record["font_css_url"]
+    return item
+
+
 def main() -> None:
     records, summary, pmm_filter_options = build_records()
-    preview_records = [
-        {
-            "family": record["family"],
-            "preview_status": record["preview_status"],
-            "preview_family": record["preview_family"],
-            "google_css_url": record["google_css_url"],
-            "license_confidence": record["license_confidence"],
-            "license_summary": record["license_summary"],
-            "evidence_urls": record["evidence_urls"],
-        }
-        for record in records
-    ]
+    preview_records = [preview_record(record) for record in records]
 
     payload = {
         "summary": summary,

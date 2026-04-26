@@ -1,7 +1,8 @@
 (function () {
   const ROOT_ID = "pmm-font-index";
   const PAGE_SIZE = 120;
-  const DATA_URL = new URL("font-index-data.json", document.currentScript.src).toString();
+  const SCRIPT_URL = document.currentScript.src;
+  const DATA_URL = new URL("font-index-data.json", SCRIPT_URL).toString();
   const loadedCss = new Set();
 
   const SAMPLE_PRESETS = {
@@ -15,21 +16,9 @@
 
   const COLLECTIONS = [
     {
-      id: "all",
-      label: "All Fonts",
-      description: "Every family found in PMM's public font inventories.",
-      predicate: () => true,
-    },
-    {
-      id: "installed",
-      label: "Installed Runtime",
-      description: "Families present in PMM's runtime font list, closest to what OpenSCAD can use.",
-      predicate: (family) => family.installed,
-    },
-    {
-      id: "broad",
-      label: "Broad Catalog",
-      description: "Families from PMM's broader display/catalog list; not always runtime-confirmed.",
+      id: "pmm",
+      label: "PMM OpenSCAD Fonts",
+      description: "Exact font choices PMM exposes for OpenSCAD //font parameters.",
       predicate: (family) => family.broad,
     },
     {
@@ -56,7 +45,6 @@
     { id: "styles-desc", label: "Most styles" },
     { id: "family-az", label: "Family A-Z" },
     { id: "family-za", label: "Family Z-A" },
-    { id: "installed-first", label: "Installed first" },
     { id: "warnings-first", label: "Warnings first" },
     { id: "previewable-first", label: "Previewable first" },
     { id: "shuffle", label: "Shuffle" },
@@ -96,6 +84,32 @@
     return wrap;
   }
 
+  function rememberFocus(state, key, element) {
+    state.focusAfterRender = {
+      key,
+      selectionStart: typeof element.selectionStart === "number" ? element.selectionStart : null,
+      selectionEnd: typeof element.selectionEnd === "number" ? element.selectionEnd : null,
+    };
+  }
+
+  function restoreFocus(root, state) {
+    const pending = state.focusAfterRender;
+    state.focusAfterRender = null;
+    if (!pending) return;
+
+    const target = root.querySelector(`[data-focus-key="${pending.key}"]`);
+    if (!target || target.disabled || target.hidden) return;
+
+    target.focus({ preventScroll: true });
+    if (
+      typeof target.setSelectionRange === "function" &&
+      pending.selectionStart !== null &&
+      pending.selectionEnd !== null
+    ) {
+      target.setSelectionRange(pending.selectionStart, pending.selectionEnd);
+    }
+  }
+
   function badge(text, tone) {
     const span = document.createElement("span");
     span.className = "pmm-font-book__badge" + (tone ? ` pmm-font-book__badge--${tone}` : "");
@@ -110,12 +124,13 @@
   }
 
   function ensureCss(record) {
-    if (!record.google_css_url || loadedCss.has(record.google_css_url)) return;
+    const cssUrl = record.font_css_url || record.google_css_url;
+    if (!cssUrl || loadedCss.has(cssUrl)) return;
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = record.google_css_url;
+    link.href = new URL(cssUrl, SCRIPT_URL).toString();
     document.head.appendChild(link);
-    loadedCss.add(record.google_css_url);
+    loadedCss.add(cssUrl);
   }
 
   function sampleText(state) {
@@ -226,11 +241,6 @@
     const sorted = families.slice();
     sorted.sort((a, b) => {
       if (state.sort === "family-za") return b.family.localeCompare(a.family);
-      if (state.sort === "installed-first") {
-        const installedDelta = Number(b.installed) - Number(a.installed);
-        if (installedDelta) return installedDelta;
-        return byName(a, b);
-      }
       if (state.sort === "warnings-first") {
         const caveatDelta = Number(b.hasCaveat) - Number(a.hasCaveat);
         if (caveatDelta) return caveatDelta;
@@ -253,8 +263,6 @@
       if (state.sort === "styles-desc") {
         const styleDelta = b.records.length - a.records.length;
         if (styleDelta) return styleDelta;
-        const installedDelta = Number(b.installed) - Number(a.installed);
-        if (installedDelta) return installedDelta;
         return byName(a, b);
       }
       return byName(a, b);
@@ -265,22 +273,13 @@
   function renderFamilyBadges(family) {
     const wrap = document.createElement("div");
     wrap.className = "pmm-font-book__badges";
-    if (family.installed) wrap.appendChild(badge("installed"));
-    if (family.broad) wrap.appendChild(badge("broad"));
     Array.from(family.previewStatuses).sort().forEach((status) => {
-      wrap.appendChild(badge(status, status === "fallback-only" ? "warn" : ""));
+      wrap.appendChild(badge(status, ["fallback-only", "self-hosted-preview"].includes(status) ? "warn" : ""));
     });
     Array.from(family.licenseConfidences).sort().forEach((confidence) => {
       wrap.appendChild(badge(confidence, licenseTone(confidence)));
     });
     return wrap;
-  }
-
-  function familyInventoryLabel(family) {
-    if (family.installed && family.broad) return "installed runtime + broad catalog";
-    if (family.installed) return "installed runtime";
-    if (family.broad) return "broad catalog";
-    return "unclassified";
   }
 
   function familyCaveatLabel(family) {
@@ -302,15 +301,11 @@
   }
 
   function formatFamilyLine(family) {
-    return `- ${family.family} (${family.records.length} PMM string${family.records.length === 1 ? "" : "s"}; ${familyInventoryLabel(family)}; ${familyCaveatLabel(family)})`;
+    return `- ${family.family} (${family.records.length} PMM OpenSCAD font string${family.records.length === 1 ? "" : "s"}; ${familyCaveatLabel(family)})`;
   }
 
   function formatPmmStringLine(record) {
-    const inventory = [
-      record.in_installed_inventory ? "installed runtime" : "",
-      record.in_broad_catalog ? "broad catalog" : "",
-    ].filter(Boolean).join(" + ") || "unclassified";
-    return `- ${record.pmm_name} (${record.style}; ${inventory}; preview: ${record.preview_status}; license/provenance: ${record.license_confidence})`;
+    return `- ${record.pmm_name} (${record.style}; preview: ${record.preview_status}; license/provenance: ${record.license_confidence})`;
   }
 
   function subsetLabel(value) {
@@ -439,9 +434,11 @@
     search.value = state.queryDisplay;
     search.placeholder = "Search families, styles, exact PMM strings...";
     search.className = "pmm-font-book__search";
+    search.dataset.focusKey = "search";
     search.addEventListener("input", () => {
       state.queryDisplay = search.value;
       state.query = search.value.trim().toLowerCase();
+      rememberFocus(state, "search", search);
       state.visible = PAGE_SIZE;
       render();
     });
@@ -469,13 +466,13 @@
 
     const sample = document.createElement("select");
     sample.className = "pmm-font-book__select";
-    sample.append(option("makerworld", "MakerWorld PMM"));
-    sample.append(option("single", "Aa"));
-    sample.append(option("alphabet", "Alphabet"));
-    sample.append(option("pangram", "Pangram"));
-    sample.append(option("digits", "Digits and code"));
-    sample.append(option("label", "Model label"));
-    sample.append(option("custom", "Custom"));
+    sample.append(option("makerworld", "MakerWorld PMM words"));
+    sample.append(option("single", "Short Aa sample"));
+    sample.append(option("alphabet", "Full alphabet"));
+    sample.append(option("pangram", "Sentence with every letter"));
+    sample.append(option("digits", "Numbers + OpenSCAD text"));
+    sample.append(option("label", "Model label example"));
+    sample.append(option("custom", "Custom text"));
     sample.value = state.sampleMode;
     sample.addEventListener("change", () => {
       state.sampleMode = sample.value;
@@ -504,7 +501,12 @@
       state.selectedFamily = "";
       render();
     });
-    const randomWrap = labeledControl("Explore", random, "pmm-font-book__control pmm-font-book__control--random");
+    const randomWrap = document.createElement("div");
+    randomWrap.className = "pmm-font-book__control pmm-font-book__control--random";
+    const randomLabel = document.createElement("span");
+    randomLabel.className = "pmm-font-book__control-label";
+    randomLabel.textContent = "Explore";
+    randomWrap.append(randomLabel, random);
 
     const custom = document.createElement("input");
     custom.type = "text";
@@ -512,8 +514,10 @@
     custom.placeholder = "Custom preview text";
     custom.value = state.customSample;
     custom.hidden = state.sampleMode !== "custom";
+    custom.dataset.focusKey = "customSample";
     custom.addEventListener("input", () => {
       state.customSample = custom.value;
+      rememberFocus(state, "customSample", custom);
       render();
     });
     const customWrap = labeledControl("Custom text", custom);
@@ -525,8 +529,10 @@
     size.max = "92";
     size.value = String(state.sampleSize);
     size.className = "pmm-font-book__size";
+    size.dataset.focusKey = "sampleSize";
     size.addEventListener("input", () => {
       state.sampleSize = Number(size.value);
+      rememberFocus(state, "sampleSize", size);
       render();
     });
     const sizeWrap = labeledControl("Preview size", size, "pmm-font-book__control pmm-font-book__control--size");
@@ -541,9 +547,11 @@
     style.type = "search";
     style.placeholder = "Style: Regular, Bold, Italic...";
     style.value = state.styleDisplay;
+    style.dataset.focusKey = "style";
     style.addEventListener("input", () => {
       state.styleDisplay = style.value;
       state.style = style.value.trim().toLowerCase();
+      rememberFocus(state, "style", style);
       state.visible = PAGE_SIZE;
       render();
     });
@@ -551,6 +559,7 @@
     const preview = document.createElement("select");
     preview.append(option("", "All preview sources"));
     preview.append(option("google-css", "Google CSS previews"));
+    preview.append(option("self-hosted-preview", "Self-hosted previews"));
     preview.append(option("external-preview", "External preview only"));
     preview.append(option("fallback-only", "Fallback only"));
     preview.value = state.preview;
@@ -714,11 +723,15 @@
 
     const note = document.createElement("p");
     note.className = "pmm-font-book__muted";
-    note.textContent = family.demoRecord.preview_family
-      ? family.demoRecord.preview_family === family.family
-        ? "Preview uses the matching Google Fonts family."
-        : `Preview alias: ${family.demoRecord.preview_family}; exact PMM names remain below.`
-      : "Fallback preview only; this site is not loading a matching webfont.";
+    if (family.demoRecord.preview_status === "self-hosted-preview") {
+      note.textContent = "Preview uses a bundled webfont.";
+    } else {
+      note.textContent = family.demoRecord.preview_family
+        ? family.demoRecord.preview_family === family.family
+          ? "Preview uses the matching Google Fonts family."
+          : `Preview alias: ${family.demoRecord.preview_family}; exact PMM names remain below.`
+        : "Fallback preview only; this site is not loading a matching webfont.";
+    }
     inspector.appendChild(note);
 
     const pmmLines = pmmMetadataLines(family);
@@ -764,7 +777,7 @@
   function init(root, payload) {
     const allFamilies = buildFamilies(payload.fonts);
     const state = {
-      collection: "all",
+      collection: "pmm",
       query: "",
       queryDisplay: "",
       style: "",
@@ -797,7 +810,7 @@
     const titleBlock = document.createElement("div");
     titleBlock.className = "pmm-font-book__title-block";
     const title = document.createElement("h2");
-    title.textContent = "All Fonts";
+    title.textContent = "PMM OpenSCAD Fonts";
     const meta = document.createElement("div");
     meta.className = "pmm-font-book__muted";
     titleBlock.append(title, meta);
@@ -876,6 +889,7 @@
         : `Showing ${visible.length.toLocaleString()} of ${filtered.length.toLocaleString()} families. Scroll for more.`;
       loadMore.hidden = allVisible;
       sentinel.hidden = allVisible;
+      restoreFocus(shell, state);
     }
 
     render();

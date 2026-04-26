@@ -8,7 +8,8 @@
     "combined_family_count": 1881,
     "preview_status_counts": {
       "google-css": 8066,
-      "fallback-only": 200,
+      "fallback-only": 194,
+      "self-hosted-preview": 6,
       "external-preview": 1
     },
     "license_confidence_counts": {
@@ -27291,87 +27292,105 @@
     },
     {
       "family": "HarmonyOS Sans SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "HarmonyOS Sans SC",
       "google_css_url": null,
       "license_confidence": "restricted-redistribution",
-      "license_summary": "Official Huawei/OpenHarmony materials allow use but restrict standalone redistribution; do not self-host font files.",
+      "license_summary": "Self-hosted preview. Redistribution terms require care; see the linked license sources.",
       "evidence_urls": [
+        "https://github.com/huawei-fonts/HarmonyOS-Sans",
+        "https://github.com/ajacocks/harmonyos-sans-font/blob/main/LICENSE",
         "https://developer.huawei.com/consumer/cn/design/resource-V1/",
         "https://developer.huawei.com/images/download/general/HarmonyOS-Sans.zip",
         "https://gitee.com/openharmony/utils_system_resources/blob/master/LICENSE_Fonts",
         "https://gitee.com/openharmony/global_system_resources/blob/master/README.md"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/harmonyos-sans-sc/harmonyos-sans-sc.css"
     },
     {
       "family": "HarmonyOS Sans SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "HarmonyOS Sans SC",
       "google_css_url": null,
       "license_confidence": "restricted-redistribution",
-      "license_summary": "Official Huawei/OpenHarmony materials allow use but restrict standalone redistribution; do not self-host font files.",
+      "license_summary": "Self-hosted preview. Redistribution terms require care; see the linked license sources.",
       "evidence_urls": [
+        "https://github.com/huawei-fonts/HarmonyOS-Sans",
+        "https://github.com/ajacocks/harmonyos-sans-font/blob/main/LICENSE",
         "https://developer.huawei.com/consumer/cn/design/resource-V1/",
         "https://developer.huawei.com/images/download/general/HarmonyOS-Sans.zip",
         "https://gitee.com/openharmony/utils_system_resources/blob/master/LICENSE_Fonts",
         "https://gitee.com/openharmony/global_system_resources/blob/master/README.md"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/harmonyos-sans-sc/harmonyos-sans-sc.css"
     },
     {
       "family": "HarmonyOS Sans SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "HarmonyOS Sans SC",
       "google_css_url": null,
       "license_confidence": "restricted-redistribution",
-      "license_summary": "Official Huawei/OpenHarmony materials allow use but restrict standalone redistribution; do not self-host font files.",
+      "license_summary": "Self-hosted preview. Redistribution terms require care; see the linked license sources.",
       "evidence_urls": [
+        "https://github.com/huawei-fonts/HarmonyOS-Sans",
+        "https://github.com/ajacocks/harmonyos-sans-font/blob/main/LICENSE",
         "https://developer.huawei.com/consumer/cn/design/resource-V1/",
         "https://developer.huawei.com/images/download/general/HarmonyOS-Sans.zip",
         "https://gitee.com/openharmony/utils_system_resources/blob/master/LICENSE_Fonts",
         "https://gitee.com/openharmony/global_system_resources/blob/master/README.md"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/harmonyos-sans-sc/harmonyos-sans-sc.css"
     },
     {
       "family": "HarmonyOS Sans SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "HarmonyOS Sans SC",
       "google_css_url": null,
       "license_confidence": "restricted-redistribution",
-      "license_summary": "Official Huawei/OpenHarmony materials allow use but restrict standalone redistribution; do not self-host font files.",
+      "license_summary": "Self-hosted preview. Redistribution terms require care; see the linked license sources.",
       "evidence_urls": [
+        "https://github.com/huawei-fonts/HarmonyOS-Sans",
+        "https://github.com/ajacocks/harmonyos-sans-font/blob/main/LICENSE",
         "https://developer.huawei.com/consumer/cn/design/resource-V1/",
         "https://developer.huawei.com/images/download/general/HarmonyOS-Sans.zip",
         "https://gitee.com/openharmony/utils_system_resources/blob/master/LICENSE_Fonts",
         "https://gitee.com/openharmony/global_system_resources/blob/master/README.md"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/harmonyos-sans-sc/harmonyos-sans-sc.css"
     },
     {
       "family": "HarmonyOS Sans SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "HarmonyOS Sans SC",
       "google_css_url": null,
       "license_confidence": "restricted-redistribution",
-      "license_summary": "Official Huawei/OpenHarmony materials allow use but restrict standalone redistribution; do not self-host font files.",
+      "license_summary": "Self-hosted preview. Redistribution terms require care; see the linked license sources.",
       "evidence_urls": [
+        "https://github.com/huawei-fonts/HarmonyOS-Sans",
+        "https://github.com/ajacocks/harmonyos-sans-font/blob/main/LICENSE",
         "https://developer.huawei.com/consumer/cn/design/resource-V1/",
         "https://developer.huawei.com/images/download/general/HarmonyOS-Sans.zip",
         "https://gitee.com/openharmony/utils_system_resources/blob/master/LICENSE_Fonts",
         "https://gitee.com/openharmony/global_system_resources/blob/master/README.md"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/harmonyos-sans-sc/harmonyos-sans-sc.css"
     },
     {
       "family": "HarmonyOS Sans SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "HarmonyOS Sans SC",
       "google_css_url": null,
       "license_confidence": "restricted-redistribution",
-      "license_summary": "Official Huawei/OpenHarmony materials allow use but restrict standalone redistribution; do not self-host font files.",
+      "license_summary": "Self-hosted preview. Redistribution terms require care; see the linked license sources.",
       "evidence_urls": [
+        "https://github.com/huawei-fonts/HarmonyOS-Sans",
+        "https://github.com/ajacocks/harmonyos-sans-font/blob/main/LICENSE",
         "https://developer.huawei.com/consumer/cn/design/resource-V1/",
         "https://developer.huawei.com/images/download/general/HarmonyOS-Sans.zip",
         "https://gitee.com/openharmony/utils_system_resources/blob/master/LICENSE_Fonts",
         "https://gitee.com/openharmony/global_system_resources/blob/master/README.md"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/harmonyos-sans-sc/harmonyos-sans-sc.css"
     },
     {
       "family": "HeadlandOne",

@@ -322,10 +322,13 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: installed runtime, broad catalog
 - License confidence: `restricted-redistribution`
-- Preview status: `fallback-only`
-- Note: Official Huawei/OpenHarmony materials allow use but restrict standalone redistribution; do not self-host font files.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `HarmonyOS Sans SC`
+- Note: Self-hosted preview. Redistribution terms require care; see the linked license sources.
 - Styles observed: `Black`, `Bold`, `Light`, `Medium`, `Regular`, `Thin`
 - Evidence:
+  - https://github.com/huawei-fonts/HarmonyOS-Sans
+  - https://github.com/ajacocks/harmonyos-sans-font/blob/main/LICENSE
   - https://developer.huawei.com/consumer/cn/design/resource-V1/
   - https://developer.huawei.com/images/download/general/HarmonyOS-Sans.zip
   - https://gitee.com/openharmony/utils_system_resources/blob/master/LICENSE_Fonts
@@ -877,5 +880,5 @@ The site does not redistribute questionable font software. When a family is not 
 
 ## Generated Summary
 
-- Preview statuses: `{'google-css': 8066, 'fallback-only': 200, 'external-preview': 1}`
+- Preview statuses: `{'google-css': 8066, 'fallback-only': 194, 'self-hosted-preview': 6, 'external-preview': 1}`
 - License confidence labels: `{'clean': 8026, 'unknown': 188, 'conflicting': 1, 'restricted-redistribution': 6, 'likely-clean': 45, 'custom-license': 1}`
