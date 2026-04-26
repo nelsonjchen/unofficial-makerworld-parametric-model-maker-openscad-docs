@@ -4,6 +4,10 @@ This repository is an agent-first reference for Bambu Lab MakerWorld's [OpenSCAD
 
 **Start here for the actual OpenSCAD authoring surface:** [PMM OpenSCAD API](docs/pmm-openscad-api.md).
 
+**Generated docs site:** [MakerWorld PMM OpenSCAD Reference](https://nelsonjchen.github.io/unofficial-makerworld-parametric-model-maker-openscad-docs/).
+
+**Generated font index:** [PMM Font Index](https://nelsonjchen.github.io/unofficial-makerworld-parametric-model-maker-openscad-docs/font-index/).
+
 The main use case is practical:
 - A user points Codex, Claude Code, or another agent at this repo.
 - The agent learns PMM-specific OpenSCAD rules, packaging constraints, source-backed quirks, and common failure modes.
@@ -54,7 +58,9 @@ If you want to refresh the evidence-backed data:
 ```bash
 python3 scripts/fetch_sources.py
 python3 scripts/discover_pmm_web.py
+python3 scripts/fetch_pmm_syntax_demo.py
 python3 scripts/build_index.py
+python3 scripts/build_font_index.py
 python3 scripts/build_changelog.py
 python3 scripts/build_patterns_index.py
 python3 scripts/build_docs.py
@@ -66,14 +72,27 @@ Or run the one-shot helper:
 python3 scripts/build_all.py
 ```
 
+To preview the GitHub Pages site locally:
+
+```bash
+pip install -r requirements-docs.txt
+python3 scripts/build_all.py
+mkdocs serve
+```
+
+The font index is generated from MakerWorld's public PMM font inventory snapshots. Browser previews are best-effort and provenance-labeled: clean webfont sources may render live previews, while font families with custom, conflicting, or restricted redistribution terms are documented without bundling questionable font files.
+
 ## Repository Layout
 - `AGENTS.md`: retrieval-first instructions for coding agents.
 - `docs/pmm-openscad-api.md`: author-facing PMM OpenSCAD API surface.
 - `docs/`: curated reference docs and generated summaries.
 - `patterns/`: PMM-oriented OpenSCAD examples and templates.
+- `patterns/pmm-syntax-demo.scad`: PMM's extracted default editor source, refreshed from public web chunks.
 - `checklists/`: migration, packaging, and validation checklists.
 - `data/`: machine-readable indexes for agent retrieval.
 - `data/bundled-library-index.json`: normalized bundled-library include methods, source links, and version clues.
+- `data/font-index.json`: normalized PMM font inventory records.
+- `data/font-preview-index.json`: font preview and provenance metadata for the generated font index.
 - `data/pmm-web-discovery.json`: current public-web discovery summary for PMM assets.
 - `sources/raw/discourse/`: raw public Discourse JSON snapshots from Bambu's forum.
 - `sources/raw/makerworld/`: raw PMM app endpoints and public web-asset captures.

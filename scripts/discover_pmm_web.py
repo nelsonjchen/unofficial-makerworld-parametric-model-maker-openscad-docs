@@ -21,6 +21,7 @@ DATA_DIR = REPO_ROOT / "data"
 DISCOVERY_PATH = DATA_DIR / "pmm-web-discovery.json"
 PAGE_URL = "https://makerworld.com/en/makerlab/parametricModelMaker?pageType=generator"
 MAKERWORLD_ORIGIN = "https://makerworld.com"
+NEXT_STATIC_BASE = "https://makerworld.com/_next/"
 DEFAULT_OPENSCAD_BASE = "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/"
 DEFAULT_PUBLIC_ENDPOINTS = [
     f"{DEFAULT_OPENSCAD_BASE}libraries-0.8.0.json",
@@ -145,7 +146,7 @@ def extract_urls_from_text(text: str) -> tuple[set[str], set[str], set[str], set
     absolute_urls = set(re.findall(r"https://[A-Za-z0-9./?_=:%&@#~+-]+", text))
     relative_urls = set(
         re.findall(
-            r"/(?:_next|api|makerworld)/[A-Za-z0-9._~:/?#[\]@!$&'()*+,;=%-]+",
+            r"(?:/(?:_next|api|makerworld)|static/chunks)/[A-Za-z0-9._~:/?#[\]@!$&'()*+,;=%-]+",
             text,
         )
     )
@@ -346,6 +347,8 @@ def main() -> None:
     for url in discovered_relative_urls:
         if url.startswith("/_next/") or url.startswith("/api/"):
             discovered_urls.add(urljoin(MAKERWORLD_ORIGIN, url))
+        elif url.startswith("static/chunks/"):
+            discovered_urls.add(urljoin(NEXT_STATIC_BASE, url))
         elif url.startswith("/makerworld/makerlab/content-generator/openscad/"):
             discovered_urls.add(urljoin("https://makerworld.bblmw.com", url))
         elif url.startswith("/makerworld/makerlab/content-generator/stl/"):
@@ -360,7 +363,44 @@ def main() -> None:
         if auth_hint(url) != "public":
             account_candidates.append({"url": url, "auth_hint": auth_hint(url), "source": "chunk_string"})
             continue
-        if url in fetched_artifacts or not direct_public_asset(url):
+        if url in fetched_artifacts or (not direct_public_asset(url) and not relevant_chunk_url(url)):
+            continue
+        response = fetch_url(url)
+        artifact_record = {
+            "url": url,
+            "status": response.get("status"),
+            "ok": response.get("ok", False),
+            "source": "chunk_string",
+        }
+        if response.get("ok"):
+            artifact_record["saved_path"] = save_raw_artifact(
+                url,
+                response["body"],
+                "Discovered from public PMM chunk strings and fetched without auth.",
+            )
+            artifact_record["summary"] = summarize_fetch(url, response)
+            public_fetches.append(artifact_record)
+            fetched_artifacts.append(url)
+            if url.endswith(".js"):
+                text = decode_text(response["body"][:MAX_TEXT_ARTIFACT_BYTES])
+                absolute_urls, relative_urls, base_urls, content_files = extract_urls_from_text(text)
+                discovered_relative_urls.update(relative_urls)
+                discovered_bases.update(base_urls)
+                discovered_content_files.update(content_files)
+                if relevant_chunk_url(url) and not url.endswith(("_buildManifest.js", "_ssgManifest.js")):
+                    current_chunk_urls.append(url)
+        else:
+            artifact_record["error"] = response.get("error")
+            public_fetches.append(artifact_record)
+
+    openscad_base = next((base for base in sorted(discovered_bases) if base.endswith("/openscad/") and ".com/" in base), DEFAULT_OPENSCAD_BASE)
+    extra_content_urls = {
+        urljoin(openscad_base, filename)
+        for filename in discovered_content_files
+        if filename.endswith((".json", ".zip"))
+    }
+    for url in sorted(extra_content_urls):
+        if url in fetched_artifacts or auth_hint(url) != "public" or not direct_public_asset(url):
             continue
         response = fetch_url(url)
         artifact_record = {

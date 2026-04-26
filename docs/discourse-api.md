@@ -18,8 +18,8 @@ Bambu Lab's forum is a Discourse instance and exposes public JSON endpoints that
 
 ## Current Snapshot Inventory
 
-- MakerWorld app-endpoint artifacts indexed elsewhere: `3`
-- MakerWorld public web assets indexed elsewhere: `6`
+- MakerWorld app-endpoint artifacts indexed elsewhere: `5`
+- MakerWorld public web assets indexed elsewhere: `12`
 - Discourse artifacts indexed: `24`
 - Manual UI captures are intentionally separate and are not fetched by the script.
 

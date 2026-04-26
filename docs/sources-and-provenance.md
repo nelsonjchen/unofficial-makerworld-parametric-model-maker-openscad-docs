@@ -29,8 +29,8 @@ This repository separates evidence class from source type.
 
 ## Current Source Inventory
 
-- `makerworld_json`: `3`
-- `makerworld_web_asset`: `6`
+- `makerworld_json`: `5`
+- `makerworld_web_asset`: `12`
 - `discourse_json`: `24`
 - `manual_capture`: `0`
 

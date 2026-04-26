@@ -1,32 +1,76 @@
 [
   {
+    "path": "sources/raw/makerworld/b9727229.e623804f5ef7915d.js",
+    "metadata_path": "sources/raw/makerworld/b9727229.e623804f5ef7915d.js.meta.json",
+    "source_type": "makerworld_web_asset",
+    "origin": "MakerWorld PMM public web asset",
+    "captured_at": "2026-04-26T09:10:48Z",
+    "url": "https://makerworld.com/_next/static/chunks/b9727229.e623804f5ef7915d.js",
+    "capture_method": "public_web_fetch",
+    "verbatim": true,
+    "notes": "Generator lazy chunk containing PMM's default OpenSCAD syntax demo."
+  },
+  {
+    "path": "sources/raw/makerworld/edit-41890c8d8e2bb4ab.js",
+    "metadata_path": "sources/raw/makerworld/edit-41890c8d8e2bb4ab.js.meta.json",
+    "source_type": "makerworld_web_asset",
+    "origin": "MakerWorld PMM public web asset",
+    "captured_at": "2026-04-26T09:10:47Z",
+    "url": "https://makerworld.com/_next/static/chunks/pages/makerlab-app/parametricModelMaker/edit-41890c8d8e2bb4ab.js",
+    "capture_method": "public_web_fetch",
+    "verbatim": true,
+    "notes": "Discovered from public PMM chunk strings and fetched without auth."
+  },
+  {
     "path": "sources/raw/makerworld/fonts-0.8.0.json",
     "metadata_path": "sources/raw/makerworld/fonts-0.8.0.json.meta.json",
     "source_type": "makerworld_json",
     "origin": "MakerWorld PMM public web asset",
-    "captured_at": "2026-04-21T17:36:14Z",
+    "captured_at": "2026-04-26T09:10:46Z",
     "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.8.0.json",
     "capture_method": "public_web_fetch",
     "verbatim": true,
     "notes": "Fetched from a public PMM web asset or chunk URL."
   },
   {
+    "path": "sources/raw/makerworld/fonts-0.9.0.json",
+    "metadata_path": "sources/raw/makerworld/fonts-0.9.0.json.meta.json",
+    "source_type": "makerworld_json",
+    "origin": "MakerWorld PMM app endpoint",
+    "captured_at": "2026-04-26T09:06:50Z",
+    "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.9.0.json",
+    "capture_method": "public_app_json_endpoint",
+    "verbatim": true,
+    "notes": "PMM font family metadata used by the current font dialog filters."
+  },
+  {
     "path": "sources/raw/makerworld/fonts-show-0.0.1.json",
     "metadata_path": "sources/raw/makerworld/fonts-show-0.0.1.json.meta.json",
     "source_type": "makerworld_json",
     "origin": "MakerWorld PMM public web asset",
-    "captured_at": "2026-04-21T17:36:15Z",
+    "captured_at": "2026-04-26T09:10:48Z",
     "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-show-0.0.1.json",
     "capture_method": "public_web_fetch",
     "verbatim": true,
     "notes": "Discovered from public PMM chunk strings and fetched without auth."
   },
   {
+    "path": "sources/raw/makerworld/language-0.0.1.json",
+    "metadata_path": "sources/raw/makerworld/language-0.0.1.json.meta.json",
+    "source_type": "makerworld_json",
+    "origin": "MakerWorld PMM app endpoint",
+    "captured_at": "2026-04-26T09:06:51Z",
+    "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/language-0.0.1.json",
+    "capture_method": "public_app_json_endpoint",
+    "verbatim": true,
+    "notes": "PMM language list used by the current font dialog language filter."
+  },
+  {
     "path": "sources/raw/makerworld/language2family-0.0.1.zip",
     "metadata_path": "sources/raw/makerworld/language2family-0.0.1.zip.meta.json",
     "source_type": "makerworld_web_asset",
     "origin": "MakerWorld PMM public web asset",
-    "captured_at": "2026-04-21T17:36:15Z",
+    "captured_at": "2026-04-26T09:10:48Z",
     "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/language2family-0.0.1.zip",
     "capture_method": "public_web_fetch",
     "verbatim": true,
@@ -37,11 +81,22 @@
     "metadata_path": "sources/raw/makerworld/libraries-0.8.0.json.meta.json",
     "source_type": "makerworld_json",
     "origin": "MakerWorld PMM public web asset",
-    "captured_at": "2026-04-21T17:36:14Z",
+    "captured_at": "2026-04-26T09:10:47Z",
     "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/libraries-0.8.0.json",
     "capture_method": "public_web_fetch",
     "verbatim": true,
     "notes": "Fetched from a public PMM web asset or chunk URL."
+  },
+  {
+    "path": "sources/raw/makerworld/openscad-322264d1afad64d2.js",
+    "metadata_path": "sources/raw/makerworld/openscad-322264d1afad64d2.js.meta.json",
+    "source_type": "makerworld_web_asset",
+    "origin": "MakerWorld PMM public web asset",
+    "captured_at": "2026-04-26T09:10:47Z",
+    "url": "https://makerworld.com/_next/static/chunks/openscad-322264d1afad64d2.js",
+    "capture_method": "public_web_fetch",
+    "verbatim": true,
+    "notes": "Discovered from public PMM chunk strings and fetched without auth."
   },
   {
     "path": "sources/raw/makerworld/openscad-84d6e74b207bcd6c.js",
@@ -55,6 +110,17 @@
     "notes": "Fetched from a public PMM web asset or chunk URL."
   },
   {
+    "path": "sources/raw/makerworld/parametricModelMaker-622c487668203be4.js",
+    "metadata_path": "sources/raw/makerworld/parametricModelMaker-622c487668203be4.js.meta.json",
+    "source_type": "makerworld_web_asset",
+    "origin": "MakerWorld PMM public web asset",
+    "captured_at": "2026-04-26T09:10:47Z",
+    "url": "https://makerworld.com/_next/static/chunks/pages/makerlab-app/parametricModelMaker-622c487668203be4.js",
+    "capture_method": "public_web_fetch",
+    "verbatim": true,
+    "notes": "Discovered from public PMM chunk strings and fetched without auth."
+  },
+  {
     "path": "sources/raw/makerworld/parametricModelMaker-b38162896fad14ff.js",
     "metadata_path": "sources/raw/makerworld/parametricModelMaker-b38162896fad14ff.js.meta.json",
     "source_type": "makerworld_web_asset",
@@ -66,12 +132,23 @@
     "notes": "Fetched from a public PMM web asset or chunk URL."
   },
   {
+    "path": "sources/raw/makerworld/parametricModelMaker-eb834cf651f37250.js",
+    "metadata_path": "sources/raw/makerworld/parametricModelMaker-eb834cf651f37250.js.meta.json",
+    "source_type": "makerworld_web_asset",
+    "origin": "MakerWorld PMM public web asset",
+    "captured_at": "2026-04-26T09:10:47Z",
+    "url": "https://makerworld.com/_next/static/chunks/pages/makerlab/parametricModelMaker-eb834cf651f37250.js",
+    "capture_method": "public_web_fetch",
+    "verbatim": true,
+    "notes": "Discovered from public PMM chunk strings and fetched without auth."
+  },
+  {
     "path": "sources/raw/makerworld/pmm-build-manifest.js",
     "metadata_path": "sources/raw/makerworld/pmm-build-manifest.js.meta.json",
     "source_type": "makerworld_web_asset",
     "origin": "MakerWorld PMM public web asset",
-    "captured_at": "2026-04-21T17:36:14Z",
-    "url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_buildManifest.js",
+    "captured_at": "2026-04-26T09:10:47Z",
+    "url": "https://makerworld.com/_next/static/RdZ0CIHTGHlcTXN1gWsoT/_buildManifest.js",
     "capture_method": "public_web_fetch",
     "verbatim": true,
     "notes": "Fetched from a public PMM web asset or chunk URL."
@@ -81,7 +158,7 @@
     "metadata_path": "sources/raw/makerworld/pmm-page.html.meta.json",
     "source_type": "makerworld_web_asset",
     "origin": "MakerWorld PMM public web asset",
-    "captured_at": "2026-04-21T17:36:14Z",
+    "captured_at": "2026-04-26T09:10:46Z",
     "url": "https://makerworld.com/en/makerlab/parametricModelMaker?pageType=generator",
     "capture_method": "public_web_fetch",
     "verbatim": true,
@@ -92,11 +169,22 @@
     "metadata_path": "sources/raw/makerworld/pmm-ssg-manifest.js.meta.json",
     "source_type": "makerworld_web_asset",
     "origin": "MakerWorld PMM public web asset",
-    "captured_at": "2026-04-21T17:36:15Z",
-    "url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_ssgManifest.js",
+    "captured_at": "2026-04-26T09:10:47Z",
+    "url": "https://makerworld.com/_next/static/RdZ0CIHTGHlcTXN1gWsoT/_ssgManifest.js",
     "capture_method": "public_web_fetch",
     "verbatim": true,
     "notes": "Fetched from a public PMM web asset or chunk URL."
+  },
+  {
+    "path": "sources/raw/makerworld/pmm-syntax-demo.scad",
+    "metadata_path": "sources/raw/makerworld/pmm-syntax-demo.scad.meta.json",
+    "source_type": "makerworld_web_asset",
+    "origin": "MakerWorld PMM default OpenSCAD syntax demo embedded in a public generator chunk",
+    "captured_at": "2026-04-26T09:10:48Z",
+    "url": "https://makerworld.com/_next/static/chunks/b9727229.e623804f5ef7915d.js",
+    "capture_method": "public_web_chunk_extraction",
+    "verbatim": true,
+    "notes": "Extracted from the English JS string literal used as PMM's default editor source."
   },
   {
     "path": "sources/raw/discourse/category-makerlab.json",

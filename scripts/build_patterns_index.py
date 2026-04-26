@@ -78,6 +78,14 @@ PATTERNS = [
         "limitations": ["Template must still be adapted to the user's geometry and packaging strategy."],
         "evidence_urls": [],
     },
+    {
+        "pattern_key": "pmm_syntax_demo",
+        "path": "patterns/pmm-syntax-demo.scad",
+        "purpose": "Verbatim PMM default editor source demonstrating the syntax PMM itself advertises.",
+        "supports": ["parameters", "dropdowns", "sliders", "checkboxes", "files", "colors", "fonts", "multi-plate"],
+        "limitations": ["Generated from the current public MakerWorld app chunk; rerun the refresh when PMM updates."],
+        "evidence_urls": [],
+    },
 ]
 
 

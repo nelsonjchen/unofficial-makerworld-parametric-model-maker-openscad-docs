@@ -11,7 +11,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = [
     "fetch_sources.py",
     "discover_pmm_web.py",
+    "fetch_pmm_syntax_demo.py",
     "build_library_index.py",
+    "build_font_index.py",
     "build_index.py",
     "build_changelog.py",
     "build_patterns_index.py",

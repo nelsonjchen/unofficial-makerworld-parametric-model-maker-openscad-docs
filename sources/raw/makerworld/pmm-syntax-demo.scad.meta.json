@@ -1,0 +1,11 @@
+{
+  "source_type": "makerworld_web_asset",
+  "origin": "MakerWorld PMM default OpenSCAD syntax demo embedded in a public generator chunk",
+  "captured_at": "2026-04-26T09:10:48Z",
+  "url": "https://makerworld.com/_next/static/chunks/b9727229.e623804f5ef7915d.js",
+  "capture_method": "public_web_chunk_extraction",
+  "verbatim": true,
+  "notes": "Extracted from the English JS string literal used as PMM's default editor source.",
+  "extracted_from": "sources/raw/makerworld/b9727229.e623804f5ef7915d.js",
+  "content_sha256": "98ae3f9e61e4dab6598d59934d710f3c8819d4004c3072b2be9b81486885cf19"
+}

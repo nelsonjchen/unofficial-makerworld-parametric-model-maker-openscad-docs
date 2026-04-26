@@ -80,6 +80,16 @@ MAKERWORLD_ENDPOINTS = [
         "url": f"{MAKERWORLD_BASE}/fonts-0.8.0.json",
         "notes": "Installed font inventory exposed by MakerWorld.",
     },
+    {
+        "name": "fonts-0.9.0",
+        "url": f"{MAKERWORLD_BASE}/fonts-0.9.0.json",
+        "notes": "PMM font family metadata used by the current font dialog filters.",
+    },
+    {
+        "name": "language-0.0.1",
+        "url": f"{MAKERWORLD_BASE}/language-0.0.1.json",
+        "notes": "PMM language list used by the current font dialog language filter.",
+    },
 ]
 
 

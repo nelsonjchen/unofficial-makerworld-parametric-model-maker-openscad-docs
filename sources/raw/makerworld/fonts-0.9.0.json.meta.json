@@ -1,0 +1,9 @@
+{
+  "capture_method": "public_app_json_endpoint",
+  "captured_at": "2026-04-26T09:06:50Z",
+  "notes": "PMM font family metadata used by the current font dialog filters.",
+  "origin": "MakerWorld PMM app endpoint",
+  "source_type": "makerworld_json",
+  "url": "https://makerworld.bblmw.com/makerworld/makerlab/content-generator/openscad/fonts-0.9.0.json",
+  "verbatim": true
+}

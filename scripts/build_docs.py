@@ -181,7 +181,8 @@ def render_web_discovery(discovery: dict | None) -> None:
             "",
             "1. Run `python3 scripts/discover_pmm_web.py` first.",
             "2. If the PMM page itself is challenge-protected, seed discovery with a cleaned browser network log using `--seed-file` or known public chunk URLs using `--seed-url`.",
-            "3. Re-run `python3 scripts/build_index.py` and `python3 scripts/build_docs.py` after discovery if you changed the raw artifact set.",
+            "3. Run `python3 scripts/fetch_pmm_syntax_demo.py` to extract the current PMM default editor source from the generator lazy chunk.",
+            "4. Re-run `python3 scripts/build_index.py` and `python3 scripts/build_docs.py` after discovery if you changed the raw artifact set.",
             "",
             "## Current Notes",
             "",
@@ -191,6 +192,40 @@ def render_web_discovery(discovery: dict | None) -> None:
         lines.append(f"- {note}")
 
     write_doc("web-discovery.md", lines)
+
+
+def render_syntax_demo(status: dict | None) -> None:
+    if status is None:
+        lines = [
+            "# PMM Syntax Demo",
+            "",
+            "Run `python3 scripts/fetch_pmm_syntax_demo.py` to extract PMM's current default OpenSCAD source from public MakerWorld web chunks.",
+        ]
+        write_doc("pmm-syntax-demo.md", lines)
+        return
+
+    source_path = REPO_ROOT / status.get("raw_path", "")
+    source = source_path.read_text(encoding="utf-8") if source_path.exists() else ""
+    lines = [
+        "# PMM Syntax Demo",
+        "",
+        "This is the current default OpenSCAD source that MakerWorld PMM loads into the editor for the generator flow.",
+        "",
+        f"- Extraction status: `{status.get('status')}`",
+        f"- Captured at: `{status.get('captured_at')}`",
+        f"- Source chunk: {status.get('source_url')}",
+        f"- Raw source: [`{status.get('raw_path')}`](../{status.get('raw_path')})",
+        f"- Pattern copy: [`{status.get('pattern_path')}`](../{status.get('pattern_path')})",
+        f"- Lines: `{status.get('line_count')}`",
+        f"- SHA-256: `{status.get('content_sha256')}`",
+        "",
+        "Refresh it with `python3 scripts/fetch_pmm_syntax_demo.py`. If a headless fetch misses the current chunk, pass a cleaned browser network export with `--seed-file`.",
+        "",
+        "```scad",
+        source.rstrip(),
+        "```",
+    ]
+    write_doc("pmm-syntax-demo.md", lines)
 
 
 def render_sources_and_provenance(source_index: list[dict]) -> None:
@@ -242,11 +277,13 @@ def main() -> None:
     rules = load_json("compatibility-rules.json")
     source_index = load_json("source-index.json")
     web_discovery = load_json_optional("pmm-web-discovery.json")
+    syntax_demo = load_json_optional("pmm-syntax-demo.json")
 
     render_feature_reference(features)
     render_compatibility_rules(rules)
     render_discourse_api(source_index)
     render_web_discovery(web_discovery)
+    render_syntax_demo(syntax_demo)
     render_sources_and_provenance(source_index)
 
 

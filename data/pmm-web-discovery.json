@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-04-21T17:36:16Z",
+  "captured_at": "2026-04-26T09:10:48Z",
   "page_url": "https://makerworld.com/en/makerlab/parametricModelMaker?pageType=generator",
   "page_fetch": {
     "status": "ok",
@@ -8,11 +8,13 @@
     "error": null
   },
   "seed_sources": [],
-  "seed_url_count": 31,
-  "build_manifest_url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_buildManifest.js",
+  "seed_url_count": 29,
+  "build_manifest_url": "https://makerworld.com/_next/static/RdZ0CIHTGHlcTXN1gWsoT/_buildManifest.js",
   "current_chunk_urls": [
-    "https://makerworld.com/_next/static/chunks/openscad-84d6e74b207bcd6c.js",
-    "https://makerworld.com/_next/static/chunks/pages/makerlab/parametricModelMaker-b38162896fad14ff.js"
+    "https://makerworld.com/_next/static/chunks/openscad-322264d1afad64d2.js",
+    "https://makerworld.com/_next/static/chunks/pages/makerlab-app/parametricModelMaker-622c487668203be4.js",
+    "https://makerworld.com/_next/static/chunks/pages/makerlab-app/parametricModelMaker/edit-41890c8d8e2bb4ab.js",
+    "https://makerworld.com/_next/static/chunks/pages/makerlab/parametricModelMaker-eb834cf651f37250.js"
   ],
   "region_base_urls": [
     "https://makerworld.bblmw.cn/makerworld/makerlab/content-generator/openscad/",
@@ -151,7 +153,7 @@
       }
     },
     {
-      "url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_buildManifest.js",
+      "url": "https://makerworld.com/_next/static/RdZ0CIHTGHlcTXN1gWsoT/_buildManifest.js",
       "status": 200,
       "ok": true,
       "saved_path": "sources/raw/makerworld/pmm-build-manifest.js",
@@ -159,13 +161,13 @@
         "content_type": "application/javascript; charset=UTF-8",
         "bytes": 55553,
         "embedded_absolute_url_count": 0,
-        "embedded_relative_url_count": 3,
+        "embedded_relative_url_count": 449,
         "embedded_base_url_count": 0,
         "embedded_content_file_count": 0
       }
     },
     {
-      "url": "https://makerworld.com/_next/static/70KJ0RikzXL6bbz2JJlju/_ssgManifest.js",
+      "url": "https://makerworld.com/_next/static/RdZ0CIHTGHlcTXN1gWsoT/_ssgManifest.js",
       "status": 200,
       "ok": true,
       "saved_path": "sources/raw/makerworld/pmm-ssg-manifest.js",
@@ -179,13 +181,14 @@
       }
     },
     {
-      "url": "https://makerworld.com/_next/static/chunks/openscad-84d6e74b207bcd6c.js",
+      "url": "https://makerworld.com/_next/static/chunks/openscad-322264d1afad64d2.js",
       "status": 200,
       "ok": true,
-      "saved_path": "sources/raw/makerworld/openscad-84d6e74b207bcd6c.js",
+      "source": "chunk_string",
+      "saved_path": "sources/raw/makerworld/openscad-322264d1afad64d2.js",
       "summary": {
         "content_type": "application/javascript; charset=UTF-8",
-        "bytes": 297298,
+        "bytes": 299508,
         "embedded_absolute_url_count": 16,
         "embedded_relative_url_count": 3,
         "embedded_base_url_count": 2,
@@ -193,10 +196,41 @@
       }
     },
     {
-      "url": "https://makerworld.com/_next/static/chunks/pages/makerlab/parametricModelMaker-b38162896fad14ff.js",
+      "url": "https://makerworld.com/_next/static/chunks/pages/makerlab-app/parametricModelMaker-622c487668203be4.js",
       "status": 200,
       "ok": true,
-      "saved_path": "sources/raw/makerworld/parametricModelMaker-b38162896fad14ff.js",
+      "source": "chunk_string",
+      "saved_path": "sources/raw/makerworld/parametricModelMaker-622c487668203be4.js",
+      "summary": {
+        "content_type": "application/javascript; charset=UTF-8",
+        "bytes": 2336,
+        "embedded_absolute_url_count": 2,
+        "embedded_relative_url_count": 0,
+        "embedded_base_url_count": 0,
+        "embedded_content_file_count": 0
+      }
+    },
+    {
+      "url": "https://makerworld.com/_next/static/chunks/pages/makerlab-app/parametricModelMaker/edit-41890c8d8e2bb4ab.js",
+      "status": 200,
+      "ok": true,
+      "source": "chunk_string",
+      "saved_path": "sources/raw/makerworld/edit-41890c8d8e2bb4ab.js",
+      "summary": {
+        "content_type": "application/javascript; charset=UTF-8",
+        "bytes": 2813,
+        "embedded_absolute_url_count": 0,
+        "embedded_relative_url_count": 0,
+        "embedded_base_url_count": 0,
+        "embedded_content_file_count": 0
+      }
+    },
+    {
+      "url": "https://makerworld.com/_next/static/chunks/pages/makerlab/parametricModelMaker-eb834cf651f37250.js",
+      "status": 200,
+      "ok": true,
+      "source": "chunk_string",
+      "saved_path": "sources/raw/makerworld/parametricModelMaker-eb834cf651f37250.js",
       "summary": {
         "content_type": "application/javascript; charset=UTF-8",
         "bytes": 12430,

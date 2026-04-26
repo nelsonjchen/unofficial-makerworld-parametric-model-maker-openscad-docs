@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "captured_at": "2026-04-26T09:10:48Z",
+  "source_url": "https://makerworld.com/_next/static/chunks/b9727229.e623804f5ef7915d.js",
+  "raw_path": "sources/raw/makerworld/pmm-syntax-demo.scad",
+  "pattern_path": "patterns/pmm-syntax-demo.scad",
+  "chunk_raw_path": "sources/raw/makerworld/b9727229.e623804f5ef7915d.js",
+  "content_sha256": "98ae3f9e61e4dab6598d59934d710f3c8819d4004c3072b2be9b81486885cf19",
+  "line_count": 198,
+  "stats": {
+    "page_fetch_ok": true,
+    "page_http_status": 200,
+    "seed_url_count": 16,
+    "fetched_js_count": 35,
+    "dynamic_chunk_id_count": 22,
+    "dynamic_chunk_ids": [
+      2397,
+      8671,
+      11216,
+      12737,
+      16659,
+      22841,
+      26208,
+      32974,
+      33449,
+      36581,
+      39098,
+      42239,
+      49329,
+      58225,
+      63866,
+      68398,
+      73460,
+      74805,
+      81578,
+      81731,
+      83926,
+      91487
+    ]
+  }
+}
