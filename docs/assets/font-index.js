@@ -531,11 +531,14 @@
     sidebar.replaceChildren();
     const title = document.createElement("div");
     title.className = "pmm-font-book__sidebar-title";
-    title.textContent = "PMM Fonts";
+    title.textContent = "MakerWorld Parametric Model Maker Fonts";
     const subtitle = document.createElement("div");
     subtitle.className = "pmm-font-book__sidebar-subtitle";
     subtitle.textContent = `${families.length.toLocaleString()} families`;
-    sidebar.append(title, subtitle);
+    const unofficial = document.createElement("div");
+    unofficial.className = "pmm-font-book__sidebar-note";
+    unofficial.textContent = "Unofficial, reverse-engineered reference.";
+    sidebar.append(title, subtitle, unofficial);
 
     const nav = document.createElement("nav");
     nav.className = "pmm-font-book__nav";
