@@ -1,0 +1,41 @@
+/* Google Fonts repo preview files. Source font files are SIL OFL; see OFL.txt in this directory. */
+
+@font-face {
+  font-family: "Hind Kochi";
+  src: url("HindKochi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hind Kochi";
+  src: url("HindKochi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hind Kochi";
+  src: url("HindKochi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hind Kochi";
+  src: url("HindKochi-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hind Kochi";
+  src: url("HindKochi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

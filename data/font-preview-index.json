@@ -8,9 +8,9 @@
     "combined_family_count": 1881,
     "preview_status_counts": {
       "google-css": 8092,
-      "fallback-only": 162,
+      "self-hosted-preview": 127,
+      "fallback-only": 41,
       "system-font-preview": 6,
-      "self-hosted-preview": 6,
       "external-preview": 1
     },
     "license_confidence_counts": {
@@ -950,14 +950,15 @@
     },
     {
       "family": "Aksara Bali Galang",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Aksara Bali Galang",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Aksara Bali Galang under SIL OFL. Fallback-only until a Balinese-aware preview is added.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/aksarabaligalang"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/aksarabaligalang/aksarabaligalang.css"
     },
     {
       "family": "Akshar",
@@ -2483,27 +2484,29 @@
     },
     {
       "family": "Alumni Sans Collegiate One SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Alumni Sans Collegiate One SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/alumnisanscollegiateonesc/alumnisanscollegiateonesc.css"
     },
     {
       "family": "Alumni Sans Collegiate One SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Alumni Sans Collegiate One SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/alumnisanscollegiateonesc/alumnisanscollegiateonesc.css"
     },
     {
       "family": "Alumni Sans Collegiate One",
@@ -3178,27 +3181,29 @@
     },
     {
       "family": "AmstelvarAlpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "AmstelvarAlpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Amstelvar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; upstream Amstelvar sources identify it under SIL OFL.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/amstelvaralpha",
         "https://github.com/googlefonts/amstelvar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/amstelvaralpha/amstelvaralpha.css"
     },
     {
       "family": "AmstelvarAlpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "AmstelvarAlpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Amstelvar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; upstream Amstelvar sources identify it under SIL OFL.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/amstelvaralpha",
         "https://github.com/googlefonts/amstelvar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/amstelvaralpha/amstelvaralpha.css"
     },
     {
       "family": "Anaheim",
@@ -7008,14 +7013,15 @@
     },
     {
       "family": "BM HANNA_TTF",
-      "preview_status": "fallback-only",
+      "preview_status": "self-hosted-preview",
       "preview_family": "Hanna",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "PMM name appears to map to Google Fonts Hanna / BM-HANNA under SIL OFL.",
+      "license_summary": "Self-hosted preview uses Google Fonts Hanna / BM-HANNA under SIL OFL.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hanna"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hanna/hanna.css"
     },
     {
       "family": "Babylonica",
@@ -9505,14 +9511,15 @@
     },
     {
       "family": "Bhavuka",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Bhavuka",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Bhavuka under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/bhavuka"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bhavuka/bhavuka.css"
     },
     {
       "family": "BhuTuka Expanded One",
@@ -9538,123 +9545,133 @@
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersdisplaysc/bigshouldersdisplaysc.css"
     },
     {
       "family": "Big Shoulders Display",
@@ -9768,113 +9785,123 @@
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinedisplaysc/bigshouldersinlinedisplaysc.css"
     },
     {
       "family": "Big Shoulders Inline Display",
@@ -9988,113 +10015,123 @@
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Inline Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersinlinetextsc/bigshouldersinlinetextsc.css"
     },
     {
       "family": "Big Shoulders Inline Text",
@@ -10208,113 +10245,123 @@
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Display SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstencildisplaysc/bigshouldersstencildisplaysc.css"
     },
     {
       "family": "Big Shoulders Stencil Display",
@@ -10428,113 +10475,123 @@
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Stencil Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshouldersstenciltextsc/bigshouldersstenciltextsc.css"
     },
     {
       "family": "Big Shoulders Stencil Text",
@@ -10648,113 +10705,123 @@
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Big Shoulders Text SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bigshoulderstextsc/bigshoulderstextsc.css"
     },
     {
       "family": "Big Shoulders Text",
@@ -12375,15 +12442,16 @@
     },
     {
       "family": "Bungee Color",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Bungee Color",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Bungee Color under SIL OFL. Fallback-only until a color-font preview is added.",
+      "license_summary": "Self-hosted preview uses the SIL OFL color font file from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/bungeecolor",
         "https://github.com/djrrb/Bungee"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/bungeecolor/bungeecolor.css"
     },
     {
       "family": "Bungee Hairline",
@@ -16941,206 +17009,223 @@
     },
     {
       "family": "Decovar Alpha Regular24",
-      "preview_status": "fallback-only",
+      "preview_status": "self-hosted-preview",
       "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "likely-clean",
-      "license_summary": "Likely a named instance or legacy PMM name for Decovar Alpha, which Google Fonts carries under SIL OFL.",
+      "license_summary": "Self-hosted preview uses Decovar Alpha from the Google Fonts repository; Regular24 is likely a named instance or legacy PMM name.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Decovar Alpha",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
         "https://github.com/googlefonts/decovar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/decovaralpha/decovaralpha.css"
     },
     {
       "family": "Dekko",
@@ -22876,25 +22961,27 @@
     },
     {
       "family": "Fragment Mono SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Fragment Mono SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/fragmentmonosc/fragmentmonosc.css"
     },
     {
       "family": "Fragment Mono SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Fragment Mono SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/fragmentmonosc/fragmentmonosc.css"
     },
     {
       "family": "Fragment Mono",
@@ -27419,15 +27506,16 @@
     },
     {
       "family": "Hannari",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hannari",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts Early Access and repository sources carry Hannari under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
       "evidence_urls": [
         "https://fonts.googleapis.com/earlyaccess/hannari.css",
         "https://github.com/google/fonts/tree/main/ofl/hannari"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hannari/hannari.css"
     },
     {
       "family": "Hanuman",
@@ -27927,14 +28015,15 @@
     },
     {
       "family": "Hermeneus One",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hermeneus One",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hermeneus One under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hermeneusone"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hermeneusone/hermeneusone.css"
     },
     {
       "family": "Herr Von Muellerhoff",
@@ -27971,58 +28060,63 @@
     },
     {
       "family": "Hind Colombo",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Colombo",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindcolombo/hindcolombo.css"
     },
     {
       "family": "Hind Colombo",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Colombo",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindcolombo/hindcolombo.css"
     },
     {
       "family": "Hind Colombo",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Colombo",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindcolombo/hindcolombo.css"
     },
     {
       "family": "Hind Colombo",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Colombo",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindcolombo/hindcolombo.css"
     },
     {
       "family": "Hind Colombo",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Colombo",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindcolombo/hindcolombo.css"
     },
     {
       "family": "Hind Guntur",
@@ -28081,113 +28175,123 @@
     },
     {
       "family": "Hind Jalandhar",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Jalandhar",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindjalandhar/hindjalandhar.css"
     },
     {
       "family": "Hind Jalandhar",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Jalandhar",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindjalandhar/hindjalandhar.css"
     },
     {
       "family": "Hind Jalandhar",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Jalandhar",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindjalandhar/hindjalandhar.css"
     },
     {
       "family": "Hind Jalandhar",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Jalandhar",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindjalandhar/hindjalandhar.css"
     },
     {
       "family": "Hind Jalandhar",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Jalandhar",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindjalandhar/hindjalandhar.css"
     },
     {
       "family": "Hind Kochi",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Kochi",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindkochi"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindkochi/hindkochi.css"
     },
     {
       "family": "Hind Kochi",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Kochi",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindkochi"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindkochi/hindkochi.css"
     },
     {
       "family": "Hind Kochi",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Kochi",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindkochi"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindkochi/hindkochi.css"
     },
     {
       "family": "Hind Kochi",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Kochi",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindkochi"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindkochi/hindkochi.css"
     },
     {
       "family": "Hind Kochi",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Hind Kochi",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/hindkochi"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/hindkochi/hindkochi.css"
     },
     {
       "family": "Hind Madurai",
@@ -35652,15 +35756,16 @@
     },
     {
       "family": "Kokoro",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Kokoro",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts Early Access and repository sources carry Kokoro under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
       "evidence_urls": [
         "https://fonts.googleapis.com/earlyaccess/kokoro.css",
         "https://github.com/google/fonts/tree/main/ofl/kokoro"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/kokoro/kokoro.css"
     },
     {
       "family": "Kolker Brush",
@@ -42782,15 +42887,16 @@
     },
     {
       "family": "Molle",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Molle",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Molle under SIL OFL, but CSS2 serving is unreliable.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; CSS2 serving is unreliable.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/molle",
         "https://fontsource.org/fonts/molle"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/molle/molle.css"
     },
     {
       "family": "Mona Sans",
@@ -45411,15 +45517,16 @@
     },
     {
       "family": "Nico Moji",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Nico Moji",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts Early Access and repository sources carry Nico Moji under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
       "evidence_urls": [
         "https://fonts.googleapis.com/earlyaccess/nicomoji.css",
         "https://github.com/google/fonts/tree/main/ofl/nicomoji"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/nicomoji/nicomoji.css"
     },
     {
       "family": "Niconne",
@@ -45434,15 +45541,16 @@
     },
     {
       "family": "Nikukyu",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Nikukyu",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts Early Access and repository sources carry Nikukyu under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
       "evidence_urls": [
         "https://fonts.googleapis.com/earlyaccess/nikukyu.css",
         "https://github.com/google/fonts/tree/main/ofl/nikukyu"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/nikukyu/nikukyu.css"
     },
     {
       "family": "Niramit",
@@ -79808,51 +79916,55 @@
     },
     {
       "family": "Signika Negative SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika Negative SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikanegativesc/signikanegativesc.css"
     },
     {
       "family": "Signika Negative SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika Negative SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikanegativesc/signikanegativesc.css"
     },
     {
       "family": "Signika Negative SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika Negative SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikanegativesc/signikanegativesc.css"
     },
     {
       "family": "Signika Negative SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika Negative SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikanegativesc/signikanegativesc.css"
     },
     {
       "family": "Signika Negative",
@@ -79911,63 +80023,68 @@
     },
     {
       "family": "Signika SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikasc/signikasc.css"
     },
     {
       "family": "Signika SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikasc/signikasc.css"
     },
     {
       "family": "Signika SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikasc/signikasc.css"
     },
     {
       "family": "Signika SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikasc/signikasc.css"
     },
     {
       "family": "Signika SC",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Signika SC",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "license_summary": "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
       "evidence_urls": [
         "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
         "https://github.com/google/fonts/issues/2354"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/signikasc/signikasc.css"
     },
     {
       "family": "Signika",
@@ -83651,39 +83768,42 @@
     },
     {
       "family": "Sunflower",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Sunflower",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Sunflower under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/sunflower",
         "https://fontsource.org/fonts/sunflower/install"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/sunflower/sunflower.css"
     },
     {
       "family": "Sunflower",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Sunflower",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Sunflower under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/sunflower",
         "https://fontsource.org/fonts/sunflower/install"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/sunflower/sunflower.css"
     },
     {
       "family": "Sunflower",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "Sunflower",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository carries Sunflower under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/sunflower",
         "https://fontsource.org/fonts/sunflower/install"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/sunflower/sunflower.css"
     },
     {
       "family": "Supermercado",
@@ -84831,15 +84951,16 @@
     },
     {
       "family": "TharLon",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "self-hosted-preview",
+      "preview_family": "TharLon",
       "google_css_url": null,
       "license_confidence": "clean",
-      "license_summary": "Google Fonts repository and Early Access sources carry TharLon under SIL OFL.",
+      "license_summary": "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
       "evidence_urls": [
         "https://github.com/google/fonts/tree/main/ofl/tharlon",
         "https://fonts.googleapis.com/earlyaccess/tharlon.css"
-      ]
+      ],
+      "font_css_url": "vendor-fonts/google-ofl/tharlon/tharlon.css"
     },
     {
       "family": "Thasadith",

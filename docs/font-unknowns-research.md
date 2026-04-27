@@ -4,7 +4,7 @@ This report summarizes the research pass over the `unknown` font-provenance buck
 
 At the start of this pass, the generated index had `78` families marked `unknown`. Most were not actually unknowable; they were aliases, old Google Fonts Early Access names, small-caps variants that exist in `google/fonts` but not in the CSS2 API, or system fonts that should be labeled as restricted rather than unknown.
 
-Current implementation status: all findings in this report have been applied to the generated index. The `unknown` bucket is now empty; remaining caveats are represented as `fallback-only`, `likely-clean`, `restricted-redistribution`, `custom-license`, or `conflicting`.
+Current implementation status: all findings in this report have been applied to the generated index. The `unknown` bucket is now empty; remaining caveats are represented as `fallback-only`, `likely-clean`, `restricted-redistribution`, `custom-license`, or `conflicting`. A follow-up pass also added self-hosted previews for the smaller clean Google Fonts repo / Early Access families that are not served by the public CSS2 API.
 
 ## Executive Summary
 
@@ -19,8 +19,8 @@ Current implementation status: all findings in this report have been applied to 
 | Bucket | Families | Recommendation |
 |---|---|---|
 | Clean Google CSS alias | `Abhaya Libre ExtraBold`, `Abhaya Libre Medium`, `Abhaya Libre SemiBold`, `Asap Black`, `Asap Extra`, `Asap ExtraLight`, `Asap Light`, `Asap Medium`, `Asap Semi`, `Buda`, `Encode Sans Condensed Thin`, `Encode Sans SC Condensed Thin`, `Fjord`, `Noto Serif Hmong Nyiakeng`, `Rounded Mplus 1c Bold`, `Sansation Light`, `Space Grotesk Light`, `Supermercado`, `UnifrakturCook`, `Yaldevi Colombo`, `Yaldevi Colombo ExtraLight`, `Yaldevi Colombo Light`, `Yaldevi Colombo Medium`, `Yaldevi Colombo SemiBold` | Implemented as `clean`; previews use canonical Google CSS family/weight/style. |
-| Clean Google repo / Early Access, not CSS2 | `Aksara Bali Galang`, `Alumni Sans Collegiate One SC`, `AmstelvarAlpha`, `Big Shoulders Display SC`, `Big Shoulders Inline Display SC`, `Big Shoulders Inline Text SC`, `Big Shoulders Stencil Display SC`, `Big Shoulders Stencil Text SC`, `Big Shoulders Text SC`, `Bungee Color`, `Decovar Alpha`, `Decovar Alpha Regular24`, `Fragment Mono SC`, `Hannari`, `Hermeneus One`, `Kokoro`, `Maven Pro VF Beta`, `Molle`, `Nico Moji`, `Nikukyu`, `Noto Color Emoji Compat Test`, `Podkova VF Beta`, `Signika Negative SC`, `Signika SC` | Mark `clean` or `likely-clean`; preview via exact repo font, Early Access CSS, or fallback with explicit note. |
-| Clean or likely-clean non-CSS aliases | `BM HANNA_TTF`, `Bhavuka`, `Digital Numbers`, `Hind Colombo`, `Hind Jalandhar`, `Hind Kochi`, `Ligconsolata`, `Miama`, `Myanmar Khyay`, `TharLon`, `Yinmar` | Mark `clean`; add alias or self-host/external preview where reasonable. |
+| Clean Google repo / Early Access, not CSS2 | `Aksara Bali Galang`, `Alumni Sans Collegiate One SC`, `AmstelvarAlpha`, `Big Shoulders Display SC`, `Big Shoulders Inline Display SC`, `Big Shoulders Inline Text SC`, `Big Shoulders Stencil Display SC`, `Big Shoulders Stencil Text SC`, `Big Shoulders Text SC`, `Bungee Color`, `Decovar Alpha`, `Decovar Alpha Regular24`, `Fragment Mono SC`, `Hannari`, `Hermeneus One`, `Kokoro`, `Maven Pro VF Beta`, `Molle`, `Nico Moji`, `Nikukyu`, `Noto Color Emoji Compat Test`, `Podkova VF Beta`, `Signika Negative SC`, `Signika SC` | Mark `clean` or `likely-clean`; self-host smaller exact repo fonts, preview canonical aliases for Maven/Podkova, and keep very large or special-case color/test fonts fallback-only. |
+| Clean or likely-clean non-CSS aliases | `BM HANNA_TTF`, `Bhavuka`, `Digital Numbers`, `Hind Colombo`, `Hind Jalandhar`, `Hind Kochi`, `Ligconsolata`, `Miama`, `Myanmar Khyay`, `TharLon`, `Yinmar` | Mark `clean`; self-host smaller Google repo fonts and leave remaining upstream/archive cases for a later pass. |
 | Likely-clean but weaker or historical evidence | `KoPub Batang`, `Merge One`, `Mervale Script`, `Myanmar Sans Pro`, `NATS`, `Sitara`, `Souliyo Unicode` | Mark `likely-clean`; evidence is good enough to remove from `unknown`, but note old metadata, mirrors, or minor license-source disagreement. |
 | Restricted system/proprietary | `Batang`, `BatangChe`, `DotumChe`, `GulimChe`, `Gungsuh`, `GungsuhChe` | Mark `restricted-redistribution`; use `system-font-preview` only. Do not self-host. |
 | PMM-render identified, likely clean | `Strong` | Mark `likely-clean`; evidence points to Gaslight/Cyreal `Strong` under SIL OFL. Keep fallback-only until a deliberate self-hosted preview is added from a source that preserves the OFL and copyright metadata. |
@@ -110,9 +110,14 @@ Current implementation status: all findings in this report have been applied to 
 
 ## Implementation Notes
 
+Completed follow-up:
+
+1. Added self-hosted previews for the smaller clean Google Fonts repo files that fail CSS2, including Decovar Alpha, AmstelvarAlpha, the Big Shoulders SC families, Fragment Mono SC, Signika SC, Signika Negative SC, Hind Colombo/Jalandhar/Kochi, Bungee Color, and several Early Access display families.
+2. Kept oversized or special-case fonts fallback-only for now, especially `Noto Color Emoji Compat Test`, Jeju families, and KoPub Batang.
+3. Preserved bundled `OFL.txt` files next to each self-hosted Google repo preview font.
+
 Possible next implementation pass:
 
-1. Add self-hosted previews for selected OFL fonts that exist in `google/fonts` but fail CSS2, especially the `SC` small-caps families.
-2. Add Early Access CSS previews where they are stable enough for Japanese and Myanmar families.
-3. Use script-appropriate preview samples for Myanmar, Balinese, Japanese, Sinhala, Gurmukhi, Malayalam, Lao, and Telugu families.
-4. Keep `Strong` as a likely-clean Gaslight/Cyreal match from the PMM render probe, while preserving a note about the unrelated enStep/Altsys `STRONG Regular` name collision.
+1. Add script-appropriate preview samples for Myanmar, Balinese, Japanese, Sinhala, Gurmukhi, Malayalam, Lao, and Telugu families.
+2. Add WOFF2 conversion for the repo-sourced TTFs if payload size starts to matter.
+3. Keep `Strong` as a likely-clean Gaslight/Cyreal match from the PMM render probe, while preserving a note about the unrelated enStep/Altsys `STRONG Regular` name collision.

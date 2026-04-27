@@ -1,0 +1,25 @@
+/* Google Fonts repo preview files. Source font files are SIL OFL; see OFL.txt in this directory. */
+
+@font-face {
+  font-family: "Sunflower";
+  src: url("Sunflower-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sunflower";
+  src: url("Sunflower-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sunflower";
+  src: url("Sunflower-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

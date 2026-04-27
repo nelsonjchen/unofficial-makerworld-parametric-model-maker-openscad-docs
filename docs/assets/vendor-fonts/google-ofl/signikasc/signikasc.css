@@ -1,0 +1,9 @@
+/* Google Fonts repo preview files. Source font files are SIL OFL; see OFL.txt in this directory. */
+
+@font-face {
+  font-family: "Signika SC";
+  src: url("SignikaSC[wght].ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,9 @@
+/* Google Fonts repo preview files. Source font files are SIL OFL; see OFL.txt in this directory. */
+
+@font-face {
+  font-family: "Big Shoulders Stencil Display SC";
+  src: url("BigShouldersStencilDisplaySC[wght].ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}

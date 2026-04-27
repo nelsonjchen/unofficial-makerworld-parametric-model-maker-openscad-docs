@@ -15,7 +15,7 @@ RAW_DIR = REPO_ROOT / "sources" / "raw" / "makerworld"
 DATA_DIR = REPO_ROOT / "data"
 DOCS_DIR = REPO_ROOT / "docs"
 ASSET_DIR = DOCS_DIR / "assets"
-FONT_INDEX_ASSET_VERSION = "20260427-sticky-font-drawer"
+FONT_INDEX_ASSET_VERSION = "20260427-google-ofl-previews"
 
 INSTALLED_PATH = RAW_DIR / "fonts-0.8.0.json"
 BROAD_PATH = RAW_DIR / "fonts-show-0.0.1.json"
@@ -336,6 +336,24 @@ def source_only_override(
     }
 
 
+def google_repo_preview_override(
+    confidence: str,
+    summary: str,
+    evidence_urls: list[str],
+    slug: str,
+    *,
+    preview_family: str | None = None,
+) -> dict:
+    return {
+        "license_confidence": confidence,
+        "preview_status": "self-hosted-preview",
+        "preview_family": preview_family,
+        "font_css_url": f"vendor-fonts/google-ofl/{slug}/{slug}.css",
+        "license_summary": summary,
+        "evidence_urls": evidence_urls,
+    }
+
+
 FONT_OVERRIDES.update({
     "Abhaya Libre ExtraBold": google_alias_override(
         "Abhaya Libre",
@@ -512,79 +530,105 @@ FONT_OVERRIDES.update({
         google_url="https://fonts.googleapis.com/css2?family=Yaldevi:wght@600&display=swap",
         weight=600,
     ),
-    "Aksara Bali Galang": source_only_override(
+    "Aksara Bali Galang": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Aksara Bali Galang under SIL OFL. Fallback-only until a Balinese-aware preview is added.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository.",
         ["https://github.com/google/fonts/tree/main/ofl/aksarabaligalang"],
+        "aksarabaligalang",
+        preview_family="Aksara Bali Galang",
     ),
-    "Alumni Sans Collegiate One SC": source_only_override(
+    "Alumni Sans Collegiate One SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         [
             "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/METADATA.pb",
             "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/OFL.txt",
         ],
+        "alumnisanscollegiateonesc",
+        preview_family="Alumni Sans Collegiate One SC",
     ),
-    "AmstelvarAlpha": source_only_override(
+    "AmstelvarAlpha": google_repo_preview_override(
         "clean",
-        "Google Fonts repository and upstream Amstelvar sources identify this early variable family under SIL OFL.",
+        "Self-hosted preview uses the early variable font from the Google Fonts repository; upstream Amstelvar sources identify it under SIL OFL.",
         ["https://github.com/google/fonts/tree/main/ofl/amstelvaralpha", "https://github.com/googlefonts/amstelvar"],
+        "amstelvaralpha",
+        preview_family="AmstelvarAlpha",
     ),
-    "BM HANNA_TTF": source_only_override(
+    "BM HANNA_TTF": google_repo_preview_override(
         "clean",
-        "PMM name appears to map to Google Fonts Hanna / BM-HANNA under SIL OFL.",
+        "Self-hosted preview uses Google Fonts Hanna / BM-HANNA under SIL OFL.",
         ["https://github.com/google/fonts/tree/main/ofl/hanna"],
+        "hanna",
         preview_family="Hanna",
     ),
-    "Bhavuka": source_only_override(
+    "Bhavuka": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Bhavuka under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository.",
         ["https://github.com/google/fonts/tree/main/ofl/bhavuka"],
+        "bhavuka",
+        preview_family="Bhavuka",
     ),
-    "Big Shoulders Display SC": source_only_override(
+    "Big Shoulders Display SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb", "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"],
+        "bigshouldersdisplaysc",
+        preview_family="Big Shoulders Display SC",
     ),
-    "Big Shoulders Inline Display SC": source_only_override(
+    "Big Shoulders Inline Display SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"],
+        "bigshouldersinlinedisplaysc",
+        preview_family="Big Shoulders Inline Display SC",
     ),
-    "Big Shoulders Inline Text SC": source_only_override(
+    "Big Shoulders Inline Text SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"],
+        "bigshouldersinlinetextsc",
+        preview_family="Big Shoulders Inline Text SC",
     ),
-    "Big Shoulders Stencil Display SC": source_only_override(
+    "Big Shoulders Stencil Display SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"],
+        "bigshouldersstencildisplaysc",
+        preview_family="Big Shoulders Stencil Display SC",
     ),
-    "Big Shoulders Stencil Text SC": source_only_override(
+    "Big Shoulders Stencil Text SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"],
+        "bigshouldersstenciltextsc",
+        preview_family="Big Shoulders Stencil Text SC",
     ),
-    "Big Shoulders Text SC": source_only_override(
+    "Big Shoulders Text SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"],
+        "bigshoulderstextsc",
+        preview_family="Big Shoulders Text SC",
     ),
-    "Bungee Color": source_only_override(
+    "Bungee Color": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Bungee Color under SIL OFL. Fallback-only until a color-font preview is added.",
+        "Self-hosted preview uses the SIL OFL color font file from the Google Fonts repository.",
         ["https://github.com/google/fonts/tree/main/ofl/bungeecolor", "https://github.com/djrrb/Bungee"],
+        "bungeecolor",
+        preview_family="Bungee Color",
     ),
-    "Decovar Alpha": source_only_override(
+    "Decovar Alpha": google_repo_preview_override(
         "clean",
-        "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+        "Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.",
         ["https://github.com/google/fonts/tree/main/ofl/decovaralpha", "https://github.com/googlefonts/decovar"],
+        "decovaralpha",
+        preview_family="Decovar Alpha",
     ),
-    "Decovar Alpha Regular24": source_only_override(
+    "Decovar Alpha Regular24": google_repo_preview_override(
         "likely-clean",
-        "Likely a named instance or legacy PMM name for Decovar Alpha, which Google Fonts carries under SIL OFL.",
+        "Self-hosted preview uses Decovar Alpha from the Google Fonts repository; Regular24 is likely a named instance or legacy PMM name.",
         ["https://github.com/google/fonts/tree/main/ofl/decovaralpha"],
+        "decovaralpha",
         preview_family="Decovar Alpha",
     ),
     "Digital Numbers": source_only_override(
@@ -592,35 +636,47 @@ FONT_OVERRIDES.update({
         "Upstream repository carries Digital Numbers under SIL OFL.",
         ["https://github.com/s-a/digital-numbers-font", "https://raw.githubusercontent.com/s-a/digital-numbers-font/master/OFL.txt"],
     ),
-    "Fragment Mono SC": source_only_override(
+    "Fragment Mono SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb"],
+        "fragmentmonosc",
+        preview_family="Fragment Mono SC",
     ),
-    "Hannari": source_only_override(
+    "Hannari": google_repo_preview_override(
         "clean",
-        "Google Fonts Early Access and repository sources carry Hannari under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
         ["https://fonts.googleapis.com/earlyaccess/hannari.css", "https://github.com/google/fonts/tree/main/ofl/hannari"],
+        "hannari",
+        preview_family="Hannari",
     ),
-    "Hermeneus One": source_only_override(
+    "Hermeneus One": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Hermeneus One under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://github.com/google/fonts/tree/main/ofl/hermeneusone"],
+        "hermeneusone",
+        preview_family="Hermeneus One",
     ),
-    "Hind Colombo": source_only_override(
+    "Hind Colombo": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Hind Colombo under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
         ["https://github.com/google/fonts/tree/main/ofl/hindcolombo"],
+        "hindcolombo",
+        preview_family="Hind Colombo",
     ),
-    "Hind Jalandhar": source_only_override(
+    "Hind Jalandhar": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
         ["https://github.com/google/fonts/tree/main/ofl/hindjalandhar"],
+        "hindjalandhar",
+        preview_family="Hind Jalandhar",
     ),
-    "Hind Kochi": source_only_override(
+    "Hind Kochi": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Hind Kochi under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
         ["https://github.com/google/fonts/tree/main/ofl/hindkochi"],
+        "hindkochi",
+        preview_family="Hind Kochi",
     ),
     "JejuGothic": source_only_override(
         "clean",
@@ -645,10 +701,12 @@ FONT_OVERRIDES.update({
         "Google Fonts repository carries KoPub Batang under SIL OFL, but official KoPub distribution terms deserve a caveat.",
         ["https://github.com/google/fonts/tree/main/ofl/kopubbatang"],
     ),
-    "Kokoro": source_only_override(
+    "Kokoro": google_repo_preview_override(
         "clean",
-        "Google Fonts Early Access and repository sources carry Kokoro under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
         ["https://fonts.googleapis.com/earlyaccess/kokoro.css", "https://github.com/google/fonts/tree/main/ofl/kokoro"],
+        "kokoro",
+        preview_family="Kokoro",
     ),
     "Ligconsolata": source_only_override(
         "clean",
@@ -676,10 +734,12 @@ FONT_OVERRIDES.update({
         "Font Squirrel carries Miama with SIL OFL license text.",
         ["https://www.fontsquirrel.com/fonts/miama", "https://www.fontsquirrel.com/license/miama"],
     ),
-    "Molle": source_only_override(
+    "Molle": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Molle under SIL OFL, but CSS2 serving is unreliable.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; CSS2 serving is unreliable.",
         ["https://github.com/google/fonts/tree/main/ofl/molle", "https://fontsource.org/fonts/molle"],
+        "molle",
+        preview_family="Molle",
     ),
     "Myanmar Khyay": source_only_override(
         "clean",
@@ -700,15 +760,19 @@ FONT_OVERRIDES.update({
             "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/nats/OFL.txt",
         ],
     ),
-    "Nico Moji": source_only_override(
+    "Nico Moji": google_repo_preview_override(
         "clean",
-        "Google Fonts Early Access and repository sources carry Nico Moji under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
         ["https://fonts.googleapis.com/earlyaccess/nicomoji.css", "https://github.com/google/fonts/tree/main/ofl/nicomoji"],
+        "nicomoji",
+        preview_family="Nico Moji",
     ),
-    "Nikukyu": source_only_override(
+    "Nikukyu": google_repo_preview_override(
         "clean",
-        "Google Fonts Early Access and repository sources carry Nikukyu under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
         ["https://fonts.googleapis.com/earlyaccess/nikukyu.css", "https://github.com/google/fonts/tree/main/ofl/nikukyu"],
+        "nikukyu",
+        preview_family="Nikukyu",
     ),
     "Noto Color Emoji Compat Test": source_only_override(
         "clean",
@@ -726,15 +790,19 @@ FONT_OVERRIDES.update({
         "Font Squirrel and DaFont evidence identify Porter Sans Block as SIL OFL.",
         ["https://www.fontsquirrel.com/fonts/porter-sans", "https://www.dafont.com/porter-sans-block.font"],
     ),
-    "Signika Negative SC": source_only_override(
+    "Signika Negative SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb", "https://github.com/google/fonts/issues/2354"],
+        "signikanegativesc",
+        preview_family="Signika Negative SC",
     ),
-    "Signika SC": source_only_override(
+    "Signika SC": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        "Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.",
         ["https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb", "https://github.com/google/fonts/issues/2354"],
+        "signikasc",
+        preview_family="Signika SC",
     ),
     "Sitara": source_only_override(
         "likely-clean",
@@ -752,15 +820,19 @@ FONT_OVERRIDES.update({
             "https://cdn.tardix.co/google/fonts/raw/commit/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/souliyo/OFL.txt",
         ],
     ),
-    "Sunflower": source_only_override(
+    "Sunflower": google_repo_preview_override(
         "clean",
-        "Google Fonts repository carries Sunflower under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.",
         ["https://github.com/google/fonts/tree/main/ofl/sunflower", "https://fontsource.org/fonts/sunflower/install"],
+        "sunflower",
+        preview_family="Sunflower",
     ),
-    "TharLon": source_only_override(
+    "TharLon": google_repo_preview_override(
         "clean",
-        "Google Fonts repository and Early Access sources carry TharLon under SIL OFL.",
+        "Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.",
         ["https://github.com/google/fonts/tree/main/ofl/tharlon", "https://fonts.googleapis.com/earlyaccess/tharlon.css"],
+        "tharlon",
+        preview_family="TharLon",
     ),
     "Yinmar": source_only_override(
         "clean",

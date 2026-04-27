@@ -19,8 +19,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Aksara Bali Galang under SIL OFL. Fallback-only until a Balinese-aware preview is added.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Aksara Bali Galang`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository.
 - Styles observed: `Regular`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/aksarabaligalang
@@ -43,8 +44,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Alumni Sans Collegiate One SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Italic`, `Regular`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/METADATA.pb
@@ -54,8 +56,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository and upstream Amstelvar sources identify this early variable family under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `AmstelvarAlpha`
+- Note: Self-hosted preview uses the early variable font from the Google Fonts repository; upstream Amstelvar sources identify it under SIL OFL.
 - Styles observed: `Default`, `Regular`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/amstelvaralpha
@@ -65,9 +68,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
+- Preview status: `self-hosted-preview`
 - Preview family or alias: `Hanna`
-- Note: PMM name appears to map to Google Fonts Hanna / BM-HANNA under SIL OFL.
+- Note: Self-hosted preview uses Google Fonts Hanna / BM-HANNA under SIL OFL.
 - Styles observed: `Regular`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/hanna
@@ -98,8 +101,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Bhavuka under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Bhavuka`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository.
 - Styles observed: `Regular`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/bhavuka
@@ -108,8 +112,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Big Shoulders Display SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb
@@ -119,8 +124,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Big Shoulders Inline Display SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb
@@ -129,8 +135,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Big Shoulders Inline Text SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb
@@ -139,8 +146,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Big Shoulders Stencil Display SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb
@@ -149,8 +157,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Big Shoulders Stencil Text SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb
@@ -159,8 +168,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Big Shoulders Text SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb
@@ -169,8 +179,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Bungee Color under SIL OFL. Fallback-only until a color-font preview is added.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Bungee Color`
+- Note: Self-hosted preview uses the SIL OFL color font file from the Google Fonts repository.
 - Styles observed: `Regular`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/bungeecolor
@@ -180,8 +191,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Decovar Alpha`
+- Note: Self-hosted preview uses the early variable font from the Google Fonts repository; Decovar is not served by the public CSS2 API.
 - Styles observed: `Bifurcated`, `Checkered`, `Checkered Reverse`, `Contrast`, `Fancy`, `Flared`, `Flared Open`, `Inline`, `Mayhem`, `Open`, `Regular24`, `Rounded`
 - Additional styles: `4`
 - Evidence:
@@ -192,9 +204,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `likely-clean`
-- Preview status: `fallback-only`
+- Preview status: `self-hosted-preview`
 - Preview family or alias: `Decovar Alpha`
-- Note: Likely a named instance or legacy PMM name for Decovar Alpha, which Google Fonts carries under SIL OFL.
+- Note: Self-hosted preview uses Decovar Alpha from the Google Fonts repository; Regular24 is likely a named instance or legacy PMM name.
 - Styles observed: `Worm`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/decovaralpha
@@ -225,8 +237,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Fragment Mono SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Italic`, `Regular`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb
@@ -268,8 +281,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts Early Access and repository sources carry Hannari under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Hannari`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.
 - Styles observed: `Regular`
 - Evidence:
   - https://fonts.googleapis.com/earlyaccess/hannari.css
@@ -304,8 +318,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Hermeneus One under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Hermeneus One`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Regular`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/hermeneusone
@@ -314,8 +329,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Hind Colombo under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Hind Colombo`
+- Note: Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.
 - Styles observed: `Bold`, `Light`, `Medium`, `Regular`, `SemiBold`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/hindcolombo
@@ -324,8 +340,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Hind Jalandhar under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Hind Jalandhar`
+- Note: Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.
 - Styles observed: `Bold`, `Light`, `Medium`, `Regular`, `SemiBold`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/hindjalandhar
@@ -334,8 +351,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Hind Kochi under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Hind Kochi`
+- Note: Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.
 - Styles observed: `Bold`, `Light`, `Medium`, `Regular`, `SemiBold`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/hindkochi
@@ -477,8 +495,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts Early Access and repository sources carry Kokoro under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Kokoro`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.
 - Styles observed: `Regular`
 - Evidence:
   - https://fonts.googleapis.com/earlyaccess/kokoro.css
@@ -567,8 +586,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Molle under SIL OFL, but CSS2 serving is unreliable.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Molle`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; CSS2 serving is unreliable.
 - Styles observed: `Regular`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/molle
@@ -651,8 +671,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts Early Access and repository sources carry Nico Moji under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Nico Moji`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.
 - Styles observed: `Regular`
 - Evidence:
   - https://fonts.googleapis.com/earlyaccess/nicomoji.css
@@ -662,8 +683,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts Early Access and repository sources carry Nikukyu under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Nikukyu`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.
 - Styles observed: `Regular`
 - Evidence:
   - https://fonts.googleapis.com/earlyaccess/nikukyu.css
@@ -743,8 +765,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Signika Negative SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font files from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Bold`, `Light`, `Regular`, `SemiBold`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb
@@ -754,8 +777,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Signika SC`
+- Note: Self-hosted preview uses the SIL OFL small-caps font file from the Google Fonts repository; the CSS2 API does not serve this exact family name.
 - Styles observed: `Bold`, `Light`, `Regular`, `SemiBold`
 - Evidence:
   - https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb
@@ -809,8 +833,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository carries Sunflower under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `Sunflower`
+- Note: Self-hosted preview uses the SIL OFL font files from the Google Fonts repository.
 - Styles observed: `Bold`, `Light`, `Medium`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/sunflower
@@ -820,8 +845,9 @@ The site does not redistribute questionable font software. When a family is not 
 
 - Inventory: broad catalog
 - License confidence: `clean`
-- Preview status: `fallback-only`
-- Note: Google Fonts repository and Early Access sources carry TharLon under SIL OFL.
+- Preview status: `self-hosted-preview`
+- Preview family or alias: `TharLon`
+- Note: Self-hosted preview uses the SIL OFL font file from the Google Fonts repository; public Early Access serving may be unavailable.
 - Styles observed: `Regular`
 - Evidence:
   - https://github.com/google/fonts/tree/main/ofl/tharlon
@@ -841,5 +867,5 @@ The site does not redistribute questionable font software. When a family is not 
 
 ## Generated Summary
 
-- Preview statuses: `{'google-css': 8092, 'fallback-only': 162, 'system-font-preview': 6, 'self-hosted-preview': 6, 'external-preview': 1}`
+- Preview statuses: `{'google-css': 8092, 'self-hosted-preview': 127, 'fallback-only': 41, 'system-font-preview': 6, 'external-preview': 1}`
 - License confidence labels: `{'clean': 8194, 'conflicting': 1, 'restricted-redistribution': 12, 'likely-clean': 59, 'custom-license': 1}`
