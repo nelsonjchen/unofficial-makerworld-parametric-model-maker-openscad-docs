@@ -72,13 +72,26 @@ Or run the one-shot helper:
 python3 scripts/build_all.py
 ```
 
-To preview the GitHub Pages site locally:
+## Local Docs Preview
+
+Use a repo-local virtualenv so the preview server does not depend on whichever Python environment Codex or your shell happens to be using:
 
 ```bash
-pip install -r requirements-docs.txt
-python3 scripts/build_all.py
-mkdocs serve
+.venv/bin/python -m pip install -r requirements-docs.txt
+python3 scripts/build_font_index.py
+.venv/bin/mkdocs serve -a 127.0.0.1:8000
 ```
+
+If `.venv` does not exist yet, create it first:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install --upgrade pip
+```
+
+Then open the local site at `http://127.0.0.1:8000/unofficial-makerworld-parametric-model-maker-openscad-docs/`. The generated font book is at `http://127.0.0.1:8000/unofficial-makerworld-parametric-model-maker-openscad-docs/font-index/`.
+
+For a full evidence refresh, run `python3 scripts/build_all.py` instead of `build_font_index.py`. That command fetches current public MakerWorld and Discourse sources before rebuilding generated docs, so expect source metadata diffs.
 
 The font index is generated from MakerWorld's public PMM font inventory snapshots. Browser previews are best-effort and provenance-labeled: clean webfont sources may render live previews, while font families with custom, conflicting, or restricted redistribution terms are documented without bundling questionable font files.
 

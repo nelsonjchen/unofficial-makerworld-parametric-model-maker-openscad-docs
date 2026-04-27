@@ -4,23 +4,25 @@ This report summarizes the research pass over the `unknown` font-provenance buck
 
 At the start of this pass, the generated index had `78` families marked `unknown`. Most were not actually unknowable; they were aliases, old Google Fonts Early Access names, small-caps variants that exist in `google/fonts` but not in the CSS2 API, or system fonts that should be labeled as restricted rather than unknown.
 
+Current implementation status: all findings in this report have been applied to the generated index. The `unknown` bucket is now empty; remaining caveats are represented as `fallback-only`, `likely-clean`, `restricted-redistribution`, `custom-license`, or `conflicting`.
+
 ## Executive Summary
 
-- Most `unknown` entries can become `clean` or `likely-clean` with explicit aliases and evidence links.
+- The original `unknown` entries have been reclassified as `clean`, `likely-clean`, `restricted-redistribution`, or `conflicting` with explicit evidence links.
 - The largest clean group is Google Fonts / `google/fonts` repo families whose exact PMM names are not accepted by `fonts.googleapis.com/css2`.
 - `SC` in the investigated Latin families means small caps. These are real `google/fonts` OFL families, but Google CSS currently rejects the exact SC family names.
-- Korean Windows/HanYang fonts should not stay `unknown`; they should become `restricted-redistribution` or a similar system-font label.
+- Korean Windows/HanYang fonts no longer stay `unknown`; they are `restricted-redistribution` with `system-font-preview`. The docs site tries the local system font first, then warns when the browser's best-effort canvas check cannot detect it.
 - `Strong` has been tentatively identified from a PMM render probe as the Gaslight/Cyreal `Strong` by Roman Shchyukin. FontMirror, Online Fonts, Figma, and WFonts all point to the same `Strong-Regular` / version `1.001` / SIL OFL metadata. Older `STRONG Regular` enStep/Altsys records still exist on the web, so keep a caveat, but the PMM entry no longer looks like that font.
 
 ## Recommended Buckets
 
 | Bucket | Families | Recommendation |
 |---|---|---|
-| Clean Google CSS alias | `Abhaya Libre ExtraBold`, `Abhaya Libre Medium`, `Abhaya Libre SemiBold`, `Asap Black`, `Asap Extra`, `Asap ExtraLight`, `Asap Light`, `Asap Medium`, `Asap Semi`, `Buda`, `Encode Sans Condensed Thin`, `Encode Sans SC Condensed Thin`, `Fjord`, `Noto Serif Hmong Nyiakeng`, `Rounded Mplus 1c Bold`, `Sansation Light`, `Space Grotesk Light`, `Supermercado`, `UnifrakturCook`, `Yaldevi Colombo`, `Yaldevi Colombo ExtraLight`, `Yaldevi Colombo Light`, `Yaldevi Colombo Medium`, `Yaldevi Colombo SemiBold` | Mark `clean`; preview with canonical Google CSS family/weight/style. |
+| Clean Google CSS alias | `Abhaya Libre ExtraBold`, `Abhaya Libre Medium`, `Abhaya Libre SemiBold`, `Asap Black`, `Asap Extra`, `Asap ExtraLight`, `Asap Light`, `Asap Medium`, `Asap Semi`, `Buda`, `Encode Sans Condensed Thin`, `Encode Sans SC Condensed Thin`, `Fjord`, `Noto Serif Hmong Nyiakeng`, `Rounded Mplus 1c Bold`, `Sansation Light`, `Space Grotesk Light`, `Supermercado`, `UnifrakturCook`, `Yaldevi Colombo`, `Yaldevi Colombo ExtraLight`, `Yaldevi Colombo Light`, `Yaldevi Colombo Medium`, `Yaldevi Colombo SemiBold` | Implemented as `clean`; previews use canonical Google CSS family/weight/style. |
 | Clean Google repo / Early Access, not CSS2 | `Aksara Bali Galang`, `Alumni Sans Collegiate One SC`, `AmstelvarAlpha`, `Big Shoulders Display SC`, `Big Shoulders Inline Display SC`, `Big Shoulders Inline Text SC`, `Big Shoulders Stencil Display SC`, `Big Shoulders Stencil Text SC`, `Big Shoulders Text SC`, `Bungee Color`, `Decovar Alpha`, `Decovar Alpha Regular24`, `Fragment Mono SC`, `Hannari`, `Hermeneus One`, `Kokoro`, `Maven Pro VF Beta`, `Molle`, `Nico Moji`, `Nikukyu`, `Noto Color Emoji Compat Test`, `Podkova VF Beta`, `Signika Negative SC`, `Signika SC` | Mark `clean` or `likely-clean`; preview via exact repo font, Early Access CSS, or fallback with explicit note. |
 | Clean or likely-clean non-CSS aliases | `BM HANNA_TTF`, `Bhavuka`, `Digital Numbers`, `Hind Colombo`, `Hind Jalandhar`, `Hind Kochi`, `Ligconsolata`, `Miama`, `Myanmar Khyay`, `TharLon`, `Yinmar` | Mark `clean`; add alias or self-host/external preview where reasonable. |
 | Likely-clean but weaker or historical evidence | `KoPub Batang`, `Merge One`, `Mervale Script`, `Myanmar Sans Pro`, `NATS`, `Sitara`, `Souliyo Unicode` | Mark `likely-clean`; evidence is good enough to remove from `unknown`, but note old metadata, mirrors, or minor license-source disagreement. |
-| Restricted system/proprietary | `Batang`, `BatangChe`, `DotumChe`, `GulimChe`, `Gungsuh`, `GungsuhChe` | Mark `restricted-redistribution`; use fallback/system preview only. |
+| Restricted system/proprietary | `Batang`, `BatangChe`, `DotumChe`, `GulimChe`, `Gungsuh`, `GungsuhChe` | Mark `restricted-redistribution`; use `system-font-preview` only. Do not self-host. |
 | PMM-render identified, likely clean | `Strong` | Mark `likely-clean`; evidence points to Gaslight/Cyreal `Strong` under SIL OFL. Keep fallback-only until a deliberate self-hosted preview is added from a source that preserves the OFL and copyright metadata. |
 
 ## Per-Family Findings
@@ -40,8 +42,8 @@ At the start of this pass, the generated index had `78` families marked `unknown
 | `Asap Medium` | `clean`; alias to `Asap`, italic weight 500. | Google CSS `Asap:ital,wght@1,500`. | [`google/fonts/ofl/asap`](https://github.com/google/fonts/tree/main/ofl/asap) |
 | `Asap Semi` | `clean`; inferred alias to `Asap` SemiBold Italic, weight 600. | Google CSS `Asap:ital,wght@1,600`. | [`google/fonts/ofl/asap`](https://github.com/google/fonts/tree/main/ofl/asap) |
 | `BM HANNA_TTF` | `clean`; alias to `Hanna` / `BM-HANNA`. | Google repo or self-host; PMM `_TTF` suffix appears internal. | [`google/fonts/ofl/hanna`](https://github.com/google/fonts/tree/main/ofl/hanna) |
-| `Batang` | Restricted system font; Microsoft/HanYang. | Fallback/system preview only; do not redistribute. | [Microsoft Batang](https://learn.microsoft.com/en-us/typography/font-list/batang) |
-| `BatangChe` | Restricted system font; fixed-width Batang variant. | Fallback/system preview only. | [Microsoft Batang](https://learn.microsoft.com/en-us/typography/font-list/batang) |
+| `Batang` | Restricted system font; Microsoft/HanYang. | `system-font-preview`; tries local `Batang` and warns when not detected. Do not redistribute. | [Microsoft Batang](https://learn.microsoft.com/en-us/typography/font-list/batang) |
+| `BatangChe` | Restricted system font; fixed-width Batang variant. | `system-font-preview`; tries local `BatangChe` and warns when not detected. | [Microsoft Batang](https://learn.microsoft.com/en-us/typography/font-list/batang) |
 | `Bhavuka` | `clean`; Google repo OFL. | Google repo/self-host or CSS if available. | [`google/fonts/ofl/bhavuka`](https://github.com/google/fonts/tree/main/ofl/bhavuka) |
 | `Big Shoulders Display SC` | `clean`; exact `google/fonts` small-caps family. | Self-host exact SC TTF; CSS2 currently rejects exact family. | [`METADATA.pb`](https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb), [`OFL.txt`](https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt) |
 | `Big Shoulders Inline Display SC` | `clean`; exact `google/fonts` small-caps family. | Self-host exact SC TTF. | [`METADATA.pb`](https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb) |
@@ -54,14 +56,14 @@ At the start of this pass, the generated index had `78` families marked `unknown
 | `Decovar Alpha` | `clean`; Google Early Access variable font. | Self-host or fallback; optional variation preview later. | [`google/fonts/ofl/decovaralpha`](https://github.com/google/fonts/tree/main/ofl/decovaralpha), [`googlefonts/decovar`](https://github.com/googlefonts/decovar) |
 | `Decovar Alpha Regular24` | `likely-clean`; alias or named instance of `Decovar Alpha`. | Collapse preview to `Decovar Alpha` unless exact named instance is self-hosted. | [`google/fonts/ofl/decovaralpha`](https://github.com/google/fonts/tree/main/ofl/decovaralpha) |
 | `Digital Numbers` | `clean`; upstream OFL LCD-style font. | Self-host upstream OFL font. | [`s-a/digital-numbers-font`](https://github.com/s-a/digital-numbers-font), [`OFL.txt`](https://raw.githubusercontent.com/s-a/digital-numbers-font/master/OFL.txt) |
-| `DotumChe` | Restricted system font; Microsoft/HanYang. | Fallback/system preview only. | [Microsoft Dotum](https://learn.microsoft.com/en-us/typography/font-list/dotum) |
+| `DotumChe` | Restricted system font; Microsoft/HanYang. | `system-font-preview`; tries local `DotumChe` and warns when not detected. | [Microsoft Dotum](https://learn.microsoft.com/en-us/typography/font-list/dotum) |
 | `Encode Sans Condensed Thin` | `clean`; alias to `Encode Sans Condensed`, weight 100. | Google CSS. | [`google/fonts/ofl/encodesanscondensed`](https://github.com/google/fonts/tree/main/ofl/encodesanscondensed) |
 | `Encode Sans SC Condensed Thin` | `clean`; alias to `Encode Sans SC`, condensed width, weight 100. | Google CSS with width/weight axes. | [`google/fonts/ofl/encodesanssc`](https://github.com/google/fonts/tree/main/ofl/encodesanssc) |
 | `Fjord` | `clean`; PMM split of `Fjord One`. | Google CSS `Fjord One`. | [`google/fonts/ofl/fjordone`](https://github.com/google/fonts/tree/main/ofl/fjordone) |
 | `Fragment Mono SC` | `clean`; exact `google/fonts` small-caps family. | Self-host exact SC TTF. | [`METADATA.pb`](https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb) |
-| `GulimChe` | Restricted system font; Microsoft/HanYang. | Fallback/system preview only. | [Microsoft Gulim](https://learn.microsoft.com/en-us/typography/font-list/gulim) |
-| `Gungsuh` | Restricted system font; Microsoft/HanYang. | Fallback/system preview only. | [Microsoft Gungsuh](https://learn.microsoft.com/en-us/typography/font-list/gungsuh) |
-| `GungsuhChe` | Restricted system font; Microsoft/HanYang. | Fallback/system preview only. | [Microsoft Gungsuh](https://learn.microsoft.com/en-us/typography/font-list/gungsuh) |
+| `GulimChe` | Restricted system font; Microsoft/HanYang. | `system-font-preview`; tries local `GulimChe` and warns when not detected. | [Microsoft Gulim](https://learn.microsoft.com/en-us/typography/font-list/gulim) |
+| `Gungsuh` | Restricted system font; Microsoft/HanYang. | `system-font-preview`; tries local `Gungsuh` and warns when not detected. | [Microsoft Gungsuh](https://learn.microsoft.com/en-us/typography/font-list/gungsuh) |
+| `GungsuhChe` | Restricted system font; Microsoft/HanYang. | `system-font-preview`; tries local `GungsuhChe` and warns when not detected. | [Microsoft Gungsuh](https://learn.microsoft.com/en-us/typography/font-list/gungsuh) |
 | `Hannari` | `clean`; Google Early Access Japanese font. | Early Access CSS or self-host; use kana sample. | [Early Access CSS](https://fonts.googleapis.com/earlyaccess/hannari.css), [`google/fonts/ofl/hannari`](https://github.com/google/fonts/tree/main/ofl/hannari) |
 | `Hermeneus One` | `clean`; Google repo OFL, but CSS2 currently rejects it. | Self-host or fallback. | [`google/fonts/ofl/hermeneusone`](https://github.com/google/fonts/tree/main/ofl/hermeneusone) |
 | `Hind Colombo` | `clean`; Google repo OFL Sinhala family. | Google repo/self-host; use Sinhala sample. | [`google/fonts/ofl/hindcolombo`](https://github.com/google/fonts/tree/main/ofl/hindcolombo) |
@@ -108,10 +110,9 @@ At the start of this pass, the generated index had `78` families marked `unknown
 
 ## Implementation Notes
 
-Recommended next implementation pass:
+Possible next implementation pass:
 
-1. Add generator override entries for all `clean` Google CSS aliases that can be previewed without self-hosting.
-2. Add a separate `google-repo-only` or `self-host-candidate` note for OFL fonts that exist in `google/fonts` but fail CSS2.
-3. Move Microsoft/HanYang Korean fonts out of `unknown` into `restricted-redistribution`.
-4. Treat `Strong` as a likely-clean Gaslight/Cyreal match from the PMM render probe, while preserving a note about the unrelated enStep/Altsys `STRONG Regular` name collision.
-5. Use script-appropriate preview samples for Myanmar, Balinese, Japanese, Sinhala, Gurmukhi, Malayalam, Lao, and Telugu families.
+1. Add self-hosted previews for selected OFL fonts that exist in `google/fonts` but fail CSS2, especially the `SC` small-caps families.
+2. Add Early Access CSS previews where they are stable enough for Japanese and Myanmar families.
+3. Use script-appropriate preview samples for Myanmar, Balinese, Japanese, Sinhala, Gurmukhi, Malayalam, Lao, and Telugu families.
+4. Keep `Strong` as a likely-clean Gaslight/Cyreal match from the PMM render probe, while preserving a note about the unrelated enStep/Altsys `STRONG Regular` name collision.

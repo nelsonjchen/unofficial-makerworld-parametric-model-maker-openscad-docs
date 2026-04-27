@@ -4,6 +4,9 @@
   const SCRIPT_URL = document.currentScript.src;
   const DATA_URL = new URL("font-index-data.json", SCRIPT_URL).toString();
   const loadedCss = new Set();
+  const cssLoadPromises = new Map();
+  const webFontAvailability = new Map();
+  const systemFontAvailability = new Map();
 
   const SAMPLE_PRESETS = {
     makerworld: "MakerWorld PMM",
@@ -24,8 +27,8 @@
     {
       id: "previewable",
       label: "Previewable",
-      description: "Families this docs site can preview with Google Fonts CSS or a verified alias.",
-      predicate: (family) => family.previewStatuses.has("google-css"),
+      description: "Families this docs site can preview with Google CSS, bundled webfonts, or local system fonts.",
+      predicate: (family) => ["google-css", "self-hosted-preview", "system-font-preview"].some((status) => family.previewStatuses.has(status)),
     },
     {
       id: "caveats",
@@ -123,14 +126,30 @@
     return "";
   }
 
+  function previewStatusTone(status) {
+    if (status === "fallback-only" || status === "self-hosted-preview" || status === "system-font-preview") return "warn";
+    return "";
+  }
+
+  function isPreviewableStatus(status) {
+    return ["google-css", "self-hosted-preview", "system-font-preview"].includes(status);
+  }
+
   function ensureCss(record) {
     const cssUrl = record.font_css_url || record.google_css_url;
-    if (!cssUrl || loadedCss.has(cssUrl)) return;
+    if (!cssUrl) return Promise.resolve(false);
+    if (cssLoadPromises.has(cssUrl)) return cssLoadPromises.get(cssUrl);
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = new URL(cssUrl, SCRIPT_URL).toString();
+    const promise = new Promise((resolve) => {
+      link.addEventListener("load", () => resolve(true), { once: true });
+      link.addEventListener("error", () => resolve(false), { once: true });
+    });
     document.head.appendChild(link);
     loadedCss.add(cssUrl);
+    cssLoadPromises.set(cssUrl, promise);
+    return promise;
   }
 
   function sampleText(state) {
@@ -155,13 +174,154 @@
     return hash >>> 0;
   }
 
-  function applyPreviewStyle(element, record, state) {
-    element.style.fontFamily = record.preview_family
+  function applyLoadedPreviewStyle(element, record, state) {
+    const family = isPreviewableStatus(record.preview_status) ? record.preview_family : null;
+    element.style.fontFamily = family
       ? `"${record.preview_family}", ${record.fallback_stack}`
       : record.fallback_stack;
     element.style.fontSize = `${state.sampleSize}px`;
     if (record.weight) element.style.fontWeight = record.weight;
     if (record.italic) element.style.fontStyle = "italic";
+  }
+
+  function applyWarningPreviewStyle(element, state) {
+    element.style.fontFamily = "system-ui, sans-serif";
+    element.style.fontSize = `${Math.min(Math.max(state.sampleSize * 0.34, 13), 18)}px`;
+    element.style.fontWeight = "700";
+    element.style.fontStyle = "normal";
+  }
+
+  function fontSpec(record, size) {
+    const style = record.italic ? "italic" : "normal";
+    const weight = record.weight || 400;
+    return `${style} ${weight} ${size}px "${record.preview_family}"`;
+  }
+
+  function previewUnavailableMessage(record, reason = "unavailable") {
+    if (record.preview_status === "fallback-only") {
+      return record.preview_family
+        ? `No preview font loaded. Possible source alias: ${record.preview_family}.`
+        : "No preview font loaded for this PMM family.";
+    }
+    if (record.preview_status === "system-font-preview") {
+      return `System font not detected: ${record.preview_family}`;
+    }
+    if (reason === "unsupported") return "Cannot verify this preview font in this browser.";
+    return `Preview font did not load: ${record.preview_family || record.family}`;
+  }
+
+  function renderPreviewUnavailable(element, record, state, reason) {
+    element.textContent = previewUnavailableMessage(record, reason);
+    element.dataset.previewState = "unavailable";
+    applyWarningPreviewStyle(element, state);
+  }
+
+  function renderPreviewChecking(element, record, state) {
+    element.textContent = `Checking preview font: ${record.preview_family || record.family}`;
+    element.dataset.previewState = "checking";
+    applyWarningPreviewStyle(element, state);
+  }
+
+  function renderLoadedPreview(element, record, state, text) {
+    element.textContent = text;
+    element.dataset.previewState = "loaded";
+    applyLoadedPreviewStyle(element, record, state);
+  }
+
+  async function detectWebFont(record) {
+    if (!record.preview_family || !["google-css", "self-hosted-preview"].includes(record.preview_status)) return false;
+    const key = `${record.preview_status}:${record.preview_family}:${record.weight || 400}:${record.italic ? "italic" : "normal"}:${record.google_css_url || record.font_css_url || ""}`;
+    if (webFontAvailability.has(key)) return webFontAvailability.get(key);
+    if (!document.fonts?.load || !document.fonts?.check) {
+      webFontAvailability.set(key, "unsupported");
+      return "unsupported";
+    }
+
+    const cssLoaded = await ensureCss(record);
+    if (!cssLoaded) {
+      webFontAvailability.set(key, false);
+      return false;
+    }
+
+    try {
+      const spec = fontSpec(record, 72);
+      const faces = await document.fonts.load(spec);
+      await document.fonts.ready;
+      const available = faces.length > 0 && document.fonts.check(spec);
+      webFontAvailability.set(key, available);
+      return available;
+    } catch (error) {
+      webFontAvailability.set(key, false);
+      return false;
+    }
+  }
+
+  function renderPreview(element, record, state, text) {
+    if (!isPreviewableStatus(record.preview_status) || !record.preview_family) {
+      renderPreviewUnavailable(element, record, state);
+      return;
+    }
+
+    if (record.preview_status === "system-font-preview") {
+      if (detectSystemFont(record)) {
+        renderLoadedPreview(element, record, state, text);
+      } else {
+        renderPreviewUnavailable(element, record, state);
+      }
+      return;
+    }
+
+    renderPreviewChecking(element, record, state);
+    detectWebFont(record).then((available) => {
+      if (!element.isConnected) return;
+      if (available === true) {
+        renderLoadedPreview(element, record, state, text);
+      } else {
+        renderPreviewUnavailable(element, record, state, available === "unsupported" ? "unsupported" : "unavailable");
+      }
+    });
+  }
+
+  function detectSystemFont(record) {
+    if (record.preview_status !== "system-font-preview" || !record.preview_family) return null;
+    if (systemFontAvailability.has(record.preview_family)) return systemFontAvailability.get(record.preview_family);
+
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    if (!context) return null;
+
+    const probe = "mmmmmmmmmmlliWWWW 가나다라마 0123456789";
+    const baseFonts = ["monospace", "serif", "sans-serif"];
+    const baseWidths = baseFonts.map((baseFont) => {
+      context.font = `72px ${baseFont}`;
+      return context.measureText(probe).width;
+    });
+
+    const available = baseFonts.some((baseFont, index) => {
+      context.font = `72px "${record.preview_family}", ${baseFont}`;
+      return Math.abs(context.measureText(probe).width - baseWidths[index]) > 0.01;
+    });
+
+    systemFontAvailability.set(record.preview_family, available);
+    return available;
+  }
+
+  function systemFontMessage(record) {
+    const available = detectSystemFont(record);
+    if (available === null) return null;
+    return available
+      ? `System font detected: ${record.preview_family}`
+      : `System font not detected: showing fallback instead of ${record.preview_family}`;
+  }
+
+  function systemFontIndicator(record) {
+    const message = systemFontMessage(record);
+    if (!message) return null;
+    const available = detectSystemFont(record);
+    const indicator = document.createElement("div");
+    indicator.className = `pmm-font-book__availability pmm-font-book__availability--${available ? "ok" : "warn"}`;
+    indicator.textContent = message;
+    return indicator;
   }
 
   function buildFamilies(fonts) {
@@ -249,7 +409,9 @@
         return byName(a, b);
       }
       if (state.sort === "previewable-first") {
-        const previewDelta = Number(b.previewStatuses.has("google-css")) - Number(a.previewStatuses.has("google-css"));
+        const aPreviewable = Array.from(a.previewStatuses).some(isPreviewableStatus);
+        const bPreviewable = Array.from(b.previewStatuses).some(isPreviewableStatus);
+        const previewDelta = Number(bPreviewable) - Number(aPreviewable);
         if (previewDelta) return previewDelta;
         return byName(a, b);
       }
@@ -274,7 +436,7 @@
     const wrap = document.createElement("div");
     wrap.className = "pmm-font-book__badges";
     Array.from(family.previewStatuses).sort().forEach((status) => {
-      wrap.appendChild(badge(status, ["fallback-only", "self-hosted-preview"].includes(status) ? "warn" : ""));
+      wrap.appendChild(badge(status, previewStatusTone(status)));
     });
     Array.from(family.licenseConfidences).sort().forEach((confidence) => {
       wrap.appendChild(badge(confidence, licenseTone(confidence)));
@@ -559,6 +721,7 @@
     const preview = document.createElement("select");
     preview.append(option("", "All preview sources"));
     preview.append(option("google-css", "Google CSS previews"));
+    preview.append(option("system-font-preview", "System font previews"));
     preview.append(option("self-hosted-preview", "Self-hosted previews"));
     preview.append(option("external-preview", "External preview only"));
     preview.append(option("fallback-only", "Fallback only"));
@@ -666,7 +829,6 @@
     const text = sampleText(state);
     families.forEach((family) => {
       const record = family.demoRecord;
-      ensureCss(record);
 
       const card = button("", "pmm-font-book__card");
       card.dataset.selected = String(state.selectedFamily === family.family);
@@ -674,8 +836,7 @@
 
       const sample = document.createElement("div");
       sample.className = "pmm-font-book__sample";
-      sample.textContent = text;
-      applyPreviewStyle(sample, record, state);
+      renderPreview(sample, record, state, text);
 
       const body = document.createElement("div");
       body.className = "pmm-font-book__card-body";
@@ -686,6 +847,8 @@
       meta.className = "pmm-font-book__muted";
       meta.textContent = `${family.records.length.toLocaleString()} PMM string${family.records.length === 1 ? "" : "s"}`;
       body.append(name, meta, renderFamilyBadges(family));
+      const availability = systemFontIndicator(record);
+      if (availability) body.appendChild(availability);
 
       card.append(sample, body);
       container.appendChild(card);
@@ -716,18 +879,20 @@
     const text = sampleText(state);
     const preview = document.createElement("div");
     preview.className = "pmm-font-book__inspector-sample";
-    preview.textContent = text;
-    ensureCss(family.demoRecord);
-    applyPreviewStyle(preview, family.demoRecord, { ...state, sampleSize: Math.max(state.sampleSize, 56) });
+    renderPreview(preview, family.demoRecord, { ...state, sampleSize: Math.max(state.sampleSize, 56) }, text);
     inspector.appendChild(preview);
 
     const note = document.createElement("p");
     note.className = "pmm-font-book__muted";
     if (family.demoRecord.preview_status === "self-hosted-preview") {
       note.textContent = "Preview uses a bundled webfont.";
+    } else if (family.demoRecord.preview_status === "system-font-preview") {
+      note.textContent = systemFontMessage(family.demoRecord) || "Preview tries to use a local system font and falls back if it is not installed.";
     } else {
       note.textContent = family.demoRecord.preview_family
-        ? family.demoRecord.preview_family === family.family
+        ? family.demoRecord.preview_status === "fallback-only"
+          ? `Fallback preview only; possible source alias: ${family.demoRecord.preview_family}. This site is not loading that font.`
+          : family.demoRecord.preview_family === family.family
           ? "Preview uses the matching Google Fonts family."
           : `Preview alias: ${family.demoRecord.preview_family}; exact PMM names remain below.`
         : "Fallback preview only; this site is not loading a matching webfont.";
@@ -753,7 +918,6 @@
     const list = document.createElement("div");
     list.className = "pmm-font-book__styles";
     family.records.forEach((record) => {
-      ensureCss(record);
       const item = document.createElement("article");
       item.className = "pmm-font-book__style";
       const styleName = document.createElement("div");
@@ -763,12 +927,14 @@
       exact.textContent = record.pmm_name;
       const stylePreview = document.createElement("div");
       stylePreview.className = "pmm-font-book__style-preview";
-      stylePreview.textContent = text;
-      applyPreviewStyle(stylePreview, record, { ...state, sampleSize: 24 });
+      renderPreview(stylePreview, record, { ...state, sampleSize: 24 }, text);
       const summary = document.createElement("p");
       summary.className = "pmm-font-book__muted";
       summary.textContent = record.license_summary;
-      item.append(styleName, exact, stylePreview, renderFamilyBadges({ ...family, records: [record], previewStatuses: new Set([record.preview_status]), licenseConfidences: new Set([record.license_confidence]), installed: record.in_installed_inventory, broad: record.in_broad_catalog }), summary);
+      item.append(styleName, exact, stylePreview, renderFamilyBadges({ ...family, records: [record], previewStatuses: new Set([record.preview_status]), licenseConfidences: new Set([record.license_confidence]), installed: record.in_installed_inventory, broad: record.in_broad_catalog }));
+      const availability = systemFontIndicator(record);
+      if (availability) item.appendChild(availability);
+      item.appendChild(summary);
       list.appendChild(item);
     });
     inspector.appendChild(list);

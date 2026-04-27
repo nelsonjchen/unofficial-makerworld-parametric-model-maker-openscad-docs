@@ -15,37 +15,15 @@ The site does not redistribute questionable font software. When a family is not 
 
 ## Families With Caveats
 
-### Abhaya Libre ExtraBold
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Regular`
-
-### Abhaya Libre Medium
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Regular`
-
-### Abhaya Libre SemiBold
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Regular`
-
 ### Aksara Bali Galang
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Aksara Bali Galang under SIL OFL. Fallback-only until a Balinese-aware preview is added.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/aksarabaligalang
 
 ### Aldo
 
@@ -64,259 +42,238 @@ The site does not redistribute questionable font software. When a family is not 
 ### Alumni Sans Collegiate One SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Italic`, `Regular`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/METADATA.pb
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/OFL.txt
 
 ### AmstelvarAlpha
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository and upstream Amstelvar sources identify this early variable family under SIL OFL.
 - Styles observed: `Default`, `Regular`
-
-### Asap Black
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Italic`
-
-### Asap Extra
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Bold Italic`
-
-### Asap ExtraLight
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Italic`
-
-### Asap Light
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Italic`
-
-### Asap Medium
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Italic`
-
-### Asap Semi
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Bold Italic`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/amstelvaralpha
+  - https://github.com/googlefonts/amstelvar
 
 ### BM HANNA_TTF
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Hanna`
+- Note: PMM name appears to map to Google Fonts Hanna / BM-HANNA under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/hanna
 
 ### Batang
 
 - Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- License confidence: `restricted-redistribution`
+- Preview status: `system-font-preview`
+- Preview family or alias: `Batang`
+- Note: PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local Batang font when installed and falls back otherwise.
 - Styles observed: `Regular`
+- Evidence:
+  - https://learn.microsoft.com/en-us/typography/font-list/batang
 
 ### BatangChe
 
 - Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- License confidence: `restricted-redistribution`
+- Preview status: `system-font-preview`
+- Preview family or alias: `BatangChe`
+- Note: PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local BatangChe font when installed and falls back otherwise.
 - Styles observed: `Regular`
+- Evidence:
+  - https://learn.microsoft.com/en-us/typography/font-list/batang
 
 ### Bhavuka
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Bhavuka under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/bhavuka
 
 ### Big Shoulders Display SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt
 
 ### Big Shoulders Inline Display SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb
 
 ### Big Shoulders Inline Text SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb
 
 ### Big Shoulders Stencil Display SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb
 
 ### Big Shoulders Stencil Text SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb
 
 ### Big Shoulders Text SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
-
-### Buda
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Light`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb
 
 ### Bungee Color
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Bungee Color under SIL OFL. Fallback-only until a color-font preview is added.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/bungeecolor
+  - https://github.com/djrrb/Bungee
 
 ### Decovar Alpha
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.
 - Styles observed: `Bifurcated`, `Checkered`, `Checkered Reverse`, `Contrast`, `Fancy`, `Flared`, `Flared Open`, `Inline`, `Mayhem`, `Open`, `Regular24`, `Rounded`
 - Additional styles: `4`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/decovaralpha
+  - https://github.com/googlefonts/decovar
 
 ### Decovar Alpha Regular24
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Decovar Alpha`
+- Note: Likely a named instance or legacy PMM name for Decovar Alpha, which Google Fonts carries under SIL OFL.
 - Styles observed: `Worm`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/decovaralpha
 
 ### Digital Numbers
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Upstream repository carries Digital Numbers under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/s-a/digital-numbers-font
+  - https://raw.githubusercontent.com/s-a/digital-numbers-font/master/OFL.txt
 
 ### DotumChe
 
 - Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- License confidence: `restricted-redistribution`
+- Preview status: `system-font-preview`
+- Preview family or alias: `DotumChe`
+- Note: PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local DotumChe font when installed and falls back otherwise.
 - Styles observed: `Regular`
-
-### Encode Sans Condensed Thin
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Condensed Light`
-
-### Encode Sans SC Condensed Thin
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Condensed Light`
-
-### Fjord
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `One`
+- Evidence:
+  - https://learn.microsoft.com/en-us/typography/font-list/dotum
 
 ### Fragment Mono SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Italic`, `Regular`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb
 
 ### GulimChe
 
 - Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- License confidence: `restricted-redistribution`
+- Preview status: `system-font-preview`
+- Preview family or alias: `GulimChe`
+- Note: PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local GulimChe font when installed and falls back otherwise.
 - Styles observed: `Regular`
+- Evidence:
+  - https://learn.microsoft.com/en-us/typography/font-list/gulim
 
 ### Gungsuh
 
 - Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- License confidence: `restricted-redistribution`
+- Preview status: `system-font-preview`
+- Preview family or alias: `Gungsuh`
+- Note: PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local Gungsuh font when installed and falls back otherwise.
 - Styles observed: `Regular`
+- Evidence:
+  - https://learn.microsoft.com/en-us/typography/font-list/gungsuh
 
 ### GungsuhChe
 
 - Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- License confidence: `restricted-redistribution`
+- Preview status: `system-font-preview`
+- Preview family or alias: `GungsuhChe`
+- Note: PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local GungsuhChe font when installed and falls back otherwise.
 - Styles observed: `Regular`
+- Evidence:
+  - https://learn.microsoft.com/en-us/typography/font-list/gungsuh
 
 ### Hannari
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts Early Access and repository sources carry Hannari under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://fonts.googleapis.com/earlyaccess/hannari.css
+  - https://github.com/google/fonts/tree/main/ofl/hannari
 
 ### HarmonyOS Sans SC
 
@@ -346,34 +303,42 @@ The site does not redistribute questionable font software. When a family is not 
 ### Hermeneus One
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Hermeneus One under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/hermeneusone
 
 ### Hind Colombo
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Hind Colombo under SIL OFL.
 - Styles observed: `Bold`, `Light`, `Medium`, `Regular`, `SemiBold`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/hindcolombo
 
 ### Hind Jalandhar
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Hind Jalandhar under SIL OFL.
 - Styles observed: `Bold`, `Light`, `Medium`, `Regular`, `SemiBold`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/hindjalandhar
 
 ### Hind Kochi
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Hind Kochi under SIL OFL.
 - Styles observed: `Bold`, `Light`, `Medium`, `Regular`, `SemiBold`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/hindkochi
 
 ### IM FELL DW Pica
 
@@ -468,42 +433,56 @@ The site does not redistribute questionable font software. When a family is not 
 ### JejuGothic
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Jeju Gothic`
+- Note: PMM compact name maps to Google Fonts Jeju Gothic under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/jejugothic
 
 ### JejuHallasan
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Jeju Hallasan`
+- Note: PMM compact name maps to Google Fonts Jeju Hallasan under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/jejuhallasan
 
 ### JejuMyeongjo
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Jeju Myeongjo`
+- Note: PMM compact name maps to Google Fonts Jeju Myeongjo under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/jejumyeongjo
 
 ### KoPub Batang
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries KoPub Batang under SIL OFL, but official KoPub distribution terms deserve a caveat.
 - Styles observed: `Bold`, `Light`, `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/kopubbatang
 
 ### Kokoro
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts Early Access and repository sources carry Kokoro under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://fonts.googleapis.com/earlyaccess/kokoro.css
+  - https://github.com/google/fonts/tree/main/ofl/kokoro
 
 ### Komikazoom
 
@@ -532,74 +511,102 @@ The site does not redistribute questionable font software. When a family is not 
 ### Ligconsolata
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Ligconsolata is an Inconsolata variant with ligatures enabled by default; upstream Inconsolata sources are open.
 - Styles observed: `Bold`, `Regular`
+- Evidence:
+  - https://github.com/googlefonts/Inconsolata
 
 ### Maven Pro VF Beta
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Maven Pro`
+- Note: Historical beta name for Maven Pro; Google Fonts carries canonical Maven Pro under SIL OFL.
 - Styles observed: `Black`, `Bold`, `Medium`, `Regular`
+- Evidence:
+  - https://github.com/google/fonts/blob/main/ofl/mavenpro/METADATA.pb
+  - https://github.com/googlefonts/mavenproFont
 
 ### Merge One
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: OFL metadata exists in public mirrors, but no current authoritative upstream was found.
 - Styles observed: `Regular`
+- Evidence:
+  - https://online-fonts.com/fonts/merge-one
+  - https://www.cufonfonts.com/font/merge-one
 
 ### Mervale Script
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Old OFL release evidence exists, but a commercial Mervale Script Pro family also exists.
 - Styles observed: `Regular`
+- Evidence:
+  - https://online-fonts.com/fonts/mervale-script
+  - https://www.myfonts.com/collections/mervale-script-pro-font-stiggy-sands/
 
 ### Miama
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Font Squirrel carries Miama with SIL OFL license text.
 - Styles observed: `Regular`
+- Evidence:
+  - https://www.fontsquirrel.com/fonts/miama
+  - https://www.fontsquirrel.com/license/miama
 
 ### Molle
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Molle under SIL OFL, but CSS2 serving is unreliable.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/molle
+  - https://fontsource.org/fonts/molle
 
 ### Myanmar Khyay
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Khyay`
+- Note: Upstream Khyay and Google Early Access sources identify Myanmar Khyay under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/khmertype/Khyay
+  - https://fonts.googleapis.com/earlyaccess/khyay.css
 
 ### Myanmar Sans Pro
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Upstream Myanmar Sans Pro is open, but public license metadata disagrees between SIL OFL and Apache 2.0.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/khmertype/MyanmarSansPro
+  - https://fonts.googleapis.com/earlyaccess/myanmarsanspro.css
 
 ### NATS
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Historical Google Fonts metadata and OFL files exist, but the family is not in the current main repo snapshot.
 - Styles observed: `Regular`
+- Evidence:
+  - https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/nats/METADATA.pb
+  - https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/nats/OFL.txt
 
 ### Nanum Pen
 
@@ -643,18 +650,24 @@ The site does not redistribute questionable font software. When a family is not 
 ### Nico Moji
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts Early Access and repository sources carry Nico Moji under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://fonts.googleapis.com/earlyaccess/nicomoji.css
+  - https://github.com/google/fonts/tree/main/ofl/nicomoji
 
 ### Nikukyu
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts Early Access and repository sources carry Nikukyu under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://fonts.googleapis.com/earlyaccess/nikukyu.css
+  - https://github.com/google/fonts/tree/main/ofl/nikukyu
 
 ### Norwester
 
@@ -669,18 +682,12 @@ The site does not redistribute questionable font software. When a family is not 
 ### Noto Color Emoji Compat Test
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this test color font under SIL OFL.
 - Styles observed: `Regular`
-
-### Noto Serif Hmong Nyiakeng
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `SemiBold`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/notocoloremojicompattest
 
 ### NovaMono
 
@@ -694,26 +701,25 @@ The site does not redistribute questionable font software. When a family is not 
 ### Podkova VF Beta
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Podkova`
+- Note: Historical beta name for Podkova; Google Fonts carries canonical Podkova under SIL OFL.
 - Styles observed: `Bold`, `ExtraBold`, `Medium`, `Regular`, `SemiBold`
+- Evidence:
+  - https://github.com/google/fonts/blob/main/ofl/podkova/METADATA.pb
+  - https://github.com/cyrealtype/Podkova
 
 ### Porter Sans Block
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Font Squirrel and DaFont evidence identify Porter Sans Block as SIL OFL.
 - Styles observed: `Block`
-
-### Rounded Mplus 1c Bold
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Bold`
+- Evidence:
+  - https://www.fontsquirrel.com/fonts/porter-sans
+  - https://www.dafont.com/porter-sans-block.font
 
 ### Saira ExtraCondensed
 
@@ -733,29 +739,27 @@ The site does not redistribute questionable font software. When a family is not 
 - Note: Preview uses a verified naming alias for the PMM-listed family.
 - Styles observed: `Black`, `Bold`, `ExtraBold`, `ExtraLight`, `Light`, `Medium`, `Regular`, `SemiBold`, `Thin`
 
-### Sansation Light
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Light`, `Light Italic`
-
 ### Signika Negative SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Bold`, `Light`, `Regular`, `SemiBold`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb
+  - https://github.com/google/fonts/issues/2354
 
 ### Signika SC
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.
 - Styles observed: `Bold`, `Light`, `Regular`, `SemiBold`
+- Evidence:
+  - https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb
+  - https://github.com/google/fonts/issues/2354
 
 ### SirinStencil
 
@@ -769,26 +773,24 @@ The site does not redistribute questionable font software. When a family is not 
 ### Sitara
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Historical Google Fonts metadata and OFL files exist, but current upstream evidence is weak.
 - Styles observed: `Bold`, `Bold Italic`, `Italic`, `Regular`
+- Evidence:
+  - https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/METADATA.pb
+  - https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/OFL.txt
 
 ### Souliyo Unicode
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `likely-clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Archived Google Fonts metadata and OFL files exist for Souliyo Unicode.
 - Styles observed: `Regular`
-
-### Space Grotesk Light
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Medium`
+- Evidence:
+  - https://cdn.tardix.co/google/fonts/raw/commit/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/souliyo/DESCRIPTION.en_us.html
+  - https://cdn.tardix.co/google/fonts/raw/commit/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/souliyo/OFL.txt
 
 ### Strong
 
@@ -806,84 +808,38 @@ The site does not redistribute questionable font software. When a family is not 
 ### Sunflower
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository carries Sunflower under SIL OFL.
 - Styles observed: `Bold`, `Light`, `Medium`
-
-### Supermercado
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/sunflower
+  - https://fontsource.org/fonts/sunflower/install
 
 ### TharLon
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Note: Google Fonts repository and Early Access sources carry TharLon under SIL OFL.
 - Styles observed: `Regular`
-
-### UnifrakturCook
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Bold`
-
-### Yaldevi Colombo
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Bold`, `Regular`
-
-### Yaldevi Colombo ExtraLight
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Regular`
-
-### Yaldevi Colombo Light
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Regular`
-
-### Yaldevi Colombo Medium
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Regular`
-
-### Yaldevi Colombo SemiBold
-
-- Inventory: broad catalog
-- License confidence: `unknown`
-- Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
-- Styles observed: `Regular`
+- Evidence:
+  - https://github.com/google/fonts/tree/main/ofl/tharlon
+  - https://fonts.googleapis.com/earlyaccess/tharlon.css
 
 ### Yinmar
 
 - Inventory: broad catalog
-- License confidence: `unknown`
+- License confidence: `clean`
 - Preview status: `fallback-only`
-- Note: No direct Google Fonts CSS preview was confirmed for this PMM-listed family.
+- Preview family or alias: `Myanmar Yinmar`
+- Note: PMM short name maps to upstream Myanmar Yinmar under SIL OFL.
 - Styles observed: `Regular`
+- Evidence:
+  - https://github.com/khmertype/Yinmar
+  - https://raw.githubusercontent.com/khmertype/Yinmar/master/OFL.txt
 
 ## Generated Summary
 
-- Preview statuses: `{'google-css': 8066, 'fallback-only': 194, 'self-hosted-preview': 6, 'external-preview': 1}`
-- License confidence labels: `{'clean': 8026, 'unknown': 187, 'conflicting': 1, 'restricted-redistribution': 6, 'likely-clean': 46, 'custom-license': 1}`
+- Preview statuses: `{'google-css': 8092, 'fallback-only': 162, 'system-font-preview': 6, 'self-hosted-preview': 6, 'external-preview': 1}`
+- License confidence labels: `{'clean': 8194, 'conflicting': 1, 'restricted-redistribution': 12, 'likely-clean': 59, 'custom-license': 1}`

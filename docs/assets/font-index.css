@@ -455,6 +455,18 @@ body:has(#pmm-font-index) .md-content__inner > p {
   text-align: left;
 }
 
+.pmm-font-book__sample[data-preview-state="checking"],
+.pmm-font-book__sample[data-preview-state="unavailable"],
+.pmm-font-book__inspector-sample[data-preview-state="checking"],
+.pmm-font-book__inspector-sample[data-preview-state="unavailable"],
+.pmm-font-book__style-preview[data-preview-state="checking"],
+.pmm-font-book__style-preview[data-preview-state="unavailable"] {
+  border-color: #d29922;
+  background: #fff8c5;
+  color: var(--pmm-warn);
+  line-height: 1.25;
+}
+
 .pmm-font-book__card-body {
   display: grid;
   gap: 0.35rem;
@@ -497,6 +509,27 @@ body:has(#pmm-font-index) .md-content__inner > p {
   border-color: var(--pmm-danger);
   background: #ffebe9;
   color: #82071e;
+}
+
+.pmm-font-book__availability {
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 6px;
+  padding: 0.18rem 0.4rem;
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
+.pmm-font-book__availability--ok {
+  border: 1px solid #1a7f37;
+  background: #dafbe1;
+  color: #116329;
+}
+
+.pmm-font-book__availability--warn {
+  border: 1px solid #d29922;
+  background: #fff8c5;
+  color: var(--pmm-warn);
 }
 
 .pmm-font-book__more {

@@ -7,17 +7,17 @@
     "combined_entry_count": 8267,
     "combined_family_count": 1881,
     "preview_status_counts": {
-      "google-css": 8066,
-      "fallback-only": 194,
+      "google-css": 8092,
+      "fallback-only": 162,
+      "system-font-preview": 6,
       "self-hosted-preview": 6,
       "external-preview": 1
     },
     "license_confidence_counts": {
-      "clean": 8026,
-      "unknown": 187,
+      "clean": 8194,
       "conflicting": 1,
-      "restricted-redistribution": 6,
-      "likely-clean": 46,
+      "restricted-redistribution": 12,
+      "likely-clean": 59,
       "custom-license": 1
     },
     "pmm_metadata_family_count": 1790,
@@ -125,30 +125,36 @@
     },
     {
       "family": "Abhaya Libre ExtraBold",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Abhaya Libre",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this weight into the family name. Preview uses Google Fonts Abhaya Libre ExtraBold; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/abhayalibre"
+      ]
     },
     {
       "family": "Abhaya Libre Medium",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Abhaya Libre",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this weight into the family name. Preview uses Google Fonts Abhaya Libre Medium; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/abhayalibre"
+      ]
     },
     {
       "family": "Abhaya Libre SemiBold",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Abhaya Libre",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this weight into the family name. Preview uses Google Fonts Abhaya Libre SemiBold; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/abhayalibre"
+      ]
     },
     {
       "family": "Abhaya Libre",
@@ -947,9 +953,11 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Aksara Bali Galang under SIL OFL. Fallback-only until a Balinese-aware preview is added.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/aksarabaligalang"
+      ]
     },
     {
       "family": "Akshar",
@@ -2478,18 +2486,24 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/OFL.txt"
+      ]
     },
     {
       "family": "Alumni Sans Collegiate One SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/OFL.txt"
+      ]
     },
     {
       "family": "Alumni Sans Collegiate One",
@@ -3167,18 +3181,24 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Amstelvar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/amstelvaralpha",
+        "https://github.com/googlefonts/amstelvar"
+      ]
     },
     {
       "family": "AmstelvarAlpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Amstelvar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/amstelvaralpha",
+        "https://github.com/googlefonts/amstelvar"
+      ]
     },
     {
       "family": "Anaheim",
@@ -5646,12 +5666,14 @@
     },
     {
       "family": "Asap Black",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Asap",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,900&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap Black Italic; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/asap"
+      ]
     },
     {
       "family": "Asap Condensed",
@@ -5765,48 +5787,58 @@
     },
     {
       "family": "Asap Extra",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Asap",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,800&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap ExtraBold Italic; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/asap"
+      ]
     },
     {
       "family": "Asap ExtraLight",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Asap",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap ExtraLight Italic; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/asap"
+      ]
     },
     {
       "family": "Asap Light",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Asap",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,300&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap Light Italic; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/asap"
+      ]
     },
     {
       "family": "Asap Medium",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Asap",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap Medium Italic; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/asap"
+      ]
     },
     {
       "family": "Asap Semi",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Asap",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,600&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap SemiBold Italic; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/asap"
+      ]
     },
     {
       "family": "Asap",
@@ -6977,11 +7009,13 @@
     {
       "family": "BM HANNA_TTF",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Hanna",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "PMM name appears to map to Google Fonts Hanna / BM-HANNA under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hanna"
+      ]
     },
     {
       "family": "Babylonica",
@@ -8613,21 +8647,25 @@
     },
     {
       "family": "Batang",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "system-font-preview",
+      "preview_family": "Batang",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "restricted-redistribution",
+      "license_summary": "PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local Batang font when installed and falls back otherwise.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/typography/font-list/batang"
+      ]
     },
     {
       "family": "BatangChe",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "system-font-preview",
+      "preview_family": "BatangChe",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "restricted-redistribution",
+      "license_summary": "PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local BatangChe font when installed and falls back otherwise.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/typography/font-list/batang"
+      ]
     },
     {
       "family": "Battambang",
@@ -9470,9 +9508,11 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Bhavuka under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/bhavuka"
+      ]
     },
     {
       "family": "BhuTuka Expanded One",
@@ -9501,90 +9541,120 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb",
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"
+      ]
     },
     {
       "family": "Big Shoulders Display",
@@ -9701,90 +9771,110 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Display",
@@ -9901,90 +9991,110 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Inline Text",
@@ -10101,90 +10211,110 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Display",
@@ -10301,90 +10431,110 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Stencil Text",
@@ -10501,90 +10651,110 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"
+      ]
     },
     {
       "family": "Big Shoulders Text",
@@ -12172,12 +12342,14 @@
     },
     {
       "family": "Buda",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Buda",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "Preview uses Google Fonts Buda Light; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/buda"
+      ]
     },
     {
       "family": "Buenard",
@@ -12206,9 +12378,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Bungee Color under SIL OFL. Fallback-only until a color-font preview is added.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/bungeecolor",
+        "https://github.com/djrrb/Bungee"
+      ]
     },
     {
       "family": "Bungee Hairline",
@@ -16767,155 +16942,205 @@
     {
       "family": "Decovar Alpha Regular24",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Decovar Alpha",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Likely a named instance or legacy PMM name for Decovar Alpha, which Google Fonts carries under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Decovar Alpha",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/decovaralpha",
+        "https://github.com/googlefonts/decovar"
+      ]
     },
     {
       "family": "Dekko",
@@ -17076,9 +17301,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Upstream repository carries Digital Numbers under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/s-a/digital-numbers-font",
+        "https://raw.githubusercontent.com/s-a/digital-numbers-font/master/OFL.txt"
+      ]
     },
     {
       "family": "Diphylleia",
@@ -17456,12 +17684,14 @@
     },
     {
       "family": "DotumChe",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "system-font-preview",
+      "preview_family": "DotumChe",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "restricted-redistribution",
+      "license_summary": "PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local DotumChe font when installed and falls back otherwise.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/typography/font-list/dotum"
+      ]
     },
     {
       "family": "Dr Sugiyama",
@@ -18587,12 +18817,14 @@
     },
     {
       "family": "Encode Sans Condensed Thin",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Encode Sans Condensed",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this thin weight into the family name. Preview uses Google Fonts Encode Sans Condensed Thin; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/encodesanscondensed"
+      ]
     },
     {
       "family": "Encode Sans Condensed",
@@ -18805,12 +19037,14 @@
     },
     {
       "family": "Encode Sans SC Condensed Thin",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Encode Sans SC",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wdth,wght@75,100&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this condensed thin instance into the family name. Preview uses Google Fonts Encode Sans SC with condensed width and thin weight; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/encodesanssc"
+      ]
     },
     {
       "family": "Encode Sans SC",
@@ -22411,12 +22645,14 @@
     },
     {
       "family": "Fjord",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Fjord One",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Fjord+One&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits Fjord One across family/style fields. Preview uses Google Fonts Fjord One; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/fjordone"
+      ]
     },
     {
       "family": "Flamenco",
@@ -22643,18 +22879,22 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb"
+      ]
     },
     {
       "family": "Fragment Mono SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb"
+      ]
     },
     {
       "family": "Fragment Mono",
@@ -26519,12 +26759,14 @@
     },
     {
       "family": "GulimChe",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "system-font-preview",
+      "preview_family": "GulimChe",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "restricted-redistribution",
+      "license_summary": "PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local GulimChe font when installed and falls back otherwise.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/typography/font-list/gulim"
+      ]
     },
     {
       "family": "Gulzar",
@@ -26539,21 +26781,25 @@
     },
     {
       "family": "Gungsuh",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "system-font-preview",
+      "preview_family": "Gungsuh",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "restricted-redistribution",
+      "license_summary": "PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local Gungsuh font when installed and falls back otherwise.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/typography/font-list/gungsuh"
+      ]
     },
     {
       "family": "GungsuhChe",
-      "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_status": "system-font-preview",
+      "preview_family": "GungsuhChe",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "restricted-redistribution",
+      "license_summary": "PMM exposes this Korean Windows system font. The docs site does not self-host it; the preview uses your local GungsuhChe font when installed and falls back otherwise.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/typography/font-list/gungsuh"
+      ]
     },
     {
       "family": "Gupter",
@@ -27176,9 +27422,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts Early Access and repository sources carry Hannari under SIL OFL.",
+      "evidence_urls": [
+        "https://fonts.googleapis.com/earlyaccess/hannari.css",
+        "https://github.com/google/fonts/tree/main/ofl/hannari"
+      ]
     },
     {
       "family": "Hanuman",
@@ -27681,9 +27930,11 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hermeneus One under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hermeneusone"
+      ]
     },
     {
       "family": "Herr Von Muellerhoff",
@@ -27723,45 +27974,55 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
+      ]
     },
     {
       "family": "Hind Colombo",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
+      ]
     },
     {
       "family": "Hind Colombo",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
+      ]
     },
     {
       "family": "Hind Colombo",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
+      ]
     },
     {
       "family": "Hind Colombo",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Colombo under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindcolombo"
+      ]
     },
     {
       "family": "Hind Guntur",
@@ -27823,90 +28084,110 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
+      ]
     },
     {
       "family": "Hind Jalandhar",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
+      ]
     },
     {
       "family": "Hind Jalandhar",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
+      ]
     },
     {
       "family": "Hind Jalandhar",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
+      ]
     },
     {
       "family": "Hind Jalandhar",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindjalandhar"
+      ]
     },
     {
       "family": "Hind Kochi",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindkochi"
+      ]
     },
     {
       "family": "Hind Kochi",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindkochi"
+      ]
     },
     {
       "family": "Hind Kochi",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindkochi"
+      ]
     },
     {
       "family": "Hind Kochi",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindkochi"
+      ]
     },
     {
       "family": "Hind Kochi",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Hind Kochi under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/hindkochi"
+      ]
     },
     {
       "family": "Hind Madurai",
@@ -32171,29 +32452,35 @@
     {
       "family": "JejuGothic",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Jeju Gothic",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "PMM compact name maps to Google Fonts Jeju Gothic under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/jejugothic"
+      ]
     },
     {
       "family": "JejuHallasan",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Jeju Hallasan",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "PMM compact name maps to Google Fonts Jeju Hallasan under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/jejuhallasan"
+      ]
     },
     {
       "family": "JejuMyeongjo",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Jeju Myeongjo",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "PMM compact name maps to Google Fonts Jeju Myeongjo under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/jejumyeongjo"
+      ]
     },
     {
       "family": "Jersey 10 Charted",
@@ -35093,27 +35380,33 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Google Fonts repository carries KoPub Batang under SIL OFL, but official KoPub distribution terms deserve a caveat.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/kopubbatang"
+      ]
     },
     {
       "family": "KoPub Batang",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Google Fonts repository carries KoPub Batang under SIL OFL, but official KoPub distribution terms deserve a caveat.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/kopubbatang"
+      ]
     },
     {
       "family": "KoPub Batang",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Google Fonts repository carries KoPub Batang under SIL OFL, but official KoPub distribution terms deserve a caveat.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/kopubbatang"
+      ]
     },
     {
       "family": "Kodchasan",
@@ -35362,9 +35655,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts Early Access and repository sources carry Kokoro under SIL OFL.",
+      "evidence_urls": [
+        "https://fonts.googleapis.com/earlyaccess/kokoro.css",
+        "https://github.com/google/fonts/tree/main/ofl/kokoro"
+      ]
     },
     {
       "family": "Kolker Brush",
@@ -38466,18 +38762,22 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Ligconsolata is an Inconsolata variant with ligatures enabled by default; upstream Inconsolata sources are open.",
+      "evidence_urls": [
+        "https://github.com/googlefonts/Inconsolata"
+      ]
     },
     {
       "family": "Ligconsolata",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Ligconsolata is an Inconsolata variant with ligatures enabled by default; upstream Inconsolata sources are open.",
+      "evidence_urls": [
+        "https://github.com/googlefonts/Inconsolata"
+      ]
     },
     {
       "family": "Lilita One",
@@ -41342,47 +41642,62 @@
     {
       "family": "Maven Pro VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Maven Pro",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Maven Pro; Google Fonts carries canonical Maven Pro under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/mavenpro/METADATA.pb",
+        "https://github.com/googlefonts/mavenproFont"
+      ]
     },
     {
       "family": "Maven Pro VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Maven Pro",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Maven Pro; Google Fonts carries canonical Maven Pro under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/mavenpro/METADATA.pb",
+        "https://github.com/googlefonts/mavenproFont"
+      ]
     },
     {
       "family": "Maven Pro VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Maven Pro",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Maven Pro; Google Fonts carries canonical Maven Pro under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/mavenpro/METADATA.pb",
+        "https://github.com/googlefonts/mavenproFont"
+      ]
     },
     {
       "family": "Maven Pro VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Maven Pro",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Maven Pro; Google Fonts carries canonical Maven Pro under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/mavenpro/METADATA.pb",
+        "https://github.com/googlefonts/mavenproFont"
+      ]
     },
     {
       "family": "Maven Pro VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Maven Pro",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Maven Pro; Google Fonts carries canonical Maven Pro under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/mavenpro/METADATA.pb",
+        "https://github.com/googlefonts/mavenproFont"
+      ]
     },
     {
       "family": "Maven Pro",
@@ -41554,9 +41869,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "OFL metadata exists in public mirrors, but no current authoritative upstream was found.",
+      "evidence_urls": [
+        "https://online-fonts.com/fonts/merge-one",
+        "https://www.cufonfonts.com/font/merge-one"
+      ]
     },
     {
       "family": "Merienda",
@@ -41838,9 +42156,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Old OFL release evidence exists, but a commercial Mervale Script Pro family also exists.",
+      "evidence_urls": [
+        "https://online-fonts.com/fonts/mervale-script",
+        "https://www.myfonts.com/collections/mervale-script-pro-font-stiggy-sands/"
+      ]
     },
     {
       "family": "Metal Mania",
@@ -41891,9 +42212,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Font Squirrel carries Miama with SIL OFL license text.",
+      "evidence_urls": [
+        "https://www.fontsquirrel.com/fonts/miama",
+        "https://www.fontsquirrel.com/license/miama"
+      ]
     },
     {
       "family": "Michroma",
@@ -42461,9 +42785,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Molle under SIL OFL, but CSS2 serving is unreliable.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/molle",
+        "https://fontsource.org/fonts/molle"
+      ]
     },
     {
       "family": "Mona Sans",
@@ -44481,20 +44808,26 @@
     {
       "family": "Myanmar Khyay",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Khyay",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Upstream Khyay and Google Early Access sources identify Myanmar Khyay under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/khmertype/Khyay",
+        "https://fonts.googleapis.com/earlyaccess/khyay.css"
+      ]
     },
     {
       "family": "Myanmar Sans Pro",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Upstream Myanmar Sans Pro is open, but public license metadata disagrees between SIL OFL and Apache 2.0.",
+      "evidence_urls": [
+        "https://github.com/khmertype/MyanmarSansPro",
+        "https://fonts.googleapis.com/earlyaccess/myanmarsanspro.css"
+      ]
     },
     {
       "family": "Mynerve",
@@ -44523,9 +44856,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Historical Google Fonts metadata and OFL files exist, but the family is not in the current main repo snapshot.",
+      "evidence_urls": [
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/nats/METADATA.pb",
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/nats/OFL.txt"
+      ]
     },
     {
       "family": "NTR",
@@ -45078,9 +45414,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts Early Access and repository sources carry Nico Moji under SIL OFL.",
+      "evidence_urls": [
+        "https://fonts.googleapis.com/earlyaccess/nicomoji.css",
+        "https://github.com/google/fonts/tree/main/ofl/nicomoji"
+      ]
     },
     {
       "family": "Niconne",
@@ -45098,9 +45437,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts Early Access and repository sources carry Nikukyu under SIL OFL.",
+      "evidence_urls": [
+        "https://fonts.googleapis.com/earlyaccess/nikukyu.css",
+        "https://github.com/google/fonts/tree/main/ofl/nikukyu"
+      ]
     },
     {
       "family": "Niramit",
@@ -45481,9 +45823,11 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this test color font under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/notocoloremojicompattest"
+      ]
     },
     {
       "family": "Noto Color Emoji",
@@ -59556,12 +59900,14 @@
     },
     {
       "family": "Noto Serif Hmong Nyiakeng",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Noto Serif Nyiakeng Puachue Hmong",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+Nyiakeng+Puachue+Hmong:wght@600&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses an older shortened name. Preview uses Google Fonts Noto Serif Nyiakeng Puachue Hmong SemiBold; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/notoserifnyiakengpuachuehmong"
+      ]
     },
     {
       "family": "Noto Serif JP",
@@ -70065,56 +70411,74 @@
     {
       "family": "Podkova VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Podkova",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Podkova; Google Fonts carries canonical Podkova under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/podkova/METADATA.pb",
+        "https://github.com/cyrealtype/Podkova"
+      ]
     },
     {
       "family": "Podkova VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Podkova",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Podkova; Google Fonts carries canonical Podkova under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/podkova/METADATA.pb",
+        "https://github.com/cyrealtype/Podkova"
+      ]
     },
     {
       "family": "Podkova VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Podkova",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Podkova; Google Fonts carries canonical Podkova under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/podkova/METADATA.pb",
+        "https://github.com/cyrealtype/Podkova"
+      ]
     },
     {
       "family": "Podkova VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Podkova",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Podkova; Google Fonts carries canonical Podkova under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/podkova/METADATA.pb",
+        "https://github.com/cyrealtype/Podkova"
+      ]
     },
     {
       "family": "Podkova VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Podkova",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Podkova; Google Fonts carries canonical Podkova under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/podkova/METADATA.pb",
+        "https://github.com/cyrealtype/Podkova"
+      ]
     },
     {
       "family": "Podkova VF Beta",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Podkova",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Historical beta name for Podkova; Google Fonts carries canonical Podkova under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/blob/main/ofl/podkova/METADATA.pb",
+        "https://github.com/cyrealtype/Podkova"
+      ]
     },
     {
       "family": "Podkova",
@@ -70660,9 +71024,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Font Squirrel and DaFont evidence identify Porter Sans Block as SIL OFL.",
+      "evidence_urls": [
+        "https://www.fontsquirrel.com/fonts/porter-sans",
+        "https://www.dafont.com/porter-sans-block.font"
+      ]
     },
     {
       "family": "Potta One",
@@ -76364,12 +76731,14 @@
     },
     {
       "family": "Rounded Mplus 1c Bold",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "M PLUS Rounded 1c",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses a legacy M+ naming form. Preview uses Google Fonts M PLUS Rounded 1c Bold; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/mplusrounded1c"
+      ]
     },
     {
       "family": "Rounded Mplus 1c",
@@ -77965,21 +78334,25 @@
     },
     {
       "family": "Sansation Light",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Sansation",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;1,300&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this light weight into the family name. Preview uses Google Fonts Sansation Light; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/sansation"
+      ]
     },
     {
       "family": "Sansation Light",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Sansation",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;1,300&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this light weight into the family name. Preview uses Google Fonts Sansation Light; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/sansation"
+      ]
     },
     {
       "family": "Sansation",
@@ -79438,36 +79811,48 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika Negative SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika Negative SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika Negative SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika Negative",
@@ -79529,45 +79914,60 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika SC",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb",
+        "https://github.com/google/fonts/issues/2354"
+      ]
     },
     {
       "family": "Signika",
@@ -79737,36 +80137,48 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Historical Google Fonts metadata and OFL files exist, but current upstream evidence is weak.",
+      "evidence_urls": [
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/METADATA.pb",
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/OFL.txt"
+      ]
     },
     {
       "family": "Sitara",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Historical Google Fonts metadata and OFL files exist, but current upstream evidence is weak.",
+      "evidence_urls": [
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/METADATA.pb",
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/OFL.txt"
+      ]
     },
     {
       "family": "Sitara",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Historical Google Fonts metadata and OFL files exist, but current upstream evidence is weak.",
+      "evidence_urls": [
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/METADATA.pb",
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/OFL.txt"
+      ]
     },
     {
       "family": "Sitara",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Historical Google Fonts metadata and OFL files exist, but current upstream evidence is weak.",
+      "evidence_urls": [
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/METADATA.pb",
+        "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/OFL.txt"
+      ]
     },
     {
       "family": "Six Caps",
@@ -81434,9 +81846,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "likely-clean",
+      "license_summary": "Archived Google Fonts metadata and OFL files exist for Souliyo Unicode.",
+      "evidence_urls": [
+        "https://cdn.tardix.co/google/fonts/raw/commit/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/souliyo/DESCRIPTION.en_us.html",
+        "https://cdn.tardix.co/google/fonts/raw/commit/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/souliyo/OFL.txt"
+      ]
     },
     {
       "family": "Sour Gummy",
@@ -82221,12 +82636,14 @@
     },
     {
       "family": "Space Grotesk Light",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Space Grotesk",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM splits this light weight into the family name. Preview uses Google Fonts Space Grotesk Light; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/spacegrotesk"
+      ]
     },
     {
       "family": "Space Grotesk",
@@ -83237,36 +83654,47 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Sunflower under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/sunflower",
+        "https://fontsource.org/fonts/sunflower/install"
+      ]
     },
     {
       "family": "Sunflower",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Sunflower under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/sunflower",
+        "https://fontsource.org/fonts/sunflower/install"
+      ]
     },
     {
       "family": "Sunflower",
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository carries Sunflower under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/sunflower",
+        "https://fontsource.org/fonts/sunflower/install"
+      ]
     },
     {
       "family": "Supermercado",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Supermercado One",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses the shortened family name. Preview uses Google Fonts Supermercado One; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/supermercadoone"
+      ]
     },
     {
       "family": "Sura",
@@ -84406,9 +84834,12 @@
       "preview_status": "fallback-only",
       "preview_family": null,
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "Google Fonts repository and Early Access sources carry TharLon under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/tharlon",
+        "https://fonts.googleapis.com/earlyaccess/tharlon.css"
+      ]
     },
     {
       "family": "Thasadith",
@@ -86755,12 +87186,14 @@
     },
     {
       "family": "UnifrakturCook",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "UnifrakturCook",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "Preview uses Google Fonts UnifrakturCook Bold; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/unifrakturcook"
+      ]
     },
     {
       "family": "UnifrakturMaguntia",
@@ -88700,57 +89133,69 @@
     },
     {
       "family": "Yaldevi Colombo ExtraLight",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Yaldevi",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi ExtraLight; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi"
+      ]
     },
     {
       "family": "Yaldevi Colombo Light",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Yaldevi",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi Light; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi"
+      ]
     },
     {
       "family": "Yaldevi Colombo Medium",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Yaldevi",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Yaldevi:wght@500&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi Medium; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi"
+      ]
     },
     {
       "family": "Yaldevi Colombo SemiBold",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Yaldevi",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Yaldevi:wght@600&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi SemiBold; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi"
+      ]
     },
     {
       "family": "Yaldevi Colombo",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Yaldevi",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Yaldevi:wght@400;700&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi"
+      ]
     },
     {
       "family": "Yaldevi Colombo",
-      "preview_status": "fallback-only",
-      "preview_family": null,
-      "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "preview_status": "google-css",
+      "preview_family": "Yaldevi",
+      "google_css_url": "https://fonts.googleapis.com/css2?family=Yaldevi:wght@400;700&display=swap",
+      "license_confidence": "clean",
+      "license_summary": "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi; source is SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi"
+      ]
     },
     {
       "family": "Yaldevi",
@@ -89052,11 +89497,14 @@
     {
       "family": "Yinmar",
       "preview_status": "fallback-only",
-      "preview_family": null,
+      "preview_family": "Myanmar Yinmar",
       "google_css_url": null,
-      "license_confidence": "unknown",
-      "license_summary": "No direct Google Fonts CSS preview was confirmed for this PMM-listed family.",
-      "evidence_urls": []
+      "license_confidence": "clean",
+      "license_summary": "PMM short name maps to upstream Myanmar Yinmar under SIL OFL.",
+      "evidence_urls": [
+        "https://github.com/khmertype/Yinmar",
+        "https://raw.githubusercontent.com/khmertype/Yinmar/master/OFL.txt"
+      ]
     },
     {
       "family": "Yomogi",

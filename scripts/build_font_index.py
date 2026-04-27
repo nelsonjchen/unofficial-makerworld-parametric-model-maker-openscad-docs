@@ -279,6 +279,496 @@ FONT_OVERRIDES = {
     },
 }
 
+
+def system_font_override(family: str, evidence_url: str) -> dict:
+    return {
+        "license_confidence": "restricted-redistribution",
+        "preview_status": "system-font-preview",
+        "preview_family": family,
+        "fallback_stack": "Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif",
+        "license_summary": (
+            f"PMM exposes this Korean Windows system font. The docs site does not self-host it; "
+            f"the preview uses your local {family} font when installed and falls back otherwise."
+        ),
+        "evidence_urls": [evidence_url],
+    }
+
+
+def google_alias_override(
+    preview_family: str,
+    evidence_url: str,
+    summary: str,
+    *,
+    google_url: str | None = None,
+    weight: int | None = None,
+    italic: bool | None = None,
+) -> dict:
+    override = {
+        "license_confidence": "clean",
+        "preview_status": "google-css",
+        "preview_family": preview_family,
+        "license_summary": summary,
+        "evidence_urls": [evidence_url],
+    }
+    if google_url:
+        override["google_css_url"] = google_url
+    if weight is not None:
+        override["weight"] = weight
+    if italic is not None:
+        override["italic"] = italic
+    return override
+
+
+def source_only_override(
+    confidence: str,
+    summary: str,
+    evidence_urls: list[str],
+    *,
+    preview_family: str | None = None,
+) -> dict:
+    return {
+        "license_confidence": confidence,
+        "preview_status": "fallback-only",
+        "preview_family": preview_family,
+        "license_summary": summary,
+        "evidence_urls": evidence_urls,
+    }
+
+
+FONT_OVERRIDES.update({
+    "Abhaya Libre ExtraBold": google_alias_override(
+        "Abhaya Libre",
+        "https://github.com/google/fonts/tree/main/ofl/abhayalibre",
+        "PMM splits this weight into the family name. Preview uses Google Fonts Abhaya Libre ExtraBold; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap",
+        weight=800,
+    ),
+    "Abhaya Libre Medium": google_alias_override(
+        "Abhaya Libre",
+        "https://github.com/google/fonts/tree/main/ofl/abhayalibre",
+        "PMM splits this weight into the family name. Preview uses Google Fonts Abhaya Libre Medium; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap",
+        weight=500,
+    ),
+    "Abhaya Libre SemiBold": google_alias_override(
+        "Abhaya Libre",
+        "https://github.com/google/fonts/tree/main/ofl/abhayalibre",
+        "PMM splits this weight into the family name. Preview uses Google Fonts Abhaya Libre SemiBold; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&display=swap",
+        weight=600,
+    ),
+    "Asap Black": google_alias_override(
+        "Asap",
+        "https://github.com/google/fonts/tree/main/ofl/asap",
+        "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap Black Italic; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,900&display=swap",
+        weight=900,
+        italic=True,
+    ),
+    "Asap Extra": google_alias_override(
+        "Asap",
+        "https://github.com/google/fonts/tree/main/ofl/asap",
+        "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap ExtraBold Italic; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,800&display=swap",
+        weight=800,
+        italic=True,
+    ),
+    "Asap ExtraLight": google_alias_override(
+        "Asap",
+        "https://github.com/google/fonts/tree/main/ofl/asap",
+        "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap ExtraLight Italic; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&display=swap",
+        weight=200,
+        italic=True,
+    ),
+    "Asap Light": google_alias_override(
+        "Asap",
+        "https://github.com/google/fonts/tree/main/ofl/asap",
+        "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap Light Italic; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,300&display=swap",
+        weight=300,
+        italic=True,
+    ),
+    "Asap Medium": google_alias_override(
+        "Asap",
+        "https://github.com/google/fonts/tree/main/ofl/asap",
+        "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap Medium Italic; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&display=swap",
+        weight=500,
+        italic=True,
+    ),
+    "Asap Semi": google_alias_override(
+        "Asap",
+        "https://github.com/google/fonts/tree/main/ofl/asap",
+        "PMM splits this italic weight into the family name. Preview uses Google Fonts Asap SemiBold Italic; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,600&display=swap",
+        weight=600,
+        italic=True,
+    ),
+    "Batang": system_font_override("Batang", "https://learn.microsoft.com/en-us/typography/font-list/batang"),
+    "BatangChe": system_font_override("BatangChe", "https://learn.microsoft.com/en-us/typography/font-list/batang"),
+    "Buda": google_alias_override(
+        "Buda",
+        "https://github.com/google/fonts/tree/main/ofl/buda",
+        "Preview uses Google Fonts Buda Light; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap",
+        weight=300,
+    ),
+    "DotumChe": system_font_override("DotumChe", "https://learn.microsoft.com/en-us/typography/font-list/dotum"),
+    "Encode Sans Condensed Thin": google_alias_override(
+        "Encode Sans Condensed",
+        "https://github.com/google/fonts/tree/main/ofl/encodesanscondensed",
+        "PMM splits this thin weight into the family name. Preview uses Google Fonts Encode Sans Condensed Thin; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100&display=swap",
+        weight=100,
+    ),
+    "Encode Sans SC Condensed Thin": google_alias_override(
+        "Encode Sans SC",
+        "https://github.com/google/fonts/tree/main/ofl/encodesanssc",
+        "PMM splits this condensed thin instance into the family name. Preview uses Google Fonts Encode Sans SC with condensed width and thin weight; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wdth,wght@75,100&display=swap",
+        weight=100,
+    ),
+    "Fjord": google_alias_override(
+        "Fjord One",
+        "https://github.com/google/fonts/tree/main/ofl/fjordone",
+        "PMM splits Fjord One across family/style fields. Preview uses Google Fonts Fjord One; source is SIL OFL.",
+    ),
+    "GulimChe": system_font_override("GulimChe", "https://learn.microsoft.com/en-us/typography/font-list/gulim"),
+    "Gungsuh": system_font_override("Gungsuh", "https://learn.microsoft.com/en-us/typography/font-list/gungsuh"),
+    "GungsuhChe": system_font_override("GungsuhChe", "https://learn.microsoft.com/en-us/typography/font-list/gungsuh"),
+    "Noto Serif Hmong Nyiakeng": google_alias_override(
+        "Noto Serif Nyiakeng Puachue Hmong",
+        "https://github.com/google/fonts/tree/main/ofl/notoserifnyiakengpuachuehmong",
+        "PMM uses an older shortened name. Preview uses Google Fonts Noto Serif Nyiakeng Puachue Hmong SemiBold; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Noto+Serif+Nyiakeng+Puachue+Hmong:wght@600&display=swap",
+        weight=600,
+    ),
+    "Rounded Mplus 1c Bold": google_alias_override(
+        "M PLUS Rounded 1c",
+        "https://github.com/google/fonts/tree/main/ofl/mplusrounded1c",
+        "PMM uses a legacy M+ naming form. Preview uses Google Fonts M PLUS Rounded 1c Bold; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap",
+        weight=700,
+    ),
+    "Sansation Light": google_alias_override(
+        "Sansation",
+        "https://github.com/google/fonts/tree/main/ofl/sansation",
+        "PMM splits this light weight into the family name. Preview uses Google Fonts Sansation Light; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;1,300&display=swap",
+        weight=300,
+    ),
+    "Space Grotesk Light": google_alias_override(
+        "Space Grotesk",
+        "https://github.com/google/fonts/tree/main/ofl/spacegrotesk",
+        "PMM splits this light weight into the family name. Preview uses Google Fonts Space Grotesk Light; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap",
+        weight=300,
+    ),
+    "Supermercado": google_alias_override(
+        "Supermercado One",
+        "https://github.com/google/fonts/tree/main/ofl/supermercadoone",
+        "PMM uses the shortened family name. Preview uses Google Fonts Supermercado One; source is SIL OFL.",
+    ),
+    "UnifrakturCook": google_alias_override(
+        "UnifrakturCook",
+        "https://github.com/google/fonts/tree/main/ofl/unifrakturcook",
+        "Preview uses Google Fonts UnifrakturCook Bold; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap",
+        weight=700,
+    ),
+    "Yaldevi Colombo": google_alias_override(
+        "Yaldevi",
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi",
+        "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Yaldevi:wght@400;700&display=swap",
+    ),
+    "Yaldevi Colombo ExtraLight": google_alias_override(
+        "Yaldevi",
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi",
+        "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi ExtraLight; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap",
+        weight=200,
+    ),
+    "Yaldevi Colombo Light": google_alias_override(
+        "Yaldevi",
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi",
+        "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi Light; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap",
+        weight=300,
+    ),
+    "Yaldevi Colombo Medium": google_alias_override(
+        "Yaldevi",
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi",
+        "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi Medium; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Yaldevi:wght@500&display=swap",
+        weight=500,
+    ),
+    "Yaldevi Colombo SemiBold": google_alias_override(
+        "Yaldevi",
+        "https://github.com/google/fonts/tree/main/ofl/yaldevi",
+        "PMM uses the old Yaldevi Colombo source name. Preview uses Google Fonts Yaldevi SemiBold; source is SIL OFL.",
+        google_url="https://fonts.googleapis.com/css2?family=Yaldevi:wght@600&display=swap",
+        weight=600,
+    ),
+    "Aksara Bali Galang": source_only_override(
+        "clean",
+        "Google Fonts repository carries Aksara Bali Galang under SIL OFL. Fallback-only until a Balinese-aware preview is added.",
+        ["https://github.com/google/fonts/tree/main/ofl/aksarabaligalang"],
+    ),
+    "Alumni Sans Collegiate One SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        [
+            "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/METADATA.pb",
+            "https://raw.githubusercontent.com/google/fonts/main/ofl/alumnisanscollegiateonesc/OFL.txt",
+        ],
+    ),
+    "AmstelvarAlpha": source_only_override(
+        "clean",
+        "Google Fonts repository and upstream Amstelvar sources identify this early variable family under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/amstelvaralpha", "https://github.com/googlefonts/amstelvar"],
+    ),
+    "BM HANNA_TTF": source_only_override(
+        "clean",
+        "PMM name appears to map to Google Fonts Hanna / BM-HANNA under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/hanna"],
+        preview_family="Hanna",
+    ),
+    "Bhavuka": source_only_override(
+        "clean",
+        "Google Fonts repository carries Bhavuka under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/bhavuka"],
+    ),
+    "Big Shoulders Display SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/METADATA.pb", "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersdisplaysc/OFL.txt"],
+    ),
+    "Big Shoulders Inline Display SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinedisplaysc/METADATA.pb"],
+    ),
+    "Big Shoulders Inline Text SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersinlinetextsc/METADATA.pb"],
+    ),
+    "Big Shoulders Stencil Display SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstencildisplaysc/METADATA.pb"],
+    ),
+    "Big Shoulders Stencil Text SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshouldersstenciltextsc/METADATA.pb"],
+    ),
+    "Big Shoulders Text SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulderstextsc/METADATA.pb"],
+    ),
+    "Bungee Color": source_only_override(
+        "clean",
+        "Google Fonts repository carries Bungee Color under SIL OFL. Fallback-only until a color-font preview is added.",
+        ["https://github.com/google/fonts/tree/main/ofl/bungeecolor", "https://github.com/djrrb/Bungee"],
+    ),
+    "Decovar Alpha": source_only_override(
+        "clean",
+        "Google Fonts repository and upstream Decovar sources identify this early variable family under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/decovaralpha", "https://github.com/googlefonts/decovar"],
+    ),
+    "Decovar Alpha Regular24": source_only_override(
+        "likely-clean",
+        "Likely a named instance or legacy PMM name for Decovar Alpha, which Google Fonts carries under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/decovaralpha"],
+        preview_family="Decovar Alpha",
+    ),
+    "Digital Numbers": source_only_override(
+        "clean",
+        "Upstream repository carries Digital Numbers under SIL OFL.",
+        ["https://github.com/s-a/digital-numbers-font", "https://raw.githubusercontent.com/s-a/digital-numbers-font/master/OFL.txt"],
+    ),
+    "Fragment Mono SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmonosc/METADATA.pb"],
+    ),
+    "Hannari": source_only_override(
+        "clean",
+        "Google Fonts Early Access and repository sources carry Hannari under SIL OFL.",
+        ["https://fonts.googleapis.com/earlyaccess/hannari.css", "https://github.com/google/fonts/tree/main/ofl/hannari"],
+    ),
+    "Hermeneus One": source_only_override(
+        "clean",
+        "Google Fonts repository carries Hermeneus One under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://github.com/google/fonts/tree/main/ofl/hermeneusone"],
+    ),
+    "Hind Colombo": source_only_override(
+        "clean",
+        "Google Fonts repository carries Hind Colombo under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/hindcolombo"],
+    ),
+    "Hind Jalandhar": source_only_override(
+        "clean",
+        "Google Fonts repository carries Hind Jalandhar under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/hindjalandhar"],
+    ),
+    "Hind Kochi": source_only_override(
+        "clean",
+        "Google Fonts repository carries Hind Kochi under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/hindkochi"],
+    ),
+    "JejuGothic": source_only_override(
+        "clean",
+        "PMM compact name maps to Google Fonts Jeju Gothic under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/jejugothic"],
+        preview_family="Jeju Gothic",
+    ),
+    "JejuHallasan": source_only_override(
+        "clean",
+        "PMM compact name maps to Google Fonts Jeju Hallasan under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/jejuhallasan"],
+        preview_family="Jeju Hallasan",
+    ),
+    "JejuMyeongjo": source_only_override(
+        "clean",
+        "PMM compact name maps to Google Fonts Jeju Myeongjo under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/jejumyeongjo"],
+        preview_family="Jeju Myeongjo",
+    ),
+    "KoPub Batang": source_only_override(
+        "likely-clean",
+        "Google Fonts repository carries KoPub Batang under SIL OFL, but official KoPub distribution terms deserve a caveat.",
+        ["https://github.com/google/fonts/tree/main/ofl/kopubbatang"],
+    ),
+    "Kokoro": source_only_override(
+        "clean",
+        "Google Fonts Early Access and repository sources carry Kokoro under SIL OFL.",
+        ["https://fonts.googleapis.com/earlyaccess/kokoro.css", "https://github.com/google/fonts/tree/main/ofl/kokoro"],
+    ),
+    "Ligconsolata": source_only_override(
+        "clean",
+        "Ligconsolata is an Inconsolata variant with ligatures enabled by default; upstream Inconsolata sources are open.",
+        ["https://github.com/googlefonts/Inconsolata"],
+    ),
+    "Maven Pro VF Beta": source_only_override(
+        "clean",
+        "Historical beta name for Maven Pro; Google Fonts carries canonical Maven Pro under SIL OFL.",
+        ["https://github.com/google/fonts/blob/main/ofl/mavenpro/METADATA.pb", "https://github.com/googlefonts/mavenproFont"],
+        preview_family="Maven Pro",
+    ),
+    "Merge One": source_only_override(
+        "likely-clean",
+        "OFL metadata exists in public mirrors, but no current authoritative upstream was found.",
+        ["https://online-fonts.com/fonts/merge-one", "https://www.cufonfonts.com/font/merge-one"],
+    ),
+    "Mervale Script": source_only_override(
+        "likely-clean",
+        "Old OFL release evidence exists, but a commercial Mervale Script Pro family also exists.",
+        ["https://online-fonts.com/fonts/mervale-script", "https://www.myfonts.com/collections/mervale-script-pro-font-stiggy-sands/"],
+    ),
+    "Miama": source_only_override(
+        "clean",
+        "Font Squirrel carries Miama with SIL OFL license text.",
+        ["https://www.fontsquirrel.com/fonts/miama", "https://www.fontsquirrel.com/license/miama"],
+    ),
+    "Molle": source_only_override(
+        "clean",
+        "Google Fonts repository carries Molle under SIL OFL, but CSS2 serving is unreliable.",
+        ["https://github.com/google/fonts/tree/main/ofl/molle", "https://fontsource.org/fonts/molle"],
+    ),
+    "Myanmar Khyay": source_only_override(
+        "clean",
+        "Upstream Khyay and Google Early Access sources identify Myanmar Khyay under SIL OFL.",
+        ["https://github.com/khmertype/Khyay", "https://fonts.googleapis.com/earlyaccess/khyay.css"],
+        preview_family="Khyay",
+    ),
+    "Myanmar Sans Pro": source_only_override(
+        "likely-clean",
+        "Upstream Myanmar Sans Pro is open, but public license metadata disagrees between SIL OFL and Apache 2.0.",
+        ["https://github.com/khmertype/MyanmarSansPro", "https://fonts.googleapis.com/earlyaccess/myanmarsanspro.css"],
+    ),
+    "NATS": source_only_override(
+        "likely-clean",
+        "Historical Google Fonts metadata and OFL files exist, but the family is not in the current main repo snapshot.",
+        [
+            "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/nats/METADATA.pb",
+            "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/nats/OFL.txt",
+        ],
+    ),
+    "Nico Moji": source_only_override(
+        "clean",
+        "Google Fonts Early Access and repository sources carry Nico Moji under SIL OFL.",
+        ["https://fonts.googleapis.com/earlyaccess/nicomoji.css", "https://github.com/google/fonts/tree/main/ofl/nicomoji"],
+    ),
+    "Nikukyu": source_only_override(
+        "clean",
+        "Google Fonts Early Access and repository sources carry Nikukyu under SIL OFL.",
+        ["https://fonts.googleapis.com/earlyaccess/nikukyu.css", "https://github.com/google/fonts/tree/main/ofl/nikukyu"],
+    ),
+    "Noto Color Emoji Compat Test": source_only_override(
+        "clean",
+        "Google Fonts repository carries this test color font under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/notocoloremojicompattest"],
+    ),
+    "Podkova VF Beta": source_only_override(
+        "clean",
+        "Historical beta name for Podkova; Google Fonts carries canonical Podkova under SIL OFL.",
+        ["https://github.com/google/fonts/blob/main/ofl/podkova/METADATA.pb", "https://github.com/cyrealtype/Podkova"],
+        preview_family="Podkova",
+    ),
+    "Porter Sans Block": source_only_override(
+        "clean",
+        "Font Squirrel and DaFont evidence identify Porter Sans Block as SIL OFL.",
+        ["https://www.fontsquirrel.com/fonts/porter-sans", "https://www.dafont.com/porter-sans-block.font"],
+    ),
+    "Signika Negative SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/signikanegativesc/METADATA.pb", "https://github.com/google/fonts/issues/2354"],
+    ),
+    "Signika SC": source_only_override(
+        "clean",
+        "Google Fonts repository carries this small-caps family under SIL OFL, but the CSS2 API does not serve this exact family name.",
+        ["https://raw.githubusercontent.com/google/fonts/main/ofl/signikasc/METADATA.pb", "https://github.com/google/fonts/issues/2354"],
+    ),
+    "Sitara": source_only_override(
+        "likely-clean",
+        "Historical Google Fonts metadata and OFL files exist, but current upstream evidence is weak.",
+        [
+            "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/METADATA.pb",
+            "https://cdn.tardix.co/google/fonts/raw/branch/main/ofl/sitara/OFL.txt",
+        ],
+    ),
+    "Souliyo Unicode": source_only_override(
+        "likely-clean",
+        "Archived Google Fonts metadata and OFL files exist for Souliyo Unicode.",
+        [
+            "https://cdn.tardix.co/google/fonts/raw/commit/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/souliyo/DESCRIPTION.en_us.html",
+            "https://cdn.tardix.co/google/fonts/raw/commit/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/souliyo/OFL.txt",
+        ],
+    ),
+    "Sunflower": source_only_override(
+        "clean",
+        "Google Fonts repository carries Sunflower under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/sunflower", "https://fontsource.org/fonts/sunflower/install"],
+    ),
+    "TharLon": source_only_override(
+        "clean",
+        "Google Fonts repository and Early Access sources carry TharLon under SIL OFL.",
+        ["https://github.com/google/fonts/tree/main/ofl/tharlon", "https://fonts.googleapis.com/earlyaccess/tharlon.css"],
+    ),
+    "Yinmar": source_only_override(
+        "clean",
+        "PMM short name maps to upstream Myanmar Yinmar under SIL OFL.",
+        ["https://github.com/khmertype/Yinmar", "https://raw.githubusercontent.com/khmertype/Yinmar/master/OFL.txt"],
+        preview_family="Myanmar Yinmar",
+    ),
+})
+
 WEIGHT_BY_STYLE = {
     "Thin": 100,
     "ExtraLight": 200,
@@ -373,6 +863,8 @@ def google_css_url(family: str) -> str:
 def font_css_url(preview: dict, preview_family: str | None) -> str | None:
     if preview.get("font_css_url"):
         return preview["font_css_url"]
+    if preview.get("google_css_url"):
+        return preview["google_css_url"]
     if preview["preview_status"] == "google-css" and preview_family:
         return google_css_url(preview_family)
     return None
@@ -422,13 +914,15 @@ def build_records() -> tuple[list[dict], dict, dict]:
         preview.update(FONT_OVERRIDES.get(family, {}))
         preview_family = preview.get("preview_family")
         local_font_css_url = font_css_url(preview, preview_family)
+        record_weight = preview.get("weight", style_to_weight(style))
+        record_italic = preview.get("italic", is_italic(style))
         record = {
             "id": f"font-{idx}",
             "pmm_name": raw_name,
             "family": family,
             "style": style,
-            "weight": style_to_weight(style),
-            "italic": is_italic(style),
+            "weight": record_weight,
+            "italic": record_italic,
             "in_installed_inventory": raw_name in installed_set,
             "in_broad_catalog": raw_name in broad_set,
             "source_inventories": [
@@ -441,7 +935,7 @@ def build_records() -> tuple[list[dict], dict, dict]:
             ],
             "preview_status": preview["preview_status"],
             "preview_family": preview_family,
-            "google_css_url": google_css_url(preview_family) if preview["preview_status"] == "google-css" and preview_family else None,
+            "google_css_url": local_font_css_url if preview["preview_status"] == "google-css" and preview_family else None,
             "fallback_stack": preview.get("fallback_stack", "system-ui, sans-serif"),
             "license_confidence": preview["license_confidence"],
             "license_summary": preview["license_summary"],
@@ -497,6 +991,17 @@ def write_font_index_page(summary: dict) -> None:
         "# PMM Font Index",
         "",
         f"Browse `{summary['combined_family_count']}` MakerWorld PMM font families and `{summary['combined_entry_count']}` exact PMM font strings. The browser is family-first: select a family to inspect styles, exact OpenSCAD names, PMM font-dialog filter metadata, preview aliases, and provenance warnings. See [font provenance notes](font-provenance-notes.md) for licensing caveats and source evidence.",
+        "",
+        "Local preview workflow:",
+        "",
+        "```bash",
+        "python3 -m venv .venv",
+        ".venv/bin/python -m pip install -r requirements-docs.txt",
+        "python3 scripts/build_font_index.py",
+        ".venv/bin/mkdocs serve -a 127.0.0.1:8000",
+        "```",
+        "",
+        "Then open `http://127.0.0.1:8000/unofficial-makerworld-parametric-model-maker-openscad-docs/font-index/`.",
         "",
         '<div id="pmm-font-index" class="pmm-font-index">',
         '  <p class="pmm-font-index__loading">Loading generated font index...</p>',
