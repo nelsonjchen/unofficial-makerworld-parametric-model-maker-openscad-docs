@@ -257,29 +257,10 @@
   }
 
   function renderPreview(element, record, state, text) {
-    if (!isPreviewableStatus(record.preview_status) || !record.preview_family) {
-      renderPreviewUnavailable(element, record, state);
-      return;
+    if (["google-css", "self-hosted-preview"].includes(record.preview_status)) {
+      ensureCss(record);
     }
-
-    if (record.preview_status === "system-font-preview") {
-      if (detectSystemFont(record)) {
-        renderLoadedPreview(element, record, state, text);
-      } else {
-        renderPreviewUnavailable(element, record, state);
-      }
-      return;
-    }
-
-    renderPreviewChecking(element, record, state);
-    detectWebFont(record).then((available) => {
-      if (!element.isConnected) return;
-      if (available === true) {
-        renderLoadedPreview(element, record, state, text);
-      } else {
-        renderPreviewUnavailable(element, record, state, available === "unsupported" ? "unsupported" : "unavailable");
-      }
-    });
+    renderLoadedPreview(element, record, state, text);
   }
 
   function detectSystemFont(record) {
