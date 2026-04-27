@@ -15,6 +15,7 @@ RAW_DIR = REPO_ROOT / "sources" / "raw" / "makerworld"
 DATA_DIR = REPO_ROOT / "data"
 DOCS_DIR = REPO_ROOT / "docs"
 ASSET_DIR = DOCS_DIR / "assets"
+FONT_INDEX_ASSET_VERSION = "20260427-sidebar-title"
 
 INSTALLED_PATH = RAW_DIR / "fonts-0.8.0.json"
 BROAD_PATH = RAW_DIR / "fonts-show-0.0.1.json"
@@ -1010,8 +1011,8 @@ def write_font_index_page(summary: dict) -> None:
         '  <p class="pmm-font-index__loading">Loading generated font index...</p>',
         "</div>",
         "",
-        '<link rel="stylesheet" href="../assets/font-index.css">',
-        '<script src="../assets/font-index.js"></script>',
+        f'<link rel="stylesheet" href="../assets/font-index.css?v={FONT_INDEX_ASSET_VERSION}">',
+        f'<script src="../assets/font-index.js?v={FONT_INDEX_ASSET_VERSION}"></script>',
     ]
     (DOCS_DIR / "font-index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
