@@ -1,6 +1,6 @@
 # MakerWorld PMM OpenSCAD Reference
 
-This site is a practical reference for building MakerWorld Parametric Model Maker-compatible OpenSCAD.
+This site is an unofficial, reverse-engineered practical reference for building MakerWorld Parametric Model Maker-compatible OpenSCAD. It is not affiliated with, endorsed by, or maintained by Bambu Lab or MakerWorld.
 
 Start with:
 
