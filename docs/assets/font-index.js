@@ -200,8 +200,8 @@
   function previewUnavailableMessage(record, reason = "unavailable") {
     if (record.preview_status === "fallback-only") {
       return record.preview_family
-        ? `No preview font loaded. Possible source alias: ${record.preview_family}.`
-        : "No preview font loaded for this PMM family.";
+        ? `No preview available: ${record.preview_family} is identified as a possible source, but this site is not loading that font.`
+        : "No preview available for this PMM family.";
     }
     if (record.preview_status === "system-font-preview") {
       return `System font not detected: ${record.preview_family}`;
@@ -257,6 +257,16 @@
   }
 
   function renderPreview(element, record, state, text) {
+    if (record.preview_status === "fallback-only" || !isPreviewableStatus(record.preview_status) || !record.preview_family) {
+      renderPreviewUnavailable(element, record, state);
+      return;
+    }
+
+    if (record.preview_status === "system-font-preview" && detectSystemFont(record) === false) {
+      renderPreviewUnavailable(element, record, state);
+      return;
+    }
+
     if (["google-css", "self-hosted-preview"].includes(record.preview_status)) {
       ensureCss(record);
     }
@@ -875,11 +885,11 @@
     } else {
       note.textContent = family.demoRecord.preview_family
         ? family.demoRecord.preview_status === "fallback-only"
-          ? `Fallback preview only; possible source alias: ${family.demoRecord.preview_family}. This site is not loading that font.`
+          ? `No preview available. Possible source alias: ${family.demoRecord.preview_family}; this site is not loading that font.`
           : family.demoRecord.preview_family === family.family
           ? "Preview uses the matching Google Fonts family."
           : `Preview alias: ${family.demoRecord.preview_family}; exact PMM names remain below.`
-        : "Fallback preview only; this site is not loading a matching webfont.";
+        : "No preview available; this site is not loading a matching webfont.";
     }
     inspector.appendChild(note);
 
