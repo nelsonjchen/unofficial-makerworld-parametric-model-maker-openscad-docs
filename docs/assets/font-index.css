@@ -584,10 +584,18 @@ body:has(#pmm-font-index) .md-content__inner > p {
 }
 
 .pmm-font-book__inspector-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   display: flex;
   align-items: start;
   justify-content: space-between;
   gap: 1rem;
+  margin: -1rem -1rem 0;
+  border-bottom: 1px solid var(--pmm-border);
+  padding: 1rem;
+  background: rgba(249, 250, 251, 0.96);
+  backdrop-filter: blur(12px);
 }
 
 .pmm-font-book__inspector h2 {
@@ -599,10 +607,18 @@ body:has(#pmm-font-index) .md-content__inner > p {
 .pmm-font-book__close {
   border: 1px solid var(--pmm-border);
   border-radius: 6px;
-  padding: 0.25rem 0.55rem;
+  padding: 0.35rem 0.65rem;
   background: #fff;
   color: var(--pmm-text);
   cursor: pointer;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.pmm-font-book__close:hover,
+.pmm-font-book__close:focus-visible {
+  border-color: var(--pmm-blue);
+  color: var(--pmm-blue);
 }
 
 .pmm-font-book__inspector-sample {

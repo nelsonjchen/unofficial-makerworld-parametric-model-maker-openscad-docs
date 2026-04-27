@@ -859,7 +859,8 @@
 
     const head = document.createElement("div");
     head.className = "pmm-font-book__inspector-head";
-    const close = button("Close", "pmm-font-book__close");
+    const close = button("Close details", "pmm-font-book__close");
+    close.setAttribute("aria-label", `Close details for ${family.family}`);
     close.addEventListener("click", closeInspector);
 
     const title = document.createElement("h2");
@@ -932,6 +933,10 @@
       list.appendChild(item);
     });
     inspector.appendChild(list);
+    if (state.resetInspectorScroll) {
+      inspector.scrollTop = 0;
+      state.resetInspectorScroll = false;
+    }
   }
 
   function init(root, payload) {
@@ -999,6 +1004,7 @@
 
     function selectFamily(familyName) {
       state.selectedFamily = familyName;
+      state.resetInspectorScroll = true;
       render();
     }
 
@@ -1053,6 +1059,12 @@
     }
 
     render();
+
+    shell.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || !state.selectedFamily) return;
+      state.selectedFamily = "";
+      render();
+    });
   }
 
   document.addEventListener("DOMContentLoaded", () => {
