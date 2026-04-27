@@ -15,7 +15,7 @@ RAW_DIR = REPO_ROOT / "sources" / "raw" / "makerworld"
 DATA_DIR = REPO_ROOT / "data"
 DOCS_DIR = REPO_ROOT / "docs"
 ASSET_DIR = DOCS_DIR / "assets"
-FONT_INDEX_ASSET_VERSION = "20260427-google-ofl-previews"
+FONT_INDEX_ASSET_VERSION = "20260427-sidebar-footer-links"
 
 INSTALLED_PATH = RAW_DIR / "fonts-0.8.0.json"
 BROAD_PATH = RAW_DIR / "fonts-show-0.0.1.json"

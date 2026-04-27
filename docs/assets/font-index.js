@@ -578,7 +578,15 @@
 
     const links = document.createElement("div");
     links.className = "pmm-font-book__sidebar-links";
-    links.innerHTML = '<a href="../">Docs home</a><a href="../font-provenance-notes/">Provenance notes</a>';
+    links.innerHTML = [
+      '<strong>Site links</strong>',
+      '<a href="../">Docs home</a>',
+      '<a href="../font-provenance-notes/">Font provenance notes</a>',
+      '<a href="../font-unknowns-research/">Font unknowns research</a>',
+      '<a href="../pmm-openscad-api/">PMM OpenSCAD API</a>',
+      '<a href="../pmm-syntax-demo/">PMM syntax demo</a>',
+      '<a href="https://github.com/nelsonjchen/unofficial-makerworld-parametric-model-maker-openscad-docs">GitHub source</a>',
+    ].join("");
     sidebar.appendChild(links);
   }
 

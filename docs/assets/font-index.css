@@ -12,6 +12,10 @@ body:has(#pmm-font-index) .md-tabs {
   display: none;
 }
 
+body:has(#pmm-font-index) .md-footer {
+  display: none;
+}
+
 body:has(#pmm-font-index) .md-main {
   padding-top: 0;
 }
@@ -165,11 +169,17 @@ body:has(#pmm-font-index) .md-content__inner > p {
 
 .pmm-font-book__sidebar-links {
   display: grid;
-  gap: 0.35rem;
+  gap: 0.4rem;
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--pmm-border);
   font-size: 0.82rem;
+}
+
+.pmm-font-book__sidebar-links strong {
+  color: var(--pmm-muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
 }
 
 .pmm-font-book__sidebar-links a {

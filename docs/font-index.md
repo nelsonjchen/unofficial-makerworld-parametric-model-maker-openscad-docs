@@ -20,5 +20,5 @@ Then open `http://127.0.0.1:8000/unofficial-makerworld-parametric-model-maker-op
   <p class="pmm-font-index__loading">Loading generated font index...</p>
 </div>
 
-<link rel="stylesheet" href="../assets/font-index.css?v=20260427-google-ofl-previews">
-<script src="../assets/font-index.js?v=20260427-google-ofl-previews"></script>
+<link rel="stylesheet" href="../assets/font-index.css?v=20260427-sidebar-footer-links">
+<script src="../assets/font-index.js?v=20260427-sidebar-footer-links"></script>
