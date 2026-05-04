@@ -7,6 +7,8 @@ This is the practical path from a local OpenSCAD script to a MakerWorld-customiz
 - Remove dependencies on arbitrary local file layout where possible.
 - Decide whether the model is single-plate or truly needs multi-plate output.
 
+For larger source trees, a generated-export workflow can be easier to maintain than hand-editing a single PMM file. See `docs/community-tooling.md` for a community example.
+
 ## 2. PMM-Enable The Script
 - Convert important user-facing values into simple top-level parameters.
 - Add `// color` only to hex string parameters you want PMM to expose as colors.
@@ -57,3 +59,5 @@ When possible, note the rationale with links to:
 - `docs/compatibility-rules.md`
 - `docs/gotchas.md`
 - `docs/changelog.md`
+
+External project workflows can be cited inline as examples, but do not use them as proof that PMM supports a feature.

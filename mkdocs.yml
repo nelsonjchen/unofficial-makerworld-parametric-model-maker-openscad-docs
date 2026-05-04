@@ -27,6 +27,7 @@ nav:
   - Compatibility Rules: compatibility-rules.md
   - Agent Workflow: agent-workflow.md
   - Publishing Workflow: publishing-workflow.md
+  - Community Tooling: community-tooling.md
   - Public Web Discovery: web-discovery.md
   - Gotchas: gotchas.md
   - Changelog: changelog.md

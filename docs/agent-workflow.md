@@ -31,6 +31,8 @@ Before adding PMM sugar:
 - Remove non-portable assumptions about local filesystem layout.
 - Prefer simple helper modules over PMM magic until the model is stable.
 
+For larger repos with reusable local libraries, see `docs/community-tooling.md` for a community example of maintaining local source files while generating flattened MakerWorld exports.
+
 ## 4. Add PMM-Facing Parameters
 Only after the script is structurally safe:
 - Add basic scalar or string parameters that map cleanly to user intent.
@@ -73,3 +75,4 @@ When explaining why a rewrite is needed:
 - Prefer `Official release` or `Employee-confirmed` evidence.
 - Link to the relevant docs in this repo first.
 - Fall back to raw source material only when a user needs provenance or newer details.
+- Treat external project workflows as community examples, not PMM feature evidence.

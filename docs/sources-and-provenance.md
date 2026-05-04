@@ -35,3 +35,5 @@ This repository separates evidence class from source type.
 - `manual_capture`: `0`
 
 Manual UI captures should never be auto-scraped in v1. Add them intentionally under `sources/raw/manual/` using the provided template.
+
+External project workflows, such as community repositories that publish PMM-ready OpenSCAD, may be cited inline as examples. They are lower-authority evidence than official app endpoints, official releases, employee-confirmed behavior, or labeled manual captures, and should not be used as standalone proof of PMM feature support.
